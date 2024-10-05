@@ -11,6 +11,7 @@ public class InputManager : MonoBehaviour
 {
     private bool interactPressed = false;
     private bool submitPressed = false;
+    private bool isPause = false;
 
     // private bool isDebug = false;
 
@@ -31,9 +32,24 @@ public class InputManager : MonoBehaviour
     }
 
     //_________
+    /* 
+     * Notas
+     * var buttonAction = new InputAction(type: InputActionType.Button, binding: "<Gamepad>/*Trigger");
+     * buttonAction.performed += c => Debug.Log("${c.control.name} pressed (Button)");
+     */
+    /* 
+        using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
+
+        public void Update()
+        {
+            foreach (var touch in Touch.activeTouches)
+                Debug.Log($"{touch.touchId}: {touch.screenPosition},{touch.phase}");
+        }
+    */
 
     public void InteractButtonPressed(InputAction.CallbackContext context)
     {
+        Debug.Log(context);
         if (context.performed)
         {
             interactPressed = true;
@@ -54,6 +70,11 @@ public class InputManager : MonoBehaviour
         {
             submitPressed = false;
         }
+    }
+
+    public void Pause(InputAction.CallbackContext context)
+    {
+        isPause = !isPause;
     }
 
 

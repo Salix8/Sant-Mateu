@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -11,22 +12,24 @@ public class DialogueTrigger : MonoBehaviour
     //[Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
-    private bool isPressed = false;
-
-    private bool isDebug = true;
+    private bool isDebug = false;
 
     private void Awake()
     {
         if(isDebug) Debug.Log("Activando Dialogue trigger");
-        isPressed = false;
         exclamationMark.SetActive(false);
     }
 
     private void Update()
     {
-        if (isPressed && !DialogueManager.GetInstance().dialogueIsPlaying)
+        if (isDebug && InputManager.GetInstance().GetInteractPressed()) //Tambien sirve para controles tactiles
         {
-            exclamationMark.SetActive(true);
+            Debug.Log("Se ha clicado en " + this.gameObject.name);
+        }
+
+        if (!DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            //exclamationMark.SetActive(true); //Esto sera si se pasa el cursor por encima
             if (InputManager.GetInstance().GetInteractPressed())
             {
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
@@ -38,9 +41,4 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
-    {
-        Debug.Log("Funciona");
-        isPressed = true;
-    }
 }

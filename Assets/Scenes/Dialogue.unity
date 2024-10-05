@@ -242,10 +242,21 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8758239333894443969, guid: 0152850ee283efa44b781fb7d54a6cde, type: 3}
-      insertIndex: 0
+      insertIndex: -1
       addedObject: {fileID: 794539711}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0152850ee283efa44b781fb7d54a6cde, type: 3}
+--- !u!114 &176925013 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6181334812441270465, guid: 60a7f1390b29e954e932a46838b60e18, type: 3}
+  m_PrefabInstance: {fileID: 1298959587}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb2a601801c4ed4fb04d396e0d9daca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &444627817
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,10 +558,10 @@ GameObject:
   - component: {fileID: 794539711}
   - component: {fileID: 794539710}
   - component: {fileID: 794539709}
-  - component: {fileID: 794539712}
   - component: {fileID: 794539713}
+  - component: {fileID: 794539712}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Andreu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,18 +638,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 622418898}
   inkJSON: {fileID: 4900000, guid: 1171a823992163647ba53f6a3c555f98, type: 3}
---- !u!114 &794539713
-MonoBehaviour:
+--- !u!61 &794539713
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794539708}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fe7bc7555484ef4cb8ebb37d4391bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -8.863327, y: -11.05249}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 745.1282, y: 995.3347}
+  m_EdgeRadius: 0
 --- !u!4 &1004870243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6255905677327059680, guid: 60a7f1390b29e954e932a46838b60e18, type: 3}
@@ -694,6 +738,22 @@ PrefabInstance:
       propertyPath: choices.Array.data[2]
       value: 
       objectReference: {fileID: 2044972741}
+    - target: {fileID: 6255905676877302019, guid: 60a7f1390b29e954e932a46838b60e18, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 176925013}
+    - target: {fileID: 6255905676877302019, guid: 60a7f1390b29e954e932a46838b60e18, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 176925013}
+    - target: {fileID: 6255905676877302019, guid: 60a7f1390b29e954e932a46838b60e18, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InteractButtonPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6255905676877302019, guid: 60a7f1390b29e954e932a46838b60e18, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SubmitPressed
+      objectReference: {fileID: 0}
     - target: {fileID: 6255905677327059680, guid: 60a7f1390b29e954e932a46838b60e18, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.608488
