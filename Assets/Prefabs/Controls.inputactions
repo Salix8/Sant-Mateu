@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "selectChoice",
+                    "type": "Value",
+                    "id": "4615d538-7ff4-41f3-96cc-3365208bc84f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -90,6 +99,72 @@
                     "action": "submit",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "arrows",
+                    "id": "2a2f722a-a463-40bb-954c-ed0b17601312",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "selectChoice",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Negative",
+                    "id": "f9f60104-c084-4c1e-8b5d-73c315549f09",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "selectChoice",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "82df7f3a-f8ce-42d1-b5c6-6df39f6df0d9",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "selectChoice",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "wasd",
+                    "id": "d716b605-35a0-44d3-be06-2030d429e55c",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "selectChoice",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Negative",
+                    "id": "9b0fa5a4-d74c-4baf-8e3f-9c0300f7c5e6",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "selectChoice",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "befaa3a5-0915-401a-9cfe-5e3fca0ebc3e",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "selectChoice",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         },

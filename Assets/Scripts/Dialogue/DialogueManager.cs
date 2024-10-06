@@ -33,7 +33,7 @@ public class DialogueManager : MonoBehaviour
     private const string PORTAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
 
-    private bool isDebug = false;
+    private bool isDebug = true;
 
 
     public void Awake()
@@ -158,6 +158,8 @@ public class DialogueManager : MonoBehaviour
     {
         List<Choice> currentChoices = currentStory.currentChoices;
 
+        // if (currentChoices.Count == 0) return; // No podemos hacer esto porque si no veremos botones que no queremos, maas abajo haglo el bucle que los oculta
+
         if (currentChoices.Count > choices.Length)
         {
             // Si ha saltado este error prueba a mirar el Dialoguemanager o los DialogueChoices del canvas
@@ -179,6 +181,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         StartCoroutine( SelectFirstChoice() );
+        Debug.Log("Fin opciones");
     }
 
     private IEnumerator SelectFirstChoice()
@@ -191,6 +194,7 @@ public class DialogueManager : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
+        Debug.Log("choiceIndex: " + choiceIndex); //Siempre sale 0
         currentStory.ChooseChoiceIndex(choiceIndex);
         InputManager.GetInstance().RegisterSubmitPressed();
         ContinueStory();

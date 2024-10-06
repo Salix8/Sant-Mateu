@@ -13,7 +13,7 @@ public class InputManager : MonoBehaviour
     private bool submitPressed = false;
     private bool isPause = false;
 
-    // private bool isDebug = false;
+    private bool isDebug = false;
 
     private static InputManager instance;
 
@@ -49,7 +49,7 @@ public class InputManager : MonoBehaviour
 
     public void InteractButtonPressed(InputAction.CallbackContext context)
     {
-        Debug.Log(context);
+        if (isDebug) Debug.Log(context);
         if (context.performed)
         {
             interactPressed = true;
