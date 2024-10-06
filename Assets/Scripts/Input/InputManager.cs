@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 // Unico punto de acceso para obtener cualquier Input
@@ -11,6 +12,7 @@ public class InputManager : MonoBehaviour
 {
     private bool interactPressed = false;
     private bool submitPressed = false;
+    private Vector2 direction = Vector2.zero;
     private bool isPause = false;
 
     private bool isDebug = false;
@@ -72,6 +74,21 @@ public class InputManager : MonoBehaviour
         }
     }
 
+    public void SelectChoice(InputAction.CallbackContext context)
+    {
+        // ReadValue tiene que leer un Vector2 si no, no funcionan las opciones de dialogo ni el segundo sistema de movimiento (si empiezas con wasd luego las flechas no van)
+        // Esto se determina en Controls que es una accion que establecemos en Unity y que hemos cambiado en el EventSystem
+        Debug.Log(context);
+        if (context.performed)
+        {
+            direction = context.ReadValue<Vector2>();
+        }
+        else if (context.canceled)
+        {
+            direction = context.ReadValue<Vector2>();
+        }
+    }
+
     public void Pause(InputAction.CallbackContext context)
     {
         isPause = !isPause;
@@ -80,6 +97,10 @@ public class InputManager : MonoBehaviour
 
     //__________________________________
 
+    public Vector2 GetDirection() //En principio esto solo sirve para las choices
+    {
+        return direction;
+    }
 
     public bool GetInteractPressed()
     {

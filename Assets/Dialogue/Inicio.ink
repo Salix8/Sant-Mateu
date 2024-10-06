@@ -1,4 +1,3 @@
-primero se lo salta y no se porque
 Hello there! #speaker:Andreu #portrait:andreu-neutral #layout:left
 -> main
 
@@ -9,7 +8,7 @@ How are you feeling today?
 + [Sad]
     Oh, well that makes me sad too.
     
-- Don't trust him, he's not real doctor! #speaker:Ms. Yellow #portrait:ms_yellow_neutral #layout:right
+- Don't trust him, he's not real doctor! #speaker:Silvia #portrait:silvia-neutral #layout:right
 
 Well, do you have any more questions? #speaker:Andreu #portrait:andreu-neutral #layout:left
 + [Yes]

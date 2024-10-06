@@ -11,6 +11,8 @@ using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
+    [Header("Params")]
+    [SerializeField] private float typingSpeed = 0.04f; //Cuanto menor sea mas rapido escribirá
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
@@ -24,8 +26,12 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
+
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
+
+    private bool canContinueToNextLine = false;
+    private Coroutine displayLineCoroutinte;
 
     private static DialogueManager instance;
 
@@ -73,7 +79,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (currentStory.currentChoices.Count == 0 && InputManager.GetInstance().GetSubmitPressed())
+        if (canContinueToNextLine && currentStory.currentChoices.Count == 0 && InputManager.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
         }
@@ -108,15 +114,47 @@ public class DialogueManager : MonoBehaviour
         if (currentStory.canContinue)
         {
             //set text la linea actual del dialogo
-            dialogueText.text = currentStory.Continue();
-            //
-            DisplayChoices();
-            //
+            //dialogueText.text = currentStory.Continue();
+            if (displayLineCoroutinte != null)
+                StopCoroutine(displayLineCoroutinte);
+
+            displayLineCoroutinte = StartCoroutine(Displayline(currentStory.Continue()));
+            
+            // Las etiquetas que definen la imagen posicion etc del npc que habla
             HandleTags(currentStory.currentTags);
         }
         else
         {
             StartCoroutine( ExitDialogueMode() );
+        }
+    }
+
+    private IEnumerator Displayline(string line)
+    {
+        // Vaciamos el texto para que la linea anterior ya no se muestre
+        dialogueText.text = "";
+
+        continueIcon.SetActive(false); // Ocultamos la UI mientras se escribe
+        HideChoices();
+        canContinueToNextLine = false; // Para evitar que el jugador continue hasta que haya completado el texto
+
+        foreach (char letter in line.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        continueIcon.SetActive(true); // Volvemos activar la UI para que el Jugador sepa que puede continuar
+        DisplayChoices();
+
+        canContinueToNextLine = true;
+    }
+
+    private void HideChoices()
+    {
+        foreach (var choiceBtn in choices)
+        {
+            choiceBtn.SetActive(false);
         }
     }
 
@@ -181,7 +219,6 @@ public class DialogueManager : MonoBehaviour
         }
 
         StartCoroutine( SelectFirstChoice() );
-        Debug.Log("Fin opciones");
     }
 
     private IEnumerator SelectFirstChoice()
@@ -194,9 +231,11 @@ public class DialogueManager : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
-        Debug.Log("choiceIndex: " + choiceIndex); //Siempre sale 0
-        currentStory.ChooseChoiceIndex(choiceIndex);
-        InputManager.GetInstance().RegisterSubmitPressed();
-        ContinueStory();
+        if (canContinueToNextLine)
+        {
+            currentStory.ChooseChoiceIndex(choiceIndex);
+            InputManager.GetInstance().RegisterSubmitPressed();
+            ContinueStory();
+        }
     }
 }
