@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b091875ee512341a737c80fa4133b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  typingSpeed: 0.04
   dialoguePanel: {fileID: 0}
   continueIcon: {fileID: 0}
   dialogueText: {fileID: 0}
@@ -144,11 +145,35 @@ MonoBehaviour:
     m_ActionId: d32260d4-d4b5-4fef-90c4-f9de63d50bb8
     m_ActionName: game/submit[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6181334812441270465}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: SelectChoice
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 4615d538-7ff4-41f3-96cc-3365208bc84f
     m_ActionName: game/selectChoice[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/w,/Keyboard/s]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6181334812441270465}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 0c679151-417a-4adb-b520-bf0f968566fa
     m_ActionName: UI/pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
