@@ -1,8 +1,0 @@
-181606102024
-Bugs
-    Layout
-        Reacer las animaciones de left y right
-    Opciones
-        Siempre se elige la opcion 0
-        Creo que hay que cambiar los controles game y en el interact añadir las flechas
-    Pointer Lower priority (Da igual donde se clique)
