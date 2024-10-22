@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using Ink.UnityIntegration;
 
 // Inicia, muestra y termina los dialogos
 //Continua los dialogos, muestra las opciones, cambia posiciones del layout
@@ -13,6 +14,10 @@ public class DialogueManager : MonoBehaviour
 {
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.04f; //Cuanto menor sea mas rapido escribirá
+
+    [Header("Globals Ink File")]
+    [SerializeField] private InkFile globalsInkFile;
+
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
@@ -39,6 +44,8 @@ public class DialogueManager : MonoBehaviour
     private const string PORTAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
 
+    private DialogueVariables dialogueVariables;
+
     private bool isDebug = true;
 
 
@@ -49,6 +56,7 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("Se ha encontrado mas de un DialogueManager en la escena");
         }
         instance = this;
+        dialogueVariables = new DialogueVariables(globalsInkFile.filePath);
     }
 
     public static DialogueManager GetInstance()
@@ -92,10 +100,20 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
+        dialogueVariables.StartListening(currentStory);
+
+        canContinueToNextLine = false; // asegurarse de que no se esta ejecutando otra linea de dialogo
+        if (displayLineCoroutinte != null)
+        {
+            StopCoroutine(displayLineCoroutinte);
+            displayLineCoroutinte = null;
+        }
+
         // Reset portrait, layout, and speaker
         displayNameText.text = "???";
         portraitAnimator.Play("default");
         layoutAnimator.Play("right");
+        dialogueText.text = "";
 
         ContinueStory();
     }
@@ -103,6 +121,8 @@ public class DialogueManager : MonoBehaviour
     public IEnumerator ExitDialogueMode()
     {
         yield return new WaitForSeconds(0.2f);
+
+        dialogueVariables.StopListening(currentStory);
 
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
@@ -131,6 +151,8 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator Displayline(string line)
     {
+        //yield return new WaitForSeconds(0.15f);//En teoria esto deberia solucionar lo de que el primero se vea muy rapido,
+        //pero si lo pongo luego cuando hay un cambio de personaje se ve extraño porque se espera ese poco con el texto de otro sin cambiar pero con el layout del nuevo queda raro
         // Vaciamos el texto para que la linea anterior ya no se muestre
         dialogueText.text = "";
 
@@ -138,10 +160,28 @@ public class DialogueManager : MonoBehaviour
         HideChoices();
         canContinueToNextLine = false; // Para evitar que el jugador continue hasta que haya completado el texto
 
+        bool isAddingRichTextTag = false;
+
         foreach (char letter in line.ToCharArray())
         {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            if (InputManager.GetInstance().GetSubmitPressed())
+            {
+                dialogueText.text = line;
+                break;
+            }
+
+            if (letter == '<' || isAddingRichTextTag)
+            {
+                isAddingRichTextTag = true;
+                dialogueText.text += letter;
+                if (letter == '>')
+                    isAddingRichTextTag = false;
+            }
+            else // No es rich text colorinchis
+            {
+                dialogueText.text += letter;
+                yield return new WaitForSeconds(typingSpeed);
+            }
         }
 
         continueIcon.SetActive(true); // Volvemos activar la UI para que el Jugador sepa que puede continuar
@@ -237,5 +277,16 @@ public class DialogueManager : MonoBehaviour
             InputManager.GetInstance().RegisterSubmitPressed();
             ContinueStory();
         }
+    }
+
+    public Ink.Runtime.Object GetVariableState(string variableName)
+    {
+        Ink.Runtime.Object variableValue = null;
+        dialogueVariables.variables.TryGetValue(variableName, out variableValue);
+        if (variableValue != null)
+        {
+            Debug.Log("Ink Variable es nula: " + variableName);
+        }
+        return variableValue;
     }
 }

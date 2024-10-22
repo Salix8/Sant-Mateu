@@ -1,4 +1,6 @@
--> main
+INCLUDE globals.ink
+
+{armaElegida =="": -> main | -> already_chose}
 
 === main ===
 
@@ -13,7 +15,10 @@ Elige un arma y parte hacia tu destino
         -> chosen("Arco y flechas")
 
 === chosen(weapon) ===
-
+~ armaElegida = weapon
 Has elegido {weapon}!
+-> END
 
+=== already_chose ===
+Ya has elegido un arma {armaElegida}.
 -> END

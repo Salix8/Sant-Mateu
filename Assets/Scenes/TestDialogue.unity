@@ -509,6 +509,10 @@ PrefabInstance:
       propertyPath: choices.Array.data[2]
       value: 
       objectReference: {fileID: 1015645127}
+    - target: {fileID: 1213351296667576194, guid: 58d8b93a1499c8d4f82373fc9d3ad98d, type: 3}
+      propertyPath: globalsInkFile.inkAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 6762c26a8addb16449393a33d556c53b, type: 3}
     - target: {fileID: 6255905677327059680, guid: 58d8b93a1499c8d4f82373fc9d3ad98d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.608488
