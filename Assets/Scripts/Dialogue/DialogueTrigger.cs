@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,34 +11,31 @@ public class DialogueTrigger : MonoBehaviour
     //[SerializeField] private GameObject exclamationMark;
 
     //[Header("Ink JSON")]
-    [SerializeField] private TextAsset inkJSON;
+    //[SerializeField] private TextAsset inkJSON;
 
-    private bool isDebug = false;
+    private InputAction clickAction;
+
+    private bool isDebug = true;
 
     private void Awake()
     {
         if(isDebug) Debug.Log("Activando Dialogue trigger");
+        clickAction = InputSystem.actions.FindAction("Click");
         //exclamationMark.SetActive(false);
     }
 
-    private void Update()
+    public void StartDialogue(TextAsset dialogo)
     {
-        if (isDebug && InputManager.GetInstance().GetInteractPressed()) //Tambien sirve para controles tactiles
+        Debug.Log("Se ha clicado en " + this.gameObject.name);
+
+        if (isDebug && clickAction.IsPressed()) //Tambien sirve para controles tactiles
         {
             Debug.Log("Se ha clicado en " + this.gameObject.name);
         }
 
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            //exclamationMark.SetActive(true); //Esto sera si se pasa el cursor por encima
-            if (InputManager.GetInstance().GetInteractPressed())
-            {
-                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-            }
-        }
-        else
-        {
-            //exclamationMark.SetActive(false);
+            DialogueManager.GetInstance().EnterDialogueMode(dialogo);
         }
     }
 

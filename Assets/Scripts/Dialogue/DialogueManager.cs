@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using Ink.UnityIntegration;
 
 // Inicia, muestra y termina los dialogos
@@ -39,6 +40,7 @@ public class DialogueManager : MonoBehaviour
     private Coroutine displayLineCoroutinte;
 
     private static DialogueManager instance;
+    private InputAction clickAction;
 
     private const string SPEAKER_TAG = "speaker";
     private const string PORTAIT_TAG = "portrait";
@@ -57,6 +59,7 @@ public class DialogueManager : MonoBehaviour
         }
         instance = this;
         dialogueVariables = new DialogueVariables(globalsInkFile.filePath);
+        clickAction = InputSystem.actions.FindAction("Click");
     }
 
     public static DialogueManager GetInstance()
@@ -87,7 +90,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (canContinueToNextLine && currentStory.currentChoices.Count == 0 && InputManager.GetInstance().GetSubmitPressed())
+        if (canContinueToNextLine && currentStory.currentChoices.Count == 0 && clickAction.IsPressed())
         {
             ContinueStory();
         }
@@ -164,7 +167,7 @@ public class DialogueManager : MonoBehaviour
 
         foreach (char letter in line.ToCharArray())
         {
-            if (InputManager.GetInstance().GetSubmitPressed())
+            if (clickAction.IsPressed())
             {
                 dialogueText.text = line;
                 break;
@@ -274,7 +277,7 @@ public class DialogueManager : MonoBehaviour
         if (canContinueToNextLine)
         {
             currentStory.ChooseChoiceIndex(choiceIndex);
-            InputManager.GetInstance().RegisterSubmitPressed();
+            //InputManager.GetInstance().RegisterSubmitPressed();
             ContinueStory();
         }
     }
