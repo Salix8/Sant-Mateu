@@ -46,6 +46,7 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
+    private const string PANEL_TAG = "panel";
 
     private DialogueVariables dialogueVariables;
 
@@ -230,6 +231,10 @@ public class DialogueManager : MonoBehaviour
                     if(isDebug) Debug.Log("Layout= " + tagValue);
                     layoutAnimator.Play(tagValue);
                     break;
+                //case PANEL_TAG:
+                //    if (isDebug) Debug.Log("Panel= " + tagValue);
+                //    dialoguePanel.ima
+                //    break;
                 default:
                     Debug.LogWarning("La tag ha llegado, pero no se esta gestionando correctamente: " + tag);
                     break;
