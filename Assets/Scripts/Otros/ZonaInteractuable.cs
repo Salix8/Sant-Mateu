@@ -13,13 +13,19 @@ public class ZonaInteractuable : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        controlCursor.changeCursor("mano");
-        textInfo.text = textoInteraccion;
+        if (!DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            controlCursor.changeCursor("mano");
+            textInfo.text = textoInteraccion;
+        }
     }
 
     private void OnMouseExit()
     {
-        controlCursor.changeCursor("normal");
-        textInfo.text = "";
+        if (!DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            controlCursor.changeCursor("normal");
+            textInfo.text = "";
+        }
     }
 }
