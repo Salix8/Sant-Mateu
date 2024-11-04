@@ -8,11 +8,23 @@ public class ControlCursor : MonoBehaviour
     [SerializeField] private Texture2D cursorNormal, cursorMano;
     private Texture2D cursorActual;
 
+    private static ControlCursor instance;
+
     // Start is called before the first frame update
-    void Start()
+    public void Awake()
     {
+        if (instance != null)
+        {
+            Debug.LogWarning("Se ha encontrado mas de un DialogueManager en la escena");
+        }
+        instance = this;
         Cursor.visible = false;
         changeCursor("normal");
+    }
+
+    public static ControlCursor GetInstance()
+    {
+        return instance;
     }
 
     public void changeCursor(string tipoCursor)
