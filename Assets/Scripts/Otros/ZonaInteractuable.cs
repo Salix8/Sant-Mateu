@@ -7,7 +7,6 @@ using TMPro;
 
 public class ZonaInteractuable : MonoBehaviour
 {
-    [SerializeField] private ControlCursor controlCursor;
     [SerializeField] private TextMeshProUGUI textInfo;
     [SerializeField] private string textoInteraccion;
 
@@ -15,7 +14,7 @@ public class ZonaInteractuable : MonoBehaviour
     {
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            controlCursor.changeCursor("mano");
+            ControlCursor.GetInstance().changeCursor("mano");
             textInfo.text = textoInteraccion;
         }
     }
@@ -24,7 +23,7 @@ public class ZonaInteractuable : MonoBehaviour
     {
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            controlCursor.changeCursor("normal");
+            ControlCursor.GetInstance().changeCursor("normal"); 
             textInfo.text = "";
         }
     }

@@ -10,6 +10,7 @@ How are you feeling today?
     
 - Don't trust him, he's <b><color=\#FF1E35>not</color></b> real doctor! #speaker:Silvia #portrait:silvia-neutral #layout:right
 
+
 Well, do you have any more questions? #speaker:Andreu #portrait:andreu-neutral #layout:left
 + [Yes]
     -> main

@@ -6,6 +6,7 @@ using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using Ink.UnityIntegration;
+using UnityEditor.Timeline.Actions;
 
 // Inicia, muestra y termina los dialogos
 //Continua los dialogos, muestra las opciones, cambia posiciones del layout
@@ -140,6 +141,7 @@ public class DialogueManager : MonoBehaviour
             //dialogueText.text = currentStory.Continue();
             if (displayLineCoroutinte != null)
                 StopCoroutine(displayLineCoroutinte);
+
 
             displayLineCoroutinte = StartCoroutine(Displayline(currentStory.Continue()));
             
@@ -278,6 +280,10 @@ public class DialogueManager : MonoBehaviour
         {
             currentStory.ChooseChoiceIndex(choiceIndex);
             //InputManager.GetInstance().RegisterSubmitPressed();
+            //clickAction.Value = false;
+            /*
+             * public void RegistrerSubmitPressed(){ submitedPresed = false }
+             */
             ContinueStory();
         }
     }
