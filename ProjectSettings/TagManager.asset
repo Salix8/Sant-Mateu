@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Villores
+  - Plaza
+  - Arciprestal
+  - Muralla
+  - Borrull
+  - Callejon
+  - Horno
+  - Fuente
+  - Pere
+  - Convento
   layers:
   - Default
   - TransparentFX
