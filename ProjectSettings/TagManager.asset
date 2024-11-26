@@ -4,41 +4,51 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Villores
+  - Plaza
+  - Arciprestal
+  - Muralla
+  - Borrull
+  - Callejon
+  - Horno
+  - Fuente
+  - Pere
+  - Convento
   - Shield
   - Projectile
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  -
   - Water
   - UI
-  - 
-  - 
-  - 
+  -
+  -
+  -
   - Projectile
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
   m_SortingLayers:
   - name: Default
     uniqueID: 0
