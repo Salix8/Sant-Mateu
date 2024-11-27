@@ -15,7 +15,7 @@ using UnityEditor.Timeline.Actions;
 public class DialogueManager : MonoBehaviour
 {
     [Header("Params")]
-    [SerializeField] private float typingSpeed = 0.04f; //Cuanto menor sea mas rapido escribirá
+    [SerializeField] private float typingSpeed = 0.04f; //Cuanto menor sea mas rapido escribirï¿½
 
     [Header("Globals Ink File")]
     [SerializeField] private InkFile globalsInkFile;
@@ -145,7 +145,7 @@ public class DialogueManager : MonoBehaviour
 
 
             displayLineCoroutinte = StartCoroutine(Displayline(currentStory.Continue()));
-            
+
             // Las etiquetas que definen la imagen posicion etc del npc que habla
             HandleTags(currentStory.currentTags);
         }
@@ -158,7 +158,7 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator Displayline(string line)
     {
         //yield return new WaitForSeconds(0.15f);//En teoria esto deberia solucionar lo de que el primero se vea muy rapido,
-        //pero si lo pongo luego cuando hay un cambio de personaje se ve extraño porque se espera ese poco con el texto de otro sin cambiar pero con el layout del nuevo queda raro
+        //pero si lo pongo luego cuando hay un cambio de personaje se ve extraï¿½o porque se espera ese poco con el texto de otro sin cambiar pero con el layout del nuevo queda raro
         // Vaciamos el texto para que la linea anterior ya no se muestre
         dialogueText.text = "";
 
