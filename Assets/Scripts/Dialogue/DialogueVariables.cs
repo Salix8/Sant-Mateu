@@ -21,7 +21,7 @@ public class DialogueVariables
         {
             Ink.Runtime.Object value = globalVariablesStory.variablesState.GetVariableWithName(name);
             variables.Add(name, value);
-            Debug.Log("Inicializada variable global de dialogo: " + name + " = " + value);
+            //Debug.Log("Inicializada variable global de dialogo: " + name + " = " + value);
         }
 
     }
