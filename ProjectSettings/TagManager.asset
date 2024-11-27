@@ -3,12 +3,26 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Villores
+  - Plaza
+  - Arciprestal
+  - Muralla
+  - Borrull
+  - Callejon
+  - Horno
+  - Fuente
+  - Pere
+  - Convento
+  - Shield
+  - Projectile
+  - TopButton
+  - BottomButton
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Pieza
+  - 
   - Water
   - UI
   - 
