@@ -273,7 +273,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Fuente Virgen Pasado
+      value: FuentePasado
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -299,8 +299,8 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 57038296}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &123758620 stripped
-RectTransform:
+--- !u!4 &123758620 stripped
+Transform:
   m_CorrespondingSourceObject: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
   m_PrefabInstance: {fileID: 9035498132095549511}
   m_PrefabAsset: {fileID: 0}
@@ -312,6 +312,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1497191064}
     m_Modifications:
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 685
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -260
+      objectReference: {fileID: 0}
     - target: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -392,6 +400,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 158
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -146
+      objectReference: {fileID: 0}
     - target: {fileID: 2191502545518683669, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_SizeDelta.x
       value: 391.07
@@ -438,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Muralla
+      value: MurallaPresente
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -586,6 +602,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1497191064}
     m_Modifications:
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 577
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -232
+      objectReference: {fileID: 0}
     - target: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -666,6 +690,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -925
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -361
+      objectReference: {fileID: 0}
     - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: nextScene
       value: 
@@ -696,7 +728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Iglesia Sant Pere
+      value: PerePresente
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -857,7 +889,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Iglesia Sant Pere Pasado
+      value: PerePasado
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -1013,7 +1045,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Villores 3 (sala musica pasado)
+      value: Villores3Pasado
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -1146,6 +1178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -93
+      objectReference: {fileID: 0}
     - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: nextScene
       value: 
@@ -1172,7 +1208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Villores 2
+      value: Villores2
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -1226,6 +1262,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1497191064}
     m_Modifications:
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -635
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -245
+      objectReference: {fileID: 0}
     - target: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1306,6 +1350,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -722
+      objectReference: {fileID: 0}
     - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: nextScene
       value: 
@@ -1336,11 +1384,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Convento Galletas
+      value: ConventoGalletas
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7158015840869222548, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
@@ -1364,7 +1412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8176305107674142745, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Size.x
-      value: 461.24362
+      value: 727.93823
       objectReference: {fileID: 0}
     - target: {fileID: 8176305107674142745, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Size.y
@@ -1372,15 +1420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8176305107674142745, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Offset.x
-      value: -107.90776
+      value: -800.2875
       objectReference: {fileID: 0}
     - target: {fileID: 8176305107674142745, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Offset.y
-      value: 68.74713
-      objectReference: {fileID: 0}
-    - target: {fileID: 8931170641278078088, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -829
+      value: 68.74715
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1407,8 +1451,8 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 790450065}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &352048683 stripped
-RectTransform:
+--- !u!4 &352048683 stripped
+Transform:
   m_CorrespondingSourceObject: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
   m_PrefabInstance: {fileID: 365973720}
   m_PrefabAsset: {fileID: 0}
@@ -1420,6 +1464,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385159854}
     m_Modifications:
+    - target: {fileID: 322522618358308308, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 873
+      objectReference: {fileID: 0}
     - target: {fileID: 1294184320705406138, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Name
       value: Interact Siguiente (1)
@@ -1619,7 +1667,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Horno Pasado
+      value: HornoPasado
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -2033,7 +2081,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Muralla Pasado
+      value: MurallaPasado
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -2303,7 +2351,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Borrull Pasado
+      value: BorrullPasado
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -2458,6 +2506,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1497191064}
     m_Modifications:
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -275
+      objectReference: {fileID: 0}
     - target: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2538,6 +2590,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -135
+      objectReference: {fileID: 0}
     - target: {fileID: 2191502545518683669, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_SizeDelta.x
       value: 563.54
@@ -2584,7 +2644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Iglesia Arciprestal
+      value: ArciprestalPresente
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -2750,7 +2810,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Convento Pasado
+      value: ConventoPasado
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -2920,6 +2980,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1497191064}
     m_Modifications:
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 855
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 203
+      objectReference: {fileID: 0}
     - target: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3000,6 +3068,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -995
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: nextScene
       value: 
@@ -3030,7 +3106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Judios
+      value: CallejonPresente
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -3100,6 +3176,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1497191064}
     m_Modifications:
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 670
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -203
+      objectReference: {fileID: 0}
     - target: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3180,6 +3264,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -909
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -293
+      objectReference: {fileID: 0}
     - target: {fileID: 2191502545518683669, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_SizeDelta.x
       value: 299.46
@@ -3226,7 +3318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Borrull
+      value: BorrullPresente
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -3285,6 +3377,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1497191064}
     m_Modifications:
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 867
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 117
+      objectReference: {fileID: 0}
     - target: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3365,6 +3465,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -759
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -377
+      objectReference: {fileID: 0}
     - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: nextScene
       value: 
@@ -3395,7 +3503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Fuente Virgen
+      value: FuentePresente
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -3456,8 +3564,8 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1192306233}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1258533850 stripped
-RectTransform:
+--- !u!4 &1258533850 stripped
+Transform:
   m_CorrespondingSourceObject: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
   m_PrefabInstance: {fileID: 1349844096}
   m_PrefabAsset: {fileID: 0}
@@ -3606,7 +3714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Plaza Mayor Pasado
+      value: PlazaPasado
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -3660,6 +3768,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385159854}
     m_Modifications:
+    - target: {fileID: 322522618358308308, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -783
+      objectReference: {fileID: 0}
     - target: {fileID: 1294184320705406138, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Name
       value: Interact Siguiente (2)
@@ -3678,7 +3790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.x
-      value: 232.3825
+      value: 480.50336
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.y
@@ -3686,7 +3798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Offset.x
-      value: -504.71536
+      value: -805.15125
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Offset.y
@@ -3869,7 +3981,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Judios Pasado
+      value: CallejonPasado
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -4409,6 +4521,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -263
+      objectReference: {fileID: 0}
     - target: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4489,6 +4605,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 649
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -138
+      objectReference: {fileID: 0}
     - target: {fileID: 1760797218868080987, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4539,7 +4663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Plaza Mayor
+      value: PlazaPresente
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -4605,8 +4729,8 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 438808830}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1823109317 stripped
-RectTransform:
+--- !u!4 &1823109317 stripped
+Transform:
   m_CorrespondingSourceObject: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
   m_PrefabInstance: {fileID: 7012687128056747965}
   m_PrefabAsset: {fileID: 0}
@@ -4621,6 +4745,14 @@ PrefabInstance:
     - target: {fileID: 515675035877657247, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 365
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Pivot.x
@@ -4732,7 +4864,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Villores 3 (sala musica presente)
+      value: Villores3Presente
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -4796,6 +4928,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1497191064}
     m_Modifications:
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -714
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000805073357408309, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -251
+      objectReference: {fileID: 0}
     - target: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4876,6 +5016,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 738
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284944871377117135, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: nextScene
       value: 
@@ -4906,7 +5054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Horno
+      value: HornoPresente
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -5092,7 +5240,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
-      value: Escena Iglesia Arciprestal Pasado
+      value: ArciprestalPasado
       objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_IsActive
@@ -5291,13 +5439,13 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1746022573}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &2097333375 stripped
-RectTransform:
+--- !u!4 &2097333375 stripped
+Transform:
   m_CorrespondingSourceObject: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
   m_PrefabInstance: {fileID: 691942964390062912}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &2130461833 stripped
-RectTransform:
+--- !u!4 &2130461833 stripped
+Transform:
   m_CorrespondingSourceObject: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
   m_PrefabInstance: {fileID: 1561867338973248698}
   m_PrefabAsset: {fileID: 0}
@@ -5309,6 +5457,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1244551099636659286}
     m_Modifications:
+    - target: {fileID: 322522618358308308, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 522
+      objectReference: {fileID: 0}
+    - target: {fileID: 322522618358308308, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -226
+      objectReference: {fileID: 0}
     - target: {fileID: 1294184320705406138, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Name
       value: Interact Atras
@@ -5331,19 +5487,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.x
-      value: 378.07355
+      value: 335.6764
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.y
-      value: 498.71136
+      value: 578.23157
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Offset.x
-      value: 81.12216
+      value: 506.12372
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Offset.y
-      value: -21.970795
+      value: -147.69858
       objectReference: {fileID: 0}
     - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_LocalScale.x
@@ -5386,10 +5542,6 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 858
-      objectReference: {fileID: 0}
-    - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -5418,7 +5570,7 @@ GameObject:
   - component: {fileID: 6863163235769202907}
   - component: {fileID: 837166813136669384}
   m_Layer: 5
-  m_Name: Escena Villores 1
+  m_Name: Villores1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5503,6 +5655,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1244551099636659286}
     m_Modifications:
+    - target: {fileID: 322522618358308308, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -876
+      objectReference: {fileID: 0}
+    - target: {fileID: 322522618358308308, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -158
+      objectReference: {fileID: 0}
     - target: {fileID: 1294184320705406138, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Name
       value: Interact Siguiente
@@ -5525,7 +5685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.x
-      value: 637.9135
+      value: 730.2307
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.y
@@ -5533,11 +5693,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Offset.x
-      value: -235.86044
+      value: -992.3495
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Offset.y
-      value: -78.72888
+      value: -78.728874
       objectReference: {fileID: 0}
     - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_LocalScale.x
@@ -5578,10 +5738,6 @@ PrefabInstance:
     - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -836
       objectReference: {fileID: 0}
     - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6048,12 +6204,12 @@ GameObject:
   - component: {fileID: 4032565709329466406}
   - component: {fileID: 7158015842742695477}
   m_Layer: 5
-  m_Name: Escena Convento
+  m_Name: ConventoPresente
   m_TagString: Convento
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1001 &7012687128056747965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6062,6 +6218,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8758902168487987371}
     m_Modifications:
+    - target: {fileID: 322522618358308308, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 287
+      objectReference: {fileID: 0}
+    - target: {fileID: 322522618358308308, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -171
+      objectReference: {fileID: 0}
     - target: {fileID: 1294184320705406138, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Name
       value: Interact Atras
@@ -6084,19 +6248,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.x
-      value: 122.35503
+      value: 167.29639
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.y
-      value: 176.99963
+      value: 263.28693
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Offset.x
-      value: 0.8836975
+      value: 287.60925
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Offset.y
-      value: 1.6761322
+      value: 23.247948
       objectReference: {fileID: 0}
     - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6125,14 +6289,6 @@ PrefabInstance:
     - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 280
-      objectReference: {fileID: 0}
-    - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -168
       objectReference: {fileID: 0}
     - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6550,13 +6706,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8758902168487987371}
     m_Modifications:
+    - target: {fileID: 322522618358308308, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 322522618358308308, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -177
+      objectReference: {fileID: 0}
     - target: {fileID: 1294184320705406138, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Name
       value: Interact Siguiente
-      objectReference: {fileID: 0}
-    - target: {fileID: 1294184320705406138, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: m_TagString
-      value: Path
       objectReference: {fileID: 0}
     - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: nextScene
@@ -6566,26 +6726,6 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
-    - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: textoInteraccion
-      value: Villores 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: m_Size.x
-      value: 138.60414
-      objectReference: {fileID: 0}
-    - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: m_Size.y
-      value: 198.10303
-      objectReference: {fileID: 0}
-    - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: m_Offset.x
-      value: 5.729088
-      objectReference: {fileID: 0}
-    - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: m_Offset.y
-      value: -8.030487
-      objectReference: {fileID: 0}
     - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6613,14 +6753,6 @@ PrefabInstance:
     - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
