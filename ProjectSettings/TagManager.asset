@@ -17,6 +17,7 @@ TagManager:
   - Shield
   - Projectile
   - Path
+  - Menu
   layers:
   - Default
   - TransparentFX
