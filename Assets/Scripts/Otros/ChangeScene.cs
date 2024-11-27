@@ -6,7 +6,7 @@ public class ChangeScene : MonoBehaviour
 {
     [SerializeField] private GameObject nextScene;
 
-    private void OnMouseUp()
+    public void OnMouseUp(GameObject nextScene)
     {
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
