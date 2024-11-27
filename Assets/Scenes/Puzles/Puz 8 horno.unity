@@ -364,7 +364,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -141939248, guid: bbdb285e1dcaf0a41bb2bd10a0ac1512, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce18c510526824b4a8188be07f36b3c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -384,8 +384,8 @@ Transform:
   m_GameObject: {fileID: 485767881}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -261.92, y: 43.32, z: 39072.867}
-  m_LocalScale: {x: 6.243785, y: 12.087568, z: 45.0048}
+  m_LocalPosition: {x: -246, y: 6, z: 39072.867}
+  m_LocalScale: {x: 33.517887, y: 43.769085, z: 45.0048}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1453139839}
@@ -1445,7 +1445,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -475878659, guid: bbdb285e1dcaf0a41bb2bd10a0ac1512, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 40027decdfb1a0f45976a5b77b4f9dbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1465,8 +1465,8 @@ Transform:
   m_GameObject: {fileID: 1233278750}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55.355904, y: -75.15801, z: 39072.867}
-  m_LocalScale: {x: 9.685033, y: 8.676926, z: 45.0048}
+  m_LocalPosition: {x: -69, y: -57, z: 39072.867}
+  m_LocalScale: {x: 30.058952, y: 30.486464, z: 45.0048}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1453139839}
@@ -1796,7 +1796,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1957072198, guid: bbdb285e1dcaf0a41bb2bd10a0ac1512, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a73bf2be0c7f3e4d96e747753614efd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1816,8 +1816,8 @@ Transform:
   m_GameObject: {fileID: 1283903797}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 172.92, y: 61.86, z: 39072.867}
-  m_LocalScale: {x: 15.176157, y: 5.2680817, z: 45.0048}
+  m_LocalPosition: {x: 183, y: 9, z: 39072.867}
+  m_LocalScale: {x: 35.82635, y: 26.243475, z: 45.0048}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1453139839}
@@ -2719,7 +2719,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0bdeea7d70e8a6644a8008c4d2e737f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eafaa5578969c6c4fa33d7c12c496cb7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
