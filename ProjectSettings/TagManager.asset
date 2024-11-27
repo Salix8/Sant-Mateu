@@ -4,20 +4,22 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Villores
-  - Plaza
-  - Arciprestal
-  - Muralla
-  - Borrull
-  - Callejon
-  - Horno
-  - Fuente
-  - Pere
+  - Path
+  - Menu
   - Convento
-  - Shield
-  - Projectile
+  - Fuente
+  - Arciprestal
+  - Horno
+  - Muralla
+  - Plaza
+  - Callejon
+  - Borrull
+  - Pere
+  - Villores
   - TopButton
   - BottomButton
+  - Shield
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -27,7 +29,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Projectile
   - 
   - 
   - 
