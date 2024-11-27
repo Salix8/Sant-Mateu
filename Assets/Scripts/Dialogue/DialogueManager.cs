@@ -269,6 +269,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         StartCoroutine( SelectFirstChoice() );
+
     }
 
     private IEnumerator SelectFirstChoice()
@@ -284,11 +285,8 @@ public class DialogueManager : MonoBehaviour
         if (canContinueToNextLine)
         {
             currentStory.ChooseChoiceIndex(choiceIndex);
-            //InputManager.GetInstance().RegisterSubmitPressed();
-            //clickAction.Value = false;
-            /*
-             * public void RegistrerSubmitPressed(){ submitedPresed = false }
-             */
+            Debug.LogWarning(clickAction.IsPressed());
+            //Aqui estan los errores
             ContinueStory();
         }
     }
