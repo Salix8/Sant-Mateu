@@ -424,10 +424,18 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Iglesia Arciprestal
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Borrull
+      objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
       value: Escena Muralla
@@ -674,10 +682,18 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Fuente Virgen
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Convento Galletas
+      objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
       value: Escena Iglesia Sant Pere
@@ -987,6 +1003,10 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Villores 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -1146,6 +1166,10 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Villores 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
       value: Escena Villores 2
@@ -1298,10 +1322,18 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Iglesia Sant Pere
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Convento
+      objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
       value: Escena Convento Galletas
@@ -1398,7 +1430,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textoInteraccion
-      value: Siguiente
+      value: Convento
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.x
@@ -2413,10 +2445,18 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Plaza Mayor
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Muralla
+      objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
       value: Escena Iglesia Arciprestal
@@ -2851,10 +2891,18 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Borrull
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Horno
+      objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
       value: Escena Judios
@@ -3039,10 +3087,18 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Muralla
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Judios
+      objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
       value: Escena Borrull
@@ -3200,10 +3256,18 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Horno
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Iglesia Sant Pere
+      objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
       value: Escena Fuente Virgen
@@ -3411,6 +3475,10 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Iglesia Arciprestal Pasado
+      objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
       value: Escena Plaza Mayor Pasado
@@ -3481,7 +3549,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textoInteraccion
-      value: Siguiente
+      value: Villores 1
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.x
@@ -3892,7 +3960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15, y: 120}
+  m_AnchoredPosition: {x: 15, y: 119.999985}
   m_SizeDelta: {x: 500, y: 400}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1672046770
@@ -4140,10 +4208,18 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Villores 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Iglesia Arciprestal
+      objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
       value: Escena Plaza Mayor
@@ -4329,6 +4405,10 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Villores 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -4495,10 +4575,18 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Judios
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Fuente Virgen
+      objectReference: {fileID: 0}
     - target: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Name
       value: Escena Horno
@@ -4677,6 +4765,10 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: textoInteraccion
+      value: Plaza Mayor Pasado
+      objectReference: {fileID: 0}
     - target: {fileID: 6535776766826934736, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -4916,6 +5008,10 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: textoInteraccion
+      value: Convento Galletas
+      objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.x
       value: 275.49878
@@ -5104,7 +5200,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textoInteraccion
-      value: Siguiente
+      value: Villores 1
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.x
@@ -5657,6 +5753,10 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: textoInteraccion
+      value: Convento
+      objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.x
       value: 167.29639
@@ -6157,7 +6257,7 @@ PrefabInstance:
       objectReference: {fileID: 5073405988659505659}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textoInteraccion
-      value: Siguiente
+      value: Villores 2
       objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.x
