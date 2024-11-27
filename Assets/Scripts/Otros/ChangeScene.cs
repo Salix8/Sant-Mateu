@@ -6,15 +6,13 @@ public class ChangeScene : MonoBehaviour
 {
     [SerializeField] private GameObject nextScene;
 
-    private void OnMouseUp()
+    public void OnMouseUp()
     {
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
             transform.parent.gameObject.SetActive(false);
             nextScene.gameObject.SetActive(true);
-            Debug.Log(nextScene);
-            Debug.Log(transform.parent.gameObject);
-            Debug.Log(nextScene.gameObject);
+            Debug.Log("Se ha cambiado a la escena: " + nextScene);
         }
     }
 }

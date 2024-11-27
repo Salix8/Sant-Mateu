@@ -21,4 +21,33 @@ public class BallMovement : MonoBehaviour
             rb.AddForce(force, ForceMode2D.Impulse);
         }
     }
+
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if (collision.collider.CompareTag("Shield"))
+    //     {
+    //         // Calcula el ángulo de rebote usando la normal de colisión.
+    //         Vector2 reflectDirection = Vector2.Reflect(rb.velocity, collision.contacts[0].normal);
+
+    //         // Ajusta la velocidad manteniendo la magnitud constante.
+    //         rb.velocity = reflectDirection.normalized * speed;
+
+    //         // Opción: Agregar algo de fuerza adicional para dinamismo.
+    //         rb.AddForce(Vector2.up * 0.5f, ForceMode2D.Impulse);
+    //     }
+    // }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Shield"))
+        {
+            rb.velocity = new Vector2(rb.velocity.x, -Mathf.Abs(rb.velocity.y)).normalized * speed;
+        }
+    }
+
+    private void OnBecameInvisible()
+    {
+        // Este método se llama automáticamente cuando el objeto sale de la cámara.
+        Destroy(gameObject);
+    }
 }
