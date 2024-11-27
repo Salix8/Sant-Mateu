@@ -16,8 +16,13 @@ TagManager:
   - Convento
   - Shield
   - Projectile
+<<<<<<< HEAD
   - Path
   - Menu
+=======
+  - TopButton
+  - BottomButton
+>>>>>>> master
   layers:
   - Default
   - TransparentFX
