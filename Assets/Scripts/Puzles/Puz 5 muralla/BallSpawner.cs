@@ -7,7 +7,6 @@ public class BallSpawner : MonoBehaviour
     [SerializeField] private GameObject ballPrefab; // El prefab de la bola que quieres generar
 
     [Header("Spawn")]
-    [SerializeField] private bool usePointSpawn = false;
     [SerializeField] private float spawnInterval = 2.0f; // Intervalo de tiempo entre cada generación de bola
     [SerializeField] private Vector2 spawnAreaMin; // Coordenadas mínimas del área de generación
     [SerializeField] private Vector2 spawnAreaMax; // Coordenadas máximas del área de generación
