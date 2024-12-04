@@ -7,17 +7,18 @@ using UnityEngine.SceneManagement;
 public class TimeTravel : MonoBehaviour
 {
     private SceneTransitionManager sceneTransitionManager;
-    private bool isEnable = false;
+    private bool isEnable = true;
 
     void Start()
     {
         sceneTransitionManager = FindObjectOfType<SceneTransitionManager>();
-        transform.gameObject.SetActive(false);
+        //transform.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
         //Si hay dialogo se desactiva
         if (isEnable && !DialogueManager.GetInstance().dialogueIsPlaying)
         {
@@ -33,7 +34,7 @@ public class TimeTravel : MonoBehaviour
         {
             isEnable = true;
             transform.gameObject.SetActive(isEnable);
-        }
+        }*/
     }
 
     public void OnButtonClick()
@@ -56,7 +57,7 @@ public class TimeTravel : MonoBehaviour
         else
         {
             // Dialogo de Silvia
-            Debug.Log("No se puede cambiar a la escena del pasado todavía.");
+            Debug.Log("No se puede cambiar a la escena del pasado todavï¿½a.");
         }
     }
 }
