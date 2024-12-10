@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Menus/Menu_Inicial.unity
+    guid: 6c1ed4dcbf588584c8784f9dc2ca9411
+  - enabled: 1
+    path: Assets/Scenes/TestDialogue.unity
+    guid: 29f1d41984587764984e816658a82e55
+  - enabled: 1
     path: Assets/Scenes/Puzles/Puz 1 Villores.unity
     guid: d4af9443d3b09b144a2be140abb0fc15
   - enabled: 1
