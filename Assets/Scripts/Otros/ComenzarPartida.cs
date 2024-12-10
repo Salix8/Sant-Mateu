@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 public class ComenzarPartida : MonoBehaviour
 {
     
-    public void LoadScene(string TestDialogue)
+    public void LoadScene(string JuegoPrincipal)
     {
-        SceneManager.LoadScene("TestDialogue");
+        SceneManager.LoadScene("JuegoPrincipal");
     }
 }
