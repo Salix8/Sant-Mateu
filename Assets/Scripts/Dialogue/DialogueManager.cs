@@ -92,7 +92,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (canContinueToNextLine && currentStory.currentChoices.Count == 0 && clickAction.IsPressed())
+        if (canContinueToNextLine && currentStory.currentChoices.Count == 0 && InputManager.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
         }
@@ -170,7 +170,7 @@ public class DialogueManager : MonoBehaviour
 
         foreach (char letter in line.ToCharArray())
         {
-            if (clickAction.IsPressed())
+            if (InputManager.GetInstance().GetSubmitPressed())
             {
                 dialogueText.text = line;
                 break;
@@ -285,8 +285,8 @@ public class DialogueManager : MonoBehaviour
         if (canContinueToNextLine)
         {
             currentStory.ChooseChoiceIndex(choiceIndex);
-            Debug.LogWarning(clickAction.IsPressed());
-            //Aqui estan los errores
+            //Debug.LogWarning(clickAction.IsPressed());
+            InputManager.GetInstance().RegisterSubmitPressed();
             ContinueStory();
         }
     }

@@ -111,7 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8689750892836949254}
   - component: {fileID: 210884668279123474}
-  - component: {fileID: 3812436474885575520}
+  - component: {fileID: 5536377034005552967}
   m_Layer: 0
   m_Name: InputManager
   m_TagString: Untagged
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3812436474885575520}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
         m_MethodName: SelectChoice
         m_Mode: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
     m_ActionName: UI/Point[/Mouse/position,/Pen/position]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3812436474885575520}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
         m_MethodName: SubmitPressed
         m_Mode: 0
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &3812436474885575520
+--- !u!114 &5536377034005552967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
