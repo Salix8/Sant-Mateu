@@ -11,7 +11,7 @@ public class GlobalManager : MonoBehaviour
     private GameObject[] pathObjects;
     private GameObject[] scenesObjects;
 
-    //private bool isDebug = false;
+    private bool isDebug = false;
 
 
     public void Awake()
@@ -26,13 +26,22 @@ public class GlobalManager : MonoBehaviour
         foreach (GameObject obj in pathObjects)
         {
             obj.SetActive(false);
-            Debug.Log(obj);
+            if (isDebug) Debug.Log("Path: " + obj);
         }
         scenesObjects = GameObject.FindGameObjectsWithTag("Escena");
         foreach (GameObject obj in scenesObjects)
         {
             obj.SetActive(false);
-            Debug.Log(obj);
+            if (isDebug) Debug.Log("Escena: " + obj);
+        }
+    }
+
+    public void SetPathObject(bool isEnable)
+    {
+        foreach (GameObject obj in pathObjects)
+        {
+            obj.SetActive(isEnable);
+            if (isDebug) Debug.Log("Path: " + obj);
         }
     }
 
