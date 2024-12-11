@@ -70,15 +70,26 @@ using UnityEngine.SceneManagement;
 
 public class TimeTravel : MonoBehaviour
 {
-    private SceneTransitionManager sceneTransitionManager;
+    [SerializeField] private SceneTransitionManager sceneTransitionManager;
     private bool isEnable = false; // Comienza desactivado hasta que el QR esté completado.
     private GameObject[] sceneObjects;
+    
 
     void Start()
     {
         sceneTransitionManager = FindObjectOfType<SceneTransitionManager>();
+        if (sceneTransitionManager == null)
+        {
+            Debug.LogError("No se encontró un objeto con SceneTransitionManager en la escena.");
+        }
+
         sceneObjects = GameObject.FindGameObjectsWithTag("Escena");
-        //Debug.Log(sceneObjects);
+        Debug.Log(sceneObjects);
+        foreach (GameObject obj in sceneObjects)
+        {
+            Debug.Log(obj);
+            obj.SetActive(false);
+        }
     }
 
     void Update()
@@ -93,25 +104,29 @@ public class TimeTravel : MonoBehaviour
 
     public void OnButtonClick()
     {
-        string currentScene = "";
+        Debug.Log(GameObject.FindGameObjectsWithTag("Escena"));
         // Solo permite cambiar de escena si `isEnable` está en true.
         if (isEnable)
         {
+            string currentScene = "";
             foreach (GameObject obj in sceneObjects)
             {
-                Debug.Log(obj.activeSelf);
                 if (obj.activeSelf) {
-                    Debug.Log(obj.name);
                     currentScene = obj.name;
                 }
             }
-            //string currentScene = SceneManager.GetActiveScene().name;
+            //currentScene = SceneManager.GetActiveScene().name;
             string otherScene = sceneTransitionManager.GetOtherScene(currentScene);
+            Debug.Log(otherScene);
+            Debug.Log(!string.IsNullOrEmpty(otherScene));
 
             if (!string.IsNullOrEmpty(otherScene))
             {
                 Debug.Log($"Cambiando a la otra escena: {otherScene}");
-                SceneManager.LoadScene(otherScene); // Carga la escena siguiente.
+                GameObject current = GameObject.Find($"/Canvas/Escenas/{currentScene}");
+                current.SetActive(false);
+                GameObject other = GameObject.Find($"/Canvas/Escenas/{otherScene}");
+                other.SetActive(true);
             }
             else
             {
