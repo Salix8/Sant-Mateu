@@ -10,10 +10,12 @@ public class TogglePath : MonoBehaviour
     {
         // Encuentra todos los objetos con el tag "Path"
         pathObjects = GameObject.FindGameObjectsWithTag("Path");
+        Debug.Log(pathObjects);
         // Los desactiva
         foreach (GameObject obj in pathObjects)
         {
             obj.SetActive(false);
+            Debug.Log(obj);
         }
     }
 
@@ -25,6 +27,6 @@ public class TogglePath : MonoBehaviour
             obj.SetActive(isEnable);
         }
 
-        isEnable = !isEnable; // Cambia el estado para la próxima vez que se haga clic
+        isEnable = !isEnable; // Cambia el estado para la prï¿½xima vez que se haga clic
     }
 }
