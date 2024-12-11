@@ -1,4 +1,4 @@
-﻿Muchas gracias por ayudarme. Tomen, a cambio les concedo esta libreta y el sello de los trovadores, con este sello entenderán que vienen de parte de nosotros. #speaker:NPC #portrait:npc-neutral #layout:left
+Muchas gracias por ayudarme. Tomen, a cambio les concedo esta libreta y el sello de los trovadores, con este sello entenderán que vienen de parte de nosotros. #speaker:NPC #portrait:npc-neutral #layout:left
 
 // Se entrega el sello
 
