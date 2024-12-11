@@ -20,6 +20,7 @@ TagManager:
   - BottomButton
   - Shield
   - Projectile
+  - Escena
   layers:
   - Default
   - TransparentFX
@@ -32,8 +33,6 @@ TagManager:
   - 
   - 
   - Projectile
-  - 
-  - 
   - 
   - 
   - 
