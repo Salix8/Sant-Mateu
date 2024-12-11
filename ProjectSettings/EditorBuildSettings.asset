@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/Menu_Inicial.unity
     guid: 6c1ed4dcbf588584c8784f9dc2ca9411
   - enabled: 1
-    path: Assets/Scenes/TestDialogue.unity
+    path: Assets/Scenes/JuegoPrincipal.unity
     guid: 29f1d41984587764984e816658a82e55
   - enabled: 1
     path: Assets/Scenes/Puzles/Puz 1 Villores.unity
