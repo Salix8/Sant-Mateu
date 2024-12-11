@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class ProgresionManager : MonoBehaviour
 {
-    [SerializeField] public bool puzleQRCompletado = false;
+    [SerializeField] public bool puzleQRCompletado = true;
     [SerializeField] public bool sello1Villores    = false;
     [SerializeField] public bool sello2Villores    = false;
     [SerializeField] public bool sello3PlazaMayor  = false;
