@@ -1,6 +1,10 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.49f1 (4dae1bb8668d) revision 5090843'; Using compiler version '192829333'; Build Type 'Release'
+<<<<<<< HEAD
 OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'es' Physical Memory: 16197 MB
+=======
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'es' Physical Memory: 15713 MB
+>>>>>>> origin/master
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,6 +15,7 @@ C:\Program Files\Unity\Hub\Editor\2022.3.49f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< HEAD
 C:/Users/Usuario/Documents/Unity/Triple
 -logFile
 Logs/AssetImportWorker0.log
@@ -18,6 +23,15 @@ Logs/AssetImportWorker0.log
 52082
 Successfully changed project path to: C:/Users/Usuario/Documents/Unity/Triple
 C:/Users/Usuario/Documents/Unity/Triple
+=======
+C:/Users/blue1/Documents/REPOS/Sant-Mateu
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61702
+Successfully changed project path to: C:/Users/blue1/Documents/REPOS/Sant-Mateu
+C:/Users/blue1/Documents/REPOS/Sant-Mateu
+>>>>>>> origin/master
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,6 +63,7 @@ C:/Users/Usuario/Documents/Unity/Triple
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [18252]  Target information:
 
 Player connection [18252]  * "[IP] 192.168.1.229 [Port] 0 [Flags] 2 [Guid] 3658420914 [EditorId] 3658420914 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SUM6BQ3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
@@ -68,10 +83,34 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     8024 MB
     Driver:   32.0.15.6094
+=======
+Player connection [28992]  Target information:
+
+Player connection [28992]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1893008682 [EditorId] 1893008682 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-A0J2OD2N) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28992]  * "[IP] 192.168.218.83 [Port] 0 [Flags] 2 [Guid] 1893008682 [EditorId] 1893008682 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-A0J2OD2N) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28992] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [28992] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Refreshing native plugins compatible for Editor in 16.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.49f1 (4dae1bb8668d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/blue1/Documents/REPOS/Sant-Mateu/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x249d)
+    Vendor:   NVIDIA
+    VRAM:     8020 MB
+    Driver:   32.0.15.6614
+>>>>>>> origin/master
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56176
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -86,10 +125,29 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  1.955 seconds
 Domain Reload Profiling: 2216ms
 	BeginReloadAssembly (83ms)
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56864
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013075 seconds.
+- Loaded All Assemblies, in  0.426 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 274 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.587 seconds
+Domain Reload Profiling: 1011ms
+	BeginReloadAssembly (140ms)
+>>>>>>> origin/master
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (24ms)
 	RebuildNativeTypeToScriptingClass (7ms)
@@ -113,6 +171,31 @@ Domain Reload Profiling: 2216ms
 			BeforeProcessingInitializeOnLoad (2ms)
 			ProcessInitializeOnLoadAttributes (91ms)
 			ProcessInitializeOnLoadMethodAttributes (32ms)
+=======
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (162ms)
+		LoadAssemblies (137ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (159ms)
+			TypeCache.Refresh (157ms)
+				TypeCache.ScanAssembly (144ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (587ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (542ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (370ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (118ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+>>>>>>> origin/master
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -121,14 +204,22 @@ Domain Reload Profiling: 2216ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 - Loaded All Assemblies, in  0.523 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
+=======
+- Loaded All Assemblies, in  0.687 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+>>>>>>> origin/master
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  0.527 seconds
 Domain Reload Profiling: 1047ms
 	BeginReloadAssembly (108ms)
@@ -170,6 +261,49 @@ Unloading 4664 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 46 unused Assets / (1.8 MB). Loaded Objects now: 5129.
 Memory consumption went from 172.9 MB to 171.2 MB.
 Total: 3.775700 ms (FindLiveObjects: 0.626400 ms CreateObjectMapping: 0.163500 ms MarkObjects: 2.712900 ms  DeleteObjects: 0.271700 ms)
+=======
+- Finished resetting the current domain, in  0.745 seconds
+Domain Reload Profiling: 1428ms
+	BeginReloadAssembly (144ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (453ms)
+		LoadAssemblies (349ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (159ms)
+				TypeCache.ScanAssembly (143ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (746ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (581ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (432ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 6.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4664 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (1.8 MB). Loaded Objects now: 5127.
+Memory consumption went from 172.5 MB to 170.8 MB.
+Total: 4.389400 ms (FindLiveObjects: 0.324700 ms CreateObjectMapping: 0.461000 ms MarkObjects: 3.180600 ms  DeleteObjects: 0.422000 ms)
+>>>>>>> origin/master
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -187,6 +321,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   Time since last request: 3057.458292 seconds.
   path: Assets/InputSystem_Actions.inputactions
   artifactKey: Guid(948df37e011d88744a6b26604c93903b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -201,10 +336,18 @@ Received Import Request.
   artifactKey: Guid(29f1d41984587764984e816658a82e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/JuegoPrincipal.unity using Guid(29f1d41984587764984e816658a82e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
  -> (artifact id: 'ac4ea67beaf6dcb29d0a0668b7437428') in 0.000389 seconds
+=======
+  Time since last request: 485404.444457 seconds.
+  path: Assets/Dialogue
+  artifactKey: Guid(859c51c69d769cb44a9696a7bfb09d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue using Guid(859c51c69d769cb44a9696a7bfb09d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '59f93522e91099e51452fb4177ad0340') in 0.003184 seconds
+>>>>>>> origin/master
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   Time since last request: 1659.720972 seconds.
   path: Assets/Scripts/Puzles/Puz 9 Fuente/cesto_move.cs
   artifactKey: Guid(12ac7521766188344974f6c7c3d817ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -6602,14 +6745,155 @@ Received Import Request.
   artifactKey: Guid(ca9f5fa95ffab41fb9a615ab714db018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Packages/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.inputactions using Guid(ca9f5fa95ffab41fb9a615ab714db018) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
  -> (artifact id: '5e15bffd2712689c5efd29463661391f') in 0.004545 seconds
+=======
+  Time since last request: 0.000032 seconds.
+  path: Assets/Ink
+  artifactKey: Guid(1bf17f10e03c1924dbfdd18d35932e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink using Guid(1bf17f10e03c1924dbfdd18d35932e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '00ea02809e22339f7556f105d88d4afa') in 0.000517 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+  Time since last request: 437.601350 seconds.
+  path: Assets/Dialogue/Inicio.json
+  artifactKey: Guid(f5e80738cb9482349b72c7172b53807c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/Inicio.json using Guid(f5e80738cb9482349b72c7172b53807c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'aa5f13338a18c7a406d234fe5c74f7fb') in 0.009074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 100.728113 seconds.
+  path: Assets/Dialogue/DIálogosFinales
+  artifactKey: Guid(2053b9e2852bac5428f7a7dad1d7e710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales using Guid(2053b9e2852bac5428f7a7dad1d7e710) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '20db339ed4f6a7e9c2707dd166517281') in 0.000479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.502930 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Villores2.ink
+  artifactKey: Guid(60db8f28d6866894fb72991fd89097b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Villores2.ink using Guid(60db8f28d6866894fb72991fd89097b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '94e7d4ee2c9dafba40294917bc9c0120') in 0.000846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 53.333437 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Villores1.json
+  artifactKey: Guid(c5e48b95e01b9c8428573ce61946e81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Villores1.json using Guid(c5e48b95e01b9c8428573ce61946e81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a2cde0260b955cd2fc6ecdf52efe12e9') in 0.001386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 414.405444 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Villores
+  artifactKey: Guid(6ac747bbb03088746be6038073c4cdf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Villores using Guid(6ac747bbb03088746be6038073c4cdf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '4f1d002212900a6a69f0a5ee05d63cac') in 0.000528 seconds
+>>>>>>> origin/master
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+<<<<<<< HEAD
   Time since last request: 60.542517 seconds.
   path: Packages/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.inputactions
   artifactKey: Guid(ca9f5fa95ffab41fb9a615ab714db018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Packages/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.inputactions using Guid(ca9f5fa95ffab41fb9a615ab714db018) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
  -> (artifact id: '5e15bffd2712689c5efd29463661391f') in 0.000558 seconds
+=======
+  Time since last request: 3.550526 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Villores/Villores2.ink
+  artifactKey: Guid(60db8f28d6866894fb72991fd89097b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Villores/Villores2.ink using Guid(60db8f28d6866894fb72991fd89097b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '48d37e567c0536f9153d04aca1607c65') in 0.000812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 10.667153 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Plaza
+  artifactKey: Guid(82b95a82d28529c448ce51c1f57bfba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Plaza using Guid(82b95a82d28529c448ce51c1f57bfba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '4d1a5990830cf361406da4f8a3e739cc') in 0.000439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 625.484826 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Arciprestal
+  artifactKey: Guid(0a9550b04d97d9844938d8890cf82a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Arciprestal using Guid(0a9550b04d97d9844938d8890cf82a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e18a2703fbb8eb3fc792d95b35252de8') in 0.000550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 217.101253 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Muralla
+  artifactKey: Guid(34689a1aeb176874383047c7ea18e35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Muralla using Guid(34689a1aeb176874383047c7ea18e35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '7308f9ee3a1609c466bad4bbcc01ac78') in 0.000476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 207.348007 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Borrull
+  artifactKey: Guid(e806b4e298cee994482b3b0a8600ca69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Borrull using Guid(e806b4e298cee994482b3b0a8600ca69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5a68993f7b4b8e51e5a1337f0763eff9') in 0.000513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 123.904016 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Callejón
+  artifactKey: Guid(8bd876abad4b0104591e98fcca65f91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Callejón using Guid(8bd876abad4b0104591e98fcca65f91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9bfd379216169ad63823da6ccdf12367') in 0.000489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 138.700389 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Panadería
+  artifactKey: Guid(711ffbb43b4e58d49aa98400f5b725ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Panadería using Guid(711ffbb43b4e58d49aa98400f5b725ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '28758bd9185e577ddfadc29013d30a52') in 0.000541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 125.360254 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Fuente
+  artifactKey: Guid(e42bd711e9c68354a80aa7ba9d46f040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Fuente using Guid(e42bd711e9c68354a80aa7ba9d46f040) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b0f380a722caa1b6aec00ce9212da8e1') in 0.000812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 129.740212 seconds.
+  path: Assets/Dialogue/DIálogosFinales/SanPere
+  artifactKey: Guid(6b62cd05a07548249a57c1b5758ba68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/SanPere using Guid(6b62cd05a07548249a57c1b5758ba68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ab6bb862212a2548baa9ed54ac695cb7') in 0.000662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 127.640010 seconds.
+  path: Assets/Dialogue/DIálogosFinales/Convento
+  artifactKey: Guid(e7f66a76f4d72b942a456680d6f6c0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/DIálogosFinales/Convento using Guid(e7f66a76f4d72b942a456680d6f6c0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '7dda18cd24ee80a7a48a2bec285b6edf') in 0.000572 seconds
+>>>>>>> origin/master
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
