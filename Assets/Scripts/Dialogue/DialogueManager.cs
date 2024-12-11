@@ -46,11 +46,11 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
-    private const string PANEL_TAG = "panel";
+    //private const string PANEL_TAG = "panel";
 
     private DialogueVariables dialogueVariables;
 
-    private bool isDebug = true;
+    private bool isDebug = false;
 
 
     public void Awake()
@@ -92,9 +92,10 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (canContinueToNextLine && currentStory.currentChoices.Count == 0 && clickAction.IsPressed())
+        //if (canContinueToNextLine && currentStory.currentChoices.Count == 0 && clickAction.IsPressed())
+        if (canContinueToNextLine && currentStory.currentChoices.Count == 0 && InputManager.GetInstance().GetSubmitPressed())
         {
-            ContinueStory();
+            ContinueStory("Update");
         }
 
     }
@@ -120,7 +121,7 @@ public class DialogueManager : MonoBehaviour
         layoutAnimator.Play("right");
         dialogueText.text = "";
 
-        ContinueStory();
+        ContinueStory("EnterDialogueMode");
     }
 
     public IEnumerator ExitDialogueMode()
@@ -134,15 +135,15 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
     }
 
-    private void ContinueStory()
+    private void ContinueStory(string source)
     {
+        Debug.Log("Entramos a ContinueStory por: " + source);
         if (currentStory.canContinue)
         {
             //set text la linea actual del dialogo
             //dialogueText.text = currentStory.Continue();
             if (displayLineCoroutinte != null)
                 StopCoroutine(displayLineCoroutinte);
-
 
             displayLineCoroutinte = StartCoroutine(Displayline(currentStory.Continue()));
 
@@ -170,7 +171,7 @@ public class DialogueManager : MonoBehaviour
 
         foreach (char letter in line.ToCharArray())
         {
-            if (clickAction.IsPressed())
+            if (InputManager.GetInstance().GetSubmitPressed())
             {
                 dialogueText.text = line;
                 break;
@@ -285,9 +286,9 @@ public class DialogueManager : MonoBehaviour
         if (canContinueToNextLine)
         {
             currentStory.ChooseChoiceIndex(choiceIndex);
-            Debug.LogWarning(clickAction.IsPressed());
-            //Aqui estan los errores
-            ContinueStory();
+            //Debug.LogWarning(clickAction.IsPressed());
+            InputManager.GetInstance().RegisterSubmitPressed();
+            ContinueStory("MakeChoice");
         }
     }
 
