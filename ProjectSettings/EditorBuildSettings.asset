@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Puzles/Puz 2 Villores Pasado.unity
     guid: 867dc7ef76148744cb5b6e1b10916120
   - enabled: 1
-    path: Assets/Scenes/Puzles/Puz 5 Muralla.unity
+    path: Assets/Scenes/Puzles/Puz 5 muralla.unity
     guid: f5c26881cb5ba72459f4f95c640a0f4c
   - enabled: 1
     path: Assets/Scenes/Puzles/Puz 6 Borrull.unity
@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: "Assets/Scenes/Puzles/Puz 7 Callej\xF3n.unity"
     guid: e8979f44ffba31b478ec1076c8f9beec
   - enabled: 1
-    path: Assets/Scenes/Puzles/Puz 8 Horno.unity
+    path: Assets/Scenes/Puzles/Puz 8 horno.unity
     guid: 447b660090fd68947b3b0fc92c89cfed
   - enabled: 1
     path: Assets/Scenes/Puzles/Puz 9 Fuente.unity
@@ -39,7 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Puzles/Puz 10 Sant Pere.unity
     guid: d56e86fb65019744586eba77e36b2490
   - enabled: 1
-    path: Assets/Scenes/Puzles/Puz 11 Convento.unity
+    path: Assets/Scenes/Puzles/Puz 11 convento.unity
     guid: d65d685869e48664ab218633ceee78b6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 948df37e011d88744a6b26604c93903b, type: 3}
