@@ -5,7 +5,7 @@ using UnityEngine;
 public class Mov_flores : MonoBehaviour
 {
     //flores
-    public GameObject flor;
+    public GameObject[] flowers;
     public GameObject p_spawn;
     private int random_int;
     Rigidbody2D rigidbody2d;
@@ -61,8 +61,11 @@ public class Mov_flores : MonoBehaviour
             random_int = Random.Range(-8,9);
 
             position.x = random_int;
+
+            random_int = Random.Range(0,flowers.Length);
+
                 
-            Instantiate(flor,position, p_spawn.transform.rotation);
+            Instantiate(flowers[random_int],position, p_spawn.transform.rotation);
         }
        
 
