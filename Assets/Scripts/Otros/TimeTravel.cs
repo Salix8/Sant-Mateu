@@ -72,7 +72,7 @@ public class TimeTravel : MonoBehaviour
 {
     [SerializeField] private SceneTransitionManager sceneTransitionManager;
     private bool isEnable = false; // Comienza desactivado hasta que el QR esté completado.
-    private GameObject[] sceneObjects;
+    [SerializeField] private GameObject[] sceneObjects;
     
 
     void Start()
@@ -81,14 +81,6 @@ public class TimeTravel : MonoBehaviour
         if (sceneTransitionManager == null)
         {
             Debug.LogError("No se encontró un objeto con SceneTransitionManager en la escena.");
-        }
-
-        sceneObjects = GameObject.FindGameObjectsWithTag("Escena");
-        Debug.Log(sceneObjects);
-        foreach (GameObject obj in sceneObjects)
-        {
-            Debug.Log(obj);
-            obj.SetActive(false);
         }
     }
 
