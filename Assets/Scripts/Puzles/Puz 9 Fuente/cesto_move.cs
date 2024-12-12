@@ -6,12 +6,12 @@ public class cesto_move : MonoBehaviour
 {
 
     public int points = 0;
-    Rigidbody2D rd2d;
+    Rigidbody2D rb2d;
 
     // Start is called before the first frame update
     void Start()
     {
-        rd2d = GetComponent<Rigidbody2D>();
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -21,11 +21,11 @@ public class cesto_move : MonoBehaviour
     }
 
     public void Movement (float value){
-        Vector2 position = rd2d.position;
+        Vector2 position = rb2d.position;
 
         position.x = value/10;
 
-        rd2d.MovePosition(position);
+        rb2d.MovePosition(position);
 
         
     }

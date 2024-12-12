@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ChangeScene : MonoBehaviour
@@ -13,7 +12,6 @@ public class ChangeScene : MonoBehaviour
         {
             transform.parent.gameObject.SetActive(false);
             nextScene.gameObject.SetActive(true);
-            GlobalManager.GetInstance().SetPathObject(false);
             Debug.Log("Se ha cambiado a la escena: " + nextScene);
         }
     }
