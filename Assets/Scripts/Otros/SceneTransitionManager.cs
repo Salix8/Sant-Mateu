@@ -43,4 +43,10 @@ public class SceneTransitionManager : MonoBehaviour
         }
         return null;
     }
+
+    public void OnButtonClick()
+    {
+        string aux = GetOtherScene("Villores1");
+        Debug.Log(aux);
+    }
 }

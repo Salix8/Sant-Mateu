@@ -3364,6 +3364,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+--- !u!1 &394182505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2606896649340902579, guid: 58d8b93a1499c8d4f82373fc9d3ad98d, type: 3}
+  m_PrefabInstance: {fileID: 2918903714369514020}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &428442601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8192,10 +8197,22 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8105103001774505412, guid: 58d8b93a1499c8d4f82373fc9d3ad98d, type: 3}
   m_PrefabInstance: {fileID: 2918903714369514020}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 394182505}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd43ed65121f0154c81117020314edb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1728909680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394182505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1734956891
@@ -10215,8 +10232,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2005038582}
-        m_TargetAssemblyTypeName: TimeTravel, Assembly-CSharp
+      - m_Target: {fileID: 1728909680}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
@@ -11121,7 +11138,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6255905677327059680, guid: 58d8b93a1499c8d4f82373fc9d3ad98d, type: 3}
       insertIndex: 5
       addedObject: {fileID: 1678496250}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2606896649340902579, guid: 58d8b93a1499c8d4f82373fc9d3ad98d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1728909680}
   m_SourcePrefab: {fileID: 100100000, guid: 58d8b93a1499c8d4f82373fc9d3ad98d, type: 3}
 --- !u!4 &2918903714369514021 stripped
 Transform:

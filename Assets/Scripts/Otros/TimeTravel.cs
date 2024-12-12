@@ -93,34 +93,34 @@ public class TimeTravel : MonoBehaviour
 
     public void OnButtonClick()
     {
-        string currentScene = "";
-        // Solo permite cambiar de escena si `isEnable` está en true.
-        if (isEnable)
-        {
-            foreach (GameObject obj in sceneObjects)
-            {
-                Debug.Log(obj.activeSelf);
-                if (obj.activeSelf) {
-                    Debug.Log(obj.name);
-                    currentScene = obj.name;
-                }
-            }
-            //string currentScene = SceneManager.GetActiveScene().name;
-            string otherScene = sceneTransitionManager.GetOtherScene(currentScene);
+        //string currentScene = "";
+        //// Solo permite cambiar de escena si `isEnable` está en true.
+        //if (isEnable)
+        //{
+        //    foreach (GameObject obj in sceneObjects)
+        //    {
+        //        Debug.Log(obj.activeSelf);
+        //        if (obj.activeSelf) {
+        //            Debug.Log(obj.name);
+        //            currentScene = obj.name;
+        //        }
+        //    }
+        //    //string currentScene = SceneManager.GetActiveScene().name;
+        //    string otherScene = sceneTransitionManager.GetOtherScene(currentScene);
 
-            if (!string.IsNullOrEmpty(otherScene))
-            {
-                Debug.Log($"Cambiando a la otra escena: {otherScene}");
-                SceneManager.LoadScene(otherScene); // Carga la escena siguiente.
-            }
-            else
-            {
-                Debug.Log("No hay una escena definida para cambiar desde la escena actual.");
-            }
-        }
-        else
-        {
-            Debug.Log("No se puede cambiar de escena todavía. Completa el puzzle QR.");
-        }
+        //    if (!string.IsNullOrEmpty(otherScene))
+        //    {
+        //        Debug.Log($"Cambiando a la otra escena: {otherScene}");
+        //        SceneManager.LoadScene(otherScene); // Carga la escena siguiente.
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("No hay una escena definida para cambiar desde la escena actual.");
+        //    }
+        //}
+        //else
+        //{
+        //    Debug.Log("No se puede cambiar de escena todavía. Completa el puzzle QR.");
+        //}
     }
 }
