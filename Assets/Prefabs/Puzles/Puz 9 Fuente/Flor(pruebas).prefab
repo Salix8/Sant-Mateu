@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3275722051956531510}
   - component: {fileID: -8840910517293757476}
   m_Layer: 0
-  m_Name: Flor
+  m_Name: Flor(pruebas)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
