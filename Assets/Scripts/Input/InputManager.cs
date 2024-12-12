@@ -67,7 +67,7 @@ public class InputManager : MonoBehaviour
     {
         // ReadValue tiene que leer un Vector2 si no, no funcionan las opciones de dialogo ni el segundo sistema de movimiento (si empiezas con wasd luego las flechas no van)
         // Esto se determina en Controls que es una accion que establecemos en Unity y que hemos cambiado en el EventSystem
-        if(isDebug) Debug.Log(context);
+        if (isDebug) Debug.Log(context);
         if (context.performed)
         {
             direction = context.ReadValue<Vector2>();

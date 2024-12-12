@@ -46,11 +46,11 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
-    //private const string PANEL_TAG = "panel";
+    private const string PANEL_TAG = "panel";
 
     private DialogueVariables dialogueVariables;
 
-    private bool isDebug = false;
+    private bool isDebug = true;
 
 
     public void Awake()
@@ -92,10 +92,9 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        //if (canContinueToNextLine && currentStory.currentChoices.Count == 0 && clickAction.IsPressed())
         if (canContinueToNextLine && currentStory.currentChoices.Count == 0 && InputManager.GetInstance().GetSubmitPressed())
         {
-            ContinueStory("Update");
+            ContinueStory();
         }
 
     }
@@ -121,7 +120,7 @@ public class DialogueManager : MonoBehaviour
         layoutAnimator.Play("right");
         dialogueText.text = "";
 
-        ContinueStory("EnterDialogueMode");
+        ContinueStory();
     }
 
     public IEnumerator ExitDialogueMode()
@@ -135,15 +134,15 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
     }
 
-    private void ContinueStory(string source)
+    private void ContinueStory()
     {
-        Debug.Log("Entramos a ContinueStory por: " + source);
         if (currentStory.canContinue)
         {
             //set text la linea actual del dialogo
             //dialogueText.text = currentStory.Continue();
             if (displayLineCoroutinte != null)
                 StopCoroutine(displayLineCoroutinte);
+
 
             displayLineCoroutinte = StartCoroutine(Displayline(currentStory.Continue()));
 
@@ -288,7 +287,7 @@ public class DialogueManager : MonoBehaviour
             currentStory.ChooseChoiceIndex(choiceIndex);
             //Debug.LogWarning(clickAction.IsPressed());
             InputManager.GetInstance().RegisterSubmitPressed();
-            ContinueStory("MakeChoice");
+            ContinueStory();
         }
     }
 
