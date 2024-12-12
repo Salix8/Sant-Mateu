@@ -1,4 +1,4 @@
-﻿Pues ya estamos en la muralla ¿Usamos directamente la aplicación y vamos al lío? #speaker:Andreu #portrait:andreu-neutral #layout:left
+Pues ya estamos en la muralla ¿Usamos directamente la aplicación y vamos al lío? #speaker:Andreu #portrait:andreu-neutral #layout:left
 
 Le quitas la gracia a las cosas Andreu, ¿No sería mejor hablar con la gente que está aquí primero? #speaker:Silvia #portrait:silvia-neutral #layout:right
 

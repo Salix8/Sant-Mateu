@@ -1,4 +1,4 @@
-﻿¡Ya lo hemos recogido todo! #speaker:Silvia #portrait:silvia-neutral #layout:right
+¡Ya lo hemos recogido todo! #speaker:Silvia #portrait:silvia-neutral #layout:right
 
 Genial, podéis quedaros con alguna flor como recompensa. #speaker:NPC #portrait:npc-neutral #layout:left
 
@@ -8,4 +8,4 @@ Qué casualidad, yo tengo uno, tomad. #speaker:NPC #portrait:npc-neutral #layout
 
 ¡Muchas gracias! ¿No sabrás por casualidad dónde podemos encontrar más, no? #speaker:Silvia #portrait:silvia-neutral #layout:right
 
-Pues creo que (nombre) tenía uno, lo único es que ahora estaba en <b><color=#FF1E35>San Pere</color></b>arreglando algo… #speaker:NPC #portrait:npc-neutral #layout:left
+Pues creo que (nombre) tenía uno, lo único es que ahora estaba en <b><color=\#FF1E35>San Pere</color></b>arreglando algo… #speaker:NPC #portrait:npc-neutral #layout:left
