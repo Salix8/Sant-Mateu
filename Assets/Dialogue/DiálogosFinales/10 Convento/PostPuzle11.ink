@@ -1,4 +1,4 @@
-﻿Parece que hemos dado una vuelta a Sant Mateu. #speaker:Silvia #portrait:silvia-neutral #layout:right
+Parece que hemos dado una vuelta a Sant Mateu. #speaker:Silvia #portrait:silvia-neutral #layout:right
 
 Sí, justo delante está la calle del palacio de Villores. #speaker:Andreu #portrait:andreu-neutral #layout:left
 

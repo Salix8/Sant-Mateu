@@ -10,6 +10,8 @@ public class DivisionChecker : MonoBehaviour
 
     public LineDrawer lineDrawer; // Referencia al script que dibuja la línea
 
+    public GamePhaseManager phaseManager;
+
     public void CheckDivisions()
     {
         int countSide1 = 0; // Contador para el lado 1
@@ -44,7 +46,8 @@ public class DivisionChecker : MonoBehaviour
         if ((countSide1 == winningCount1 && countSide2 == winningCount2) ||
             (countSide1 == winningCount2 && countSide2 == winningCount1))
         {
-            Debug.Log("¡Has ganado!");
+            Debug.Log("¡Has ganado esta fase!");
+            phaseManager.LoadNextPhase();
         }
         else
         {
