@@ -5,14 +5,10 @@ public class SceneTransitionManager : MonoBehaviour
 {
     private Dictionary<string, string> sceneMapping = new Dictionary<string, string>
     {
-        { "Villores1", "Villores2"                  },
-        { "Villores2", "Villores3Presente"          },
         { "Villores3Presente", "Villores3Pasado"    },
         { "Villores3Pasado", "PlazaPresente"        },
-        { "Villores1", "PlazaPresente"              },
         { "PlazaPresente", "PlazaPasado"            },
         { "PlazaPasado", "PlazaPresente"            },
-        { "PlazaPresente", "ArciprestalPresente"    },
         { "ArciprestalPresente", "ArciprestalPasado"},
         { "ArciprestalPasado", "ArciprestalPresente"},
         { "MurallaPresente", "MurallaPasado"        },
@@ -28,11 +24,7 @@ public class SceneTransitionManager : MonoBehaviour
         { "PerePresente", "PerePasado"              },
         { "PerePasado", "PerePresente"              },
         { "ConventoPresente", "ConventoPasado"      },
-        { "ConventoPasado", "ConventoPresente"      },
-        { "ConventoPresente", "ConventoGalletas"    },
-        { "ConventoGalletas", "Villores1"           }
-
-
+        { "ConventoPasado", "ConventoPresente"      }
     };
 
     public string GetOtherScene(string currentScene)
