@@ -180,13 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5569d8134525ee41b592fd25ff9f149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flowers:
-  - {fileID: 1858122558686948654, guid: 7f76e6f78b1400f47bc8b7f1a0e48c0b, type: 3}
-  - {fileID: 236005267988376284, guid: c18aa30c95b0a8b459570fe1e81b59bf, type: 3}
-  - {fileID: 1897884378433040573, guid: 756ee1bce1fe778499eb4c0f9f7f054a, type: 3}
-  - {fileID: 1773057783322360163, guid: 3d39f1518403a2a4e8aba91d960137c8, type: 3}
-  - {fileID: 3623777880631421318, guid: 9085b6bc94c515647b64b7d110d8ba0c, type: 3}
-  - {fileID: 3623777880631421318, guid: 64c4d569698a6034097dea41969d5673, type: 3}
+  flor: {fileID: 3623777880631421318, guid: 856fa78c1e289f140b95a422edf20092, type: 3}
   p_spawn: {fileID: 22199420}
   max_timer: 120
   max_time_flowers: 2
