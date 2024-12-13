@@ -1,4 +1,4 @@
-﻿La aplicación que se nos ha descargado parece de alguna manera permitirnos ver el pasado del lugar en el que estábamos. #speaker:Silvia #portrait:silvia-neutral #layout:right
+La aplicación que se nos ha descargado parece de alguna manera permitirnos ver el pasado del lugar en el que estábamos. #speaker:Silvia #portrait:silvia-neutral #layout:right
 
 Deberíamos de probarlo en todo el pueblo, a lo mejor descubrimos algo. #speaker:Silvia #portrait:silvia-neutral #layout:right
 
