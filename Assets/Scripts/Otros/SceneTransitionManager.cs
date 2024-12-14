@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class SceneTransitionManager : MonoBehaviour
 {
-    private Dictionary<string, string> sceneMapping = new Dictionary<string, string>
+    private Dictionary<string, string> zoneMapping = new Dictionary<string, string>
     {
         { "Villores3Presente", "Villores3Pasado"    },
         { "Villores3Pasado", "PlazaPresente"        },
@@ -27,18 +27,18 @@ public class SceneTransitionManager : MonoBehaviour
         { "ConventoPasado", "ConventoPresente"      }
     };
 
-    public string GetOtherScene(string currentScene)
+    public string GetOtherZone(string currentZone)
     {
-        if (sceneMapping.ContainsKey(currentScene))
+        if (zoneMapping.ContainsKey(currentZone))
         {
-            return sceneMapping[currentScene];
+            return zoneMapping[currentZone];
         }
         return null;
     }
 
     public void OnButtonClick()
     {
-        string aux = GetOtherScene("Villores1");
+        string aux = GetOtherZone("PlazaPresente");
         Debug.Log(aux);
     }
 }

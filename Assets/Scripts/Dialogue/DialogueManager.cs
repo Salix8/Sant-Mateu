@@ -33,6 +33,15 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
+    [Header("Audio")]
+    [SerializeField] private DialogueAudioInfoSO defaultAudioInfo;
+    [SerializeField] private DialogueAudioInfoSO[] audioInfos;
+    [SerializeField] private bool makePredictable;
+    private DialogueAudioInfoSO currentAudioInfo;
+    private Dictionary<string, DialogueAudioInfoSO> audioInfoDictionary;
+    private AudioSource audioSource;
+
+
 
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
@@ -46,6 +55,7 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
+    private const string AUDIO_TAG = "audio";
     private const string PANEL_TAG = "panel";
 
     private DialogueVariables dialogueVariables;
@@ -60,8 +70,12 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("Se ha encontrado mas de un DialogueManager en la escena");
         }
         instance = this;
+
         dialogueVariables = new DialogueVariables(globalsInkFile.filePath);
         clickAction = InputSystem.actions.FindAction("Click");
+
+        audioSource = this.gameObject.AddComponent<AudioSource>();
+        currentAudioInfo = defaultAudioInfo;
     }
 
     public static DialogueManager GetInstance()
@@ -83,6 +97,29 @@ public class DialogueManager : MonoBehaviour
         for (int i = 0; i < choices.Length; i++)
         {
             choicesText[i] = choices[i].GetComponentInChildren<TextMeshProUGUI>();
+        }
+        InitializeAudioInfoDictionary();
+    }
+    private void InitializeAudioInfoDictionary()
+    {
+        audioInfoDictionary = new Dictionary<string, DialogueAudioInfoSO>();
+        audioInfoDictionary.Add(defaultAudioInfo.id, defaultAudioInfo);
+        foreach (DialogueAudioInfoSO audioInfo in audioInfos)
+        {
+            audioInfoDictionary.Add(audioInfo.id, audioInfo);
+        }
+    }
+    private void SetCurrentAudioInfo(string id)
+    {
+        DialogueAudioInfoSO audioInfo = null;
+        audioInfoDictionary.TryGetValue(id, out audioInfo);
+        if (audioInfo != null)
+        {
+            this.currentAudioInfo = audioInfo;
+        }
+        else
+        {
+            Debug.LogWarning("Failed to find audio info for id: " + id);
         }
     }
 
@@ -132,6 +169,8 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
+
+        SetCurrentAudioInfo(defaultAudioInfo.id);
     }
 
     private void ContinueStory()
@@ -143,11 +182,11 @@ public class DialogueManager : MonoBehaviour
             if (displayLineCoroutinte != null)
                 StopCoroutine(displayLineCoroutinte);
 
-
-            displayLineCoroutinte = StartCoroutine(Displayline(currentStory.Continue()));
-
+            string nextLine = currentStory.Continue();
             // Las etiquetas que definen la imagen posicion etc del npc que habla
             HandleTags(currentStory.currentTags);
+
+            displayLineCoroutinte = StartCoroutine(Displayline(nextLine));
         }
         else
         {
@@ -160,7 +199,8 @@ public class DialogueManager : MonoBehaviour
         //yield return new WaitForSeconds(0.15f);//En teoria esto deberia solucionar lo de que el primero se vea muy rapido,
         //pero si lo pongo luego cuando hay un cambio de personaje se ve extra�o porque se espera ese poco con el texto de otro sin cambiar pero con el layout del nuevo queda raro
         // Vaciamos el texto para que la linea anterior ya no se muestre
-        dialogueText.text = "";
+        dialogueText.text = line;
+        dialogueText.maxVisibleCharacters = 0;
 
         continueIcon.SetActive(false); // Ocultamos la UI mientras se escribe
         HideChoices();
@@ -172,20 +212,21 @@ public class DialogueManager : MonoBehaviour
         {
             if (InputManager.GetInstance().GetSubmitPressed())
             {
-                dialogueText.text = line;
+                dialogueText.maxVisibleCharacters = line.Length;
                 break;
             }
 
             if (letter == '<' || isAddingRichTextTag)
             {
                 isAddingRichTextTag = true;
-                dialogueText.text += letter;
+                //dialogueText.text += letter;
                 if (letter == '>')
                     isAddingRichTextTag = false;
             }
             else // No es rich text colorinchis
             {
-                dialogueText.text += letter;
+                PlayDialogueSound(dialogueText.maxVisibleCharacters, dialogueText.text[dialogueText.maxVisibleCharacters]);
+                dialogueText.maxVisibleCharacters++;
                 yield return new WaitForSeconds(typingSpeed);
             }
         }
@@ -194,6 +235,62 @@ public class DialogueManager : MonoBehaviour
         DisplayChoices();
 
         canContinueToNextLine = true;
+    }
+
+
+    private void PlayDialogueSound(int currentDisplayedCharacterCount, char currentCharacter)
+    {
+        // set variables for the below based on our config
+        AudioClip[] dialogueTypingSoundClips = currentAudioInfo.dialogueTypingSoundClips;
+        int frequencyLevel = currentAudioInfo.frequencyLevel;
+        float minPitch = currentAudioInfo.minPitch;
+        float maxPitch = currentAudioInfo.maxPitch;
+        bool stopAudioSource = currentAudioInfo.stopAudioSource;
+
+        // play the sound based on the config
+        if (currentDisplayedCharacterCount % frequencyLevel == 0)
+        {
+            if (stopAudioSource)
+            {
+                audioSource.Stop();
+            }
+            AudioClip soundClip = null;
+            // create predictable audio from hashing
+            if (makePredictable)
+            {
+                int hashCode = currentCharacter.GetHashCode();
+                // sound clip
+                int predictableIndex = hashCode % dialogueTypingSoundClips.Length;
+                soundClip = dialogueTypingSoundClips[predictableIndex];
+                // pitch
+                int minPitchInt = (int)(minPitch * 100);
+                int maxPitchInt = (int)(maxPitch * 100);
+                int pitchRangeInt = maxPitchInt - minPitchInt;
+                // cannot divide by 0, so if there is no range then skip the selection
+                if (pitchRangeInt != 0)
+                {
+                    int predictablePitchInt = (hashCode % pitchRangeInt) + minPitchInt;
+                    float predictablePitch = predictablePitchInt / 100f;
+                    audioSource.pitch = predictablePitch;
+                }
+                else
+                {
+                    audioSource.pitch = minPitch;
+                }
+            }
+            // otherwise, randomize the audio
+            else
+            {
+                // sound clip
+                int randomIndex = Random.Range(0, dialogueTypingSoundClips.Length);
+                soundClip = dialogueTypingSoundClips[randomIndex];
+                // pitch
+                audioSource.pitch = Random.Range(minPitch, maxPitch);
+            }
+
+            // play sound
+            audioSource.PlayOneShot(soundClip);
+        }
     }
 
     private void HideChoices()
@@ -230,6 +327,9 @@ public class DialogueManager : MonoBehaviour
                 case LAYOUT_TAG:
                     if(isDebug) Debug.Log("Layout= " + tagValue);
                     layoutAnimator.Play(tagValue);
+                    break;
+                case AUDIO_TAG:
+                    SetCurrentAudioInfo(tagValue);
                     break;
                 //case PANEL_TAG:
                 //    if (isDebug) Debug.Log("Panel= " + tagValue);
