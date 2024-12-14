@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GlobalManager : MonoBehaviour
 {
@@ -57,6 +58,12 @@ public class GlobalManager : MonoBehaviour
     public GameObject[] GetScenesObjects()
     {
         return scenesObjects;
+    }
+
+    public void LoadSceneByIndex(int sceneIndex)
+    {
+        Debug.Log("Hasta aqui llega");
+        SceneManager.LoadScene(sceneIndex);
     }
 
 
