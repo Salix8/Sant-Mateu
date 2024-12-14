@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f74bb4d702721478aacaae7d2921d5, type: 3}
   m_Name: DialogueAudioInfo 2
   m_EditorClassIdentifier: 
-  id: 
-  dialogueTypingSoundClips: []
+  id: animal_crossing_low
+  dialogueTypingSoundClips:
+  - {fileID: 8300000, guid: 37be475c792ed604e8d851afb6719993, type: 3}
+  - {fileID: 8300000, guid: f84ad897e6c347a4a888d4919fdc8b12, type: 3}
+  - {fileID: 8300000, guid: 64dba20483f94174f8f6833c40084081, type: 3}
+  - {fileID: 8300000, guid: b367e66c63b89b44ab0b641a746b9cbe, type: 3}
+  - {fileID: 8300000, guid: 515d2b121cb43374fa1140ffcf2db8e8, type: 3}
+  - {fileID: 8300000, guid: 1ff16ae767157ff409b260d7f5a66f7b, type: 3}
   frequencyLevel: 2
-  minPitch: 0.5
-  maxPitch: 3
-  stopAudioSource: 0
+  minPitch: 0.4
+  maxPitch: 0.45
+  stopAudioSource: 1
