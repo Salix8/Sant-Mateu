@@ -9,7 +9,7 @@ public class Muralla : MonoBehaviour
     private void hasPerdido()
     {
         if (GlobalManager.GetInstance() != null)
-            GlobalManager.GetInstance().LoadSceneByIndex(0);
+            GlobalManager.GetInstance().LoadMainScene();
         else
             Debug.LogWarning($"No se ha creado ninguna instancia del GlobalManger. Puz 5 muralla");
 

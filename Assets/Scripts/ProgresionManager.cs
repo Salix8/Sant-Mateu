@@ -20,6 +20,8 @@ public class ProgresionManager : MonoBehaviour
     [SerializeField] public bool sello11Convento   = false;
     [SerializeField] public bool sello12Reloj      = false;
 
+    private Dictionary<string, bool> zoneObjectStates = new Dictionary<string, bool>();
+
 
 
 
@@ -32,6 +34,7 @@ public class ProgresionManager : MonoBehaviour
             Debug.LogWarning("Se ha encontrado mas de un ProgresionManager en la escena");
         }
         instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     public static ProgresionManager GetInstance()
     {
@@ -100,6 +103,28 @@ public class ProgresionManager : MonoBehaviour
         }
     }
 
+
+    public void SaveZoneObjectState(GameObject[] objects)
+    {
+        zoneObjectStates.Clear();  // Limpiar cualquier estado previo
+
+        foreach (GameObject obj in objects)
+        {
+            zoneObjectStates[obj.name] = obj.activeSelf;  // Guardar el estado de cada objeto
+        }
+    }
+
+    // Restaurar el estado de los objetos de la zona
+    public void RestoreZoneObjectState(GameObject[] objects)
+    {
+        foreach (GameObject obj in objects)
+        {
+            if (zoneObjectStates.ContainsKey(obj.name))
+            {
+                obj.SetActive(zoneObjectStates[obj.name]);  // Restaurar el estado guardado
+            }
+        }
+    }
 
 
 }
