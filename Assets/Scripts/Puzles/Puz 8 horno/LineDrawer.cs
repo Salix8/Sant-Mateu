@@ -17,4 +17,17 @@ public class LineDrawer : MonoBehaviour
         lineRenderer.SetPosition(0, start);
         lineRenderer.SetPosition(1, end);
     }
+
+    public void ClearLine()
+    {
+        if (lineRenderer != null)
+        {
+            lineRenderer.positionCount = 0;
+
+            // Forzar una actualización del renderizador
+            lineRenderer.enabled = false;
+            lineRenderer.enabled = true;
+        }
+    }
+
 }
