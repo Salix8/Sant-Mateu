@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class BallMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 8f;
+    [SerializeField] private float speed = 10f;
     [SerializeField] private float upwardForce = 5f;
+    private Muralla murallaS;
 
     private Rigidbody2D rb;
 
@@ -22,6 +23,32 @@ public class BallMovement : MonoBehaviour
         }
     }
 
+    public void SetMuralla(Muralla muro)
+    {
+        murallaS = muro;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Debug.Log(collision.gameObject.name);
+        if (collision.collider.CompareTag("Shield"))
+        {
+            rb.velocity = new Vector2(rb.velocity.x, -Mathf.Abs(rb.velocity.y)).normalized * speed;
+        }
+        else if (collision.collider.CompareTag("Muralla"))
+        {
+            murallaS.SetVidaMuralla(-1);
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnBecameInvisible() // Este método se llama automáticamente cuando el objeto sale de la cámara.
+    {
+        Destroy(gameObject);
+    }
+
+
+
     // private void OnCollisionEnter2D(Collision2D collision)
     // {
     //     if (collision.collider.CompareTag("Shield"))
@@ -36,18 +63,4 @@ public class BallMovement : MonoBehaviour
     //         rb.AddForce(Vector2.up * 0.5f, ForceMode2D.Impulse);
     //     }
     // }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Shield"))
-        {
-            rb.velocity = new Vector2(rb.velocity.x, -Mathf.Abs(rb.velocity.y)).normalized * speed;
-        }
-    }
-
-    private void OnBecameInvisible()
-    {
-        // Este método se llama automáticamente cuando el objeto sale de la cámara.
-        Destroy(gameObject);
-    }
 }
