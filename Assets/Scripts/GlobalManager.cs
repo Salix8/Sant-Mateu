@@ -12,6 +12,23 @@ public class GlobalManager : MonoBehaviour
     private GameObject[] pathObjects;
     private GameObject[] zonesObjects;
 
+    public enum SceneType
+    {
+        MainScene,          // 0
+        Puz_1_Villores,     // 1
+        Puz_2_Villores,     // 2
+        Puz_3_Plaza,        // 3
+        Puz_4_Arciprestal,  // 4
+        Puz_5_Muralla,      // 5
+        Puz_6_Borrull,      // 6
+        Puz_7_Callejon,     // 7
+        Puz_8_Horno,        // 8
+        Puz_9_Fuente,       // 9
+        Puz_10_Pere,        // 10
+        Puz_11_Convento     // 11
+    }
+
+
     private bool isDebug = false;
 
 
@@ -62,11 +79,17 @@ public class GlobalManager : MonoBehaviour
         return zonesObjects;
     }
 
-    public void LoadSceneByIndex(int sceneIndex)
+    public void LoadScene(SceneType sceneType)      // Convierte el enum a string y carga la escena
     {
-        Debug.Log($"Se cambia a la escena numero {sceneIndex}");
-        SceneManager.LoadScene(sceneIndex);
+        Debug.Log($"Se cambia a la escena {sceneType}");
+        SceneManager.LoadScene(sceneType.ToString());
     }
+
+    public void LoadMainScene()
+    {
+        SceneManager.LoadScene(SceneType.MainScene.ToString());
+    }
+
 
 
 
