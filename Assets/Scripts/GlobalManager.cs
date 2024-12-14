@@ -10,7 +10,7 @@ public class GlobalManager : MonoBehaviour
     private static GlobalManager instance;
 
     private GameObject[] pathObjects;
-    private GameObject[] scenesObjects;
+    private GameObject[] zonesObjects;
 
     private bool isDebug = false;
 
@@ -20,8 +20,10 @@ public class GlobalManager : MonoBehaviour
         if (instance != null)
         {
             Debug.LogWarning("Se ha encontrado mas de un GlobalManager en la escena");
+            return;
         }
         instance = this;
+        DontDestroyOnLoad(gameObject);
 
         pathObjects = GameObject.FindGameObjectsWithTag("Path");
         foreach (GameObject obj in pathObjects)
@@ -29,8 +31,8 @@ public class GlobalManager : MonoBehaviour
             obj.SetActive(false);
             if (isDebug) Debug.Log("Path: " + obj);
         }
-        scenesObjects = GameObject.FindGameObjectsWithTag("Escena");
-        foreach (GameObject obj in scenesObjects)
+        zonesObjects = GameObject.FindGameObjectsWithTag("Escena");
+        foreach (GameObject obj in zonesObjects)
         {
             obj.SetActive(false);
             if (isDebug) Debug.Log("Escena: " + obj);
@@ -55,14 +57,14 @@ public class GlobalManager : MonoBehaviour
         return pathObjects;
     }
 
-    public GameObject[] GetScenesObjects()
+    public GameObject[] GetZonesObjects()
     {
-        return scenesObjects;
+        return zonesObjects;
     }
 
     public void LoadSceneByIndex(int sceneIndex)
     {
-        Debug.Log("Hasta aqui llega");
+        Debug.Log($"Se cambia a la escena numero {sceneIndex}");
         SceneManager.LoadScene(sceneIndex);
     }
 
