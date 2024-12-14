@@ -50,15 +50,15 @@ public class InputManager : MonoBehaviour
 
     public void SubmitPressed(InputAction.CallbackContext context)
     {
-        Debug.Log($"Fase del clic: {context.phase}");
+        if(isDebug) Debug.Log($"Fase del clic: {context.phase}");
         if (context.performed)
         {
-            Debug.Log("Clic detectado correctamente (fase: performed)");
+            if (isDebug) Debug.Log("Clic detectado correctamente (fase: performed)");
             submitPressed = true;
         }
         else if (context.canceled)
         {
-            Debug.Log("Clic detectado correctamente (fase: canceled)");
+            if (isDebug) Debug.Log("Clic detectado correctamente (fase: canceled)");
             submitPressed = false;
         }
     }
