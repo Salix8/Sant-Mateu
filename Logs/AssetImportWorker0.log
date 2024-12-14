@@ -5158,3 +5158,292 @@ Start importing Assets/Scenes/JuegoPrincipal.unity using Guid(29f1d4198458776498
  -> (artifact id: '1bf8b403f03fcbe350e5596a5edc010d') in 0.000814 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 526.625760 seconds.
+  path: Assets/Scripts/Puzles/Puz 11 convento
+  artifactKey: Guid(f51f3d35d5e4ebb45b2af87dbde059cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Puzles/Puz 11 convento using Guid(f51f3d35d5e4ebb45b2af87dbde059cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '9a511de8013fd2b43ab015eb963c02a4') in 0.000687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 18.815947 seconds.
+  path: Assets/Prefabs/CambioEscenaToMiniConGuardado.prefab
+  artifactKey: Guid(947218f8fb196b64abb229de2dc5c044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/CambioEscenaToMiniConGuardado.prefab using Guid(947218f8fb196b64abb229de2dc5c044) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a76b56b4b7178e2a7f57a24df179e1f4') in 0.000906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Prefabs/Managers.prefab
+  artifactKey: Guid(b546e7af5a61a484797689fc65f72361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Managers.prefab using Guid(b546e7af5a61a484797689fc65f72361) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '89049e09f1f6362bc31dc7ea36b8cc82') in 0.000514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Prefabs/ManagersPasado.prefab
+  artifactKey: Guid(58d8b93a1499c8d4f82373fc9d3ad98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ManagersPasado.prefab using Guid(58d8b93a1499c8d4f82373fc9d3ad98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '9478ebc39b15271073f557e63993819a') in 0.000521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.118952 seconds.
+  path: Assets/Prefabs/Puzles/Puz 11 convento
+  artifactKey: Guid(3d8bde0963c9bb14ca516336a67a6884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Puzles/Puz 11 convento using Guid(3d8bde0963c9bb14ca516336a67a6884) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '9505bfb7c24d9059df895c10a82c1928') in 0.000476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 19.209450 seconds.
+  path: Assets/Prefabs/Puzles/Puz 11 convento/CanvasConvento.prefab
+  artifactKey: Guid(22b378825877f5d43833f1c593345142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Puzles/Puz 11 convento/CanvasConvento.prefab using Guid(22b378825877f5d43833f1c593345142) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '55cb174e851efa2f376932cf85e95fef') in 0.001065 seconds
+Number of updated asset objects reloaded before import = 9
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 23.691941 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/BackTile_05.png
+  artifactKey: Guid(54c792728e9a8a94f9c325832c563065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/BackTile_05.png using Guid(54c792728e9a8a94f9c325832c563065) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c9df996a769b1ccf9935d75aac7d2d01') in 0.105983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_04.png
+  artifactKey: Guid(13384e7d329f7794e95e409de7675ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_04.png using Guid(13384e7d329f7794e95e409de7675ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6ddefe12989b9c92c6129661f46ec269') in 0.017102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_11.png
+  artifactKey: Guid(8015347fdd791a146b0e916d7fc871e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_11.png using Guid(8015347fdd791a146b0e916d7fc871e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd4cce4686b35f42f55957485d0e0abb7') in 0.015511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_17.png
+  artifactKey: Guid(015c8787d915fd6439c3735d47aa9d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_17.png using Guid(015c8787d915fd6439c3735d47aa9d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '72f184f6262db234f65c210c03351f96') in 0.014776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_23.png
+  artifactKey: Guid(03bb093f2243ab645b4c268c4cc68a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_23.png using Guid(03bb093f2243ab645b4c268c4cc68a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '855a86183c2f406825dc3b3e18bca494') in 0.015867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_27.png
+  artifactKey: Guid(0953e7b00a4f1e245b693af4864ec02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_27.png using Guid(0953e7b00a4f1e245b693af4864ec02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8c28035176d6bcb247ca4a9ae8dd9a33') in 0.014331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_33.png
+  artifactKey: Guid(2e051fb0bc479314ebaad1edec86a153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_33.png using Guid(2e051fb0bc479314ebaad1edec86a153) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '57f4e1a045798072cb898858b075a3ba') in 0.016939 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_15.png
+  artifactKey: Guid(2fdd038d85a5f184686f3eeb7d808c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_15.png using Guid(2fdd038d85a5f184686f3eeb7d808c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'de6f9cf01fed851f450c54b725416474') in 0.019517 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_40.png
+  artifactKey: Guid(3ac0e907d9070f94ba660f75fd7257b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_40.png using Guid(3ac0e907d9070f94ba660f75fd7257b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'bccbd1e8bcb2fad7ff8a8a514b914061') in 0.022468 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_12.png
+  artifactKey: Guid(eed5f911e5a90e340938f1560f7f60dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_12.png using Guid(eed5f911e5a90e340938f1560f7f60dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3374f34a07de20f756cf5b49996e98e3') in 0.014891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_16.png
+  artifactKey: Guid(fba71a89e753d9344a8799eadf86bf46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_16.png using Guid(fba71a89e753d9344a8799eadf86bf46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '63b0780f73ef748a7c5e23a873123ff1') in 0.024354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_25.png
+  artifactKey: Guid(07877ba176f2f7c43991741c470efc24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_25.png using Guid(07877ba176f2f7c43991741c470efc24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'bb180b4bef601fabe22f7c51d91ee50c') in 0.017057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_38.png
+  artifactKey: Guid(09ee57e29d6fb234e945ddfe32c5e3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_38.png using Guid(09ee57e29d6fb234e945ddfe32c5e3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '73eca4c885cdf6c7ebb282a34e6c3249') in 0.026352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_30.png
+  artifactKey: Guid(5090aee4bb164aa40a162342014952b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_30.png using Guid(5090aee4bb164aa40a162342014952b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4e78d2969476728b6c4f742a09a040df') in 0.021829 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_32.png
+  artifactKey: Guid(2abc818890b0de64ca2f441863cd5d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_32.png using Guid(2abc818890b0de64ca2f441863cd5d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5f16f3f1ac9d5033b6fad10339883c61') in 0.040751 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_37.png
+  artifactKey: Guid(09e59366d34be0f44ac59ea22bbf54b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_37.png using Guid(09e59366d34be0f44ac59ea22bbf54b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'aeedeb7e22c2f864d3c3f8bd55908b75') in 0.031465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_13.png
+  artifactKey: Guid(75a4097e114797e449b0f1fa79e5af90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_13.png using Guid(75a4097e114797e449b0f1fa79e5af90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '68e3caa4ea410ec1dc0ddd78738ad0d6') in 0.034237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_21.png
+  artifactKey: Guid(67d2973741bc1c044b85be0397073ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_21.png using Guid(67d2973741bc1c044b85be0397073ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3524e2539f0e785c1019ad064adb0ed7') in 0.018943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_05.png
+  artifactKey: Guid(d379348b444740b47b08433f2f0a2a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_05.png using Guid(d379348b444740b47b08433f2f0a2a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'cf0ba9e14732caaf3f183483a83659f3') in 0.018195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_39.png
+  artifactKey: Guid(1d4c6e73fa8ec7642b832b8175fd9c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_39.png using Guid(1d4c6e73fa8ec7642b832b8175fd9c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c0ddcc4b527371eecc831255045092c8') in 0.017139 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Puzle/Puz 11 Convento/FondoPuzle11.jpg
+  artifactKey: Guid(696e8bb34e66b4544b92b01a889d4ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 11 Convento/FondoPuzle11.jpg using Guid(696e8bb34e66b4544b92b01a889d4ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0eace753d7a99e5cc57ab0cd3506998e') in 0.019478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Puzle/Puz 11 Convento/Galletas.png
+  artifactKey: Guid(e7fd4987953536c4e9f2a8cbcf956f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 11 Convento/Galletas.png using Guid(e7fd4987953536c4e9f2a8cbcf956f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3dc284a6a23bdf91ef8a5036b63c17f2') in 0.044550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_10.png
+  artifactKey: Guid(2eccf5be6a6db45429f89b6a4fdbab4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Puzle/Puz 10 Sant Pere/pipeGrey_10.png using Guid(2eccf5be6a6db45429f89b6a4fdbab4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8a0bc324ebf5d88bdd36e1895177e8e3') in 0.020765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
