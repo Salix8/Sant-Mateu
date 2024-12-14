@@ -39,6 +39,7 @@ public class DivisionChecker : MonoBehaviour
         if (isAnyObjectTouchingLine)
         {
             Debug.Log("Inténtalo de nuevo. Hay objetos tocando la línea.");
+            lineDrawer.ClearLine();
             return;
         }
 
@@ -47,11 +48,13 @@ public class DivisionChecker : MonoBehaviour
             (countSide1 == winningCount2 && countSide2 == winningCount1))
         {
             Debug.Log("¡Has ganado esta fase!");
+            lineDrawer.ClearLine();
             phaseManager.LoadNextPhase();
         }
         else
         {
             Debug.Log("Inténtalo de nuevo.");
+            lineDrawer.ClearLine();
         }
     }
 
