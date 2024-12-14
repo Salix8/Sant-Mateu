@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ChangeScene : MonoBehaviour
+public class ChangeZone : MonoBehaviour
 {
-    [SerializeField] private GameObject nextScene;
+    [SerializeField] private GameObject nextZone;
 
     public void OnMouseUp()
     {
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
+            Debug.Log("Se ha cambiado a la escena: " + nextZone);
             transform.parent.gameObject.SetActive(false);
-            nextScene.gameObject.SetActive(true);
+            nextZone.gameObject.SetActive(true);
             GlobalManager.GetInstance().SetPathObject(false);
-            Debug.Log("Se ha cambiado a la escena: " + nextScene);
         }
     }
 }

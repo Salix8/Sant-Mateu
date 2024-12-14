@@ -14,7 +14,7 @@ public class MenuManager : MonoBehaviour
     }
 
     
-    public void AbrirMenuTelefono() // no se abre cuando hay dialogo, desactiva cambio de escenario
+    public void AbrirMenuTelefono() // no se abre cuando hay dialogo, desactiva cambio de Zona
     {
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {

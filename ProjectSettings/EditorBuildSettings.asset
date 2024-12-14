@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menus/Menu_Inicial.unity
     guid: 6c1ed4dcbf588584c8784f9dc2ca9411
   - enabled: 1
@@ -34,7 +34,7 @@ EditorBuildSettings:
     guid: 447b660090fd68947b3b0fc92c89cfed
   - enabled: 1
     path: Assets/Scenes/Puzles/Puz 9 Fuente.unity
-    guid: 678f8665b291d5c4784a514393b5e987
+    guid: 5cc57c8dd47e086448717d9ad3d8554e
   - enabled: 1
     path: Assets/Scenes/Puzles/Puz 10 Sant Pere.unity
     guid: d56e86fb65019744586eba77e36b2490

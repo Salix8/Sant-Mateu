@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 47bdea3a960dd5e48a64a21ada8018e3
+guid: 4255d335278a81048b34e73a14c3f01c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,17 +93,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Galletas_0
+      name: escudo_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 890
-        width: 565
-        height: 537
+        x: 92
+        y: 98
+        width: 297
+        height: 709
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc5e3543fa693fa499c4b17f027f6501
-      internalID: 1660552257
+      spriteID: c73e855892b71ad4cac289e59198e8ec
+      internalID: 2083373360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Galletas_1
+      name: escudo_3
       rect:
         serializedVersion: 2
-        x: 749
-        y: 892
-        width: 609
-        height: 559
+        x: 674
+        y: 312
+        width: 202
+        height: 273
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,92 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6f4a7a7bd70e6c44aff4e54f0cec852
-      internalID: 1284229305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Galletas_2
-      rect:
-        serializedVersion: 2
-        x: 1414
-        y: 884
-        width: 513
-        height: 555
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd13ed92345aed14198b12cfe130e7db
-      internalID: -576055207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Galletas_3
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 136
-        width: 543
-        height: 553
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82d13c1dd15110a4b87ed3e218925920
-      internalID: 1323559123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Galletas_4
-      rect:
-        serializedVersion: 2
-        x: 723
-        y: 174
-        width: 585
-        height: 523
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61ef4fde8d51c4343b7f5b8fe091e521
-      internalID: 2085870871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Galletas_5
-      rect:
-        serializedVersion: 2
-        x: 1386
-        y: 144
-        width: 573
-        height: 553
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0dd85c76fa42474996a81707a952173
-      internalID: -935237250
+      spriteID: 5315db5dbcd8594459dd414fd31b54a1
+      internalID: 1484385606
       vertices: []
       indices: 
       edges: []
@@ -233,12 +162,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Galletas_0: 1660552257
-      Galletas_1: 1284229305
-      Galletas_2: -576055207
-      Galletas_3: 1323559123
-      Galletas_4: 2085870871
-      Galletas_5: -935237250
+      escudo_0: 2083373360
+      escudo_1: 360982315
+      escudo_2: 975616244
+      escudo_3: 1484385606
+      escudo_4: 874864942
+      escudo_5: -1002994289
+      escudo_6: -721529332
+      escudo_7: 672109063
+      escudo_8: 1186229518
+      escudo_9: -2000475735
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
