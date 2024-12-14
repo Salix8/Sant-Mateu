@@ -11,6 +11,8 @@ public class GlobalManager : MonoBehaviour
 
     private GameObject[] pathObjects;
     private GameObject[] zonesObjects;
+    private GameObject[] allObjects;
+    private List<GameObject> activeObjectsList;
 
     public enum SceneType
     {
@@ -42,6 +44,9 @@ public class GlobalManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
 
+        allObjects = FindObjectsOfType<GameObject>();
+        activeObjectsList = new List<GameObject>();
+
         pathObjects = GameObject.FindGameObjectsWithTag("Path");
         foreach (GameObject obj in pathObjects)
         {
@@ -56,6 +61,19 @@ public class GlobalManager : MonoBehaviour
         }
     }
 
+    public GameObject[] SetActiveObjects()
+    {
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.activeInHierarchy) // Verifica si está activo en la jerarquía
+            {
+                Debug.Log(obj);
+                activeObjectsList.Add(obj);
+            }
+        }
+        return activeObjectsList.ToArray();
+    }
+
     public void SetPathObject(bool isEnable)
     {
         foreach (GameObject obj in pathObjects)
@@ -65,10 +83,25 @@ public class GlobalManager : MonoBehaviour
         }
     }
 
+
+
+
+
     public static GlobalManager GetInstance()
     {
         return instance;
     }
+
+    public GameObject[] GetAllObjects()
+    {
+        return allObjects;
+    }
+
+    public GameObject[] GetActiveObjects()
+    {
+        return activeObjectsList.ToArray();
+    }
+
     public GameObject[] GetPathObjects()
     {
         return pathObjects;
@@ -78,6 +111,9 @@ public class GlobalManager : MonoBehaviour
     {
         return zonesObjects;
     }
+
+
+
 
     public void LoadScene(SceneType sceneType)      // Convierte el enum a string y carga la escena
     {
