@@ -14,16 +14,21 @@ public class MenuManager : MonoBehaviour
     }
 
     
-    public void AbrirMenuTelefono()
+    public void AbrirMenuTelefono() // no se abre cuando hay dialogo, desactiva cambio de escenario
     {
-        
-
-        foreach (GameObject obj in allGameObjects)
+        if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            obj.SetActive(true);
+            foreach (GameObject obj in allGameObjects)
+            {
+                obj.SetActive(true);
+
+            }
+
+            GlobalManager.GetInstance().SetPathObject(false);
+            menuTelefono.SetActive(true);
         }
 
-        menuTelefono.SetActive(true);
+        
 
     }
 
