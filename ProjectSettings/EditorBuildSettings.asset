@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Puzles/Puz 2 Villores Pasado.unity
     guid: 867dc7ef76148744cb5b6e1b10916120
   - enabled: 1
+    path: Assets/Scenes/Puzles/Puz 3 Plaza.unity
+    guid: 01cf5c2164cbee84b98d2e7b0571e4be
+  - enabled: 1
+    path: Assets/Scenes/Puzles/Puz 4 Arciprestal.unity
+    guid: f5d39320a174ba54d8aee8e30e258421
+  - enabled: 1
     path: Assets/Scenes/Puzles/Puz 5 muralla.unity
     guid: f5c26881cb5ba72459f4f95c640a0f4c
   - enabled: 1

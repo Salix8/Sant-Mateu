@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4032565710150171271}
   - component: {fileID: 7158015840869222548}
   m_Layer: 5
-  m_Name: Escena
+  m_Name: Zona
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

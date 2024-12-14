@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -117,6 +118,13 @@ public class ProgresionManager : MonoBehaviour
     // Restaurar el estado de los objetos de la zona
     public void RestoreZoneObjectState(GameObject[] objects)
     {
+        GameObject[] allObjects = GlobalManager.GetInstance().GetAllObjects();
+        foreach (GameObject obj in allObjects)
+        {
+            obj.SetActive(false);
+            //if (isDebug) Debug.Log("Path: " + obj);
+        }
+
         foreach (GameObject obj in objects)
         {
             if (zoneObjectStates.ContainsKey(obj.name))
