@@ -24,8 +24,8 @@ public class RotatePipes : MonoBehaviour
     {
         PossibleRots = correctRotation.Length;
 
-        int rand = Random.Range(0, rotations.Length);
-        transform.eulerAngles = new Vector3(0, 0, rotations[rand]);
+        //int rand = Random.Range(0, rotations.Length);
+        transform.eulerAngles = new Vector3(0, 0, 90);
 
         if(PossibleRots > 1)
         {
