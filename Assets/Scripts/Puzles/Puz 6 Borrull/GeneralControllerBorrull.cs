@@ -29,7 +29,7 @@ public class GeneralControllerBorrull : MonoBehaviour
         UpdateVisuals();
 
         foreach(var line in lineContainers){
-            line.localScale =  new Vector3(0.19f, 0.19f, 1f);
+            line.localScale =  new Vector3(0.14f, 0.19f, 1f);
         }
         Debug.Log("Juego iniciado. Usa los botones para seleccionar una línea.");
     }
