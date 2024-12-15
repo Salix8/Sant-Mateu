@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class cesto_move : MonoBehaviour
 {
-
+    public Text points_text;
     public int points = 0;
     Rigidbody2D rb2D;
 
