@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityEngine.GlobalManager;
 
 public class SceneTransitionManager : MonoBehaviour
 {
@@ -38,7 +39,46 @@ public class SceneTransitionManager : MonoBehaviour
 
     public void OnButtonClick()
     {
-        string aux = GetOtherZone("PlazaPresente");
-        Debug.Log(aux);
+        GameObject currentZone = null;
+        GameObject[] zonesObjects = GlobalManager.GetInstance().GetZonesObjects();
+        foreach (GameObject zone in zonesObjects)
+        {
+            if (zone.activeSelf) {
+                currentZone = zone;
+            }
+        }
+        // Obtenemos el nombre del GameObject actual
+        string currentZoneName = currentZone.name;
+        Debug.Log(currentZoneName);
+
+        // Usamos el diccionario para obtener el nombre del siguiente GameObject
+        string otherZoneName = GetOtherZone(currentZoneName);
+        Debug.Log(otherZoneName);
+
+        if (!string.IsNullOrEmpty(otherZoneName))
+        {
+            GameObject otherZone = null;
+            // Buscamos el GameObject de la otra escena
+            foreach (GameObject zone in zonesObjects) {
+                if (zone.name == otherZoneName) {
+                    otherZone = zone;
+                }
+            }
+
+            if (otherZone != null)
+            {
+                // Desactivamos la escena actual y activamos la otra escena
+                currentZone.SetActive(false);
+                otherZone.SetActive(true);
+            }
+            else
+            {
+                Debug.LogWarning("No se encontró el GameObject para la otra escena: " + otherZoneName);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró una escena correspondiente para: " + currentZoneName);
+        }
     }
 }
