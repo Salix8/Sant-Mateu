@@ -1,5 +1,5 @@
-Os recomiendo comprar galletas. #speaker:Persona golosa #layout:left
+Os recomiendo comprar galletas. #speaker:Cliente #portrait:npcConventoPresente #layout:left
 
-¿Cuales nos recomiendas? #speaker:Silvia #portrait:silvia-neutral #layout:right
+¿Cuales nos recomiendas? #speaker:Silvia #portrait:silvia-hablando #layout:right
 
-A mi me encanta todo lo que mezcla naranja y chocolate. #speaker:Persona golosa #layout:left
+A mi me encanta todo lo que mezcla naranja y chocolate. #speaker:Cliente #portrait:npcConventoPresente #layout:left

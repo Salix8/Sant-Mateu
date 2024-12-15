@@ -95,7 +95,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: AplicacionesMovil_0
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1329
+        width: 464
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617c7c4e20686f34e894b3c3bdbedb8a
+      internalID: 471699105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AplicacionesMovil_1
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 1340
+        width: 465
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a325db81eade3240a4a83d2b390d16d
+      internalID: -750602801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AplicacionesMovil_2
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 770
+        width: 464
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea16710890a234439ec8dc2ad5634a4
+      internalID: 179979812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AplicacionesMovil_3
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 764
+        width: 465
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0061b462f9c4f5742952bfd3a6f88248
+      internalID: -755479065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AplicacionesMovil_4
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 764
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5769ffe5346e86146ba2bebeb2d23cb5
+      internalID: -1795748825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AplicacionesMovil_5
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 242
+        width: 464
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa1943588b1dd34ebc0aa8e2d47fe12
+      internalID: 1596726968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AplicacionesMovil_6
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 239
+        width: 464
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc25bd7088cd0384185ff5c4412549d9
+      internalID: 1026773666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +253,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AplicacionesMovil_0: 471699105
+      AplicacionesMovil_1: -750602801
+      AplicacionesMovil_2: 179979812
+      AplicacionesMovil_3: -755479065
+      AplicacionesMovil_4: -1795748825
+      AplicacionesMovil_5: 1596726968
+      AplicacionesMovil_6: 1026773666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
