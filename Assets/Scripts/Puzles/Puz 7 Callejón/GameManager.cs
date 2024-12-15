@@ -6,9 +6,11 @@ namespace FifteenPuzzle
 {
     public class GameManager : MonoBehaviour
     {
-        [SerializeField] GameObject _tilePrefab;
 
+        [SerializeField] GameObject _tilePrefab;
+        public List<Sprite> imageParts;
         List<Tile> _tiles = new List<Tile>();
+        float tileSpacing = 0.1f;
 
         Vector3 emptySpace = Vector3.zero;
 
@@ -50,9 +52,9 @@ namespace FifteenPuzzle
                 var tileScript = tileObj.GetComponent<Tile>();
 
                 tileObj.transform.position = new Vector3(x, y, 0f);
+                Debug.Log($"Tile {i} instanciado y asignado");
 
-                tileScript.SetNumber(i + 1);
-
+                tileScript.SetImage(imageParts[i]);
                 _tiles.Add(tileScript);
 
                 x += tileSize;

@@ -6,8 +6,8 @@ namespace FifteenPuzzle
 {
     public class Tile : MonoBehaviour
     {
-        [SerializeField] TextMesh _text;
-
+       
+        [SerializeField] private Sprite _imagePart;
         Vector3 startPos;
         Vector3 targetPos;
         SpriteRenderer _renderer;
@@ -21,13 +21,10 @@ namespace FifteenPuzzle
         {
             startPos = transform.position;
             targetPos = startPos;
-            _renderer = GetComponent<SpriteRenderer>();
+            _renderer.sprite = _imagePart;
         }
 
-        public void SetNumber(int num)
-        {
-            _text.text = num.ToString();
-        }
+       
 
         public bool IsInPlace()
         {
@@ -48,6 +45,13 @@ namespace FifteenPuzzle
 
             ColorAdjustment();
         }
+        public void SetImage(Sprite sprite)
+        {
+            _imagePart = sprite;
+            _renderer = GetComponent<SpriteRenderer>();
+            _renderer.sprite = _imagePart;
+            _renderer.transform.localScale = new Vector3(0.8f, 0.8f, 1f);
+        }
 
         IEnumerator MoveToTarget()
         {
@@ -63,7 +67,7 @@ namespace FifteenPuzzle
 
         void ColorAdjustment()
         {
-            _renderer.color = IsInPlace() ? Color.green : Color.white;
+            _renderer.color = IsInPlace() ? new Color(1f, 0.85f, 0f) : Color.white;
         }
 
         void OnMouseDown()
