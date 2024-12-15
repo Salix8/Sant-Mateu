@@ -12,6 +12,7 @@ TagManager:
   - Projectile
   - Escena
   - Muralla
+  - Tile
   layers:
   - Default
   - TransparentFX

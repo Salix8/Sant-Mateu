@@ -6,6 +6,8 @@ namespace FifteenPuzzle
 {
     public class GameManager : MonoBehaviour
     {
+        public delegate void TileCreated(GameObject tile);
+        public static event TileCreated OnTileCreated;
 
         [SerializeField] GameObject _tilePrefab;
         public List<Sprite> imageParts;
@@ -42,7 +44,7 @@ namespace FifteenPuzzle
                     y -= tileSize;
                 }
 
-                if (i == gridSize-1)
+                if (i == gridSize - 1)
                 {
                     emptySpace = new Vector3(x, y, 0f);
                     break;
@@ -56,6 +58,9 @@ namespace FifteenPuzzle
 
                 tileScript.SetImage(imageParts[i]);
                 _tiles.Add(tileScript);
+
+                // Disparar el evento para notificar que se creó un nuevo Tile
+                OnTileCreated?.Invoke(tileObj);
 
                 x += tileSize;
             }
