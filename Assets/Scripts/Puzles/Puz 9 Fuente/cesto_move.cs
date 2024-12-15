@@ -7,10 +7,7 @@ public class cesto_move : MonoBehaviour
 {
 
     public int points = 0;
-
-     public Text points_text;
     Rigidbody2D rb2D;
-
 
     // Start is called before the first frame update
     void Start()

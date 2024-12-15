@@ -11,8 +11,19 @@ public class elegirForma : MonoBehaviour
     [Header("Sprites de las Galletas")]
     [SerializeField] private Sprite[] galletasSprites; // Sprites precargados
 
-    private int fase = 1; // Iterador que indica la fase actual
+    [Header("Temporizador")]
+    [SerializeField] private float tiempoMaximo = 30f;
+    [SerializeField] private Text tiempoTexto;
+
+    [Header("Panel de Resultados")]
+    [SerializeField] private GameObject panelResultados; // Panel que muestra los resultados
+    [SerializeField] private Text textoResultados; // Texto dentro del panel
+
+    private int fase; // Iterador que indica la fase actual
     private List<int> fasesRestantes; // Lista para almacenar las fases restantes aleatoriamente
+    private float tiempoRestante;
+    private bool juegoActivo;
+    private int puntuacion; // Cantidad de galletas acertadas
 
     private void Start()
     {
@@ -22,33 +33,64 @@ public class elegirForma : MonoBehaviour
             return;
         }
 
-        // Generar una lista con todas las fases posibles
-        fasesRestantes = new List<int>();
-        for (int i = 1; i <= galletasSprites.Length; i++)
-        {
-            fasesRestantes.Add(i);
-        }
-
-        // Inicializa la primera fase aleatoria
+        // Inicializa el juego
+        tiempoRestante = tiempoMaximo;
+        juegoActivo = true;
+        puntuacion = 0; // Resetea puntuación
+        InicializarFases();
         SeleccionarFaseAleatoria();
+
+        // Asegúrate de que el panel de resultados esté desactivado
+        if (panelResultados != null)
+        {
+            panelResultados.SetActive(false);
+        }
+    }
+
+    private void Update()
+    {
+        if (juegoActivo)
+        {
+            Debug.Log("Tiempo restante: " + tiempoRestante);
+            // Actualiza el temporizador
+            if (tiempoRestante > 0)
+            {
+                tiempoRestante -= Time.deltaTime;
+                ActualizarTiempoTexto();
+            }
+            else
+            {
+                tiempoRestante = 0;
+                juegoActivo = false; // Finaliza el juego
+                FinalizarJuego();
+            }
+        }
     }
 
     public void CompruebaModelo(int forma)
     {
-        if (forma == fase) // Verifica si la forma seleccionada es la correcta
+        if (juegoActivo) // Solo permite interacciones si el juego está activo
         {
-            if (fasesRestantes.Count > 0) // Si quedan fases por jugar
+            if (forma == fase) // Verifica si la forma seleccionada es correcta
             {
-                SeleccionarFaseAleatoria();
+                Debug.Log("Forma correcta.");
+                puntuacion++; // Incrementa la puntuación
+
+                if (fasesRestantes.Count > 0)
+                {
+                    SeleccionarFaseAleatoria();
+                }
+                else
+                {
+                    // Si no quedan fases, reinicia la lista
+                    InicializarFases();
+                    SeleccionarFaseAleatoria();
+                }
             }
             else
             {
-                Debug.Log("¡Juego terminado! No hay más fases.");
+                Debug.Log("Forma incorrecta. Intenta de nuevo.");
             }
-        }
-        else
-        {
-            Debug.Log("Forma incorrecta. Intenta de nuevo.");
         }
     }
 
@@ -67,9 +109,8 @@ public class elegirForma : MonoBehaviour
         CambiarGalleta(fase);
     }
 
-    public void CambiarGalleta(int fase)
+    private void CambiarGalleta(int fase)
     {
-
         if (fase - 1 >= 0 && fase - 1 < galletasSprites.Length)
         {
             formaBase.GetComponent<Image>().sprite = galletasSprites[fase - 1];
@@ -77,6 +118,44 @@ public class elegirForma : MonoBehaviour
         else
         {
             Debug.LogError("Fase fuera de rango o sprites no asignados.");
+        }
+    }
+
+    private void ActualizarTiempoTexto()
+    {
+        if (tiempoTexto != null)
+        {
+            int minutos = Mathf.FloorToInt(tiempoRestante / 60);
+            int segundos = Mathf.FloorToInt(tiempoRestante % 60);
+            tiempoTexto.text = string.Format("{0:00}:{1:00}", minutos, segundos);
+        }
+        else
+        {
+            Debug.LogError("¡El campo Tiempo Texto no está asignado!");
+        }
+    }
+
+    private void InicializarFases()
+    {
+        fasesRestantes = new List<int>();
+        for (int i = 1; i <= galletasSprites.Length; i++)
+        {
+            fasesRestantes.Add(i);
+        }
+    }
+
+    private void FinalizarJuego()
+    {
+        Debug.Log("¡Tiempo agotado! Fin del juego.");
+        // Muestra el panel de resultados
+        if (panelResultados != null && textoResultados != null)
+        {
+            panelResultados.SetActive(true); // Activa el panel
+            textoResultados.text = "Nª Galletas : " + puntuacion;
+        }
+        else
+        {
+            Debug.LogError("¡Panel o texto de resultados no asignados en el Inspector!");
         }
     }
 }
