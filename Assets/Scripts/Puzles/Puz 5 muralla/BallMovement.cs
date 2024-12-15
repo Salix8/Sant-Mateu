@@ -15,8 +15,8 @@ public class BallMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            float angleInRadians = transform.eulerAngles.z * Mathf.Deg2Rad;
-            Vector2 forceDirection = new Vector2(Mathf.Cos(angleInRadians), Mathf.Sin(angleInRadians));
+            float angleInRadians = transform.eulerAngles.z * Mathf.Deg2Rad + Random.Range(0.0f, 0.8f);
+            Vector2 forceDirection = new Vector2(-Mathf.Cos(angleInRadians)- Random.Range(0.2f, 0.8f), Mathf.Sin(angleInRadians));
 
             Vector2 force = forceDirection * speed + Vector2.up * upwardForce;
             rb.AddForce(force, ForceMode2D.Impulse);
