@@ -3451,7 +3451,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Puz 4 Arciprestal
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &244191254
@@ -15061,7 +15061,6 @@ RectTransform:
   - {fileID: 1684553577}
   - {fileID: 496460327}
   - {fileID: 244191252}
-  - {fileID: 2059120786}
   - {fileID: 940952526}
   - {fileID: 1770224035}
   - {fileID: 159598467}
@@ -15069,6 +15068,7 @@ RectTransform:
   - {fileID: 1077668266}
   - {fileID: 1227333150}
   - {fileID: 1371907599}
+  - {fileID: 2059120786}
   - {fileID: 1143262109}
   m_Father: {fileID: 8758239333819371527}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16150,8 +16150,9 @@ GameObject:
   - component: {fileID: 2059120789}
   - component: {fileID: 2059120788}
   - component: {fileID: 2059120787}
+  - component: {fileID: 2059120790}
   m_Layer: 5
-  m_Name: S_Arc_Pres
+  m_Name: S_Torre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16220,7 +16221,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2059120788}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2059120790}
+        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
+        m_MethodName: cambioDeEscena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Puzle 12 Torre
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2059120788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16259,6 +16272,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059120785}
   m_CullTransparentMesh: 1
+--- !u!114 &2059120790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059120785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2097333375 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
