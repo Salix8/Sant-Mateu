@@ -31,9 +31,9 @@ public class GameManagerPipes : MonoBehaviour
     {
         correctedPipes +=1;
 
-        if (correctedPipes == 17) //La cantidad de tuberías puestas bien, hay que cambiarlo para que no cuenten las otras
+        if (correctedPipes == 15) //La cantidad de ladrillos puestos bien
         {
-            Debug.Log("Has ganao!");
+            Debug.Log("Completado");
         }
     }
     public void WrongMove()
