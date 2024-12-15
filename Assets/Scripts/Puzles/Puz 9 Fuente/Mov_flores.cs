@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mov_flores : MonoBehaviour
 {
@@ -8,15 +9,18 @@ public class Mov_flores : MonoBehaviour
     public GameObject[] flowers;
     public GameObject p_spawn;
     private int random_int;
-    Rigidbody2D rigidbody2d;
+  
 
     
     //timer
-    [SerializeField] private float max_timer;
-
-    private float current_time;
 
     private bool timer_active = false; 
+
+    public int t_min, t_seg;
+    public Text t_texto;
+
+    float nextTime = 0;
+    int interval = 1;
 
     //generación
     
@@ -29,7 +33,7 @@ public class Mov_flores : MonoBehaviour
    
     void Start()
     {
-        rigidbody2d = GetComponent<Rigidbody2D>();
+       
 
         Start_timer();
         StartCoroutine(Generate_flower());
@@ -42,6 +46,9 @@ public class Mov_flores : MonoBehaviour
             Change_Timer();
             
         }
+        
+
+        t_texto.text = t_min.ToString("00") + ":" + t_seg.ToString("00");
 
         
         
@@ -72,20 +79,30 @@ public class Mov_flores : MonoBehaviour
     }
      
      private void Change_Timer(){
+        if (Time.time >= nextTime){
+            nextTime += interval;
+            t_seg -=1;  
+        }
+        if (t_seg < 0){
+            t_seg = 0;    
+        }
 
-        current_time += Time.deltaTime;
-
-        if(current_time >= max_timer){
+        if( t_seg == 0 & t_min >= 1){
+            t_min -=1;
+            t_seg = 60;
+        }   
+        if(t_min == 0 & t_seg == 0){
             Debug.Log("Fin del juego");
             
 
             Finish_timer();
         }
+        
     }
     
 
     public void Start_timer(){
-        current_time = 0;
+        
         timer_active = true;
     }
 
