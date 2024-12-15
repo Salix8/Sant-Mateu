@@ -1,3 +1,3 @@
-Aquí estamos y todavía huele a horno, qué curioso. #speaker:Silvia #portrait:silvia-neutral #layout:right
+Aquí estamos y todavía huele a horno, qué curioso. #speaker:Silvia #portrait:silvia-hablando #layout:right
 
-He leído que dejó de funcionar hace poco. #speaker:Andreu #portrait:andreu-neutral #layout:left
+He leído que dejó de funcionar hace poco. #speaker:Andreu #portrait:andreu-hablando #layout:left

@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; // Para manipular el texto de UI
+using TMPro;
 
 public class GamePhaseManager : MonoBehaviour
 {
@@ -8,11 +10,25 @@ public class GamePhaseManager : MonoBehaviour
     private int currentPhaseIndex = 0;
     public DivisionChecker divisionChecker; // Referencia al script DivisionChecker
 
+    [SerializeField] private Button GroupHintButton; // Referencia al botón
+    [SerializeField] private Text groupHintText; // Texto del botón
+
+    private void Start()
+    {
+        if (GroupHintButton != null)
+        {
+            groupHintText = GroupHintButton.GetComponentInChildren<Text>();
+            UpdateGroupHintText(); // Actualizar el texto inicialmente
+        }
+    }
+
+
     public void LoadNextPhase()
     {
         if (currentPhaseIndex >= phases.Count)
         {
             Debug.Log("¡Has completado todas las fases!");
+            groupHintText.text = "¡Has completado todas las fases!";
             return;
         }
 
@@ -41,7 +57,25 @@ public class GamePhaseManager : MonoBehaviour
         divisionChecker.winningCount1 = currentPhase.winningCount1;
         divisionChecker.winningCount2 = currentPhase.winningCount2;
 
+        if (currentPhaseIndex < phases.Count) {
+            UpdateGroupHintText(); // Llamada para actualizar el texto
+        }
+
         currentPhaseIndex++;
     }
+
+    private void UpdateGroupHintText()
+    {
+        if (groupHintText != null)
+        {
+            PhaseData currentPhase = phases[currentPhaseIndex];
+            groupHintText.text = $"Forma grupos de {divisionChecker.winningCount1} y {divisionChecker.winningCount2}";
+        }
+        else
+        {
+            Debug.LogWarning("groupText no está asignado en el inspector.");
+        }
+    }
+
 
 }

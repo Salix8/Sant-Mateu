@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityEngine.GlobalManager;
 
 public class SceneTransitionManager : MonoBehaviour
 {
-    private Dictionary<string, string> sceneMapping = new Dictionary<string, string>
+    private Dictionary<string, string> zoneMapping = new Dictionary<string, string>
     {
         { "Villores3Presente", "Villores3Pasado"    },
         { "Villores3Pasado", "PlazaPresente"        },
@@ -27,18 +28,57 @@ public class SceneTransitionManager : MonoBehaviour
         { "ConventoPasado", "ConventoPresente"      }
     };
 
-    public string GetOtherScene(string currentScene)
+    public string GetOtherZone(string currentZone)
     {
-        if (sceneMapping.ContainsKey(currentScene))
+        if (zoneMapping.ContainsKey(currentZone))
         {
-            return sceneMapping[currentScene];
+            return zoneMapping[currentZone];
         }
         return null;
     }
 
     public void OnButtonClick()
     {
-        string aux = GetOtherScene("Villores1");
-        Debug.Log(aux);
+        GameObject currentZone = null;
+        GameObject[] zonesObjects = GlobalManager.GetInstance().GetZonesObjects();
+        foreach (GameObject zone in zonesObjects)
+        {
+            if (zone.activeSelf) {
+                currentZone = zone;
+            }
+        }
+        // Obtenemos el nombre del GameObject actual
+        string currentZoneName = currentZone.name;
+        Debug.Log(currentZoneName);
+
+        // Usamos el diccionario para obtener el nombre del siguiente GameObject
+        string otherZoneName = GetOtherZone(currentZoneName);
+        Debug.Log(otherZoneName);
+
+        if (!string.IsNullOrEmpty(otherZoneName))
+        {
+            GameObject otherZone = null;
+            // Buscamos el GameObject de la otra escena
+            foreach (GameObject zone in zonesObjects) {
+                if (zone.name == otherZoneName) {
+                    otherZone = zone;
+                }
+            }
+
+            if (otherZone != null)
+            {
+                // Desactivamos la escena actual y activamos la otra escena
+                currentZone.SetActive(false);
+                otherZone.SetActive(true);
+            }
+            else
+            {
+                Debug.LogWarning("No se encontró el GameObject para la otra escena: " + otherZoneName);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró una escena correspondiente para: " + currentZoneName);
+        }
     }
 }
