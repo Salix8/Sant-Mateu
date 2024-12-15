@@ -1,7 +1,7 @@
-Parece que hemos dado una vuelta a Sant Mateu. #speaker:Silvia #portrait:silvia-neutral #layout:right
+Parece que hemos dado una vuelta a Sant Mateu. #speaker:Silvia #portrait:silvia-hablando #layout:right
 
-Sí, justo delante está la calle del palacio de Villores. #speaker:Andreu #portrait:andreu-neutral #layout:left
+Sí, justo delante está la calle del palacio de Villores. #speaker:Andreu #portrait:andreu-hablando #layout:left
 
-Pues con la tontería hemos visto gran parte del pueblo. #speaker:Silvia #portrait:silvia-neutral #layout:right
+Pues con la tontería hemos visto gran parte del pueblo. #speaker:Silvia #portrait:silvia-hablando #layout:right
 
-Y hemos conseguido todos los sellos de la aplicación. #speaker:Andreu #portrait:andreu-neutral #layout:left
+Y hemos conseguido todos los sellos de la aplicación. #speaker:Andreu #portrait:andreu-hablando #layout:left
