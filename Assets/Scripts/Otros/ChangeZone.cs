@@ -8,13 +8,6 @@ public class ChangeZone : MonoBehaviour
     [SerializeField] private GameObject nextZone;
     [SerializeField] private AudioClip interactionSound; // Sonido al interactuar
     [SerializeField] private bool playSound = true; // Controla si se debe reproducir el sonido
-    [SerializeField] private AudioSource audioSource;
-
-    void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.clip = interactionSound;
-    }
 
     public void OnMouseUp()
     {
@@ -24,23 +17,19 @@ public class ChangeZone : MonoBehaviour
             transform.parent.gameObject.SetActive(false);
             nextZone.gameObject.SetActive(true);
             GlobalManager.GetInstance().SetPathObject(false);
-            GameObject audio = new GameObject("AudioFlecha");
-            AudioSource audioSource = audio.AddComponent<AudioSource>();
-            audioSource.clip = interactionSound;
-            audioSource.Play();
-
-            StartCoroutine(DestroyAfterSound(audioSource));
+            AudioPasos.GetInstance().PlayOneShot(interactionSound, 0.5f);
         }
     }
 
-    private IEnumerator DestroyAfterSound(AudioSource audioSource)
-    {
-        // Esperar a que el audio termine
-        yield return new WaitForSeconds(audioSource.clip.length);
 
-        // Destruir el GameObject
-        Destroy(audioSource.gameObject);
-    }
+    //public IEnumerator DestroyAfterSound(AudioSource audioSource)
+    //{
+    //    // Esperar a que el audio termine
+    //    yield return new WaitForSeconds(audioSource.clip.length);
+
+    //    // Destruir el GameObject
+    //    Destroy(audioSource.gameObject);
+    //}
 }
 
 // puedo utilizar onmouse... se llamacn a los collider y el raton interactua nada que ver con la UI

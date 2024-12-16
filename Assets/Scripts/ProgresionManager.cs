@@ -1,9 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class ProgresionManager : MonoBehaviour
 {
@@ -22,6 +18,7 @@ public class ProgresionManager : MonoBehaviour
     [SerializeField] public bool sello12Reloj      = false;
 
     private Dictionary<string, bool> zoneObjectStates = new Dictionary<string, bool>();
+    private List<GameObject> sceneObjects = new List<GameObject>();
 
 
 
@@ -107,31 +104,49 @@ public class ProgresionManager : MonoBehaviour
 
     public void SaveZoneObjectState(GameObject[] objects)
     {
-        zoneObjectStates.Clear();  // Limpiar cualquier estado previo
+        sceneObjects.Clear();
+        string res = "";
 
         foreach (GameObject obj in objects)
         {
-            zoneObjectStates[obj.name] = obj.activeSelf;  // Guardar el estado de cada objeto
+            sceneObjects.Add(obj);
+            //DontDestroyOnLoad(obj);
+            res += obj.name + ", ";
         }
+        Debug.Log(res);
     }
 
     // Restaurar el estado de los objetos de la zona
-    public void RestoreZoneObjectState(GameObject[] objects)
+    public void RestoreZoneObjectState()
     {
         GameObject[] allObjects = GlobalManager.GetInstance().GetAllObjects();
-        foreach (GameObject obj in allObjects)
-        {
-            obj.SetActive(false);
-            //if (isDebug) Debug.Log("Path: " + obj);
-        }
+        //foreach (GameObject obj in allObjects)
+        //{
+        //    if (obj != null)
+        //    {
+        //        obj.SetActive(false);
+        //    }
+        //}
+        //GameObject[] objects = GlobalManager.GetInstance().GetActiveObjectsDefault();
+        //foreach (GameObject obj in objects)
+        //{
+        //    obj.SetActive(true);
+        //}
 
-        foreach (GameObject obj in objects)
-        {
-            if (zoneObjectStates.ContainsKey(obj.name))
-            {
-                obj.SetActive(zoneObjectStates[obj.name]);  // Restaurar el estado guardado
-            }
-        }
+        //string res = "";
+        //foreach (GameObject obj in sceneObjects)
+        //{
+        //    if (obj != null)
+        //    {
+        //        obj.SetActive(true);
+        //        res += obj.name + ", ";
+        //    }
+        //    else
+        //    {
+        //        Debug.LogWarning("Un objeto en sceneObjects es null y no puede ser activado.");
+        //    }
+        //}
+        //Debug.Log(res);
     }
 
 

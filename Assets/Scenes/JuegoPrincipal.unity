@@ -11887,6 +11887,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 880871179116840976, guid: 5df0e14f7d22d4d4591d09bd68d4c1d9, type: 3}
   m_PrefabInstance: {fileID: 2102861892}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1452747631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1452747632}
+  - component: {fileID: 1452747633}
+  m_Layer: 0
+  m_Name: AudiosPasos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1452747632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452747631}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 332524742}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1452747633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452747631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7fa5184d2d6dd4a93e918cb8fd42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSourcePrefab: {fileID: 337392177081938770, guid: 74b5728fd7d27394598f81a768f74e05, type: 3}
 --- !u!1 &1453468047
 GameObject:
   m_ObjectHideFlags: 0
@@ -17847,6 +17892,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4182609578628904550, guid: b546e7af5a61a484797689fc65f72361, type: 3}
       insertIndex: -1
       addedObject: {fileID: 772284542}
+    - targetCorrespondingSourceObject: {fileID: 4182609578628904550, guid: b546e7af5a61a484797689fc65f72361, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1452747632}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b546e7af5a61a484797689fc65f72361, type: 3}
 --- !u!1001 &9035498132095549511

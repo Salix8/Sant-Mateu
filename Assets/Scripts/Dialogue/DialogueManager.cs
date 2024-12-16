@@ -5,8 +5,6 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using Ink.UnityIntegration;
-using UnityEditor.Timeline.Actions;
 
 // Inicia, muestra y termina los dialogos
 //Continua los dialogos, muestra las opciones, cambia posiciones del layout
@@ -17,8 +15,8 @@ public class DialogueManager : MonoBehaviour
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.04f; //Cuanto menor sea mas rapido escribir�
 
-    [Header("Globals Ink File")]
-    [SerializeField] private InkFile globalsInkFile;
+    //[Header("Globals Ink File")]
+    //[SerializeField] private TextAsset loadGlobalsJSON;
 
 
     [Header("Dialogue UI")]
@@ -58,9 +56,9 @@ public class DialogueManager : MonoBehaviour
     private const string AUDIO_TAG = "audio";
     private const string PANEL_TAG = "panel";
 
-    private DialogueVariables dialogueVariables;
+    //private DialogueVariables dialogueVariables;
 
-    private bool isDebug = true;
+    private bool isDebug = false;
 
 
     public void Awake()
@@ -71,7 +69,7 @@ public class DialogueManager : MonoBehaviour
         }
         instance = this;
 
-        dialogueVariables = new DialogueVariables(globalsInkFile.filePath);
+        //dialogueVariables = new DialogueVariables(loadGlobalsJSON);
         clickAction = InputSystem.actions.FindAction("Click");
 
         audioSource = this.gameObject.AddComponent<AudioSource>();
@@ -142,7 +140,7 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
-        dialogueVariables.StartListening(currentStory);
+        //dialogueVariables.StartListening(currentStory);
 
         canContinueToNextLine = false; // asegurarse de que no se esta ejecutando otra linea de dialogo
         if (displayLineCoroutinte != null)
@@ -164,7 +162,7 @@ public class DialogueManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
 
-        dialogueVariables.StopListening(currentStory);
+        //dialogueVariables.StopListening(currentStory);
 
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
@@ -394,7 +392,7 @@ public class DialogueManager : MonoBehaviour
     public Ink.Runtime.Object GetVariableState(string variableName)
     {
         Ink.Runtime.Object variableValue = null;
-        dialogueVariables.variables.TryGetValue(variableName, out variableValue);
+        //dialogueVariables.variables.TryGetValue(variableName, out variableValue);
         if (variableValue != null)
         {
             Debug.Log("Ink Variable es nula: " + variableName);
