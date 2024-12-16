@@ -17,22 +17,20 @@ public class SceneButtonHandler : MonoBehaviour
         GameObject[] activeObjects = GlobalManager.GetInstance().SetActiveObjects();
 
         Debug.Log($"Se cambia de la zona principal al Puzle {sceneType}");
-        Debug.Log(activeObjects);
+        //Debug.Log(activeObjects);
         ProgresionManager.GetInstance().SaveZoneObjectState(activeObjects);
         SceneManager.LoadScene((int)sceneType);
     }
 
     public void LoadMiniToScene()
     {
+        GlobalManager.GetInstance().LoadMainScene();
         Debug.Log($"Se cambia del Puzle {SceneManager.GetActiveScene().name} a la zona principal");
-        SceneManager.LoadScene((int)sceneType);
-        GameObject[] activeObjects = GlobalManager.GetInstance().GetActiveObjects();
-        Debug.LogWarning(activeObjects);
-        foreach ( GameObject obj in activeObjects )
-        {
-            Debug.Log(obj);
-        }
-
-        ProgresionManager.GetInstance().RestoreZoneObjectState(activeObjects);
+        ProgresionManager.GetInstance().RestoreZoneObjectState();
+        //Debug.LogWarning(activeObjects);
+        //foreach ( GameObject obj in activeObjects )
+        //{
+        //    Debug.Log(obj);
+        //}
     }
 }
