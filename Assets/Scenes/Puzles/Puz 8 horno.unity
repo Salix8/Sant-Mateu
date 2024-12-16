@@ -2831,7 +2831,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4951260135209990496, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
       propertyPath: m_text
-      value: texto
+      value: "El panadero esta muy ocupado y necesita que le ayudes a preparar las
+        tandas de pan de hoy.\nSepara los panes en grupos de tantas cantidades como
+        te diga el panadero para superar la fase. Completa 6 fases y habr\xE9is terminado
+        la tanda, \xA1buen trabajo!"
       objectReference: {fileID: 0}
     - target: {fileID: 4951260135209990496, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
       propertyPath: m_fontSize
