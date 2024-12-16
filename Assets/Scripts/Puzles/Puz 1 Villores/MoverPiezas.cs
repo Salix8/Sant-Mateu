@@ -1,143 +1,89 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using System.Collections.Generic;
 
-public class MoverPiezas : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class MoverPiezas : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    private Canvas canvas;
-    private RectTransform rectTransform;
-    private CanvasGroup canvasGroup;
-    public Vector2 targetPosition;     // Posición objetivo de cada pieza
+    private Vector3 startPosition; // Posición inicial del objeto
+    private Transform parentTransform;
 
-    // Lista para almacenar las referencias de todas las piezas
-    private static List<MoverPiezas> piezas = new List<MoverPiezas>();
-    private static bool puzzleCompletado = false;
+    public Transform correctPoint; // El punto correcto donde debe estar el objeto
+    public bool isCorrectlyPlaced = false; // Si la pieza está correctamente colocada
 
-    private void Awake()
-    {
-        rectTransform = GetComponent<RectTransform>();
-        canvasGroup = GetComponent<CanvasGroup>();
-        canvas = GetComponentInParent<Canvas>();
+    private GameObject lastObjectOver; // Último objeto sobre el que se colisionó
 
-        // Guardamos la posición objetivo como la posición inicial de cada pieza
-        targetPosition = rectTransform.anchoredPosition;
-
-        // Agregar la pieza a la lista de todas las piezas
-        piezas.Add(this);
-    }
+    private CanvasGroup canvasGroup; // Para manejar el raycast en UI
 
     private void Start()
     {
-        // Mueve cada pieza a una posición aleatoria al inicio
-        float randomX = Random.Range(-400, 390);
-        float randomY = Random.Range(-140, 140);
-        rectTransform.anchoredPosition = new Vector2(randomX, randomY);
-    }
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        Debug.Log($"Clic en la pieza: {gameObject.name}");
+        parentTransform = transform.parent; // Guardar el padre del objeto
+        canvasGroup = GetComponent<CanvasGroup>(); // Obtener el CanvasGroup
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        canvasGroup.alpha = 0.6f;  // Hace la pieza un poco transparente durante el arrastre
-        canvasGroup.blocksRaycasts = false;
-        Debug.Log($"Iniciando arrastre de la pieza: {gameObject.name}");
+        if (!isCorrectlyPlaced)
+        {
+            startPosition = transform.position; // Guardar la posición inicial
+            lastObjectOver = null; // Reiniciar el último objeto sobre el que se pasó
+
+            // Desactivar el raycast para evitar conflictos mientras se arrastra
+            if (canvasGroup != null)
+                canvasGroup.blocksRaycasts = false;
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        // Actualiza la posición de la pieza mientras se arrastra
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        if (!isCorrectlyPlaced)
+        {
+            // Mover el objeto con el puntero (para UI usa RectTransform)
+            if (RectTransformUtility.ScreenPointToWorldPointInRectangle(
+                parentTransform.GetComponent<RectTransform>(),
+                eventData.position,
+                eventData.pressEventCamera,
+                out Vector3 globalMousePos))
+            {
+                transform.position = globalMousePos;
+            }
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        canvasGroup.alpha = 1f;
-        canvasGroup.blocksRaycasts = true;
-        Debug.Log($"Finalizando arrastre de la pieza: {gameObject.name} en la posición {rectTransform.anchoredPosition}");
-
-        // Verificar si la pieza está cerca de su posición objetivo
-        float snapDistance = 10f;
-        if (Vector2.Distance(rectTransform.anchoredPosition, targetPosition) < snapDistance)
+        if (!isCorrectlyPlaced)
         {
-            // Colocar la pieza en su posición correcta
-            rectTransform.anchoredPosition = targetPosition;
-            enabled = false;  // Desactivar el script para evitar más movimientos de esta pieza
-
-            // Comprobar si el puzzle está completo
-            if (!puzzleCompletado)
+            // Verificar si el último objeto sobre el que se soltó es el punto correcto
+            if (lastObjectOver != null && lastObjectOver.transform == correctPoint)
             {
-                CheckPuzzleCompletion();
+                transform.position = correctPoint.position; // Ajustar al punto correcto
+                isCorrectlyPlaced = true; // Marcar como correctamente colocado
+                Debug.Log($"{gameObject.name} colocado correctamente.");
+                QrManager.Instance.CheckCompletion(); // Comprobar si el minijuego está completo
             }
+            else
+            {
+                // Si no es el lugar correcto, volver a la posición inicial
+                transform.position = startPosition;
+                Debug.Log($"{gameObject.name} no está en el lugar correcto.");
+            }
+
+            // Reactivar el raycast
+            if (canvasGroup != null)
+                canvasGroup.blocksRaycasts = true;
         }
     }
 
-    private void CheckPuzzleCompletion()
+    // Detectar cuando entra en contacto con otro collider (2D o 3D según tu setup)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Comprobando si el puzzle está completo...");
-
-        // Verifica cada pieza y sus vecinos
-        foreach (MoverPiezas pieza in piezas)
-        {
-            // Verificar que esta pieza está en su posición objetivo
-            if (Vector2.Distance(pieza.rectTransform.anchoredPosition, pieza.targetPosition) >= 10f)
-            {
-                Debug.Log($"Pieza {pieza.gameObject.name} no está en su posición correcta.");
-                return; // Si una pieza no está en su posición, el puzzle no está completo
-            }
-
-            // Verificar que los vecinos de esta pieza están en su posición correcta
-            if (!VerificarVecinos(pieza))
-            {
-                Debug.Log($"Los vecinos de la pieza {pieza.gameObject.name} no están en las posiciones correctas.");
-                return; // Si los vecinos no están en sus posiciones correctas, el puzzle no está completo
-            }
-        }
-
-        // Si todas las piezas están en posición correcta con sus vecinos
-        puzzleCompletado = true;
-        Debug.Log("¡Puzzle completado correctamente!");
+        lastObjectOver = collision.gameObject; // Guardar el último objeto sobre el que se pasó
     }
 
-    private bool VerificarVecinos(MoverPiezas pieza)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        // Definimos las posiciones relativas de los vecinos (arriba, abajo, izquierda, derecha)
-        Dictionary<string, Vector2> posicionesRelativas = new Dictionary<string, Vector2>
+        if (lastObjectOver == collision.gameObject)
         {
-            { "Arriba", new Vector2(0, 100) },
-            { "Abajo", new Vector2(0, -100) },
-            { "Izquierda", new Vector2(-100, 0) },
-            { "Derecha", new Vector2(100, 0) }
-        };
-
-        // Buscar si hay vecinos en las posiciones relativas
-        foreach (var vecino in posicionesRelativas)
-        {
-            Vector2 posicionEsperada = pieza.targetPosition + vecino.Value;
-            bool vecinoCorrecto = false;
-
-            // Verifica si alguna otra pieza está en esta posición esperada
-            foreach (MoverPiezas otraPieza in piezas)
-            {
-                if (otraPieza != pieza && Vector2.Distance(otraPieza.targetPosition, posicionEsperada) < 10f)
-                {
-                    vecinoCorrecto = true;
-                    Debug.Log($"La pieza {pieza.gameObject.name} tiene a su vecino {otraPieza.gameObject.name} en la posición {vecino.Key}.");
-                    break;
-                }
-            }
-
-            // Si no hay vecino en la posición correcta
-            if (!vecinoCorrecto)
-            {
-                Debug.Log($"La pieza {pieza.gameObject.name} no tiene un vecino en la posición {vecino.Key}.");
-                return false;
-            }
+            lastObjectOver = null; // Limpiar el último objeto si se sale del área
         }
-
-        // Si todos los vecinos están en posición correcta
-        return true;
     }
 }
