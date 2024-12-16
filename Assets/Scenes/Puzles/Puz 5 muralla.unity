@@ -251,7 +251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &310176000
@@ -270,7 +270,14 @@ MonoBehaviour:
   background: {fileID: 127589962}
   loseBackground: {fileID: 21300000, guid: 04fa2dfb72fa3ca4e95355f16454d1e5, type: 3}
   timer: {fileID: 893390936}
-  dialogo: {fileID: 0}
+  dialogo: {fileID: 4900000, guid: 15656f7f1820cc54bbaf2705669f960f, type: 3}
+  dialogo2: {fileID: 4900000, guid: 7ff83c2f9cd15a54bb0711db9e3bc40f, type: 3}
+  ocultar:
+  - {fileID: 713555031}
+  - {fileID: 297992113}
+  - {fileID: 1955291303}
+  - {fileID: 764250205}
+  - {fileID: 310175998}
 --- !u!61 &310176001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -422,7 +429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3434740728583192444, guid: 90e19fda903e4c644a4cad8d05b36449, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1597,7 +1604,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1878,7 +1885,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2568654384690017252, guid: 74f8b7615870c244bb4ee15a60d1227d, type: 3}
       propertyPath: tiempoRestante
-      value: 32
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5088902740794252440, guid: 74f8b7615870c244bb4ee15a60d1227d, type: 3}
       propertyPath: m_Pivot.x

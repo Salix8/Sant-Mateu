@@ -1,0 +1,1 @@
+Asi no llegaremos a ninguna perte ¡¡nos estan ganando!!. #speaker:Guerrera #portrait:npcMurallaPasado #layout:left

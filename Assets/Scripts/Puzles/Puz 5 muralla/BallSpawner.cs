@@ -23,8 +23,15 @@ public class BallSpawner : MonoBehaviour
     {
         if (muralla == null)
             Debug.LogWarning($"Te falta añadir el prefab de la bala en {gameObject.name}. Puz 5 muralla");
-
+        
         InvokeRepeating("SpawnBall", 0f, spawnInterval);
+    }
+    private void Update()
+    {
+        if (muralla.GetIsWin() || muralla.GetIsLose())
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void SpawnBall()
