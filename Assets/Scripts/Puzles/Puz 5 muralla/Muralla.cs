@@ -10,8 +10,12 @@ public class Muralla : MonoBehaviour
     [SerializeField] private Sprite loseBackground;
 
     [SerializeField] private Timer timer;
+    private bool isWin = false;
+    private bool isLose = false;
 
     [SerializeField] private TextAsset dialogo;
+    [SerializeField] private TextAsset dialogo2;
+    [SerializeField] private GameObject[] ocultar;
 
     private void Awake()
     {
@@ -32,32 +36,14 @@ public class Muralla : MonoBehaviour
         hasGanado();
     }
 
-    private void hasGanado()
+    public bool GetIsWin()
     {
-        DialogueManager.GetInstance().EnterDialogueMode(dialogo);
-        while (DialogueManager.GetInstance().dialogueIsPlaying)
-        {
-
-        }
-        GlobalManager.GetInstance().LoadMainScene();
+        return isWin;
     }
-
-    private void hasPerdido()
+    public bool GetIsLose()
     {
-        Image imagen = background.GetComponent<Image>();
-        imagen.sprite = loseBackground;
-
-        if (GlobalManager.GetInstance() != null)
-            GlobalManager.GetInstance().LoadMainScene();
-        else
-            Debug.LogWarning($"No se ha creado ninguna instancia del GlobalManger. Puz 5 muralla");
-
-        if (ProgresionManager.GetInstance() != null)
-            ProgresionManager.GetInstance().SetComplete(5);
-        else
-            Debug.LogWarning($"No se ha creado ninguna instancia del ProgresionManger. Puz 5 muralla");
+        return isLose;
     }
-
     public int GetVidaMuralla()
     {
         return vida;
@@ -65,10 +51,62 @@ public class Muralla : MonoBehaviour
 
     public void SetVidaMuralla(int valor)
     {
-        if(vida > 0)
+        //Debug.Log($"Vida = {vida}, y {vida} > 0 = {vida > 0}");
+        if (vida > 0)
             vida += valor;
         else
             hasPerdido();
         Debug.Log($"Tienes {vida} vidas de 3");
+    }
+
+    private void hasGanado()
+    {
+        if (!isWin && !isLose)
+        {
+            isWin = true;
+            ocultarElementos();
+            destroyProjectiles();
+            DialogueManager.GetInstance().EnterDialogueMode(dialogo);
+            //GlobalManager.GetInstance().LoadMainScene();
+        }
+    }
+
+    private void hasPerdido()
+    {
+        if (!isLose && !isWin)
+        {
+            isLose = true;
+            ocultarElementos();
+            destroyProjectiles();
+            Image imagen = background.GetComponent<Image>();
+            imagen.sprite = loseBackground;
+            DialogueManager.GetInstance().EnterDialogueMode(dialogo2);
+            if (GlobalManager.GetInstance() != null)
+                GlobalManager.GetInstance().LoadMainScene();
+            else
+                Debug.LogWarning($"No se ha creado ninguna instancia del GlobalManger. Puz 5 muralla");
+
+            if (ProgresionManager.GetInstance() != null)
+                ProgresionManager.GetInstance().SetComplete(5);
+            else
+                Debug.LogWarning($"No se ha creado ninguna instancia del ProgresionManger. Puz 5 muralla");
+        }
+    }
+
+    private void ocultarElementos()
+    {
+        foreach (GameObject obj in ocultar)
+        {
+            obj.SetActive(false);
+        }
+    }
+
+    private void destroyProjectiles()
+    {
+        GameObject[] projectiles = GameObject.FindGameObjectsWithTag("Projectile");
+        foreach (GameObject obj in projectiles)
+        {
+            Destroy(obj);
+        }
     }
 }
