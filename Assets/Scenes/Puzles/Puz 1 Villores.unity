@@ -2831,6 +2831,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4951260135209990496, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_text
+      value: "Junta las piezas del c\xF3digo QR para que Silvia y Andreu puedan escanearlo."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951260135209990496, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
       propertyPath: m_margin.w
       value: 194.07632
       objectReference: {fileID: 0}
