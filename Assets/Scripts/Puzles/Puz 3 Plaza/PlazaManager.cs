@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlazaManager : MonoBehaviour
 {
-    public static PlazaManager Instance; 
+    public static PlazaManager Instance;
     public List<ObjetoArrastrable> draggableObjects; // Lista de objetos arrastrables
 
     private void Awake()
@@ -25,11 +25,10 @@ public class PlazaManager : MonoBehaviour
         {
             if (!draggableObject.isCorrectlyPlaced)
             {
-                return; // Si hay al menos uno mal colocado, no está completo
+                return; // Si hay al menos uno mal colocado, ya no está completo
             }
         }
 
-        
         Debug.Log("¡Minijuego completado!");
     }
 }
