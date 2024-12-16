@@ -12,6 +12,10 @@ TagManager:
   - Projectile
   - Escena
   - Muralla
+  - Tile
+  - Importante
+  - Zonas
+  - MenuInicial
   layers:
   - Default
   - TransparentFX

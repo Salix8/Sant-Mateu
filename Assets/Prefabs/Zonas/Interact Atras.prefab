@@ -106,7 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 541bd389fb3950742871e57a8285197b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 0}
+  nextZone: {fileID: 0}
+  interactionSound: {fileID: 8300000, guid: 812833a87e709ba47b144b96c18075e3, type: 3}
+  playSound: 1
+  audioSource: {fileID: 0}
 --- !u!1 &6172431942704947163
 GameObject:
   m_ObjectHideFlags: 0
