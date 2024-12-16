@@ -27,9 +27,6 @@ public class MenuManager : MonoBehaviour
             GlobalManager.GetInstance().SetPathObject(false);
             menuTelefono.SetActive(true);
         }
-
-        
-
     }
 
     

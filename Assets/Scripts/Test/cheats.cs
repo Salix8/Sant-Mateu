@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class cheats : MonoBehaviour
 {
@@ -8,4 +9,5 @@ public class cheats : MonoBehaviour
     {
         ProgresionManager.GetInstance().SetComplete(0); //QR
     }
+
 }

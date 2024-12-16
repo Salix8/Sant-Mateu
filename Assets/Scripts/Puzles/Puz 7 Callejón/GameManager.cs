@@ -6,9 +6,13 @@ namespace FifteenPuzzle
 {
     public class GameManager : MonoBehaviour
     {
-        [SerializeField] GameObject _tilePrefab;
+        public delegate void TileCreated(GameObject tile);
+        public static event TileCreated OnTileCreated;
 
+        [SerializeField] GameObject _tilePrefab;
+        public List<Sprite> imageParts;
         List<Tile> _tiles = new List<Tile>();
+        float tileSpacing = 0.1f;
 
         Vector3 emptySpace = Vector3.zero;
 
@@ -40,7 +44,7 @@ namespace FifteenPuzzle
                     y -= tileSize;
                 }
 
-                if (i == gridSize-1)
+                if (i == gridSize - 1)
                 {
                     emptySpace = new Vector3(x, y, 0f);
                     break;
@@ -50,10 +54,13 @@ namespace FifteenPuzzle
                 var tileScript = tileObj.GetComponent<Tile>();
 
                 tileObj.transform.position = new Vector3(x, y, 0f);
+                Debug.Log($"Tile {i} instanciado y asignado");
 
-                tileScript.SetNumber(i + 1);
-
+                tileScript.SetImage(imageParts[i]);
                 _tiles.Add(tileScript);
+
+                // Disparar el evento para notificar que se creó un nuevo Tile
+                OnTileCreated?.Invoke(tileObj);
 
                 x += tileSize;
             }
