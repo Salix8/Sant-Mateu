@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 51586849}
   - component: {fileID: 51586848}
   - component: {fileID: 51586847}
-  - component: {fileID: 51586846}
+  - component: {fileID: 51586851}
   - component: {fileID: 51586850}
   m_Layer: 5
   m_Name: AjusteSonido
@@ -318,22 +318,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 102}
   m_SizeDelta: {x: 528.39, y: 117.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &51586846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51586844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b227be15f0b33469ce159a85612e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1497191063}
-  menuTelefono: {fileID: 959629509}
-  mapa: {fileID: 99280431}
 --- !u!114 &51586847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,8 +362,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 51586846}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+      - m_Target: {fileID: 51586851}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: Volver
         m_Mode: 1
         m_Arguments:
@@ -442,6 +426,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
+--- !u!114 &51586851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51586844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects:
+  - {fileID: 1497191063}
+  menuTelefono: {fileID: 959629509}
+  mapa: {fileID: 99280431}
 --- !u!1001 &57038296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3991,7 +3991,7 @@ GameObject:
   - component: {fileID: 309180228}
   - component: {fileID: 309180227}
   - component: {fileID: 309180226}
-  - component: {fileID: 309180229}
+  - component: {fileID: 309180231}
   - component: {fileID: 309180230}
   m_Layer: 5
   m_Name: Opciones
@@ -4064,8 +4064,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 309180229}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+      - m_Target: {fileID: 309180231}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: AbrirMenuTelefono
         m_Mode: 1
         m_Arguments:
@@ -4114,22 +4114,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309180224}
   m_CullTransparentMesh: 1
---- !u!114 &309180229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309180224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b227be15f0b33469ce159a85612e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 150928056}
-  menuTelefono: {fileID: 959629509}
-  mapa: {fileID: 99280431}
 --- !u!114 &309180230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4144,6 +4128,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
+--- !u!114 &309180231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309180224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects:
+  - {fileID: 150928056}
+  menuTelefono: {fileID: 959629509}
+  mapa: {fileID: 99280431}
 --- !u!1 &313227033
 GameObject:
   m_ObjectHideFlags: 0
@@ -5378,7 +5378,7 @@ GameObject:
   - component: {fileID: 484488604}
   - component: {fileID: 484488603}
   - component: {fileID: 484488602}
-  - component: {fileID: 484488605}
+  - component: {fileID: 484488607}
   - component: {fileID: 484488606}
   m_Layer: 5
   m_Name: Ajustes
@@ -5451,8 +5451,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484488605}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+      - m_Target: {fileID: 484488607}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: AbrirMenuTelefono
         m_Mode: 1
         m_Arguments:
@@ -5501,25 +5501,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484488600}
   m_CullTransparentMesh: 1
---- !u!114 &484488605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484488600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b227be15f0b33469ce159a85612e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 484488600}
-  - {fileID: 2008275969}
-  - {fileID: 1672046768}
-  - {fileID: 1497191063}
-  menuTelefono: {fileID: 959629509}
-  mapa: {fileID: 99280431}
 --- !u!114 &484488606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5534,6 +5515,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
+--- !u!114 &484488607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484488600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects:
+  - {fileID: 484488600}
+  - {fileID: 2008275969}
+  - {fileID: 1672046768}
+  - {fileID: 1497191063}
+  menuTelefono: {fileID: 959629509}
+  mapa: {fileID: 99280431}
 --- !u!1 &496460326
 GameObject:
   m_ObjectHideFlags: 0
@@ -6914,7 +6914,7 @@ GameObject:
   - component: {fileID: 681868458}
   - component: {fileID: 681868457}
   - component: {fileID: 681868456}
-  - component: {fileID: 681868455}
+  - component: {fileID: 681868459}
   - component: {fileID: 681868454}
   m_Layer: 5
   m_Name: btnTelefono
@@ -6957,22 +6957,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
---- !u!114 &681868455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681868452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b227be15f0b33469ce159a85612e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 681868452}
-  menuTelefono: {fileID: 547634321}
-  mapa: {fileID: 99280431}
 --- !u!114 &681868456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7017,8 +7001,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 681868455}
-        m_TargetAssemblyTypeName: CambioMenu, Assembly-CSharp
+      - m_Target: {fileID: 681868459}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: AbrirMenuTelefono
         m_Mode: 1
         m_Arguments:
@@ -7067,6 +7051,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681868452}
   m_CullTransparentMesh: 1
+--- !u!114 &681868459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681868452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects:
+  - {fileID: 681868452}
+  menuTelefono: {fileID: 547634321}
+  mapa: {fileID: 99280431}
 --- !u!1 &690341392
 GameObject:
   m_ObjectHideFlags: 0
@@ -7224,7 +7224,7 @@ GameObject:
   - component: {fileID: 717166433}
   - component: {fileID: 717166432}
   - component: {fileID: 717166431}
-  - component: {fileID: 717166430}
+  - component: {fileID: 717166435}
   - component: {fileID: 717166434}
   m_Layer: 5
   m_Name: VerMapa
@@ -7253,26 +7253,6 @@ RectTransform:
   m_AnchoredPosition: {x: -383, y: 0.0000076294}
   m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &717166430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717166428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b227be15f0b33469ce159a85612e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1497191063}
-  - {fileID: 1672046768}
-  - {fileID: 484488600}
-  - {fileID: 2008275969}
-  - {fileID: 99280431}
-  menuTelefono: {fileID: 547634321}
-  mapa: {fileID: 99280431}
 --- !u!114 &717166431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7317,9 +7297,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 717166430}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: Volver
+      - m_Target: {fileID: 717166435}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
+        m_MethodName: MostrarMapa
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7381,6 +7361,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
+--- !u!114 &717166435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717166428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects:
+  - {fileID: 1497191063}
+  - {fileID: 1672046768}
+  - {fileID: 484488600}
+  - {fileID: 2008275969}
+  - {fileID: 99280431}
+  menuTelefono: {fileID: 547634321}
+  mapa: {fileID: 99280431}
 --- !u!1 &725169791
 GameObject:
   m_ObjectHideFlags: 0
@@ -9975,7 +9975,7 @@ GameObject:
   - component: {fileID: 1143262113}
   - component: {fileID: 1143262112}
   - component: {fileID: 1143262111}
-  - component: {fileID: 1143262110}
+  - component: {fileID: 1143262115}
   - component: {fileID: 1143262114}
   m_Layer: 5
   m_Name: Volver
@@ -10004,22 +10004,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -370}
   m_SizeDelta: {x: 528.39, y: 117.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1143262110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143262108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b227be15f0b33469ce159a85612e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 959629509}
-  menuTelefono: {fileID: 1843951775}
-  mapa: {fileID: 99280431}
 --- !u!114 &1143262111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10064,8 +10048,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1143262110}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+      - m_Target: {fileID: 1143262115}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: Volver
         m_Mode: 1
         m_Arguments:
@@ -10128,6 +10112,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
+--- !u!114 &1143262115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143262108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects:
+  - {fileID: 959629509}
+  menuTelefono: {fileID: 1843951775}
+  mapa: {fileID: 99280431}
 --- !u!1 &1145024982
 GameObject:
   m_ObjectHideFlags: 0
@@ -10140,7 +10140,8 @@ GameObject:
   - component: {fileID: 1145024987}
   - component: {fileID: 1145024986}
   - component: {fileID: 1145024985}
-  - component: {fileID: 1145024984}
+  - component: {fileID: 1145024988}
+  - component: {fileID: 1145024989}
   m_Layer: 5
   m_Name: Volver
   m_TagString: Untagged
@@ -10168,25 +10169,6 @@ RectTransform:
   m_AnchoredPosition: {x: 822, y: -414}
   m_SizeDelta: {x: 124.42, y: 113.1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1145024984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145024982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b227be15f0b33469ce159a85612e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1497191063}
-  - {fileID: 1672046768}
-  - {fileID: 484488600}
-  - {fileID: 2008275969}
-  menuTelefono: {fileID: 547634321}
-  mapa: {fileID: 99280431}
 --- !u!114 &1145024985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10231,8 +10213,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1145024984}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+      - m_Target: {fileID: 1145024988}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: Volver
         m_Mode: 1
         m_Arguments:
@@ -10281,6 +10263,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145024982}
   m_CullTransparentMesh: 1
+--- !u!114 &1145024988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145024982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects:
+  - {fileID: 1497191063}
+  - {fileID: 1672046768}
+  - {fileID: 484488600}
+  - {fileID: 2008275969}
+  menuTelefono: {fileID: 547634321}
+  mapa: {fileID: 99280431}
+--- !u!114 &1145024989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145024982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09322302cc627c4e9fbfef2ebb20445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
+  playSound: 1
 --- !u!1001 &1190422581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11710,7 +11725,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.127}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 478}
+  m_AnchoredPosition: {x: 0, y: 421}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1336927523
@@ -12020,7 +12035,7 @@ GameObject:
   - component: {fileID: 1406041469}
   - component: {fileID: 1406041468}
   - component: {fileID: 1406041467}
-  - component: {fileID: 1406041466}
+  - component: {fileID: 1406041471}
   - component: {fileID: 1406041470}
   m_Layer: 5
   m_Name: Volver
@@ -12049,25 +12064,6 @@ RectTransform:
   m_AnchoredPosition: {x: 365, y: 0.0000076294}
   m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1406041466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406041464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b227be15f0b33469ce159a85612e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1497191063}
-  - {fileID: 681868452}
-  - {fileID: 484488600}
-  - {fileID: 2008275969}
-  menuTelefono: {fileID: 547634321}
-  mapa: {fileID: 99280431}
 --- !u!114 &1406041467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12112,8 +12108,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1406041466}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+      - m_Target: {fileID: 1406041471}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: Volver
         m_Mode: 1
         m_Arguments:
@@ -12176,6 +12172,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
+--- !u!114 &1406041471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406041464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects:
+  - {fileID: 1497191063}
+  - {fileID: 681868452}
+  - {fileID: 484488600}
+  - {fileID: 2008275969}
+  menuTelefono: {fileID: 547634321}
+  mapa: {fileID: 99280431}
 --- !u!4 &1442057209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 880871179116840976, guid: 5df0e14f7d22d4d4591d09bd68d4c1d9, type: 3}
@@ -12908,7 +12923,7 @@ GameObject:
   - component: {fileID: 1672046772}
   - component: {fileID: 1672046771}
   - component: {fileID: 1672046770}
-  - component: {fileID: 1672046773}
+  - component: {fileID: 1672046775}
   - component: {fileID: 1672046774}
   m_Layer: 5
   m_Name: Telefono
@@ -12981,8 +12996,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1672046773}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+      - m_Target: {fileID: 1672046775}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: AbrirMenuTelefono
         m_Mode: 1
         m_Arguments:
@@ -13031,22 +13046,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672046768}
   m_CullTransparentMesh: 1
---- !u!114 &1672046773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672046768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b227be15f0b33469ce159a85612e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1672046768}
-  menuTelefono: {fileID: 547634321}
-  mapa: {fileID: 99280431}
 --- !u!114 &1672046774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13061,6 +13060,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
+--- !u!114 &1672046775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672046768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects:
+  - {fileID: 1672046768}
+  menuTelefono: {fileID: 547634321}
+  mapa: {fileID: 99280431}
 --- !u!1 &1675240111
 GameObject:
   m_ObjectHideFlags: 0
@@ -13073,7 +13088,7 @@ GameObject:
   - component: {fileID: 1675240116}
   - component: {fileID: 1675240115}
   - component: {fileID: 1675240114}
-  - component: {fileID: 1675240113}
+  - component: {fileID: 1675240118}
   - component: {fileID: 1675240117}
   m_Layer: 5
   m_Name: Volver
@@ -13102,22 +13117,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -370}
   m_SizeDelta: {x: 528.39, y: 117.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1675240113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675240111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b227be15f0b33469ce159a85612e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1497191063}
-  menuTelefono: {fileID: 959629509}
-  mapa: {fileID: 99280431}
 --- !u!114 &1675240114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13162,8 +13161,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1675240113}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+      - m_Target: {fileID: 1675240118}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: Volver
         m_Mode: 1
         m_Arguments:
@@ -13226,6 +13225,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
+--- !u!114 &1675240118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675240111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects:
+  - {fileID: 1497191063}
+  menuTelefono: {fileID: 959629509}
+  mapa: {fileID: 99280431}
 --- !u!1 &1678411753
 GameObject:
   m_ObjectHideFlags: 0
@@ -13765,7 +13780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5c4839ed65b0a354b95e9027f170b4a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c2c20833215896c4dab69fae7686413d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14346,7 +14361,7 @@ GameObject:
   - component: {fileID: 1790458925}
   - component: {fileID: 1790458924}
   - component: {fileID: 1790458923}
-  - component: {fileID: 1790458922}
+  - component: {fileID: 1790458927}
   - component: {fileID: 1790458926}
   m_Layer: 5
   m_Name: VerSellos
@@ -14375,22 +14390,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -143}
   m_SizeDelta: {x: 528.39, y: 117.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1790458922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790458920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b227be15f0b33469ce159a85612e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1843951775}
-  menuTelefono: {fileID: 959629509}
-  mapa: {fileID: 99280431}
 --- !u!114 &1790458923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14435,8 +14434,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1790458922}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+      - m_Target: {fileID: 1790458927}
+        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: AbrirMenuTelefono
         m_Mode: 1
         m_Arguments:
@@ -14499,6 +14498,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
+--- !u!114 &1790458927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790458920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects:
+  - {fileID: 1843951775}
+  menuTelefono: {fileID: 959629509}
+  mapa: {fileID: 99280431}
 --- !u!1 &1792226343
 GameObject:
   m_ObjectHideFlags: 0
@@ -14905,7 +14920,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1818582164}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1818582166}
+        m_TargetAssemblyTypeName: SalirJuego, Assembly-CSharp
+        m_MethodName: Salir
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1818582164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15355,7 +15382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 308cd124ff742ee4d98ec0c40e043b21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50383f24efd669f4888fa0e976ce9fb5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17435,6 +17462,54 @@ PrefabInstance:
       propertyPath: sello2Villores
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: f9ae48d8deee08249b8c3e5c8035009c, type: 3}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: 8718be85cdbfb934cb19f05dc4c0554c, type: 3}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.data[2]
+      value: 
+      objectReference: {fileID: 4900000, guid: abaca84407189d245bb9cf9f03da0c10, type: 3}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.data[3]
+      value: 
+      objectReference: {fileID: 4900000, guid: baa42ef3b8ea05a4ca031cba2dee6324, type: 3}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.data[4]
+      value: 
+      objectReference: {fileID: 4900000, guid: 15656f7f1820cc54bbaf2705669f960f, type: 3}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.data[5]
+      value: 
+      objectReference: {fileID: 4900000, guid: ad32d1fed51a4f046aa710d44767531b, type: 3}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.data[6]
+      value: 
+      objectReference: {fileID: 4900000, guid: 169a9b47c5e7e8849b8899bb3ac4ddb9, type: 3}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.data[7]
+      value: 
+      objectReference: {fileID: 4900000, guid: f5e7e1c27366d48489a23038ce25e442, type: 3}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.data[8]
+      value: 
+      objectReference: {fileID: 4900000, guid: 9facecaba257c1e419388c54d8049433, type: 3}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.data[9]
+      value: 
+      objectReference: {fileID: 4900000, guid: 3da8cc3a40bf20b49a9f45ab416898ca, type: 3}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: dialogosAlCompletarPuzles.Array.data[10]
+      value: 
+      objectReference: {fileID: 4900000, guid: 75a7319efa5b3aa4cbad3f05da4246c9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17840,6 +17915,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allGameObjects: []
+  menuTelefono: {fileID: 547634321}
+  mapa: {fileID: 99280431}
 --- !u!1 &6219533761136212316
 GameObject:
   m_ObjectHideFlags: 0
@@ -18282,8 +18360,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorSize: 32
-  cursorNormal: {fileID: 2800000, guid: 646d48bc0c1f5bd42962a0babe6b60df, type: 3}
-  cursorMano: {fileID: 2800000, guid: f14b673c945c5a34a9f3ea4176246ecf, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 49ee5ebbfb4807b4d893efa4adcd1ec4, type: 3}
+  cursorMano: {fileID: 2800000, guid: 107fbf70087b1ad42b3bc8d07d60edca, type: 3}
 --- !u!1 &8682148020085218257
 GameObject:
   m_ObjectHideFlags: 0
