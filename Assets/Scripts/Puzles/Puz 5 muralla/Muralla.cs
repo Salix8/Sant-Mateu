@@ -24,6 +24,7 @@ public class Muralla : MonoBehaviour
             timer.OnTimerFinished += HandleTimerFinished; // Suscribirse al evento
             //Debug.Log("Se ha suscrito al evento OnTimerFinished.");
         }
+        vida = 3;
     }
     private void OnDestroy()
     {
@@ -67,6 +68,7 @@ public class Muralla : MonoBehaviour
             ocultarElementos();
             destroyProjectiles();
             DialogueManager.GetInstance().EnterDialogueMode(dialogo);
+            ProgresionManager.GetInstance().SetComplete(5);
             //GlobalManager.GetInstance().LoadMainScene();
         }
     }
@@ -81,15 +83,15 @@ public class Muralla : MonoBehaviour
             Image imagen = background.GetComponent<Image>();
             imagen.sprite = loseBackground;
             DialogueManager.GetInstance().EnterDialogueMode(dialogo2);
-            if (GlobalManager.GetInstance() != null)
-                GlobalManager.GetInstance().LoadMainScene();
-            else
-                Debug.LogWarning($"No se ha creado ninguna instancia del GlobalManger. Puz 5 muralla");
+            //if (GlobalManager.GetInstance() != null)
+            //    GlobalManager.GetInstance().LoadMainScene();
+            //else
+            //    Debug.LogWarning($"No se ha creado ninguna instancia del GlobalManger. Puz 5 muralla");
 
-            if (ProgresionManager.GetInstance() != null)
-                ProgresionManager.GetInstance().SetComplete(5);
-            else
-                Debug.LogWarning($"No se ha creado ninguna instancia del ProgresionManger. Puz 5 muralla");
+            //if (ProgresionManager.GetInstance() != null)
+            //    ProgresionManager.GetInstance().SetComplete(5);
+            //else
+            //    Debug.LogWarning($"No se ha creado ninguna instancia del ProgresionManger. Puz 5 muralla");
         }
     }
 

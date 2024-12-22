@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class MenuManager : MonoBehaviour
+public class CambioMenu : MonoBehaviour
 {
-    public GameObject[] allGameObjects;    
-    public GameObject menuTelefono;       
-    public GameObject mapa;               
+    [SerializeField] private GameObject[] allGameObjects;    
+    [SerializeField] private GameObject menuTelefono;       
+    [SerializeField] private GameObject mapa;               
 
     void Start()
     {
@@ -16,17 +16,26 @@ public class MenuManager : MonoBehaviour
     
     public void AbrirMenuTelefono() // no se abre cuando hay dialogo, desactiva cambio de Zona
     {
+        Debug.Log($"Hay dialogo? {DialogueManager.GetInstance().dialogueIsPlaying}");
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
+            Debug.Log($"1 No hay dialogo");
             foreach (GameObject obj in allGameObjects)
             {
+                Debug.Log($"{obj}");
                 obj.SetActive(true);
 
             }
+            Debug.Log($"2");
 
             GlobalManager.GetInstance().SetPathObject(false);
             menuTelefono.SetActive(true);
+            Debug.Log($"3 {menuTelefono}");
         }
+    }
+    public void test()
+    {
+        menuTelefono.SetActive(true);
     }
 
     

@@ -12,29 +12,12 @@ public class GlobalManager : MonoBehaviour
     private GameObject[] allObjects;
     private List<GameObject> activeObjectsList;
     [SerializeField] private GameObject[] activeObjectsDefault;
-    
+
     [System.Serializable]
     public class ObjectState
     {
         public string name; // Nombre del objeto
         public bool isActive; // Estado del objeto
-    }
-
-
-    public enum SceneType
-    {
-        MainScene,          // 0
-        Puz_1_Villores,     // 1
-        Puz_2_Villores,     // 2
-        Puz_3_Plaza,        // 3
-        Puz_4_Arciprestal,  // 4
-        Puz_5_Muralla,      // 5
-        Puz_6_Borrull,      // 6
-        Puz_7_Callejon,     // 7
-        Puz_8_Horno,        // 8
-        Puz_9_Fuente,       // 9
-        Puz_10_Pere,        // 10
-        Puz_11_Convento     // 11
     }
 
 
@@ -46,6 +29,7 @@ public class GlobalManager : MonoBehaviour
         if (instance != null)
         {
             Debug.LogWarning("Se ha encontrado mas de un GlobalManager en la escena");
+            Destroy(gameObject);
             return;
         }
         instance = this;
@@ -90,6 +74,16 @@ public class GlobalManager : MonoBehaviour
         }
     }
 
+    public void SetZonesFalse()
+    {
+        zonesObjects = GameObject.FindGameObjectsWithTag("Escena");
+        foreach (GameObject obj in zonesObjects)
+        {
+            obj.SetActive(false);
+            if (isDebug) Debug.Log("Escena: " + obj);
+        }
+    }
+
 
 
 
@@ -128,26 +122,8 @@ public class GlobalManager : MonoBehaviour
 
 
 
-    public void LoadScene(SceneType sceneType)
-    {
-        Debug.Log($"Se cambia a la escena {sceneType}");
-        SceneManager.LoadScene((int)sceneType);
-    }
-
-    public void LoadMainScene()
-    {
-        SceneManager.LoadScene((int)SceneType.MainScene);
-        
-    }
-
-    public void ReloadScene()
-    {
-        string sceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(sceneName);
-        //Reestablecer();
-
-    }
-    public void Reestablecer()
+    
+    public void Reestablecer2()
     {
         allObjects = FindObjectsOfType<GameObject>();
         foreach (GameObject obj in allObjects)
@@ -163,7 +139,7 @@ public class GlobalManager : MonoBehaviour
         //GameObject escena = GameObject.Find("Villores1"); //Esto no funciona
         //escena.SetActive(true);
     }
-    public void Reestablecer2()
+    public void Reestablecer3()
     {
         zonesObjects = GameObject.FindGameObjectsWithTag("Escena");
         foreach (GameObject obj in zonesObjects)
