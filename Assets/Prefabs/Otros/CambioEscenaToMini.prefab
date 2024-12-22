@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 6014949487046117337}
   - component: {fileID: 3673435024152647473}
   m_Layer: 5
-  m_Name: CambioEscenaToMiniConGuardado
+  m_Name: CambioEscenaToMini
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

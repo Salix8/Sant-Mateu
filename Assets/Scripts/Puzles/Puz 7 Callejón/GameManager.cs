@@ -12,7 +12,7 @@ namespace FifteenPuzzle
         [SerializeField] GameObject _tilePrefab;
         public List<Sprite> imageParts;
         List<Tile> _tiles = new List<Tile>();
-        float tileSpacing = 0.1f;
+        //float tileSpacing = 0.1f;
 
         Vector3 emptySpace = Vector3.zero;
 

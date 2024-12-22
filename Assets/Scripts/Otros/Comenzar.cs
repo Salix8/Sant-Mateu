@@ -13,7 +13,7 @@ public class Comenzar : MonoBehaviour
         {
             obj.SetActive(true);
         }
-
+        ControlCursor.GetInstance().ResetCursor();
         objetoOcultar.SetActive(false);
     }
         

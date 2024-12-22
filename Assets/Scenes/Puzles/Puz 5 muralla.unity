@@ -425,11 +425,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3434740728583192444, guid: 90e19fda903e4c644a4cad8d05b36449, type: 3}
       propertyPath: m_Name
-      value: CambioMiniToEscenaConReestablecimiento Variant
+      value: CambioMiniToEscenaVariant
       objectReference: {fileID: 0}
     - target: {fileID: 3434740728583192444, guid: 90e19fda903e4c644a4cad8d05b36449, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7901854970250827390, guid: 90e19fda903e4c644a4cad8d05b36449, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+    - target: {fileID: 7901854970250827390, guid: 90e19fda903e4c644a4cad8d05b36449, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7901854970250827390, guid: 90e19fda903e4c644a4cad8d05b36449, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProgresionManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073608361490630978, guid: 90e19fda903e4c644a4cad8d05b36449, type: 3}
+      propertyPath: m_text
+      value: Vuelta a main
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

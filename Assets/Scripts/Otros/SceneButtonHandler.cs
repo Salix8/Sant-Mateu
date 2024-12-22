@@ -7,24 +7,21 @@ using UnityEngine.SceneManagement;
 public class SceneButtonHandler : MonoBehaviour
 {
 
-    [SerializeField] private SceneType sceneType;
+    //[SerializeField] private SceneType sceneType;
 
    
 
     public void LoadSceneToMini()
     {
-
-        GameObject[] activeObjects = GlobalManager.GetInstance().SetActiveObjects();
-
-        Debug.Log($"Se cambia de la zona principal al Puzle {sceneType}");
+        //Debug.Log($"Se cambia de la zona principal al Puzle {sceneType}");
         //Debug.Log(activeObjects);
-        ProgresionManager.GetInstance().SaveZoneObjectState(activeObjects);
-        SceneManager.LoadScene((int)sceneType);
+        ProgresionManager.GetInstance().SaveZoneState();
+        //SceneManager.LoadScene((int)sceneType);
     }
 
     public void LoadMiniToScene()
     {
-        GlobalManager.GetInstance().LoadMainScene();
+        //GlobalManager.GetInstance().LoadMainScene();
         Debug.Log($"Se cambia del Puzle {SceneManager.GetActiveScene().name} a la zona principal");
         ProgresionManager.GetInstance().RestoreZoneObjectState();
         //Debug.LogWarning(activeObjects);

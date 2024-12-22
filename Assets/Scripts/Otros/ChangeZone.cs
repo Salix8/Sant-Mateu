@@ -7,7 +7,7 @@ public class ChangeZone : MonoBehaviour
 {
     [SerializeField] private GameObject nextZone;
     [SerializeField] private AudioClip interactionSound; // Sonido al interactuar
-    [SerializeField] private bool playSound = true; // Controla si se debe reproducir el sonido
+    //[SerializeField] private bool playSound = true; // Controla si se debe reproducir el sonido
 
     public void OnMouseUp()
     {
@@ -16,6 +16,7 @@ public class ChangeZone : MonoBehaviour
             Debug.Log("Se ha cambiado a la escena: " + nextZone);
             transform.parent.gameObject.SetActive(false);
             nextZone.gameObject.SetActive(true);
+            ControlCursor.GetInstance().changeCursor("normal");
             GlobalManager.GetInstance().SetPathObject(false);
             AudioPasos.GetInstance().PlayOneShot(interactionSound, 0.5f);
         }
