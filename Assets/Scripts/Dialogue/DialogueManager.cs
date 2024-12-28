@@ -39,6 +39,10 @@ public class DialogueManager : MonoBehaviour
     private Dictionary<string, DialogueAudioInfoSO> audioInfoDictionary;
     private AudioSource audioSource;
 
+    [Header("Sound Settings")]
+    [SerializeField] private AjusteSonido ajusteSonido;
+
+    
 
 
     private Story currentStory;
@@ -245,6 +249,17 @@ public class DialogueManager : MonoBehaviour
         float maxPitch = currentAudioInfo.maxPitch;
         bool stopAudioSource = currentAudioInfo.stopAudioSource;
 
+        
+        if (ajusteSonido != null)
+        {
+            audioSource.volume = ajusteSonido.GetVolume();
+        }
+        else
+        {
+            
+            audioSource.volume = 1f; // Volumen por defecto
+        }
+
         // play the sound based on the config
         if (currentDisplayedCharacterCount % frequencyLevel == 0)
         {
@@ -290,6 +305,7 @@ public class DialogueManager : MonoBehaviour
             audioSource.PlayOneShot(soundClip);
         }
     }
+
 
     private void HideChoices()
     {
