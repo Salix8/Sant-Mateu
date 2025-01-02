@@ -34,35 +34,44 @@ public class GlobalManager : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(gameObject);
+        InitializeObjects();
+    }
 
+    void InitializeObjects()
+    {
+        Debug.Log("InitializeObjects");
         allObjects = FindObjectsOfType<GameObject>();
         activeObjectsList = new List<GameObject>();
 
         pathObjects = GameObject.FindGameObjectsWithTag("Path");
+        zonesObjects = GameObject.FindGameObjectsWithTag("Escena");
+
         foreach (GameObject obj in pathObjects)
         {
             obj.SetActive(false);
             if (isDebug) Debug.Log("Path: " + obj);
         }
-        zonesObjects = GameObject.FindGameObjectsWithTag("Escena");
         foreach (GameObject obj in zonesObjects)
         {
             obj.SetActive(false);
             if (isDebug) Debug.Log("Escena: " + obj);
         }
-    }
 
-    public GameObject[] SetActiveObjects()
+    }
+    public void RefreshObjects()
     {
-        foreach (GameObject obj in allObjects)
+        InitializeObjects();
+    }
+    public void SetActiveZone(string zoneName)
+    {
+        foreach (GameObject obj in zonesObjects)
         {
-            if (obj.activeInHierarchy) // Verifica si está activo en la jerarquía
+            if (obj.name == zoneName)
             {
-                //Debug.Log(obj);
-                activeObjectsList.Add(obj);
+                obj.SetActive(true);
+                if (isDebug) Debug.Log("Escena: " + obj);
             }
         }
-        return activeObjectsList.ToArray();
     }
 
     public void SetPathObject(bool isEnable)
@@ -76,7 +85,6 @@ public class GlobalManager : MonoBehaviour
 
     public void SetZonesFalse()
     {
-        zonesObjects = GameObject.FindGameObjectsWithTag("Escena");
         foreach (GameObject obj in zonesObjects)
         {
             obj.SetActive(false);
@@ -158,11 +166,21 @@ public class GlobalManager : MonoBehaviour
                 if (isDebug) Debug.Log("Villores1 activado");
             }
         }
-        GameObject menuInicial = GameObject.FindGameObjectWithTag("MenuInicial");
-        menuInicial.SetActive(false);
+
+        HideMainMenu();
 
     }
 
+    public void HideMainMenu()
+    {
+        GameObject menuInicial = GameObject.FindGameObjectWithTag("MenuInicial");
+        menuInicial.SetActive(false);
+        GameObject[] startObjects = GameObject.FindGameObjectWithTag("ObjetosInicio").GetComponent<ObjectCollection>().Objects;
+        foreach (GameObject obj in startObjects)
+        {
+            obj.SetActive(true);
+        }
+    }
 
 
 
@@ -205,7 +223,7 @@ public class GlobalManager : MonoBehaviour
     //        }
     //        else
     //        {
-    //            Debug.LogWarning($"El objeto {state.name} no se encontró en la escena actual.");
+    //            Debug.LogWarning($"El objeto {state.name} no se encontrÃ³ en la escena actual.");
     //        }
     //    }
     //    Debug.Log("Estado de la escena restaurado.");
@@ -221,7 +239,7 @@ public class GlobalManager : MonoBehaviour
     //public void LoadMainScene2()
     //{
     //    SceneManager.LoadScene((int)SceneType.MainScene);
-    //    RestoreSceneState(); // Restaurar el estado después de cargar la escena
+    //    RestoreSceneState(); // Restaurar el estado despuÃ©s de cargar la escena
     //}
 
 

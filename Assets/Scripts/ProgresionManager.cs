@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static GlobalManager;
@@ -43,12 +44,13 @@ public class ProgresionManager : MonoBehaviour
 
     private static ProgresionManager instance;
 
-    public void Awake()
+    void Awake()
     {
         if (instance != null)
         {
             Debug.LogWarning("Se ha encontrado mas de un ProgresionManager en la escena");
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            // Destroy(gameObject);
             return;
         }
         instance = this;
@@ -126,30 +128,21 @@ public class ProgresionManager : MonoBehaviour
         DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
     }
 
-    public void ChangeZone(string nextZone)
+    void ChangeZone(string nextZone)
     {
         Debug.Log($"Escena a la que tendremos que cambiar = {currentZone}.");
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
             //transform.parent.gameObject.SetActive(false);
-            GameObject[] zonesObjects = GameObject.FindGameObjectsWithTag("Escena");
-            Debug.Log($"Numero de zonas= {zonesObjects.Length}; ChangeZone(string)");
-            foreach (GameObject zone in zonesObjects)
-            {
-                zone.SetActive(false);
-                if (zone.name == nextZone)
-                {
-                    zone.SetActive(true);
-                    Debug.Log($"Se ha cambiado a la escena: {zone}");
-                }
-            }
-            GlobalManager.GetInstance().SetPathObject(false);
+            GlobalManager.GetInstance().SetActiveZone(nextZone);
+            GlobalManager.GetInstance().HideMainMenu();
             AudioPasos.GetInstance().PlayOneShot(); //Por defecto suenan los pasos
+
         }
     }
 
 
-    public void SaveZoneState()
+    void SaveZoneState()
     {
         GameObject[] zonesObjects = GlobalManager.GetInstance().GetZonesObjects();
         foreach (GameObject zone in zonesObjects)
@@ -163,7 +156,7 @@ public class ProgresionManager : MonoBehaviour
     }
 
     // Restaurar el estado de los objetos de la zona
-    public void RestoreZoneObjectState()
+    void RestoreZoneObjectState()
     {
         if (currentZone != null)
             ChangeZone(currentZone);
@@ -176,14 +169,22 @@ public class ProgresionManager : MonoBehaviour
         SaveZoneState();
         Debug.Log($"Se cambia a la escena {(SceneType)num}; LoadSceneMinijuego(int)");
         SceneManager.LoadScene(num);
+        GlobalManager.GetInstance().RefreshObjects();
     }
 
     public void LoadMainScene()
     {
-        SceneManager.LoadScene("Test");
-        Debug.Log($"Se vuelve a la escena principal");
-        RestoreZoneObjectState();
+        SceneManager.sceneLoaded += FinishMainSceneLoad;
+        SceneManager.LoadScene(0);
 
+    }
+
+    void FinishMainSceneLoad(Scene scene, LoadSceneMode mode)
+    {
+        SceneManager.sceneLoaded -= FinishMainSceneLoad;
+
+        GlobalManager.GetInstance().RefreshObjects();
+        RestoreZoneObjectState();
     }
 
     public void ReloadScene()

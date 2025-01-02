@@ -16,6 +16,8 @@ TagManager:
   - Importante
   - Zonas
   - MenuInicial
+  - GlobalManagerProxy
+  - ObjetosInicio
   layers:
   - Default
   - TransparentFX
