@@ -12,7 +12,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private InputAction clickAction;
 
-    private bool isDebug = true;
+    private bool isDebug = false;
 
     private void Awake()
     {
