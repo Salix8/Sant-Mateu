@@ -130,46 +130,6 @@ public class GlobalManager : MonoBehaviour
 
 
 
-    
-    public void Reestablecer2()
-    {
-        allObjects = FindObjectsOfType<GameObject>();
-        foreach (GameObject obj in allObjects)
-        {
-            obj.SetActive(true);
-        }
-        pathObjects = GameObject.FindGameObjectsWithTag("Path");
-        foreach (GameObject obj in pathObjects)
-        {
-            obj.SetActive(false);
-            if (isDebug) Debug.Log("Path: " + obj);
-        }
-        //GameObject escena = GameObject.Find("Villores1"); //Esto no funciona
-        //escena.SetActive(true);
-    }
-    public void Reestablecer3()
-    {
-        zonesObjects = GameObject.FindGameObjectsWithTag("Escena");
-        foreach (GameObject obj in zonesObjects)
-        {
-            obj.SetActive(false);
-            if (isDebug) Debug.Log("Escena: " + obj);
-        }
-        GameObject escena = GameObject.FindGameObjectWithTag("Zonas");
-        Transform[] children = escena.GetComponentsInChildren<Transform>(true);
-        foreach (Transform child in children)
-        {
-            //Debug.Log("Hijo encontrado: " + child.name);
-            if (child.name == "Villores1")
-            {
-                child.gameObject.SetActive(true);
-                if (isDebug) Debug.Log("Villores1 activado");
-            }
-        }
-
-        HideMainMenu();
-
-    }
 
     public void HideMainMenu()
     {
@@ -181,68 +141,6 @@ public class GlobalManager : MonoBehaviour
             obj.SetActive(true);
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-    //private List<ObjectState> sceneObjectStates = new List<ObjectState>();
-
-    //public void SaveSceneState(GameObject[] objects)
-    //{
-    //    sceneObjectStates.Clear(); // Limpiar la lista anterior
-    //    foreach (GameObject obj in objects)
-    //    {
-    //        if (obj != null)
-    //        {
-    //            ObjectState state = new ObjectState
-    //            {
-    //                name = obj.name,
-    //                isActive = obj.activeSelf
-    //            };
-    //            sceneObjectStates.Add(state);
-    //        }
-    //    }
-    //    Debug.Log("Estado de la escena guardado.");
-    //}
-
-    //public void RestoreSceneState()
-    //{
-    //    foreach (ObjectState state in sceneObjectStates)
-    //    {
-    //        GameObject obj = GameObject.Find(state.name);
-    //        if (obj != null)
-    //        {
-    //            obj.SetActive(state.isActive);
-    //        }
-    //        else
-    //        {
-    //            Debug.LogWarning($"El objeto {state.name} no se encontró en la escena actual.");
-    //        }
-    //    }
-    //    Debug.Log("Estado de la escena restaurado.");
-    //}
-
-    //public void LoadScene2(int num)
-    //{
-    //    GameObject[] activeObjects = SetActiveObjects(); // Guardar los objetos activos
-    //    SaveSceneState(activeObjects); // Guardar el estado antes de cambiar de escena
-    //    SceneManager.LoadScene(num);
-    //}
-
-    //public void LoadMainScene2()
-    //{
-    //    SceneManager.LoadScene((int)SceneType.MainScene);
-    //    RestoreSceneState(); // Restaurar el estado después de cargar la escena
-    //}
-
-
 
 
 }

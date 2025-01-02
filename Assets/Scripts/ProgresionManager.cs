@@ -133,11 +133,9 @@ public class ProgresionManager : MonoBehaviour
         Debug.Log($"Escena a la que tendremos que cambiar = {currentZone}.");
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            //transform.parent.gameObject.SetActive(false);
             GlobalManager.GetInstance().SetActiveZone(nextZone);
             GlobalManager.GetInstance().HideMainMenu();
             AudioPasos.GetInstance().PlayOneShot(); //Por defecto suenan los pasos
-
         }
     }
 

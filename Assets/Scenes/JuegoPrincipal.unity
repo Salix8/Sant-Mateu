@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 6003098}
   - component: {fileID: 6003097}
   - component: {fileID: 6003096}
-  - component: {fileID: 6003095}
   m_Layer: 5
   m_Name: Objeto_Musicos
   m_TagString: Untagged
@@ -161,18 +160,6 @@ RectTransform:
   m_AnchoredPosition: {x: 199, y: -198}
   m_SizeDelta: {x: 160, y: 50.03}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6003095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6003093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6003096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,14 +204,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6003095}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: Puz 2 Villores Pasado
           m_BoolArgument: 0
@@ -1001,7 +988,6 @@ GameObject:
   - component: {fileID: 142578779}
   - component: {fileID: 142578778}
   - component: {fileID: 142578777}
-  - component: {fileID: 142578776}
   m_Layer: 5
   m_Name: Objeto_Horno
   m_TagString: Untagged
@@ -1028,18 +1014,6 @@ RectTransform:
   m_AnchoredPosition: {x: 392, y: -184.6}
   m_SizeDelta: {x: 157.98, y: 13.75}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &142578776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142578774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &142578777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1084,14 +1058,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 142578776}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: Puz 8 Horno
           m_BoolArgument: 0
@@ -2766,7 +2740,6 @@ GameObject:
   - component: {fileID: 197240301}
   - component: {fileID: 197240300}
   - component: {fileID: 197240299}
-  - component: {fileID: 197240298}
   m_Layer: 5
   m_Name: Objeto_Plaza
   m_TagString: Untagged
@@ -2793,18 +2766,6 @@ RectTransform:
   m_AnchoredPosition: {x: -116.26, y: -162}
   m_SizeDelta: {x: 239.95, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &197240298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197240296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &197240299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2849,14 +2810,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 197240298}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: Puz 3 Plaza
           m_BoolArgument: 0
@@ -4481,11 +4442,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 790450065}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &342598480 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-  m_PrefabInstance: {fileID: 7530246470767743866}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &350238182
 GameObject:
   m_ObjectHideFlags: 0
@@ -4498,7 +4454,6 @@ GameObject:
   - component: {fileID: 350238187}
   - component: {fileID: 350238186}
   - component: {fileID: 350238185}
-  - component: {fileID: 350238184}
   m_Layer: 5
   m_Name: Objeto_Arcipestral
   m_TagString: Untagged
@@ -4525,18 +4480,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -343}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &350238184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350238182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &350238185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4581,14 +4524,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 350238184}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: Puz 4 Arciprestal
           m_BoolArgument: 0
@@ -6053,7 +5996,7 @@ MonoBehaviour:
   allGameObjects:
   - {fileID: 484488600}
   - {fileID: 2008275969}
-  - {fileID: 1672046768}
+  - {fileID: 0}
   - {fileID: 1497191063}
   menuTelefono: {fileID: 959629509}
   mapa: {fileID: 99280431}
@@ -6203,142 +6146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &504721876
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 504721877}
-  - component: {fileID: 504721879}
-  - component: {fileID: 504721878}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &504721877
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504721876}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1672046769}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
-  m_SizeDelta: {x: 140, y: 145}
-  m_Pivot: {x: 1, y: 1}
---- !u!114 &504721878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504721876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Cambiar a pasado
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -295.7445, y: 166.10307, z: 39.16261, w: -185.00902}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &504721879
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504721876}
-  m_CullTransparentMesh: 1
 --- !u!1 &522859198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
@@ -6361,7 +6168,6 @@ GameObject:
   - component: {fileID: 545420333}
   - component: {fileID: 545420332}
   - component: {fileID: 545420331}
-  - component: {fileID: 545420330}
   m_Layer: 5
   m_Name: "Objeto_Callej\xF3n"
   m_TagString: Untagged
@@ -6388,18 +6194,6 @@ RectTransform:
   m_AnchoredPosition: {x: -185.57, y: -361}
   m_SizeDelta: {x: 244.65, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &545420330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545420328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &545420331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6444,14 +6238,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 545420330}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: "Puz 7 Callej\xF3n"
           m_BoolArgument: 0
@@ -6589,7 +6383,6 @@ GameObject:
   - component: {fileID: 562306461}
   - component: {fileID: 562306460}
   - component: {fileID: 562306459}
-  - component: {fileID: 562306458}
   m_Layer: 5
   m_Name: Objeto_Fuente
   m_TagString: Untagged
@@ -6616,18 +6409,6 @@ RectTransform:
   m_AnchoredPosition: {x: -351.99, y: -441}
   m_SizeDelta: {x: 244.65, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &562306458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 562306456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &562306459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6672,14 +6453,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 562306458}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: Puz 9 Fuente
           m_BoolArgument: 0
@@ -7721,7 +7502,6 @@ GameObject:
   - component: {fileID: 690341397}
   - component: {fileID: 690341396}
   - component: {fileID: 690341395}
-  - component: {fileID: 690341394}
   m_Layer: 5
   m_Name: Objeto_QR
   m_TagString: Untagged
@@ -7748,18 +7528,6 @@ RectTransform:
   m_AnchoredPosition: {x: -65, y: -328}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &690341394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690341392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &690341395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7804,14 +7572,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 690341394}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: Puz 1 Villores
           m_BoolArgument: 0
@@ -8017,7 +7785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allGameObjects:
   - {fileID: 1497191063}
-  - {fileID: 1672046768}
+  - {fileID: 0}
   - {fileID: 484488600}
   - {fileID: 2008275969}
   - {fileID: 99280431}
@@ -8634,7 +8402,6 @@ GameObject:
   - component: {fileID: 770886171}
   - component: {fileID: 770886170}
   - component: {fileID: 770886169}
-  - component: {fileID: 770886168}
   m_Layer: 5
   m_Name: Objeto_Borrull
   m_TagString: Untagged
@@ -8661,18 +8428,6 @@ RectTransform:
   m_AnchoredPosition: {x: -393, y: -140}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &770886168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770886166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &770886169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8717,14 +8472,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 770886168}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: Puz 6 Borrull
           m_BoolArgument: 0
@@ -11387,7 +11142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allGameObjects:
   - {fileID: 1497191063}
-  - {fileID: 1672046768}
+  - {fileID: 0}
   - {fileID: 484488600}
   - {fileID: 2008275969}
   menuTelefono: {fileID: 547634321}
@@ -13291,11 +13046,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 222447706}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1405722454 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-  m_PrefabInstance: {fileID: 1819308977}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1406041464
 GameObject:
   m_ObjectHideFlags: 0
@@ -14334,171 +14084,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!1 &1672046768
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1672046769}
-  - component: {fileID: 1672046772}
-  - component: {fileID: 1672046771}
-  - component: {fileID: 1672046770}
-  - component: {fileID: 1672046775}
-  - component: {fileID: 1672046774}
-  m_Layer: 5
-  m_Name: Telefono
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1672046769
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672046768}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.83206, y: 0.83206, z: 0.83206}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 504721877}
-  m_Father: {fileID: 8758239333819371527}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.000122, y: 120}
-  m_SizeDelta: {x: 500, y: 400}
-  m_Pivot: {x: 1, y: 1}
---- !u!114 &1672046770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672046768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1672046771}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1672046775}
-        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
-        m_MethodName: AbrirMenuTelefono
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1672046771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672046768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 52.6, y: 58.81, z: 30.52, w: 160.44}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c7815f792280f25428abb971e594fc1d, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1672046772
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672046768}
-  m_CullTransparentMesh: 1
---- !u!114 &1672046774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672046768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a09322302cc627c4e9fbfef2ebb20445, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
-  playSound: 1
---- !u!114 &1672046775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672046768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1672046768}
-  menuTelefono: {fileID: 547634321}
-  mapa: {fileID: 99280431}
 --- !u!1 &1675240111
 GameObject:
   m_ObjectHideFlags: 0
@@ -15013,7 +14598,6 @@ GameObject:
   - component: {fileID: 1734956896}
   - component: {fileID: 1734956895}
   - component: {fileID: 1734956894}
-  - component: {fileID: 1734956893}
   m_Layer: 5
   m_Name: Objeto_Convento
   m_TagString: Untagged
@@ -15040,18 +14624,6 @@ RectTransform:
   m_AnchoredPosition: {x: -313, y: -434}
   m_SizeDelta: {x: 160, y: 39.07}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1734956893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734956891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1734956894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15096,14 +14668,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1734956893}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: Puz 11 Convento
           m_BoolArgument: 0
@@ -16246,6 +15818,10 @@ PrefabInstance:
       propertyPath: textInfo
       value: 
       objectReference: {fileID: 5073405988659505659}
+    - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: textoInteraccion
+      value: Plaza
+      objectReference: {fileID: 0}
     - target: {fileID: 7265656662479018498, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Size.x
       value: 1003.5567
@@ -16468,127 +16044,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
---- !u!1001 &1819308977
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 8758239333819371527}
-    m_Modifications:
-    - target: {fileID: 701672313344738837, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 553834940}
-    - target: {fileID: 701672313344738837, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadMainScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 701672313344738837, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ProgressionManagerProxy, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3666363378646387388, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_Name
-      value: BotonesTest
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317136116891232036, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7115979842580547797, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 553834940}
-    - target: {fileID: 7115979842580547797, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadSceneMinijuego
-      objectReference: {fileID: 0}
-    - target: {fileID: 7115979842580547797, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ProgressionManagerProxy, Assembly-CSharp
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9e376b7f3212ec346bcad7d863c58870, type: 3}
 --- !u!4 &1823109317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
@@ -16783,7 +16238,6 @@ GameObject:
   - component: {fileID: 1826023305}
   - component: {fileID: 1826023304}
   - component: {fileID: 1826023303}
-  - component: {fileID: 1826023302}
   m_Layer: 5
   m_Name: Objeto_Muralla
   m_TagString: Untagged
@@ -16810,18 +16264,6 @@ RectTransform:
   m_AnchoredPosition: {x: -393, y: -338}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1826023302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826023300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1826023303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16866,14 +16308,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1826023302}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: Puz 5 Muralla
           m_BoolArgument: 0
@@ -18566,7 +18008,6 @@ GameObject:
   - component: {fileID: 2097906362}
   - component: {fileID: 2097906361}
   - component: {fileID: 2097906360}
-  - component: {fileID: 2097906359}
   m_Layer: 5
   m_Name: Objeto_Pere
   m_TagString: Untagged
@@ -18593,18 +18034,6 @@ RectTransform:
   m_AnchoredPosition: {x: -93.53, y: -271}
   m_SizeDelta: {x: 200.31, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2097906359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2097906357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2097906360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18649,14 +18078,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2097906359}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: Puz 10 Sant Pere
           m_BoolArgument: 0
@@ -20275,107 +19704,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &7530246470767743866
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 8758239333819371527}
-    m_Modifications:
-    - target: {fileID: 1259536700988567259, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_Name
-      value: CambioEscenaToMiniConGuardado
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259536700988567259, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 317.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 118.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -367
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 89
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2731892836644142603, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 947218f8fb196b64abb229de2dc5c044, type: 3}
 --- !u!4 &7552507470399321716
 Transform:
   m_ObjectHideFlags: 0
@@ -20536,7 +19864,6 @@ RectTransform:
   - {fileID: 1497191064}
   - {fileID: 1336927522}
   - {fileID: 8758239332470372370}
-  - {fileID: 1672046769}
   - {fileID: 681868453}
   - {fileID: 806097537}
   - {fileID: 484488601}
@@ -20547,8 +19874,6 @@ RectTransform:
   - {fileID: 1083174061}
   - {fileID: 1843951776}
   - {fileID: 432573197}
-  - {fileID: 342598480}
-  - {fileID: 1405722454}
   - {fileID: 408569275}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
