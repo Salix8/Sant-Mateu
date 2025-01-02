@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class TogglePath : MonoBehaviour
 {
-    private bool isEnable = false;
 
     public void ToggleObjects()
     {
-        // Alterna el estado activo de cada objeto
-        GlobalManager.GetInstance().SetPathObject(isEnable);
+        GameObject[] objs = GlobalManager.GetInstance().GetPathObjects(); // Cambia el estado para la pr�xima vez que se haga clic
+        if(objs.Length == 0)
+        {
+            Debug.LogWarning("No se han encontrado objetos con la etiqueta 'Path'");
+            return;
+        }
+        bool toggleVal = !objs[0].activeSelf;
 
-        isEnable = !isEnable; // Cambia el estado para la pr�xima vez que se haga clic
+        // Alterna el estado activo de cada objeto
+        GlobalManager.GetInstance().SetPathObject(toggleVal);
+
     }
 }
