@@ -6,7 +6,8 @@ public class SceneTransitionManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] allGameObjects;
     [SerializeField] private GameObject menuTelefono;       
-    [SerializeField] private GameObject mapa;  
+    [SerializeField] private GameObject mapa;
+    [SerializeField] private TextAsset dialogo;
     private Dictionary<string, string> zoneMapping = new Dictionary<string, string>
     {
         { "Villores3Presente", "Villores3Pasado"    },
@@ -49,11 +50,10 @@ public class SceneTransitionManager : MonoBehaviour
             //     obj.SetActive(true);
             //
             // }
-            Debug.Log($"2");
 
             GlobalManager.GetInstance().SetPathObject(false);
             menuTelefono.SetActive(true);
-            Debug.Log($"3 {menuTelefono}");
+            Debug.Log($"menuTelefono {menuTelefono}");
         }
     }
 
@@ -122,12 +122,14 @@ public class SceneTransitionManager : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("No se encontró el GameObject para la otra escena: " + otherZoneName);
+                Debug.Log("No se encontró el GameObject para la otra escena: " + otherZoneName);
             }
         }
         else
         {
-            Debug.LogWarning("No se encontró una escena correspondiente para: " + currentZoneName);
+            menuTelefono.SetActive(false);
+            DialogueManager.GetInstance().EnterDialogueMode(dialogo);
+            Debug.Log("No se encontró una escena correspondiente para: " + currentZoneName);
         }
     }
 }

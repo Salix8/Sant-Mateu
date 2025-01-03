@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 51586849}
   - component: {fileID: 51586848}
   - component: {fileID: 51586847}
-  - component: {fileID: 51586851}
+  - component: {fileID: 51586852}
   - component: {fileID: 51586850}
   m_Layer: 5
   m_Name: AjusteSonido
@@ -349,9 +349,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 51586851}
-        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
-        m_MethodName: AbrirMenuTelefono
+      - m_Target: {fileID: 51586852}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: MenuAManejar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
---- !u!114 &51586851
+--- !u!114 &51586852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -422,13 +422,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 51586844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0040f11c2adf4e646acebe560818e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1083174060}
-  menuTelefono: {fileID: 959629509}
-  mapa: {fileID: 99280431}
+  menu: {fileID: 1083174060}
+  isDebug: 1
 --- !u!1001 &57038296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1699,7 +1697,6 @@ GameObject:
   - component: {fileID: 159598470}
   - component: {fileID: 159598469}
   - component: {fileID: 159598468}
-  - component: {fileID: 159598471}
   m_Layer: 5
   m_Name: "S_Callej\xF3n"
   m_TagString: Untagged
@@ -1771,14 +1768,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 159598471}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: "Puz 7 Callej\xF3n"
           m_BoolArgument: 0
@@ -1821,18 +1818,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159598466}
   m_CullTransparentMesh: 1
---- !u!114 &159598471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159598466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &163464670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2152,139 +2137,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176059592}
-  m_CullTransparentMesh: 1
---- !u!1 &179473974
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 179473975}
-  - component: {fileID: 179473978}
-  - component: {fileID: 179473977}
-  - component: {fileID: 179473976}
-  m_Layer: 5
-  m_Name: QRCompletado
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &179473975
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179473974}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1678411754}
-  m_Father: {fileID: 806097537}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -27.43, y: -17.5}
-  m_SizeDelta: {x: 267.73, y: 65}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &179473976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179473974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 179473977}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7744651183845507261}
-        m_TargetAssemblyTypeName: cheats, Assembly-CSharp
-        m_MethodName: QRCompletado
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &179473977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179473974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &179473978
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179473974}
   m_CullTransparentMesh: 1
 --- !u!1 &179998414
 GameObject:
@@ -3407,7 +3259,6 @@ GameObject:
   - component: {fileID: 244191255}
   - component: {fileID: 244191254}
   - component: {fileID: 244191253}
-  - component: {fileID: 244191256}
   m_Layer: 5
   m_Name: S_Arc_Pas
   m_TagString: Untagged
@@ -3479,14 +3330,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 244191256}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: Puz 4 Arciprestal
           m_BoolArgument: 0
@@ -3529,18 +3380,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244191251}
   m_CullTransparentMesh: 1
---- !u!114 &244191256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244191251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &260364620 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6404346158651514647, guid: 9ac425efcd19e394aab690391bbaae77, type: 3}
@@ -4260,6 +4099,7 @@ MonoBehaviour:
   - {fileID: 150928056}
   menuTelefono: {fileID: 959629509}
   mapa: {fileID: 99280431}
+  dialogo: {fileID: 0}
 --- !u!1 &313227033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4413,6 +4253,7 @@ MonoBehaviour:
   - {fileID: 484488600}
   - {fileID: 2008275969}
   objetoOcultar: {fileID: 150928056}
+  dialogo: {fileID: 4900000, guid: f5e80738cb9482349b72c7172b53807c, type: 3}
 --- !u!114 &313227039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4700,7 +4541,7 @@ GameObject:
   - component: {fileID: 373212564}
   - component: {fileID: 373212563}
   - component: {fileID: 373212562}
-  - component: {fileID: 373212561}
+  - component: {fileID: 373212565}
   - component: {fileID: 373212560}
   m_Layer: 5
   m_Name: Volver
@@ -4743,22 +4584,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
---- !u!114 &373212561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373212558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1497191063}
-  menuTelefono: {fileID: 1083174060}
-  mapa: {fileID: 99280431}
 --- !u!114 &373212562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4803,9 +4628,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 373212561}
-        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
-        m_MethodName: Volver
+      - m_Target: {fileID: 373212565}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: MenuAManejar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4853,6 +4678,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373212558}
   m_CullTransparentMesh: 1
+--- !u!114 &373212565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373212558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0040f11c2adf4e646acebe560818e8d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 1083174060}
+  isDebug: 1
 --- !u!1 &376083015
 GameObject:
   m_ObjectHideFlags: 0
@@ -5844,10 +5683,10 @@ GameObject:
   - component: {fileID: 484488604}
   - component: {fileID: 484488603}
   - component: {fileID: 484488602}
-  - component: {fileID: 484488607}
+  - component: {fileID: 484488608}
   - component: {fileID: 484488606}
   m_Layer: 5
-  m_Name: Ajustes
+  m_Name: btnAjustes
   m_TagString: Importante
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5917,9 +5756,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484488607}
-        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
-        m_MethodName: AbrirMenuTelefono
+      - m_Target: {fileID: 484488608}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: MenuAManejar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5981,7 +5820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
---- !u!114 &484488607
+--- !u!114 &484488608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5990,16 +5829,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 484488600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0040f11c2adf4e646acebe560818e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 484488600}
-  - {fileID: 2008275969}
-  - {fileID: 0}
-  - {fileID: 1497191063}
-  menuTelefono: {fileID: 959629509}
-  mapa: {fileID: 99280431}
+  menu: {fileID: 959629509}
+  isDebug: 1
 --- !u!1 &496460326
 GameObject:
   m_ObjectHideFlags: 0
@@ -6012,7 +5846,6 @@ GameObject:
   - component: {fileID: 496460330}
   - component: {fileID: 496460329}
   - component: {fileID: 496460328}
-  - component: {fileID: 496460331}
   m_Layer: 5
   m_Name: S_Plaza
   m_TagString: Untagged
@@ -6084,14 +5917,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 496460331}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: Puz 3 Plaza
           m_BoolArgument: 0
@@ -6134,18 +5967,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496460326}
   m_CullTransparentMesh: 1
---- !u!114 &496460331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496460326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &522859198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
@@ -7490,6 +7311,7 @@ MonoBehaviour:
   - {fileID: 681868452}
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
+  dialogo: {fileID: 0}
 --- !u!1 &690341392
 GameObject:
   m_ObjectHideFlags: 0
@@ -7791,6 +7613,7 @@ MonoBehaviour:
   - {fileID: 99280431}
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
+  dialogo: {fileID: 0}
 --- !u!1 &725169791
 GameObject:
   m_ObjectHideFlags: 0
@@ -9070,42 +8893,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805218250}
   m_CullTransparentMesh: 1
---- !u!1 &806097536
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 806097537}
-  m_Layer: 5
-  m_Name: Menu
-  m_TagString: Menu
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &806097537
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 806097536}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 179473975}
-  m_Father: {fileID: 8758239333819371527}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &833334580 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
@@ -9428,7 +9215,6 @@ GameObject:
   - component: {fileID: 940952529}
   - component: {fileID: 940952528}
   - component: {fileID: 940952527}
-  - component: {fileID: 940952530}
   m_Layer: 5
   m_Name: S_Muralla
   m_TagString: Untagged
@@ -9500,14 +9286,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 940952530}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: Puz 5 muralla
           m_BoolArgument: 0
@@ -9550,18 +9336,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940952525}
   m_CullTransparentMesh: 1
---- !u!114 &940952530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940952525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &950075517
 GameObject:
   m_ObjectHideFlags: 0
@@ -9706,7 +9480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 959629510}
   m_Layer: 5
-  m_Name: Opciones
+  m_Name: MenuOpciones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9892,7 +9666,6 @@ GameObject:
   - component: {fileID: 1008578010}
   - component: {fileID: 1008578009}
   - component: {fileID: 1008578008}
-  - component: {fileID: 1008578011}
   m_Layer: 5
   m_Name: S_Horno
   m_TagString: Untagged
@@ -9964,14 +9737,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1008578011}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: Puz 8 horno
           m_BoolArgument: 0
@@ -10014,18 +9787,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008578006}
   m_CullTransparentMesh: 1
---- !u!114 &1008578011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008578006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1018351079
 GameObject:
   m_ObjectHideFlags: 0
@@ -10508,7 +10269,6 @@ GameObject:
   - component: {fileID: 1077668269}
   - component: {fileID: 1077668268}
   - component: {fileID: 1077668267}
-  - component: {fileID: 1077668270}
   m_Layer: 5
   m_Name: S_Fuente
   m_TagString: Untagged
@@ -10580,14 +10340,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1077668270}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: Puz 9 Fuente
           m_BoolArgument: 0
@@ -10630,18 +10390,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077668265}
   m_CullTransparentMesh: 1
---- !u!114 &1077668270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077668265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1083174060
 GameObject:
   m_ObjectHideFlags: 0
@@ -10914,8 +10662,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1143262115}
-        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
-        m_MethodName: Volver
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: MenuAManejar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10986,13 +10734,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1143262108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0040f11c2adf4e646acebe560818e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 959629509}
-  menuTelefono: {fileID: 1843951775}
-  mapa: {fileID: 99280431}
+  menu: {fileID: 1843951775}
+  isDebug: 1
 --- !u!1 &1145024982
 GameObject:
   m_ObjectHideFlags: 0
@@ -11147,6 +10893,7 @@ MonoBehaviour:
   - {fileID: 2008275969}
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
+  dialogo: {fileID: 0}
 --- !u!114 &1145024989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11705,7 +11452,6 @@ GameObject:
   - component: {fileID: 1227333153}
   - component: {fileID: 1227333152}
   - component: {fileID: 1227333151}
-  - component: {fileID: 1227333154}
   m_Layer: 5
   m_Name: S_SantPere
   m_TagString: Untagged
@@ -11777,14 +11523,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1227333154}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: Puz 10 Sant Pere
           m_BoolArgument: 0
@@ -11827,18 +11573,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227333149}
   m_CullTransparentMesh: 1
---- !u!114 &1227333154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227333149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1237259658
 GameObject:
   m_ObjectHideFlags: 0
@@ -12902,7 +12636,6 @@ GameObject:
   - component: {fileID: 1371907602}
   - component: {fileID: 1371907601}
   - component: {fileID: 1371907600}
-  - component: {fileID: 1371907603}
   m_Layer: 5
   m_Name: S_Convento
   m_TagString: Untagged
@@ -12974,14 +12707,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1371907603}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: Puz 11 Convento
           m_BoolArgument: 0
@@ -13024,18 +12757,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371907598}
   m_CullTransparentMesh: 1
---- !u!114 &1371907603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371907598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1385159851 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
@@ -13214,6 +12935,7 @@ MonoBehaviour:
   - {fileID: 2008275969}
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
+  dialogo: {fileID: 0}
 --- !u!1 &1411199928
 GameObject:
   m_ObjectHideFlags: 0
@@ -14096,7 +13818,7 @@ GameObject:
   - component: {fileID: 1675240116}
   - component: {fileID: 1675240115}
   - component: {fileID: 1675240114}
-  - component: {fileID: 1675240118}
+  - component: {fileID: 1675240119}
   - component: {fileID: 1675240117}
   m_Layer: 5
   m_Name: Volver
@@ -14169,9 +13891,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1675240118}
-        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
-        m_MethodName: Volver
+      - m_Target: {fileID: 1675240119}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: MenuAManejar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14233,7 +13955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
---- !u!114 &1675240118
+--- !u!114 &1675240119
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14242,147 +13964,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1675240111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0040f11c2adf4e646acebe560818e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1497191063}
-  menuTelefono: {fileID: 959629509}
-  mapa: {fileID: 99280431}
---- !u!1 &1678411753
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1678411754}
-  - component: {fileID: 1678411756}
-  - component: {fileID: 1678411755}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1678411754
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678411753}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 179473975}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1678411755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678411753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: QR Completado
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1678411756
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678411753}
-  m_CullTransparentMesh: 1
+  menu: {fileID: 959629509}
+  isDebug: 1
 --- !u!1001 &1682989593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14452,7 +14038,6 @@ GameObject:
   - component: {fileID: 1684553580}
   - component: {fileID: 1684553579}
   - component: {fileID: 1684553578}
-  - component: {fileID: 1684553581}
   m_Layer: 5
   m_Name: S_Villores
   m_TagString: Untagged
@@ -14524,14 +14109,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1684553581}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: Puz 2 Villores Pasado
           m_BoolArgument: 0
@@ -14574,18 +14159,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684553576}
   m_CullTransparentMesh: 1
---- !u!114 &1684553581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1684553576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1734956891
 GameObject:
   m_ObjectHideFlags: 0
@@ -15254,7 +14827,6 @@ GameObject:
   - component: {fileID: 1770224038}
   - component: {fileID: 1770224037}
   - component: {fileID: 1770224036}
-  - component: {fileID: 1770224039}
   m_Layer: 5
   m_Name: S_Borrull
   m_TagString: Untagged
@@ -15326,14 +14898,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1770224039}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: Puz 6 Borrull
           m_BoolArgument: 0
@@ -15376,18 +14948,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770224034}
   m_CullTransparentMesh: 1
---- !u!114 &1770224039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770224034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1790458920
 GameObject:
   m_ObjectHideFlags: 0
@@ -15474,8 +15034,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1790458927}
-        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
-        m_MethodName: AbrirMenuTelefono
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: MenuAManejar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15546,13 +15106,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790458920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0040f11c2adf4e646acebe560818e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1843951775}
-  menuTelefono: {fileID: 959629509}
-  mapa: {fileID: 99280431}
+  menu: {fileID: 1843951775}
+  isDebug: 1
 --- !u!1 &1792226343
 GameObject:
   m_ObjectHideFlags: 0
@@ -17390,7 +16948,7 @@ GameObject:
   - component: {fileID: 2008275971}
   - component: {fileID: 2008275974}
   m_Layer: 5
-  m_Name: Movilidad
+  m_Name: btnNavegabilidad
   m_TagString: Importante
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17677,7 +17235,6 @@ GameObject:
   - component: {fileID: 2059120789}
   - component: {fileID: 2059120788}
   - component: {fileID: 2059120787}
-  - component: {fileID: 2059120790}
   m_Layer: 5
   m_Name: S_Torre
   m_TagString: Untagged
@@ -17749,10 +17306,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2059120790}
-        m_TargetAssemblyTypeName: IniciarPuzle, Assembly-CSharp
-        m_MethodName: cambioDeEscena
-        m_Mode: 5
+      - m_Target: {fileID: 553834940}
+        m_TargetAssemblyTypeName: ProgressionManagerProxy, Assembly-CSharp
+        m_MethodName: LoadSceneMinijuego
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -17799,18 +17356,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059120785}
   m_CullTransparentMesh: 1
---- !u!114 &2059120790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059120785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390bfc0191a3324ea8d92a1bb5a3533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2072886940
 GameObject:
   m_ObjectHideFlags: 0
@@ -19417,6 +18962,7 @@ MonoBehaviour:
   allGameObjects: []
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
+  dialogo: {fileID: 4900000, guid: ab5f1ccf5972ed64b89774ad68cc3dc5, type: 3}
 --- !u!1 &6219533761136212316
 GameObject:
   m_ObjectHideFlags: 0
@@ -19865,7 +19411,6 @@ RectTransform:
   - {fileID: 1336927522}
   - {fileID: 8758239332470372370}
   - {fileID: 681868453}
-  - {fileID: 806097537}
   - {fileID: 484488601}
   - {fileID: 2008275970}
   - {fileID: 99280432}
