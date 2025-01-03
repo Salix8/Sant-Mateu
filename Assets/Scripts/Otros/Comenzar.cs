@@ -6,6 +6,7 @@ public class Comenzar : MonoBehaviour
 {
     public GameObject[] objetosMostar;
     public GameObject objetoOcultar;
+    [SerializeField] private TextAsset dialogo;
 
     public void CambiarMenuInicio()
     {
@@ -15,6 +16,7 @@ public class Comenzar : MonoBehaviour
         }
         ControlCursor.GetInstance().ResetCursor();
         objetoOcultar.SetActive(false);
+        DialogueManager.GetInstance().EnterDialogueMode(dialogo);
     }
         
 }

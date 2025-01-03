@@ -1502,7 +1502,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1884,7 +1884,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2568654384690017252, guid: 74f8b7615870c244bb4ee15a60d1227d, type: 3}
       propertyPath: tiempoRestante
-      value: 10
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 5088902740794252440, guid: 74f8b7615870c244bb4ee15a60d1227d, type: 3}
       propertyPath: m_Pivot.x
