@@ -57,11 +57,12 @@ public class GamePhaseManager : MonoBehaviour
         divisionChecker.winningCount1 = currentPhase.winningCount1;
         divisionChecker.winningCount2 = currentPhase.winningCount2;
 
+        
+
+        currentPhaseIndex++;
         if (currentPhaseIndex < phases.Count) {
             UpdateGroupHintText(); // Llamada para actualizar el texto
         }
-
-        currentPhaseIndex++;
     }
 
     private void UpdateGroupHintText()
@@ -69,7 +70,7 @@ public class GamePhaseManager : MonoBehaviour
         if (groupHintText != null)
         {
             PhaseData currentPhase = phases[currentPhaseIndex];
-            groupHintText.text = $"Forma grupos de {divisionChecker.winningCount1} y {divisionChecker.winningCount2}";
+            groupHintText.text = $"Tanda {currentPhaseIndex + 1}: Forma grupos de {divisionChecker.winningCount1} y {divisionChecker.winningCount2}";
         }
         else
         {
