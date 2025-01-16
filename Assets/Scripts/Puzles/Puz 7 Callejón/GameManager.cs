@@ -8,11 +8,13 @@ namespace FifteenPuzzle
     {
         public delegate void TileCreated(GameObject tile);
         public static event TileCreated OnTileCreated;
-
+         
         [SerializeField] GameObject _tilePrefab;
         public List<Sprite> imageParts;
         List<Tile> _tiles = new List<Tile>();
         //float tileSpacing = 0.1f;
+
+    
 
         Vector3 emptySpace = Vector3.zero;
 
@@ -21,6 +23,7 @@ namespace FifteenPuzzle
         bool allInPlace = false;
 
         public static GameManager Instance;
+      
 
         private void Awake()
         {
@@ -104,6 +107,7 @@ namespace FifteenPuzzle
 
         void CompletionCheck()
         {
+           
             bool inPlace = true;
             foreach(var tile in _tiles)
             {
@@ -112,7 +116,9 @@ namespace FifteenPuzzle
                     inPlace = false;
                     break;
                 }
+
             }
+
 
             allInPlace = inPlace;
         }
