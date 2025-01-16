@@ -174,7 +174,7 @@ MonoBehaviour:
   - {fileID: 1542322811, guid: e7fd4987953536c4e9f2a8cbcf956f5c, type: 3}
   - {fileID: 789230486, guid: e7fd4987953536c4e9f2a8cbcf956f5c, type: 3}
   - {fileID: -2095126656, guid: e7fd4987953536c4e9f2a8cbcf956f5c, type: 3}
-  tiempoMaximo: 30
+  tiempoMaximo: 120
   tiempoTexto: {fileID: 0}
   panelResultados: {fileID: 3767453208234484033}
   textoResultados: {fileID: 1994591024409110957}

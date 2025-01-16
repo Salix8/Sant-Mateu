@@ -12,7 +12,7 @@ public class elegirForma : MonoBehaviour
     [SerializeField] private Sprite[] galletasSprites; // Sprites precargados
 
     [Header("Temporizador")]
-    [SerializeField] private float tiempoMaximo = 30f;
+    [SerializeField] private float tiempoMaximo = 120f;
     [SerializeField] private Text tiempoTexto;
 
     [Header("Panel de Resultados")]
