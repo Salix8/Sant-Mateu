@@ -1275,6 +1275,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381595894}
   m_CullTransparentMesh: 1
+--- !u!1 &1599832548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 957123058787680929, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+  m_PrefabInstance: {fileID: 2036096420}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1672999924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,6 +1314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lupa: {fileID: 86621984}
   canvas: {fileID: 1672999928}
+  botonInstrucciones: {fileID: 1599832548}
 --- !u!114 &1672999926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,6 +1503,34 @@ PrefabInstance:
       value: "\xA1El pastor ha perdido la lana! Qu\xE9 despistado, para ayudarle,
         tendr\xE1s que coger su lupa y ayudarle a buscar los cestos con lana repartidos
         en el mapa.\n\nHay un total de cinco.\n\nMucha suerte"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193074993677199891, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193074993677199891, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193074993677199891, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1672999925}
+    - target: {fileID: 8193074993677199891, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193074993677199891, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AlternarInstrucciones
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193074993677199891, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ArciprestalController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193074993677199891, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
