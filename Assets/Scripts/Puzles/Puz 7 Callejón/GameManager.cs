@@ -8,22 +8,19 @@ namespace FifteenPuzzle
     {
         public delegate void TileCreated(GameObject tile);
         public static event TileCreated OnTileCreated;
-         
+
         [SerializeField] GameObject _tilePrefab;
         public List<Sprite> imageParts;
         List<Tile> _tiles = new List<Tile>();
-        //float tileSpacing = 0.1f;
-
-    
 
         Vector3 emptySpace = Vector3.zero;
 
         float tileSize = 1.3f;
 
         bool allInPlace = false;
+        bool areTilesVisible = true; // Estado de visibilidad de las piezas
 
         public static GameManager Instance;
-      
 
         private void Awake()
         {
@@ -33,7 +30,6 @@ namespace FifteenPuzzle
         void Start()
         {
             int rowSize = 3;
-
             int gridSize = rowSize * rowSize;
 
             float x = 0f;
@@ -62,7 +58,6 @@ namespace FifteenPuzzle
                 tileScript.SetImage(imageParts[i]);
                 _tiles.Add(tileScript);
 
-                // Disparar el evento para notificar que se creó un nuevo Tile
                 OnTileCreated?.Invoke(tileObj);
 
                 x += tileSize;
@@ -76,7 +71,7 @@ namespace FifteenPuzzle
 
         void Shuffle()
         {
-            for(int i=0; i<100; i++)
+            for (int i = 0; i < 100; i++)
             {
                 Swap(_tiles[Random.Range(0, _tiles.Count)], false);
             }
@@ -90,12 +85,11 @@ namespace FifteenPuzzle
             if (Vector3.Distance(tile.transform.position, emptySpace) < tileSize + 0.1f)
             {
                 Swap(tile);
-
                 CompletionCheck();
             }
         }
 
-        void Swap(Tile tile, bool animation=true)
+        void Swap(Tile tile, bool animation = true)
         {
             Vector3 tilePos = tile.TargetPosition;
             if (animation)
@@ -107,20 +101,28 @@ namespace FifteenPuzzle
 
         void CompletionCheck()
         {
-           
             bool inPlace = true;
-            foreach(var tile in _tiles)
+            foreach (var tile in _tiles)
             {
                 if (!tile.IsInPlace())
                 {
                     inPlace = false;
                     break;
                 }
-
             }
 
-
             allInPlace = inPlace;
+        }
+
+        // Método para alternar la visibilidad de las piezas
+        public void ToggleTilesVisibility()
+        {
+            areTilesVisible = !areTilesVisible;
+
+            foreach (var tile in _tiles)
+            {
+                tile.gameObject.SetActive(areTilesVisible);
+            }
         }
     }
 }
