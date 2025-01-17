@@ -26,7 +26,8 @@ public class ButtonSelector : MonoBehaviour
             }
             else
             {
-                Debug.Log("No puedes seleccionar dos botones del mismo lado.");
+                lineDrawer.startButton = button;
+                isFirstButtonSelected = true;
             }
         }
     }

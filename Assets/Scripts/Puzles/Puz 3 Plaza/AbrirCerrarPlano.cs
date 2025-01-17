@@ -7,8 +7,12 @@ public class AbrirCerrarPlano : MonoBehaviour
     
     public void Activar()
     {
-        mostrarPlano.SetActive(true); 
-        
+        if (mostrarPlano.activeSelf) {
+            Desactivar();
+        }
+        else {
+            mostrarPlano.SetActive(true); 
+        }
     }
 
     
