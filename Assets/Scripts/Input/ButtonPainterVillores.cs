@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class ButtonPainter : MonoBehaviour
+public class ButtonPainter2 : MonoBehaviour
 {
     private List<Vector2> points;
     private LineRenderer line;
@@ -11,13 +11,12 @@ public class ButtonPainter : MonoBehaviour
     public float minDistance = 0.1f;
     private bool switcher = true;
     public GameObject botonInstrucciones; // Botón de instrucciones
+    public GameObject botonlisto; // Botón de instrucciones
     public GameObject botonBorrar; // Botón de borrar
-    public GameObject botonlisto; // Botón de borrar
     public GameObject imagen;
     public GameObject linePrefab;
-    private bool isInstruccionesActive = false; // Estado del botón de instrucciones
+   
     Line activeLine;
-
     void Start()
     {
         // Asegurarnos de que el botón de borrar esté desactivado al iniciar
@@ -57,8 +56,6 @@ public class ButtonPainter : MonoBehaviour
             // Activar el lienzo
             imagen.SetActive(true);
             switcher = false;
-
-            // Mostrar el botón de borrar
             if (botonBorrar != null)
             {
                 botonBorrar.SetActive(true);
@@ -73,8 +70,6 @@ public class ButtonPainter : MonoBehaviour
             // Desactivar el lienzo
             imagen.SetActive(false);
             switcher = true;
-
-            // Ocultar el botón de borrar
             if (botonBorrar != null)
             {
                 botonBorrar.SetActive(false);

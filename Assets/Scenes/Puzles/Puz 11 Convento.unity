@@ -270,6 +270,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4951260135209990496, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_text
+      value: "Las monjas est\xE1n muy ocupadas y requieren tu ayuda para preparar
+        la mayor cantidad de galletas posible. Por cada tipo de galleta que se indique,
+        selecciona el molde correspondiente. \xA1Tu colaboraci\xF3n es fundamental!"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
