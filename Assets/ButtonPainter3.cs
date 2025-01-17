@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class ButtonPainter : MonoBehaviour
+public class ButtonPainter3 : MonoBehaviour
 {
     private List<Vector2> points;
     private LineRenderer line;
@@ -12,7 +12,7 @@ public class ButtonPainter : MonoBehaviour
     private bool switcher = true;
     public GameObject botonInstrucciones; // Botón de instrucciones
     public GameObject botonBorrar; // Botón de borrar
-    public GameObject botonlisto; // Botón de borrar
+    
     public GameObject imagen;
     public GameObject linePrefab;
     private bool isInstruccionesActive = false; // Estado del botón de instrucciones
@@ -66,7 +66,7 @@ public class ButtonPainter : MonoBehaviour
 
             // Desactivar el botón de instrucciones
             botonInstrucciones.GetComponent<Button>().interactable = false;
-            botonlisto.GetComponent<Button>().interactable = false;
+           
         }
         else
         {
@@ -82,7 +82,7 @@ public class ButtonPainter : MonoBehaviour
 
             // Reactivar el botón de instrucciones
             botonInstrucciones.GetComponent<Button>().interactable = true;
-            botonlisto.GetComponent<Button>().interactable = true;
+           
         }
     }
 
