@@ -11,14 +11,17 @@ public class GamePhaseManager : MonoBehaviour
     public DivisionChecker divisionChecker; // Referencia al script DivisionChecker
 
     [SerializeField] private Button GroupHintButton; // Referencia al botón
-    [SerializeField] private Text groupHintText; // Texto del botón
+    //[SerializeField] private Text groupHintText; // Texto del botón
+    [SerializeField] private TextMeshProUGUI groupHint; // Texto del botón
 
     private void Start()
     {
         if (GroupHintButton != null)
         {
-            groupHintText = GroupHintButton.GetComponentInChildren<Text>();
-            UpdateGroupHintText(); // Actualizar el texto inicialmente
+            //groupHintText = GroupHintButton.GetComponentInChildren<Text>();
+            groupHint = GroupHintButton.GetComponentInChildren<TextMeshProUGUI>();
+            //UpdateGroupHintText(); // Actualizar el texto inicialmente
+            groupHint.text = $"Tanda 1: Forma grupos de {divisionChecker.winningCount1} y {divisionChecker.winningCount2}";
         }
     }
 
@@ -28,7 +31,8 @@ public class GamePhaseManager : MonoBehaviour
         if (currentPhaseIndex >= phases.Count)
         {
             Debug.Log("¡Has completado todas las fases!");
-            groupHintText.text = "¡Has completado todas las fases!";
+            //groupHintText.text = "¡Has completado todas las fases!";
+            groupHint.text = "¡Has completado todas las fases!";
             return;
         }
 
@@ -59,18 +63,19 @@ public class GamePhaseManager : MonoBehaviour
 
         
 
+        //if (currentPhaseIndex < phases.Count) {
+        UpdateGroupHintText(); // Llamada para actualizar el texto
+        //}
         currentPhaseIndex++;
-        if (currentPhaseIndex < phases.Count) {
-            UpdateGroupHintText(); // Llamada para actualizar el texto
-        }
     }
 
     private void UpdateGroupHintText()
     {
-        if (groupHintText != null)
+        if (groupHint != null)
         {
             PhaseData currentPhase = phases[currentPhaseIndex];
-            groupHintText.text = $"Tanda {currentPhaseIndex + 1}: Forma grupos de {divisionChecker.winningCount1} y {divisionChecker.winningCount2}";
+            //groupHintText.text = $"Tanda {currentPhaseIndex + 1}: Forma grupos de {divisionChecker.winningCount1} y {divisionChecker.winningCount2}";
+            groupHint.text = $"Tanda {currentPhaseIndex + 2}: Forma grupos de {divisionChecker.winningCount1} y {divisionChecker.winningCount2}";
         }
         else
         {

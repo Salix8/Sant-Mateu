@@ -52,6 +52,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Fondo
+    uniqueID: 2926251809
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

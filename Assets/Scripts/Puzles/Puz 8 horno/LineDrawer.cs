@@ -16,6 +16,8 @@ public class LineDrawer : MonoBehaviour
         lineRenderer.positionCount = 2;
         lineRenderer.SetPosition(0, start);
         lineRenderer.SetPosition(1, end);
+
+        lineRenderer.sortingOrder = 1;
     }
 
     public void ClearLine()
