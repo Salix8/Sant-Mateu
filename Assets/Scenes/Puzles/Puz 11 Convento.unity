@@ -174,7 +174,7 @@ MonoBehaviour:
   - {fileID: 1542322811, guid: e7fd4987953536c4e9f2a8cbcf956f5c, type: 3}
   - {fileID: 789230486, guid: e7fd4987953536c4e9f2a8cbcf956f5c, type: 3}
   - {fileID: -2095126656, guid: e7fd4987953536c4e9f2a8cbcf956f5c, type: 3}
-  tiempoMaximo: 120
+  tiempoMaximo: 60
   tiempoTexto: {fileID: 0}
   panelResultados: {fileID: 3767453208234484033}
   textoResultados: {fileID: 1994591024409110957}
@@ -1892,6 +1892,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 236178784608121754}
     m_Modifications:
+    - target: {fileID: 2568654384690017252, guid: 74f8b7615870c244bb4ee15a60d1227d, type: 3}
+      propertyPath: tiempoRestante
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 5088902740794252440, guid: 74f8b7615870c244bb4ee15a60d1227d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1975,6 +1979,10 @@ PrefabInstance:
     - target: {fileID: 5919818575319933555, guid: 74f8b7615870c244bb4ee15a60d1227d, type: 3}
       propertyPath: m_Name
       value: Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8821904421451678284, guid: 74f8b7615870c244bb4ee15a60d1227d, type: 3}
+      propertyPath: m_text
+      value: 00:59
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

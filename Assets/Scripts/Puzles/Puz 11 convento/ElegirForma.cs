@@ -36,11 +36,11 @@ public class elegirForma : MonoBehaviour
         // Inicializa el juego
         tiempoRestante = tiempoMaximo;
         juegoActivo = true;
-        puntuacion = 0; // Resetea puntuación
+        puntuacion = 0; // Resetea puntuaciï¿½n
         InicializarFases();
         SeleccionarFaseAleatoria();
 
-        // Asegúrate de que el panel de resultados esté desactivado
+        // Asegï¿½rate de que el panel de resultados estï¿½ desactivado
         if (panelResultados != null)
         {
             panelResultados.SetActive(false);
@@ -69,12 +69,12 @@ public class elegirForma : MonoBehaviour
 
     public void CompruebaModelo(int forma)
     {
-        if (juegoActivo) // Solo permite interacciones si el juego está activo
+        if (juegoActivo) // Solo permite interacciones si el juego estï¿½ activo
         {
             if (forma == fase) // Verifica si la forma seleccionada es correcta
             {
                 Debug.Log("Forma correcta.");
-                puntuacion++; // Incrementa la puntuación
+                puntuacion++; // Incrementa la puntuaciï¿½n
 
                 if (fasesRestantes.Count > 0)
                 {
@@ -96,7 +96,7 @@ public class elegirForma : MonoBehaviour
 
     private void SeleccionarFaseAleatoria()
     {
-        // Seleccionar un índice aleatorio de la lista de fases restantes
+        // Seleccionar un ï¿½ndice aleatorio de la lista de fases restantes
         int indiceAleatorio = Random.Range(0, fasesRestantes.Count);
 
         // Obtener la fase correspondiente
@@ -131,7 +131,7 @@ public class elegirForma : MonoBehaviour
         }
         else
         {
-            Debug.LogError("¡El campo Tiempo Texto no está asignado!");
+            Debug.LogError("ï¿½El campo Tiempo Texto no estï¿½ asignado!");
         }
     }
 
@@ -146,16 +146,16 @@ public class elegirForma : MonoBehaviour
 
     private void FinalizarJuego()
     {
-        Debug.Log("¡Tiempo agotado! Fin del juego.");
+        Debug.Log("ï¿½Tiempo agotado! Fin del juego.");
         // Muestra el panel de resultados
         if (panelResultados != null && textoResultados != null)
         {
             panelResultados.SetActive(true); // Activa el panel
-            textoResultados.text = "Nª Galletas : " + puntuacion;
+            textoResultados.text = "Nï¿½ Galletas : " + puntuacion;
         }
         else
         {
-            Debug.LogError("¡Panel o texto de resultados no asignados en el Inspector!");
+            Debug.LogError("ï¿½Panel o texto de resultados no asignados en el Inspector!");
         }
     }
 }

@@ -112,6 +112,9 @@ namespace FifteenPuzzle
             }
 
             allInPlace = inPlace;
+            if (allInPlace) {
+                Debug.Log("¡Felicidades!");
+            }
         }
 
         // Método para alternar la visibilidad de las piezas
