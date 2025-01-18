@@ -13,9 +13,9 @@ public class FadeInFadeOut : MonoBehaviour
         
     }
 
-    private void FadeIn()
+    public void FadeIn()
     { animator.Play("FadeIn"); }
 
-    private void FadeOut() 
+    public void FadeOut() 
     { animator.Play("FadeOut"); }
 }

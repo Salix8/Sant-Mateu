@@ -39,6 +39,8 @@ public class ProgresionManager : MonoBehaviour
 
     [SerializeField] private TextAsset[] dialogosAlCompletarPuzles;
 
+    
+
     string currentZone = "";
 
 
@@ -135,6 +137,7 @@ public class ProgresionManager : MonoBehaviour
         {
             GlobalManager.GetInstance().SetActiveZone(nextZone);
             GlobalManager.GetInstance().HideMainMenu();
+            
             AudioPasos.GetInstance().PlayOneShot(); //Por defecto suenan los pasos
         }
     }
