@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ButtonInstructions : MonoBehaviour
 {
-    private bool switcher = true;
+    private bool switcher = false;
 
     public GameObject imagen;
 
