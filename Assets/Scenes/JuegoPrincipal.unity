@@ -13533,6 +13533,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1585859245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8805350521206537111, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
+  m_PrefabInstance: {fileID: 4441123714495777098}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1629239043
 GameObject:
   m_ObjectHideFlags: 0
@@ -15386,6 +15391,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -17940,6 +17949,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -18219,6 +18232,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -18618,6 +18635,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
       propertyPath: dialogosAlCompletarPuzles.Array.size
       value: 11
       objectReference: {fileID: 0}
@@ -18839,6 +18860,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8758239333819371527}
     m_Modifications:
+    - target: {fileID: 3241780640745695436, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241780640745695436, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
+      propertyPath: m_Maskable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241780640745695436, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -18849,27 +18882,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 5951.99
       objectReference: {fileID: 0}
     - target: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 3347.99
       objectReference: {fileID: 0}
     - target: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18901,11 +18934,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 177.11
       objectReference: {fileID: 0}
     - target: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -99.62
       objectReference: {fileID: 0}
     - target: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -18922,6 +18955,10 @@ PrefabInstance:
     - target: {fileID: 8805350521206537111, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
       propertyPath: m_Name
       value: FadeInFadeOut
+      objectReference: {fileID: 0}
+    - target: {fileID: 8805350521206537111, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19342,6 +19379,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -19866,6 +19907,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
