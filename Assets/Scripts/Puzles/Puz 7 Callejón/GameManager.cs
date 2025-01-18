@@ -18,7 +18,7 @@ namespace FifteenPuzzle
         float tileSize = 1.3f;
 
         bool allInPlace = false;
-        bool areTilesVisible = true; // Estado de visibilidad de las piezas
+        bool areTilesVisible = false; // Estado de visibilidad de las piezas
 
         public static GameManager Instance;
 
@@ -67,6 +67,7 @@ namespace FifteenPuzzle
             Camera.main.orthographicSize = (rowSize * tileSize) + 1f;
 
             Invoke("Shuffle", 0.5f);
+
         }
 
         void Shuffle()
@@ -74,6 +75,11 @@ namespace FifteenPuzzle
             for (int i = 0; i < 100; i++)
             {
                 Swap(_tiles[Random.Range(0, _tiles.Count)], false);
+            }
+
+            foreach (var tile in _tiles)
+            {
+                tile.gameObject.SetActive(false);
             }
         }
 
