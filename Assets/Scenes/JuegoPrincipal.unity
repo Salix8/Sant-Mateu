@@ -1287,6 +1287,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1303,6 +1307,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -1979,6 +1987,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1995,6 +2007,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -2865,6 +2881,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3066,6 +3086,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -3710,6 +3734,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3726,6 +3754,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -4458,6 +4490,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -8655,6 +8691,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -8671,6 +8711,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -10123,6 +10167,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -10139,6 +10187,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -11085,6 +11137,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -11101,6 +11157,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -11350,6 +11410,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -11366,6 +11430,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -12252,6 +12320,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -12552,6 +12624,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -14569,6 +14645,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -14585,6 +14665,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -15750,6 +15834,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -16425,6 +16513,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -16441,6 +16533,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -16663,6 +16759,10 @@ PrefabInstance:
       propertyPath: ajusteSonido
       value: 
       objectReference: {fileID: 2073617133}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: transicionnormal
+      value: 
+      objectReference: {fileID: 1585859245}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
