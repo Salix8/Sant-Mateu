@@ -1,24 +1,19 @@
-INCLUDE globals.ink
-
-{armaElegida =="": -> main | -> already_chose}
+Hello there! #speaker:Andreu #portrait:andreu-neutral #layout:left
+-> main
 
 === main ===
+How are you feeling today?
++ [Happy]
+    That makes me feel <color=\#F8FF30>happy</color> as well!
++ [Sad]
+    Oh, well that makes me <color=\#5B81FF>sad</color> too.
+    
+- Don't trust him, he's <b><color=\#FF1E35>not</color></b> real doctor! #speaker:Silvia #portrait:silvia-neutral #layout:right
 
-Has sido elegido para luchar en nombre del clan
 
-Elige un arma y parte hacia tu destino
-    + [Espada y escudo]
-        -> chosen("Espada y escudo")
-    + [Mandoble]
-        -> chosen("Mandoble")
-    + [Arco y flechas]
-        -> chosen("Arco y flechas")
-
-=== chosen(weapon) ===
-~ armaElegida = weapon
-Has elegido {weapon}!
--> END
-
-=== already_chose ===
-Ya has elegido un arma {armaElegida}.
--> END
+Well, do you have any more questions? #speaker:Andreu #portrait:andreu-neutral #layout:left
++ [Yes]
+    -> main
++ [No]
+    Goodbye then!
+    -> END

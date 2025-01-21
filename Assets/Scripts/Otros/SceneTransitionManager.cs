@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SceneTransitionManager : MonoBehaviour
 {
+    [SerializeField] private GameObject[] allGameObjects;
+    [SerializeField] private GameObject menuTelefono;       
+    [SerializeField] private GameObject mapa;
+    [SerializeField] private TextAsset dialogo;
     private Dictionary<string, string> zoneMapping = new Dictionary<string, string>
     {
         { "Villores3Presente", "Villores3Pasado"    },
@@ -27,6 +31,50 @@ public class SceneTransitionManager : MonoBehaviour
         { "ConventoPresente", "ConventoPasado"      },
         { "ConventoPasado", "ConventoPresente"      }
     };
+
+    void Start()
+    {
+        // menuTelefono.SetActive(false);
+        // mapa.SetActive(false);
+    }
+
+    public void AbrirMenuTelefono() // no se abre cuando hay dialogo, desactiva cambio de Zona
+    {
+        Debug.Log($"Hay dialogo? {DialogueManager.GetInstance().dialogueIsPlaying}");
+        if (!DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            // Debug.Log($"1 No hay dialogo");
+            // foreach (GameObject obj in allGameObjects)
+            // {
+            //     Debug.Log($"{obj}");
+            //     obj.SetActive(true);
+            //
+            // }
+
+            GlobalManager.GetInstance().SetPathObject(false);
+            menuTelefono.SetActive(true);
+            Debug.Log($"menuTelefono {menuTelefono}");
+        }
+    }
+
+    public void MostrarMapa()
+    {
+        mapa.SetActive(true);
+        menuTelefono.SetActive(false);
+    }
+
+    
+    public void Volver()
+    {
+        menuTelefono.SetActive(false);
+        mapa.SetActive(false);
+
+        
+        foreach (GameObject obj in allGameObjects)
+        {
+            obj.SetActive(true);
+        }
+    }
 
     public string GetOtherZone(string currentZone)
     {
@@ -70,15 +118,18 @@ public class SceneTransitionManager : MonoBehaviour
                 // Desactivamos la escena actual y activamos la otra escena
                 currentZone.SetActive(false);
                 otherZone.SetActive(true);
+                menuTelefono.SetActive(false);
             }
             else
             {
-                Debug.LogWarning("No se encontró el GameObject para la otra escena: " + otherZoneName);
+                Debug.Log("No se encontró el GameObject para la otra escena: " + otherZoneName);
             }
         }
         else
         {
-            Debug.LogWarning("No se encontró una escena correspondiente para: " + currentZoneName);
+            menuTelefono.SetActive(false);
+            DialogueManager.GetInstance().EnterDialogueMode(dialogo);
+            Debug.Log("No se encontró una escena correspondiente para: " + currentZoneName);
         }
     }
 }

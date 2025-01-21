@@ -1,19 +1,9 @@
-Hello there! #speaker:Andreu #portrait:andreu-neutral #layout:left
--> main
+Hola, muy buenas ¿tú tambien vienes ha hacer la visita turistica por Sant Mateu? #speaker:Silvia #portrait:silvia-hablando #layout:right
 
-=== main ===
-How are you feeling today?
-+ [Happy]
-    That makes me feel <color=\#F8FF30>happy</color> as well!
-+ [Sad]
-    Oh, well that makes me <color=\#5B81FF>sad</color> too.
-    
-- Don't trust him, he's <b><color=\#FF1E35>not</color></b> real doctor! #speaker:Silvia #portrait:silvia-neutral #layout:right
+Podriamos ir juntos, me se un par de truqillos.
 
+Mira si le das al botón de abajo a la derecha, podremos desplazarnos a traves del pueblo de Sant Mateu.
 
-Well, do you have any more questions? #speaker:Andreu #portrait:andreu-neutral #layout:left
-+ [Yes]
-    -> main
-+ [No]
-    Goodbye then!
-    -> END
+Y si le das al <i>supertelefono</i> de arriba a la derecha, podremos visitar ciertas zonas en el pasado.
+
+Pero <b><color=\#FF1E35>ojo</color></b> no siempre podremos activar nuestro <i>supertelefono</i>, a veces nos quedaremos con las ganas.

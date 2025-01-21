@@ -1,48 +1,61 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ChangeZone : MonoBehaviour
 {
     [SerializeField] private GameObject nextZone;
     [SerializeField] private AudioClip interactionSound; // Sonido al interactuar
-    [SerializeField] private bool playSound = true; // Controla si se debe reproducir el sonido
-    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AjusteSonido ajusteSonido; // Referencia al script de ajuste de sonido
+    [SerializeField] private GameObject transicionnormal;
 
-    void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.clip = interactionSound;
+    private Animator transition;
+
+
+    void Start(){
+        transition = transicionnormal.GetComponent<Animator>();
+
     }
 
     public void OnMouseUp()
     {
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            Debug.Log("Se ha cambiado a la escena: " + nextZone);
-            transform.parent.gameObject.SetActive(false);
-            nextZone.gameObject.SetActive(true);
-            GlobalManager.GetInstance().SetPathObject(false);
-            GameObject audio = new GameObject("AudioFlecha");
-            AudioSource audioSource = audio.AddComponent<AudioSource>();
-            audioSource.clip = interactionSound;
-            audioSource.Play();
+            
+            transition.SetTrigger("Ejecuta");
 
-            StartCoroutine(DestroyAfterSound(audioSource));
+           
+            if (ajusteSonido != null)
+            {
+                float volumen = ajusteSonido.GetVolume(); 
+                AudioPasos.GetInstance().PlayOneShot(interactionSound, volumen); 
+            }
+            // Inicia un Coroutine para ejecutar el cambio después de la animación
+            StartCoroutine(WaitForAnimation(transition, "FadeOut")); 
         }
     }
 
-    private IEnumerator DestroyAfterSound(AudioSource audioSource)
+    private IEnumerator WaitForAnimation(Animator animator, string stateName)
     {
-        // Esperar a que el audio termine
-        yield return new WaitForSeconds(audioSource.clip.length);
+        // Espera hasta que la animación esté en el estado deseado
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsName(stateName))
+        {
+            yield return null; // Espera un frame
+        }
 
-        // Destruir el GameObject
-        Destroy(audioSource.gameObject);
+        // Espera hasta que la animación termine
+        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+        {
+            yield return null; // Espera un frame
+        }
+
+        
+        transition.SetTrigger("AcabaMedio");
+        Debug.Log("Se ha cambiado a la escena: " + nextZone);
+        transform.parent.gameObject.SetActive(false);
+        nextZone.gameObject.SetActive(true);
+        ControlCursor.GetInstance().changeCursor("normal");
+        GlobalManager.GetInstance().SetPathObject(false);
     }
 }
 
-// puedo utilizar onmouse... se llamacn a los collider y el raton interactua nada que ver con la UI
-// Arreglar el event system utilizar el input manager (utilizar los eventos para que vayan los btn)
-// Utilizar sistema de eventos por defecto
