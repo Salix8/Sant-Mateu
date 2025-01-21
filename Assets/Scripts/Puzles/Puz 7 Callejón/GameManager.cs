@@ -6,8 +6,11 @@ namespace FifteenPuzzle
 {
     public class GameManager : MonoBehaviour
     {
-        [SerializeField] GameObject _tilePrefab;
+        public delegate void TileCreated(GameObject tile);
+        public static event TileCreated OnTileCreated;
 
+        [SerializeField] GameObject _tilePrefab;
+        public List<Sprite> imageParts;
         List<Tile> _tiles = new List<Tile>();
 
         Vector3 emptySpace = Vector3.zero;
@@ -15,6 +18,7 @@ namespace FifteenPuzzle
         float tileSize = 1.3f;
 
         bool allInPlace = false;
+        bool areTilesVisible = false; // Estado de visibilidad de las piezas
 
         public static GameManager Instance;
 
@@ -26,7 +30,6 @@ namespace FifteenPuzzle
         void Start()
         {
             int rowSize = 3;
-
             int gridSize = rowSize * rowSize;
 
             float x = 0f;
@@ -40,7 +43,7 @@ namespace FifteenPuzzle
                     y -= tileSize;
                 }
 
-                if (i == gridSize-1)
+                if (i == gridSize - 1)
                 {
                     emptySpace = new Vector3(x, y, 0f);
                     break;
@@ -50,10 +53,12 @@ namespace FifteenPuzzle
                 var tileScript = tileObj.GetComponent<Tile>();
 
                 tileObj.transform.position = new Vector3(x, y, 0f);
+                Debug.Log($"Tile {i} instanciado y asignado");
 
-                tileScript.SetNumber(i + 1);
-
+                tileScript.SetImage(imageParts[i]);
                 _tiles.Add(tileScript);
+
+                OnTileCreated?.Invoke(tileObj);
 
                 x += tileSize;
             }
@@ -62,13 +67,19 @@ namespace FifteenPuzzle
             Camera.main.orthographicSize = (rowSize * tileSize) + 1f;
 
             Invoke("Shuffle", 0.5f);
+
         }
 
         void Shuffle()
         {
-            for(int i=0; i<100; i++)
+            for (int i = 0; i < 100; i++)
             {
                 Swap(_tiles[Random.Range(0, _tiles.Count)], false);
+            }
+
+            foreach (var tile in _tiles)
+            {
+                tile.gameObject.SetActive(false);
             }
         }
 
@@ -80,12 +91,11 @@ namespace FifteenPuzzle
             if (Vector3.Distance(tile.transform.position, emptySpace) < tileSize + 0.1f)
             {
                 Swap(tile);
-
                 CompletionCheck();
             }
         }
 
-        void Swap(Tile tile, bool animation=true)
+        void Swap(Tile tile, bool animation = true)
         {
             Vector3 tilePos = tile.TargetPosition;
             if (animation)
@@ -98,7 +108,7 @@ namespace FifteenPuzzle
         void CompletionCheck()
         {
             bool inPlace = true;
-            foreach(var tile in _tiles)
+            foreach (var tile in _tiles)
             {
                 if (!tile.IsInPlace())
                 {
@@ -108,6 +118,20 @@ namespace FifteenPuzzle
             }
 
             allInPlace = inPlace;
+            if (allInPlace) {
+                Debug.Log("¡Felicidades!");
+            }
+        }
+
+        // Método para alternar la visibilidad de las piezas
+        public void ToggleTilesVisibility()
+        {
+            areTilesVisible = !areTilesVisible;
+
+            foreach (var tile in _tiles)
+            {
+                tile.gameObject.SetActive(areTilesVisible);
+            }
         }
     }
 }

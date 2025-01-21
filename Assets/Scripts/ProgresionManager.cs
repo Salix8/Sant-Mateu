@@ -1,12 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using static GlobalManager;
+using UnityEngine.SceneManagement;
+using static ProgresionManager;
 
 public class ProgresionManager : MonoBehaviour
 {
+    public enum SceneType
+    {
+        MainScene,          // 0
+        Puz_1_Villores,     // 1
+        Puz_2_Villores,     // 2
+        Puz_3_Plaza,        // 3
+        Puz_4_Arciprestal,  // 4
+        Puz_5_Muralla,      // 5
+        Puz_6_Borrull,      // 6
+        Puz_7_Callejon,     // 7
+        Puz_8_Horno,        // 8
+        Puz_9_Fuente,       // 9
+        Puz_10_Pere,        // 10
+        Puz_11_Convento     // 11
+    }
+
     [SerializeField] public bool puzleQRCompletado = true;
     [SerializeField] public bool sello1Villores    = false;
     [SerializeField] public bool sello2Villores    = false;
@@ -21,22 +37,28 @@ public class ProgresionManager : MonoBehaviour
     [SerializeField] public bool sello11Convento   = false;
     [SerializeField] public bool sello12Reloj      = false;
 
-    private Dictionary<string, bool> zoneObjectStates = new Dictionary<string, bool>();
+    [SerializeField] private TextAsset[] dialogosAlCompletarPuzles;
 
+    
 
+    string currentZone = "";
 
 
     private static ProgresionManager instance;
 
-    public void Awake()
+    void Awake()
     {
         if (instance != null)
         {
             Debug.LogWarning("Se ha encontrado mas de un ProgresionManager en la escena");
+            gameObject.SetActive(false);
+            // Destroy(gameObject);
+            return;
         }
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
     public static ProgresionManager GetInstance()
     {
         return instance;
@@ -48,90 +70,128 @@ public class ProgresionManager : MonoBehaviour
         {
             case 0:
                 puzleQRCompletado = true;
-                Debug.Log("Puzle QR completado.");
+                Debug.Log($"Puzle QR completado id: {id}.");
                 break;
             case 1:
                 sello1Villores = true;
-                Debug.Log("Sello 1 (Villores) completado.");
+                Debug.Log($"Sello {id} (Villores) completado.");
                 break;
             case 2:
                 sello2Villores = true;
-                Debug.Log("Sello 2 (Villores) completado.");
+                Debug.Log($"Sello {id} (Villores) completado.");
                 break;
             case 3:
                 sello3PlazaMayor = true;
-                Debug.Log("Sello 3 (Plaza Mayor) completado.");
+                Debug.Log($"Sello {id} (Plaza Mayor) completado.");
                 break;
             case 4:
                 sello4Arciprestal = true;
-                Debug.Log("Sello 4 (Arciprestal) completado.");
+                Debug.Log($"Sello {id} (Arciprestal) completado.");
                 break;
             case 5:
                 sello5Muralla = true;
-                Debug.Log("Sello 5 (Muralla) completado.");
+                Debug.Log($"Sello {id} (Muralla) completado.");
                 break;
             case 6:
                 sello6Borrull = true;
-                Debug.Log("Sello 6 (Borrull) completado.");
+                Debug.Log($"Sello {id} (Borrull) completado.");
                 break;
             case 7:
                 sello7Judios = true;
-                Debug.Log("Sello 7 (Judíos) completado.");
+                Debug.Log($"Sello {id} (Judíos) completado.");
                 break;
             case 8:
                 sello8Horno = true;
-                Debug.Log("Sello 8 (Horno) completado.");
+                Debug.Log($"Sello {id} (Horno) completado.");
                 break;
             case 9:
                 sello9Fuente = true;
-                Debug.Log("Sello 9 (Fuente) completado.");
+                Debug.Log($"Sello {id} (Fuente) completado.");
                 break;
             case 10:
                 sello10SantPere = true;
-                Debug.Log("Sello 10 (Sant Pere) completado.");
+                Debug.Log($"Sello {id} (Sant Pere) completado.");
                 break;
             case 11:
                 sello11Convento = true;
-                Debug.Log("Sello 11 (Convento) completado.");
+                Debug.Log($"Sello {id} (Convento) completado.");
                 break;
             case 12:
                 sello12Reloj = true;
-                Debug.Log("Sello 12 (Reloj) completado.");
+                Debug.Log($"Sello {id} (Reloj) completado.");
                 break;
             default:
-                Debug.LogWarning("ID no reconocido: " + id);
+                Debug.LogWarning($"ID no reconocido: {id}");
                 break;
+        }
+
+        RestoreZoneObjectState();
+
+        DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
+    }
+
+    void ChangeZone(string nextZone)
+    {
+        Debug.Log($"Escena a la que tendremos que cambiar = {currentZone}.");
+        if (!DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            GlobalManager.GetInstance().SetActiveZone(nextZone);
+            GlobalManager.GetInstance().HideMainMenu();
+            
+            AudioPasos.GetInstance().PlayOneShot(); //Por defecto suenan los pasos
         }
     }
 
 
-    public void SaveZoneObjectState(GameObject[] objects)
+    void SaveZoneState()
     {
-        zoneObjectStates.Clear();  // Limpiar cualquier estado previo
-
-        foreach (GameObject obj in objects)
+        GameObject[] zonesObjects = GlobalManager.GetInstance().GetZonesObjects();
+        foreach (GameObject zone in zonesObjects)
         {
-            zoneObjectStates[obj.name] = obj.activeSelf;  // Guardar el estado de cada objeto
+            if (zone.activeSelf)
+            {
+                currentZone = zone.name;
+            }
         }
+        Debug.Log($"La zona actual es: {currentZone}; SaveZoneState()");
     }
 
     // Restaurar el estado de los objetos de la zona
-    public void RestoreZoneObjectState(GameObject[] objects)
+    void RestoreZoneObjectState()
     {
-        GameObject[] allObjects = GlobalManager.GetInstance().GetAllObjects();
-        foreach (GameObject obj in allObjects)
-        {
-            obj.SetActive(false);
-            //if (isDebug) Debug.Log("Path: " + obj);
-        }
+        if (currentZone != null)
+            ChangeZone(currentZone);
+        else
+            Debug.LogWarning($"No se ha encontrado una currentZone: {currentZone}. Script progresionManager.");
+    }
 
-        foreach (GameObject obj in objects)
-        {
-            if (zoneObjectStates.ContainsKey(obj.name))
-            {
-                obj.SetActive(zoneObjectStates[obj.name]);  // Restaurar el estado guardado
-            }
-        }
+    public void LoadSceneMinijuego(int num)
+    {
+        SaveZoneState();
+        Debug.Log($"Se cambia a la escena {(SceneType)num}; LoadSceneMinijuego(int)");
+        SceneManager.LoadScene(num);
+        GlobalManager.GetInstance().RefreshObjects();
+    }
+
+    public void LoadMainScene()
+    {
+        SceneManager.sceneLoaded += FinishMainSceneLoad;
+        SceneManager.LoadScene(0);
+
+    }
+
+    void FinishMainSceneLoad(Scene scene, LoadSceneMode mode)
+    {
+        SceneManager.sceneLoaded -= FinishMainSceneLoad;
+
+        GlobalManager.GetInstance().RefreshObjects();
+        RestoreZoneObjectState();
+    }
+
+    public void ReloadScene()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(sceneName);
     }
 
 

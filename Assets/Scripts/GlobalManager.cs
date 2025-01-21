@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Timeline.Actions;
+using UnityEditor;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GlobalManager : MonoBehaviour
@@ -13,21 +11,13 @@ public class GlobalManager : MonoBehaviour
     private GameObject[] zonesObjects;
     private GameObject[] allObjects;
     private List<GameObject> activeObjectsList;
+    [SerializeField] private GameObject[] activeObjectsDefault;
 
-    public enum SceneType
+    [System.Serializable]
+    public class ObjectState
     {
-        MainScene,          // 0
-        Puz_1_Villores,     // 1
-        Puz_2_Villores,     // 2
-        Puz_3_Plaza,        // 3
-        Puz_4_Arciprestal,  // 4
-        Puz_5_Muralla,      // 5
-        Puz_6_Borrull,      // 6
-        Puz_7_Callejon,     // 7
-        Puz_8_Horno,        // 8
-        Puz_9_Fuente,       // 9
-        Puz_10_Pere,        // 10
-        Puz_11_Convento     // 11
+        public string name; // Nombre del objeto
+        public bool isActive; // Estado del objeto
     }
 
 
@@ -39,39 +29,49 @@ public class GlobalManager : MonoBehaviour
         if (instance != null)
         {
             Debug.LogWarning("Se ha encontrado mas de un GlobalManager en la escena");
+            Destroy(gameObject);
             return;
         }
         instance = this;
         DontDestroyOnLoad(gameObject);
+        InitializeObjects();
+    }
 
+    void InitializeObjects()
+    {
+        Debug.Log("InitializeObjects");
         allObjects = FindObjectsOfType<GameObject>();
         activeObjectsList = new List<GameObject>();
 
         pathObjects = GameObject.FindGameObjectsWithTag("Path");
+        zonesObjects = GameObject.FindGameObjectsWithTag("Escena");
+
         foreach (GameObject obj in pathObjects)
         {
             obj.SetActive(false);
             if (isDebug) Debug.Log("Path: " + obj);
         }
-        zonesObjects = GameObject.FindGameObjectsWithTag("Escena");
         foreach (GameObject obj in zonesObjects)
         {
             obj.SetActive(false);
             if (isDebug) Debug.Log("Escena: " + obj);
         }
-    }
 
-    public GameObject[] SetActiveObjects()
+    }
+    public void RefreshObjects()
     {
-        foreach (GameObject obj in allObjects)
+        InitializeObjects();
+    }
+    public void SetActiveZone(string zoneName)
+    {
+        foreach (GameObject obj in zonesObjects)
         {
-            if (obj.activeInHierarchy) // Verifica si está activo en la jerarquía
+            if (obj.name == zoneName)
             {
-                Debug.Log(obj);
-                activeObjectsList.Add(obj);
+                obj.SetActive(true);
+                if (isDebug) Debug.Log("Escena: " + obj);
             }
         }
-        return activeObjectsList.ToArray();
     }
 
     public void SetPathObject(bool isEnable)
@@ -80,6 +80,15 @@ public class GlobalManager : MonoBehaviour
         {
             obj.SetActive(isEnable);
             if (isDebug) Debug.Log("Path: " + obj);
+        }
+    }
+
+    public void SetZonesFalse()
+    {
+        foreach (GameObject obj in zonesObjects)
+        {
+            obj.SetActive(false);
+            if (isDebug) Debug.Log("Escena: " + obj);
         }
     }
 
@@ -96,6 +105,12 @@ public class GlobalManager : MonoBehaviour
     {
         return allObjects;
     }
+
+    public GameObject[] GetActiveObjectsDefault()
+    {
+        return activeObjectsDefault;
+    }
+
 
     public GameObject[] GetActiveObjects()
     {
@@ -115,19 +130,17 @@ public class GlobalManager : MonoBehaviour
 
 
 
-    public void LoadScene(SceneType sceneType)      // Convierte el enum a string y carga la escena
+
+    public void HideMainMenu()
     {
-        Debug.Log($"Se cambia a la escena {sceneType}");
-        SceneManager.LoadScene(sceneType.ToString());
+        GameObject menuInicial = GameObject.FindGameObjectWithTag("MenuInicial");
+        menuInicial.SetActive(false);
+        GameObject[] startObjects = GameObject.FindGameObjectWithTag("ObjetosInicio").GetComponent<ObjectCollection>().Objects;
+        foreach (GameObject obj in startObjects)
+        {
+            obj.SetActive(true);
+        }
     }
-
-    public void LoadMainScene()
-    {
-        SceneManager.LoadScene(SceneType.MainScene.ToString());
-    }
-
-
-
 
 
 }

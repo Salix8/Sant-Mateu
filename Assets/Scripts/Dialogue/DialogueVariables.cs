@@ -7,13 +7,12 @@ using System.IO;
 public class DialogueVariables
 {
     public Dictionary<string, Ink.Runtime.Object> variables { get; private set; }
-    
-    public DialogueVariables(string globalsFilePath) 
+    private Story globalVariablesStory;
+
+    public DialogueVariables(TextAsset loadGlobalsJSON) 
     {
         // Compile story
-        string inkFileComponents = File.ReadAllText(globalsFilePath);
-        Ink.Compiler compiler = new Ink.Compiler(inkFileComponents);
-        Story globalVariablesStory = compiler.Compile();
+        globalVariablesStory = new Story(loadGlobalsJSON.text);
 
         // inicializar el diccionario
         variables = new Dictionary<string, Ink.Runtime.Object>();
@@ -21,7 +20,7 @@ public class DialogueVariables
         {
             Ink.Runtime.Object value = globalVariablesStory.variablesState.GetVariableWithName(name);
             variables.Add(name, value);
-            //Debug.Log("Inicializada variable global de dialogo: " + name + " = " + value);
+            Debug.Log("Initialized global dialogue variable: " + name + " = " + value);
         }
 
     }
