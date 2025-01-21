@@ -1390,6 +1390,8 @@ MonoBehaviour:
   lupa: {fileID: 86621984}
   canvas: {fileID: 1672999928}
   botonInstrucciones: {fileID: 1599832548}
+  contadorTexto: {fileID: 1968741792}
+  contadorShakeImage: {fileID: 1218207438}
 --- !u!114 &1672999926
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class ArciprestalController : MonoBehaviour
 {
@@ -8,6 +9,12 @@ public class ArciprestalController : MonoBehaviour
     public Canvas canvas;
     public GameObject botonInstrucciones;
 
+    // Nuevas referencias
+    public TextMeshProUGUI contadorTexto; // Texto del contador
+    public GameObject contadorShakeImage; // Imagen que hará el shake
+
+    private int contador = 0; // Contador actual
+    private int maxContador = 5; // Número total de botones a encontrar
     private int restantes = 5;
     private bool isLupaActive = false;
     private bool isInstruccionesActive = true;
@@ -56,6 +63,9 @@ public class ArciprestalController : MonoBehaviour
     {
         StartCoroutine(AnimateButton(bt));
         restantes--;
+
+        // Actualizar el contador y animar el shake y el zoom
+        ActualizarContador();
 
         if (restantes == 0)
         {
@@ -118,4 +128,50 @@ public class ArciprestalController : MonoBehaviour
         // Desactivar el botón después de la animación
         button.SetActive(false);
     }
+
+    private void ActualizarContador()
+    {
+        contador++; // Incrementar el contador
+        contadorTexto.text = $"{contador}/{maxContador}"; // Actualizar el texto del contador
+
+        
+
+        // Lanzar la animación de escalado (zoom)
+        StartCoroutine(ScaleImage());
+    }
+
+
+
+    private IEnumerator ScaleImage()
+    {
+        float duration = 0.3f; // Duración de la animación
+        float scaleFactor = 1.2f; // Factor de escala (10% más grande)
+
+        Vector3 originalScale = contadorShakeImage.transform.localScale; // Guardamos el tamaño original
+       
+
+        // Fase de agrandamiento
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            float scaleLerp = Mathf.Lerp(1f, scaleFactor, elapsed / duration); // Interpolamos entre el tamaño original y el aumentado
+            contadorShakeImage.transform.localScale = originalScale * scaleLerp; // Aplicamos el cambio de escala
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        
+        elapsed = 0f;
+        while (elapsed < duration)
+        {
+            float scaleLerp = Mathf.Lerp(scaleFactor, 1f, elapsed / duration); 
+            contadorShakeImage.transform.localScale = originalScale * scaleLerp;
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+      
+        contadorShakeImage.transform.localScale = originalScale;
+    }
+
 }
