@@ -26,38 +26,38 @@ public class RotatePipes : MonoBehaviour
     {
         PossibleRots = correctRotation.Length;
 
-        // Inicializar la rotación aleatoria pero evitar que esté en la posición correcta
+        // Inicializar la rotaciï¿½n aleatoria pero evitar que estï¿½ en la posiciï¿½n correcta
         int randIndex;
         do
         {
-            randIndex = Random.Range(0, rotations.Length); // Elegir un índice aleatorio
+            randIndex = Random.Range(0, rotations.Length); // Elegir un ï¿½ndice aleatorio
             transform.eulerAngles = new Vector3(0, 0, rotations[randIndex]);
         }
-        while (IsCorrectRotation()); // Asegurarse de que no empiece en una rotación correcta
+        while (IsCorrectRotation()); // Asegurarse de que no empiece en una rotaciï¿½n correcta
 
-        // Hacer la pieza más oscura al inicio
+        // Hacer la pieza mï¿½s oscura al inicio
         if (spriteRenderer == null)
         {
-            spriteRenderer = GetComponent<SpriteRenderer>(); // Intenta obtener el SpriteRenderer automáticamente
+            spriteRenderer = GetComponent<SpriteRenderer>(); // Intenta obtener el SpriteRenderer automï¿½ticamente
         }
         spriteRenderer.color = new Color(0.5f, 0.5f, 0.5f); // Color oscuro
     }
 
     private void OnMouseDown()
     {
-        // Si la pieza ya está en su lugar, no permite moverla
+        // Si la pieza ya estï¿½ en su lugar, no permite moverla
         if (isPlaced) return;
 
         // Rotar la pieza
         RotatePiece();
 
-        // Verificar si la nueva rotación es correcta
+        // Verificar si la nueva rotaciï¿½n es correcta
         CheckPlacement();
     }
 
     private void RotatePiece()
     {
-        // Rotar exactamente 90 grados y ajustar la rotación para evitar problemas flotantes
+        // Rotar exactamente 90 grados y ajustar la rotaciï¿½n para evitar problemas flotantes
         float currentZ = NormalizeRotation(transform.eulerAngles.z);
         float nextRotation = currentZ + 90;
         if (nextRotation >= 360) nextRotation -= 360; // Asegurar que no exceda 360
@@ -66,22 +66,37 @@ public class RotatePipes : MonoBehaviour
 
     private void CheckPlacement()
     {
-        // Verificar si la pieza está en la posición correcta
+        // Verificar si la pieza estÃ¡ en la posiciÃ³n correcta
         if (IsCorrectRotation() && !isPlaced)
         {
             isPlaced = true;
             gameManager.CorrectMove();
-            spriteRenderer.color = Color.white; // Cambia el color a blanco
+            StartCoroutine(ChangeColor(spriteRenderer.color, Color.white, 0.5f)); // TransiciÃ³n a blanco
         }
         else if (!IsCorrectRotation() && isPlaced)
         {
             isPlaced = false;
             gameManager.WrongMove();
-            spriteRenderer.color = new Color(0.5f, 0.5f, 0.5f); // Vuelve al color oscuro
+            spriteRenderer.color = new Color(0.5f, 0.5f, 0.5f); // Cambio directo al color oscuro
         }
     }
 
-    // Método para verificar si la rotación actual es correcta
+    private IEnumerator ChangeColor(Color startColor, Color endColor, float duration)
+    {
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            spriteRenderer.color = Color.Lerp(startColor, endColor, elapsed / duration);
+            yield return null;
+        }
+
+        spriteRenderer.color = endColor; // AsegÃºrate de establecer el color final
+    }
+
+
+    // Mï¿½todo para verificar si la rotaciï¿½n actual es correcta
     private bool IsCorrectRotation()
     {
         float currentRotation = NormalizeRotation(transform.eulerAngles.z);
@@ -96,11 +111,11 @@ public class RotatePipes : MonoBehaviour
         return false;
     }
 
-    // Método para normalizar la rotación (conviértela a valores de 0° a 360°)
+    // Mï¿½todo para normalizar la rotaciï¿½n (conviï¿½rtela a valores de 0ï¿½ a 360ï¿½)
     private float NormalizeRotation(float rotation)
     {
         rotation = rotation % 360; // Mantiene el valor en [-360, 360]
         if (rotation < 0) rotation += 360; // Convierte valores negativos a positivos
-        return Mathf.Round(rotation); // Redondea la rotación a números enteros
+        return Mathf.Round(rotation); // Redondea la rotaciï¿½n a nï¿½meros enteros
     }
 }
