@@ -427,6 +427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 1083174060}
   isDebug: 1
+  transicionmenu: {fileID: 1516383370}
 --- !u!1001 &57038296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3345,6 +3346,7 @@ GameObject:
   - component: {fileID: 309180226}
   - component: {fileID: 309180231}
   - component: {fileID: 309180230}
+  - component: {fileID: 309180232}
   m_Layer: 5
   m_Name: Opciones
   m_TagString: Untagged
@@ -3427,6 +3429,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 0
+      - m_Target: {fileID: 309180232}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: MenuAManejar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &309180227
 MonoBehaviour:
@@ -3487,7 +3501,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309180224}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
   m_Name: 
@@ -3497,6 +3511,21 @@ MonoBehaviour:
   menuTelefono: {fileID: 959629509}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
+--- !u!114 &309180232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309180224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0040f11c2adf4e646acebe560818e8d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 959629509}
+  isDebug: 1
+  transicionmenu: {fileID: 1516383370}
 --- !u!1 &313227033
 GameObject:
   m_ObjectHideFlags: 0
@@ -9494,6 +9523,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1516383370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8843801661361700400, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+  m_PrefabInstance: {fileID: 7079487518839091557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1516383372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516383370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 862fd73597fdb6b4ab92ce981c96084b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1585859245 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8805350521206537111, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
@@ -9949,6 +9995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 959629509}
   isDebug: 1
+  transicionmenu: {fileID: 1516383370}
 --- !u!1001 &1682989593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10663,6 +10710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 1843951775}
   isDebug: 1
+  transicionmenu: {fileID: 1516383370}
 --- !u!1 &1792226343
 GameObject:
   m_ObjectHideFlags: 0
@@ -12869,6 +12917,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8758239333819371527}
     m_Modifications:
+    - target: {fileID: 881162904468154399, guid: c8877e35486c17f459ef6f8529f3797e, type: 3}
+      propertyPath: transicionmenu
+      value: 
+      objectReference: {fileID: 1516383370}
     - target: {fileID: 1034442835929824696, guid: c8877e35486c17f459ef6f8529f3797e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -13187,6 +13239,10 @@ PrefabInstance:
       propertyPath: menu
       value: 
       objectReference: {fileID: 959629509}
+    - target: {fileID: 2736453000827940205, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: transicionmenu
+      value: 
+      objectReference: {fileID: 1516383370}
     - target: {fileID: 5001812472701212108, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -13981,6 +14037,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5576990112593190238, guid: 2e33cd87c98c3104bb42ad3575ea0d0a, type: 3}
+      propertyPath: transicionmenu
+      value: 
+      objectReference: {fileID: 1516383370}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14747,6 +14807,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8758239333819371527}
     m_Modifications:
+    - target: {fileID: 1905943856988432822, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1470.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905943856988432822, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1706.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905943856988432822, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1808.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905943856988432822, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 12.75
+      objectReference: {fileID: 0}
     - target: {fileID: 3529796266885769315, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -14827,14 +14903,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287836413133849815, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1463.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287836413133849815, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1706.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287836413133849815, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1829.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287836413133849815, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 12.74
+      objectReference: {fileID: 0}
     - target: {fileID: 8843801661361700400, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
       propertyPath: m_Name
       value: "Transici\xF3nMenus"
       objectReference: {fileID: 0}
+    - target: {fileID: 8843801661361700400, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8843801661361700400, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1516383372}
   m_SourcePrefab: {fileID: 100100000, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
 --- !u!114 &7158015842742695477
 MonoBehaviour:
