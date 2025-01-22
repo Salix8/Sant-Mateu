@@ -65,8 +65,11 @@ namespace FifteenPuzzle
 
             Camera.main.transform.position = new Vector3(rowSize / 2f, -rowSize / 2f, -10f);
             Camera.main.orthographicSize = (rowSize * tileSize) + 1f;
-
-            Invoke("Shuffle", 0.5f);
+            foreach (var tile in _tiles)
+            {
+                tile.gameObject.SetActive(false);
+            }
+            Invoke("Shuffle", 0.01f);
 
         }
 
@@ -77,10 +80,7 @@ namespace FifteenPuzzle
                 Swap(_tiles[Random.Range(0, _tiles.Count)], false);
             }
 
-            foreach (var tile in _tiles)
-            {
-                tile.gameObject.SetActive(false);
-            }
+           
         }
 
         public void ClickedTile(Tile tile)
