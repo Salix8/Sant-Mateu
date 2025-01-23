@@ -11,13 +11,14 @@ namespace FifteenPuzzle
 
         [SerializeField] GameObject _tilePrefab;
         public List<Sprite> imageParts;
-        public List<Tile> tiles = new List<Tile>(); // Lista de tiles
+        List<Tile> _tiles = new List<Tile>();
 
         Vector3 emptySpace = Vector3.zero;
 
         float tileSize = 1.3f;
 
         bool allInPlace = false;
+        bool areTilesVisible = false; // Estado de visibilidad de las piezas
 
         public static GameManager Instance;
 
@@ -28,19 +29,12 @@ namespace FifteenPuzzle
 
         void Start()
         {
-            StartCoroutine(SetupGame()); // Inicia la secuencia de configuración del juego
-           
-        }
-
-        IEnumerator SetupGame()
-        {
             int rowSize = 3;
             int gridSize = rowSize * rowSize;
 
             float x = 0f;
             float y = 0f;
 
-            // Instanciación de los tiles
             for (int i = 0; i < gridSize; i++)
             {
                 if (i % rowSize == 0 && i != 0)
@@ -59,33 +53,34 @@ namespace FifteenPuzzle
                 var tileScript = tileObj.GetComponent<Tile>();
 
                 tileObj.transform.position = new Vector3(x, y, 0f);
+                Debug.Log($"Tile {i} instanciado y asignado");
+
                 tileScript.SetImage(imageParts[i]);
-                tiles.Add(tileScript); // Añadir el tile a la lista de tiles
+                _tiles.Add(tileScript);
 
                 OnTileCreated?.Invoke(tileObj);
 
                 x += tileSize;
             }
 
-            // Espera 1 frame para asegurarse de que todo está instanciado antes de continuar
-            yield return null;
-
-            // Ahora que los tiles están creados, configura la cámara
             Camera.main.transform.position = new Vector3(rowSize / 2f, -rowSize / 2f, -10f);
             Camera.main.orthographicSize = (rowSize * tileSize) + 1f;
+            foreach (var tile in _tiles)
+            {
+                tile.gameObject.SetActive(false);
+            }
+            Invoke("Shuffle", 0.01f);
 
-            // Activar todos los tiles
-            
-
-            Invoke("Shuffle", 0.01f); // Mezclar los tiles después de haberlos activado
         }
 
         void Shuffle()
         {
             for (int i = 0; i < 100; i++)
             {
-                Swap(tiles[Random.Range(0, tiles.Count)], false);
+                Swap(_tiles[Random.Range(0, _tiles.Count)], false);
             }
+
+           
         }
 
         public void ClickedTile(Tile tile)
@@ -113,7 +108,7 @@ namespace FifteenPuzzle
         void CompletionCheck()
         {
             bool inPlace = true;
-            foreach (var tile in tiles)
+            foreach (var tile in _tiles)
             {
                 if (!tile.IsInPlace())
                 {
@@ -123,9 +118,19 @@ namespace FifteenPuzzle
             }
 
             allInPlace = inPlace;
-            if (allInPlace)
-            {
+            if (allInPlace) {
                 Debug.Log("¡Felicidades!");
+            }
+        }
+
+        // Método para alternar la visibilidad de las piezas
+        public void ToggleTilesVisibility()
+        {
+            areTilesVisible = !areTilesVisible;
+
+            foreach (var tile in _tiles)
+            {
+                tile.gameObject.SetActive(areTilesVisible);
             }
         }
     }
