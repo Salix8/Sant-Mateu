@@ -8,6 +8,8 @@ public class MenuController : MonoBehaviour
     [SerializeField] private bool isDebug = true;
     [SerializeField] private GameObject transicionmenu;
 
+    private bool switcher = false;
+
     private Animator transition;
 
     void Start()
@@ -27,13 +29,13 @@ public class MenuController : MonoBehaviour
 
     private IEnumerator WaitForAnimation(Animator animator, string stateName)
     {
-        // Espera hasta que la animación esté en el estado deseado
+        // Espera hasta que la animaciï¿½n estï¿½ en el estado deseado
         while (!animator.GetCurrentAnimatorStateInfo(0).IsName(stateName))
         {
             yield return null; // Espera un frame
         }
 
-        // Espera hasta que la animación termine
+        // Espera hasta que la animaciï¿½n termine
         while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
         {
             yield return null; // Espera un frame
@@ -45,13 +47,21 @@ public class MenuController : MonoBehaviour
         if (menu.activeSelf)
         {
             menu.SetActive(false);
-
-
+            if(switcher){
+                //imagen.SetActive(true);
+                switcher = false;
+                Time.timeScale = 0;
+            }
             if (isDebug) Debug.Log($"Se ha cerrado el menu: {menu}. MenuController.MenuAManejar()");
         }
         else
         {
             menu.SetActive(true);
+            if(!switcher){
+                //imagen.SetActive(false);
+                switcher = true;
+                Time.timeScale = 1;
+            }
             if (isDebug) Debug.Log($"Se ha abierto el menu: {menu}. MenuController.MenuAManejar()");
         }
 
