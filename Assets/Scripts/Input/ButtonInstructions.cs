@@ -6,52 +6,31 @@ public class ButtonInstructions : MonoBehaviour
 {
     private bool switcher = false;
 
-    public GameObject imagen; // Imagen del panel de instrucciones
-    private bool areTilesVisible = false; // Estado de visibilidad de las piezas
+    public GameObject imagen;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Esperamos a que se inicialicen los tiles
-        Time.timeScale = 0;
-        foreach (var tile in FifteenPuzzle.GameManager.Instance.tiles)
-        {
-            tile.gameObject.SetActive(areTilesVisible);
-        }
-
-
+        Time.timeScale = 0;   
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-    public void ToggleInstructionsAndTiles()
+    public void change ()
     {
-        // Cambiar el estado de la imagen (como lo hacía change())
-        if (switcher)
-        {
+        if(switcher){
             imagen.SetActive(true);
             switcher = false;
             Time.timeScale = 0;
         }
-        else
-        {
+        else{
             imagen.SetActive(false);
             switcher = true;
             Time.timeScale = 1;
         }
-
-        // Alternar la visibilidad de los tiles (como lo hacía ToggleTilesVisibility())
-        areTilesVisible = !areTilesVisible;
-
-        // Alternar la visibilidad de todos los tiles en el GameManager
-        foreach (var tile in FifteenPuzzle.GameManager.Instance.tiles)
-        {
-            tile.gameObject.SetActive(areTilesVisible);
-        }
     }
-
 }
