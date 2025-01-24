@@ -12,6 +12,8 @@ public class MenuController : MonoBehaviour
 
     private Animator transition;
 
+    [SerializeField] private bool playTransition = false;
+
     void Start()
     {
         transition = transicionmenu.GetComponent<Animator>();
@@ -20,11 +22,28 @@ public class MenuController : MonoBehaviour
 
     public void MenuAManejar()
     {
-        transition.SetTrigger("Ejecuta");
+        //Time.timeScale = 0;
+        if (playTransition) {
+            transition.SetTrigger("Ejecuta");
 
-        
-        
-        StartCoroutine(WaitForAnimation(transition, "MenuOut"));
+            StartCoroutine(WaitForAnimation(transition, "MenuOut"));
+            StartCoroutine(WaitForBlock(transition, "MenuIn"));
+        }
+        else {
+            if (menu.activeSelf)
+            {
+                menu.SetActive(false);
+                //Debug.Log($"{switcher}");
+                if (isDebug) Debug.Log($"Se ha cerrado el menu: {menu}. MenuController.MenuAManejar()");
+                //Time.timeScale = 0;
+            }
+            else
+            {
+                menu.SetActive(true);
+                if (isDebug) Debug.Log($"Se ha abierto el menu: {menu}. MenuController.MenuAManejar()");
+            }
+            Time.timeScale = 1;
+        }
     }
 
     private IEnumerator WaitForAnimation(Animator animator, string stateName)
@@ -47,23 +66,40 @@ public class MenuController : MonoBehaviour
         if (menu.activeSelf)
         {
             menu.SetActive(false);
-            if(switcher){
-                //imagen.SetActive(true);
-                switcher = false;
-                Time.timeScale = 0;
-            }
+            //Debug.Log($"{switcher}");
             if (isDebug) Debug.Log($"Se ha cerrado el menu: {menu}. MenuController.MenuAManejar()");
+            //Time.timeScale = 0;
         }
         else
         {
             menu.SetActive(true);
-            if(!switcher){
-                //imagen.SetActive(false);
-                switcher = true;
-                Time.timeScale = 1;
-            }
             if (isDebug) Debug.Log($"Se ha abierto el menu: {menu}. MenuController.MenuAManejar()");
         }
+        Time.timeScale = 1;
 
+    }
+
+    private IEnumerator WaitForBlock(Animator animator, string stateName)
+    {
+        // Espera hasta que la animaci�n est� en el estado deseado
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsName(stateName))
+        {
+            yield return null; // Espera un frame
+        }
+
+        // Espera hasta que la animaci�n termine
+        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+        {
+            yield return null; // Espera un frame
+        }
+
+        if (menu.activeSelf) {
+            Time.timeScale = 0;
+        }
+
+    }
+
+    public void cambiarTiempo() {
+        Time.timeScale = 1;
     }
 }

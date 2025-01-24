@@ -14,8 +14,10 @@ public class TransiciónMenus : MonoBehaviour
     }
 
     public void MenuIn()
-    { animator.Play("MenuIn"); }
+    { animator.Play("MenuIn"); 
+      }
 
     public void MenuOut()
-    { animator.Play("MenuOut"); }
+    { animator.Play("MenuOut"); 
+      }
 }
