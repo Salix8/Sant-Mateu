@@ -545,6 +545,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1626352014}
     m_Modifications:
+    - target: {fileID: 881162904468154399, guid: c8877e35486c17f459ef6f8529f3797e, type: 3}
+      propertyPath: transicionmenu
+      value: 
+      objectReference: {fileID: 61346161}
     - target: {fileID: 1034442835929824696, guid: c8877e35486c17f459ef6f8529f3797e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -865,6 +869,10 @@ PrefabInstance:
     - target: {fileID: 3763284857500501909, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
       propertyPath: m_Name
       value: "Transici\xF3nMinijuegos"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3763284857500501909, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1264,7 +1272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8843801661361700400, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1846,6 +1854,10 @@ PrefabInstance:
       propertyPath: menu
       value: 
       objectReference: {fileID: 1622550877}
+    - target: {fileID: 4842940669178287623, guid: e4987c71185330a4182cd7ba56f2d80c, type: 3}
+      propertyPath: transicionmenu
+      value: 
+      objectReference: {fileID: 61346161}
     - target: {fileID: 6808646693781591852, guid: e4987c71185330a4182cd7ba56f2d80c, type: 3}
       propertyPath: m_Name
       value: MenuPausa
@@ -1934,6 +1946,10 @@ PrefabInstance:
       propertyPath: menu
       value: 
       objectReference: {fileID: 563406584}
+    - target: {fileID: 8956260669728621705, guid: e4987c71185330a4182cd7ba56f2d80c, type: 3}
+      propertyPath: transicionmenu
+      value: 
+      objectReference: {fileID: 61346161}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2309,6 +2325,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5576990112593190238, guid: 2e33cd87c98c3104bb42ad3575ea0d0a, type: 3}
+      propertyPath: transicionmenu
+      value: 
+      objectReference: {fileID: 61346161}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2785,9 +2805,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1537346090}
     - target: {fileID: 2736453000827940205, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: playTransition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736453000827940205, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
       propertyPath: transicionmenu
       value: 
       objectReference: {fileID: 61346161}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2084042368}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: cambiarTiempo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5001812472701212108, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2878,6 +2930,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5001812472701212108, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
   m_PrefabInstance: {fileID: 2084042365}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2084042368 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2736453000827940205, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+  m_PrefabInstance: {fileID: 2084042365}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0040f11c2adf4e646acebe560818e8d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

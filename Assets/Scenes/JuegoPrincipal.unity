@@ -428,6 +428,7 @@ MonoBehaviour:
   menu: {fileID: 1083174060}
   isDebug: 1
   transicionmenu: {fileID: 1516383370}
+  playTransition: 0
 --- !u!1001 &57038296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3526,6 +3527,7 @@ MonoBehaviour:
   menu: {fileID: 959629509}
   isDebug: 1
   transicionmenu: {fileID: 1516383370}
+  playTransition: 1
 --- !u!1 &313227033
 GameObject:
   m_ObjectHideFlags: 0
@@ -9996,6 +9998,7 @@ MonoBehaviour:
   menu: {fileID: 959629509}
   isDebug: 1
   transicionmenu: {fileID: 1516383370}
+  playTransition: 0
 --- !u!1001 &1682989593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10711,6 +10714,7 @@ MonoBehaviour:
   menu: {fileID: 1843951775}
   isDebug: 1
   transicionmenu: {fileID: 1516383370}
+  playTransition: 0
 --- !u!1 &1792226343
 GameObject:
   m_ObjectHideFlags: 0
@@ -13239,6 +13243,10 @@ PrefabInstance:
       propertyPath: menu
       value: 
       objectReference: {fileID: 959629509}
+    - target: {fileID: 2736453000827940205, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: playTransition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2736453000827940205, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
       propertyPath: transicionmenu
       value: 
