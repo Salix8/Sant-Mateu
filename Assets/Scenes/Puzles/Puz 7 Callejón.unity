@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7db4334a6bd4d84580284d816136062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progressionmanagerproxy: {fileID: 806512348}
   _tilePrefab: {fileID: 7863992682159088339, guid: 403a7b8bcf7cf794fa54ee3e1841f45f, type: 3}
   imageParts:
   - {fileID: 21300000, guid: 9d7be4bfd3e22d24ab35fb4d533417ce, type: 3}
@@ -1374,6 +1375,10 @@ PrefabInstance:
     - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Name
       value: CambioMiniToEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 882366497294587228, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Pivot.x

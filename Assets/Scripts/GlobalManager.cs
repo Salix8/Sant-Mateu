@@ -12,6 +12,7 @@ public class GlobalManager : MonoBehaviour
     private GameObject[] allObjects;
     private List<GameObject> activeObjectsList;
     [SerializeField] private GameObject[] activeObjectsDefault;
+    public int nivelprogreso = 0;
 
     [System.Serializable]
     public class ObjectState
@@ -46,16 +47,39 @@ public class GlobalManager : MonoBehaviour
         pathObjects = GameObject.FindGameObjectsWithTag("Path");
         zonesObjects = GameObject.FindGameObjectsWithTag("Escena");
 
-        foreach (GameObject obj in pathObjects)
-        {
-            obj.SetActive(false);
-            if (isDebug) Debug.Log("Path: " + obj);
+        if (ProgresionManager.GetInstance() != null){
+            nivelprogreso = ProgresionManager.GetInstance().nivelprogreso;
         }
+
         foreach (GameObject obj in zonesObjects)
         {
             obj.SetActive(false);
             if (isDebug) Debug.Log("Escena: " + obj);
         }
+        
+
+        foreach (GameObject obj in pathObjects)
+        {
+            if(obj.activeSelf){
+                if(obj != null){
+                    ChangeZone changezone = obj.GetComponent<ChangeZone>();
+                    Debug.Log("Path: " + changezone);
+                    if(changezone != null){
+                        if (changezone.niveldesbloqueo > nivelprogreso){
+                            Debug.Log("entra");
+                            obj.SetActive(false);
+                            if (isDebug) Debug.Log("Path: " + obj);
+                        }
+                    }
+                    
+                }
+                
+            }
+            
+            
+        }
+    
+        
 
     }
     public void RefreshObjects()
@@ -78,8 +102,23 @@ public class GlobalManager : MonoBehaviour
     {
         foreach (GameObject obj in pathObjects)
         {
-            obj.SetActive(isEnable);
-            if (isDebug) Debug.Log("Path: " + obj);
+            if(obj.activeSelf){
+                if(obj != null){
+                    ChangeZone changezone = obj.GetComponent<ChangeZone>();
+                    Debug.Log("Path: " + changezone);
+                    if(changezone != null){
+                        if (changezone.niveldesbloqueo > nivelprogreso){
+                            Debug.Log("entra");
+                            obj.SetActive(isEnable);
+                            if (isDebug) Debug.Log("Path: " + obj);
+                        }
+                    }
+                    
+                }
+                
+            }
+            
+            
         }
     }
 

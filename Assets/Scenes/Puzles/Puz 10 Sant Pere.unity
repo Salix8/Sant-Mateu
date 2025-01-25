@@ -428,6 +428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CambioMiniToEscena
       objectReference: {fileID: 0}
+    - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 882366497294587228, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2190,6 +2194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e949437078b0754caafef19a4b335ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progressionmanagerproxy: {fileID: 1437594843}
   PipesHolder: {fileID: 1157717715}
   Pipes:
   - {fileID: 1216762710}

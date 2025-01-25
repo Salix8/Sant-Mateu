@@ -269,6 +269,7 @@ MonoBehaviour:
   vida: 3
   background: {fileID: 127589962}
   loseBackground: {fileID: 21300000, guid: 04fa2dfb72fa3ca4e95355f16454d1e5, type: 3}
+  progressionmanagerproxy: {fileID: 1019073685}
   timer: {fileID: 893390936}
   dialogo: {fileID: 4900000, guid: 15656f7f1820cc54bbaf2705669f960f, type: 3}
   dialogo2: {fileID: 4900000, guid: 7ff83c2f9cd15a54bb0711db9e3bc40f, type: 3}
@@ -2423,6 +2424,10 @@ PrefabInstance:
     - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Name
       value: CambioMiniToEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 882366497294587228, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Pivot.x

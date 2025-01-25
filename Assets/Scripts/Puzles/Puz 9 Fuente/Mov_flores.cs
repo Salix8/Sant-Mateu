@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Mov_flores : MonoBehaviour
 {
+    public ProgressionManagerProxy progressionmanagerproxy;
     // Flores
     public GameObject[] flowers;
     public GameObject p_spawn;
@@ -72,6 +73,7 @@ public class Mov_flores : MonoBehaviour
 
         if (current_time >= max_timer)
         {
+            progressionmanagerproxy.SetComplete(8);
             Debug.Log("Fin del juego");
             Finish_timer();
         }

@@ -17,6 +17,8 @@ public class VilloresPasadoManager : MonoBehaviour
     private int[] result = new int[4]; // Vector con los valores correctos
     private Color defaultColor; // Color predeterminado de los botones
 
+    public ProgressionManagerProxy progressionmanagerproxy; 
+
     void Start()
     {
         result[0] = 2;
@@ -133,6 +135,7 @@ public class VilloresPasadoManager : MonoBehaviour
         if (allCorrect)
         {
             Debug.Log("Has ganado");
+            progressionmanagerproxy.SetComplete(1);
         }
         else
         {

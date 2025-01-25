@@ -8,6 +8,7 @@ namespace FifteenPuzzle
     {
         public delegate void TileCreated(GameObject tile);
         public static event TileCreated OnTileCreated;
+        public ProgressionManagerProxy progressionmanagerproxy;
 
         [SerializeField] GameObject _tilePrefab;
         public List<Sprite> imageParts;
@@ -18,7 +19,7 @@ namespace FifteenPuzzle
         float tileSize = 1.3f;
 
         bool allInPlace = false;
-        bool areTilesVisible = false; // Estado de visibilidad de las piezas
+        bool areTilesVisible = true; // Estado de visibilidad de las piezas
 
         public static GameManager Instance;
 
@@ -65,11 +66,9 @@ namespace FifteenPuzzle
 
             Camera.main.transform.position = new Vector3(rowSize / 2f, -rowSize / 2f, -10f);
             Camera.main.orthographicSize = (rowSize * tileSize) + 1f;
-            foreach (var tile in _tiles)
-            {
-                tile.gameObject.SetActive(false);
-            }
-            Invoke("Shuffle", 0.01f);
+            //Invoke("Shuffle", 0.01f);
+            Shuffle();
+        
 
         }
 
@@ -119,6 +118,7 @@ namespace FifteenPuzzle
 
             allInPlace = inPlace;
             if (allInPlace) {
+                progressionmanagerproxy.SetComplete(6);
                 Debug.Log("¡Felicidades!");
             }
         }

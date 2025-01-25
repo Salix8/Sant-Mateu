@@ -8,6 +8,8 @@ public class ChangeZone : MonoBehaviour
     [SerializeField] private AudioClip interactionSound; // Sonido al interactuar
     [SerializeField] private AjusteSonido ajusteSonido; // Referencia al script de ajuste de sonido
     [SerializeField] private GameObject transicionnormal;
+    public int niveldesbloqueo;
+
 
     private Animator transition;
 
@@ -16,6 +18,7 @@ public class ChangeZone : MonoBehaviour
         transition = transicionnormal.GetComponent<Animator>();
 
     }
+
 
     public void OnMouseUp()
     {
@@ -55,7 +58,7 @@ public class ChangeZone : MonoBehaviour
         transform.parent.gameObject.SetActive(false);
         nextZone.gameObject.SetActive(true);
         ControlCursor.GetInstance().changeCursor("normal");
-        GlobalManager.GetInstance().SetPathObject(false);
+        
     }
 }
 

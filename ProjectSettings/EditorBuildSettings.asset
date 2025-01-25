@@ -47,5 +47,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzles/Puz 11 convento.unity
     guid: d65d685869e48664ab218633ceee78b6
+  - enabled: 1
+    path: Assets/Scenes/Puzles/Puzle 12 Torre.unity
+    guid: 1de6198106aafd74bbc2381f8861d90c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 948df37e011d88744a6b26604c93903b, type: 3}
