@@ -66,9 +66,9 @@ namespace FifteenPuzzle
 
             Camera.main.transform.position = new Vector3(rowSize / 2f, -rowSize / 2f, -10f);
             Camera.main.orthographicSize = (rowSize * tileSize) + 1f;
-            //Invoke("Shuffle", 0.01f);
-            Shuffle();
-        
+            Invoke("Shuffle", 0.01f);
+            Invoke("ToggleTilesVisibility", 0.01f);
+            
 
         }
 

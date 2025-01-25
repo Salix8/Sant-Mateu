@@ -5,13 +5,17 @@ using UnityEngine;
 public class ButtonInstructions : MonoBehaviour
 {
     private bool switcher = false;
+    public bool timeinit = false;
 
     public GameObject imagen;
 
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0;   
+        if (!timeinit){
+            Time.timeScale = 0;   
+        }
+        
     }
 
     // Update is called once per frame
@@ -31,6 +35,20 @@ public class ButtonInstructions : MonoBehaviour
             imagen.SetActive(false);
             switcher = true;
             Time.timeScale = 1;
+        }
+    }
+
+    public void changeNoTime ()
+    {
+        if(switcher){
+            imagen.SetActive(true);
+            switcher = false;
+            
+        }
+        else{
+            imagen.SetActive(false);
+            switcher = true;
+            
         }
     }
 }
