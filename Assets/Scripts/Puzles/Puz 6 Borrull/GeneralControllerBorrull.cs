@@ -7,6 +7,7 @@ public class GeneralControllerBorrull : MonoBehaviour
 {
     // Referencias a los contenedores de las líneas (configurados en el Editor)
     public List<Transform> lineContainers;
+    public ProgressionManagerProxy progressionmanagerproxy;
 
     // Imágenes para los diferentes tipos de objetos (0, 1, 2)
     public Image image0;
@@ -90,6 +91,7 @@ public class GeneralControllerBorrull : MonoBehaviour
         // Comprobar la condición de victoria
         if (CheckVictory())
         {
+            progressionmanagerproxy.SetComplete(5);
             Debug.Log("¡Has ganado! Todas las líneas son homogéneas o están vacías.");
         }
     }

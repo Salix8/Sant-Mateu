@@ -8,6 +8,7 @@ public class ArciprestalController : MonoBehaviour
     public GameObject lupa;
     public Canvas canvas;
     public GameObject botonInstrucciones;
+    public ProgressionManagerProxy progressionmanagerproxy;
 
     // Nuevas referencias
     public TextMeshProUGUI contadorTexto; // Texto del contador
@@ -70,6 +71,7 @@ public class ArciprestalController : MonoBehaviour
         if (restantes == 0)
         {
             Debug.Log("Has encontrado todos");
+            progressionmanagerproxy.SetComplete(3);
         }
     }
 

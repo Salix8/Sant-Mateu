@@ -6,6 +6,8 @@ public class QrManager : MonoBehaviour
     public static QrManager Instance;
     public List<MoverPiezas> draggableObjects; // Lista de objetos arrastrables
 
+    public ProgressionManagerProxy progressionmanagerproxy;
+
     private void Awake()
     {
         if (Instance == null)
@@ -20,16 +22,17 @@ public class QrManager : MonoBehaviour
 
     public void CheckCompletion()
     {
-        // Verificar si todos los objetos están correctamente colocados
+        // Verificar si todos los objetos estï¿½n correctamente colocados
         foreach (var draggableObject in draggableObjects)
         {
             if (!draggableObject.isCorrectlyPlaced)
             {
-                return; // Si hay al menos uno mal colocado, ya no está completo
+
+                return; // Si hay al menos uno mal colocado, ya no estï¿½ completo
             }
         }
-
-        Debug.Log("¡Minijuego completado!");
+        progressionmanagerproxy.SetComplete(0);
+        Debug.Log("ï¿½Minijuego completado!");
     }
 
 }

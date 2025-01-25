@@ -2,6 +2,7 @@
 
 public class ProgressionManagerProxy : MonoBehaviour
 {
+
 	public void LoadMainScene()
 	{
 		ProgresionManager.GetInstance().LoadMainScene();
@@ -13,5 +14,8 @@ public class ProgressionManagerProxy : MonoBehaviour
 	public void ReloadScene()
 	{
 		ProgresionManager.GetInstance().ReloadScene();
+	}
+	public void SetComplete(int n){
+		ProgresionManager.GetInstance().SetComplete(n);
 	}
 }

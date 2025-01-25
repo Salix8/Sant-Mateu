@@ -5,6 +5,7 @@ using TMPro; // Importar el namespace de TextMeshPro
 
 public class GameManagerPipes : MonoBehaviour
 {
+    public ProgressionManagerProxy progressionmanagerproxy;
     public GameObject PipesHolder;
     public GameObject[] Pipes;
 
@@ -34,9 +35,10 @@ public class GameManagerPipes : MonoBehaviour
 
         UpdateUIText(); // Actualizar el texto
 
-        if (correctedPipes == totalPipes) // Todos los ladrillos están bien colocados
+        if (correctedPipes == totalPipes) // Todos los ladrillos estï¿½n bien colocados
         {
-            Debug.Log("¡Completado!");
+            progressionmanagerproxy.SetComplete(9);
+            Debug.Log("ï¿½Completado!");
         }
     }
 
@@ -49,7 +51,7 @@ public class GameManagerPipes : MonoBehaviour
 
     private void UpdateUIText()
     {
-        // Actualizar el texto con el número de tubos correctos
+        // Actualizar el texto con el nï¿½mero de tubos correctos
         pipesText.text = "Ladrillos Correctos: " + correctedPipes + "/" + totalPipes;
     }
 }

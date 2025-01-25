@@ -5,6 +5,7 @@ public class PlazaManager : MonoBehaviour
 {
     public static PlazaManager Instance;
     public List<ObjetoArrastrable> draggableObjects; // Lista de objetos arrastrables
+    public ProgressionManagerProxy progressionmanagerproxy;
 
     private void Awake()
     {
@@ -20,15 +21,15 @@ public class PlazaManager : MonoBehaviour
 
     public void CheckCompletion()
     {
-        // Verificar si todos los objetos están correctamente colocados
+        // Verificar si todos los objetos estï¿½n correctamente colocados
         foreach (var draggableObject in draggableObjects)
         {
             if (!draggableObject.isCorrectlyPlaced)
             {
-                return; // Si hay al menos uno mal colocado, ya no está completo
+                return; // Si hay al menos uno mal colocado, ya no estï¿½ completo
             }
         }
-
-        Debug.Log("¡Minijuego completado!");
+        progressionmanagerproxy.SetComplete(2);
+        Debug.Log("ï¿½Minijuego completado!");
     }
 }

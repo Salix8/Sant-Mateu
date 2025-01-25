@@ -40,6 +40,7 @@ public class SceneTransitionManager : MonoBehaviour
 
     public void AbrirMenuTelefono() // no se abre cuando hay dialogo, desactiva cambio de Zona
     {
+
         Debug.Log($"Hay dialogo? {DialogueManager.GetInstance().dialogueIsPlaying}");
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
@@ -50,7 +51,7 @@ public class SceneTransitionManager : MonoBehaviour
             //     obj.SetActive(true);
             //
             // }
-
+            GameObject[] objs = GlobalManager.GetInstance().GetPathObjects();
             GlobalManager.GetInstance().SetPathObject(false);
             menuTelefono.SetActive(true);
             Debug.Log($"menuTelefono {menuTelefono}");
@@ -69,11 +70,14 @@ public class SceneTransitionManager : MonoBehaviour
         menuTelefono.SetActive(false);
         mapa.SetActive(false);
 
-        
+        GameObject[] objs = GlobalManager.GetInstance().GetPathObjects();
+        GlobalManager.GetInstance().SetPathObject(true);
         foreach (GameObject obj in allGameObjects)
         {
             obj.SetActive(true);
+            
         }
+
     }
 
     public string GetOtherZone(string currentZone)

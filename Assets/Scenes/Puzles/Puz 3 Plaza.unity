@@ -2998,6 +2998,7 @@ MonoBehaviour:
   - {fileID: 480150131}
   - {fileID: 2010276590}
   - {fileID: 313841267}
+  progressionmanagerproxy: {fileID: 1692056139}
 --- !u!1 &1317846329
 GameObject:
   m_ObjectHideFlags: 0
@@ -3877,6 +3878,10 @@ PrefabInstance:
     - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Name
       value: CambioMiniToEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 882366497294587228, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Pivot.x

@@ -8,6 +8,7 @@ public class Muralla : MonoBehaviour
     [SerializeField] private int vida = 3;
     [SerializeField] private GameObject background;
     [SerializeField] private Sprite loseBackground;
+    public ProgressionManagerProxy progressionmanagerproxy;
 
     [SerializeField] private Timer timer;
     private bool isWin = false;
@@ -68,7 +69,7 @@ public class Muralla : MonoBehaviour
             ocultarElementos();
             destroyProjectiles();
             DialogueManager.GetInstance().EnterDialogueMode(dialogo);
-            ProgresionManager.GetInstance().SetComplete(5);
+            progressionmanagerproxy.SetComplete(4);
             //GlobalManager.GetInstance().LoadMainScene();
         }
     }

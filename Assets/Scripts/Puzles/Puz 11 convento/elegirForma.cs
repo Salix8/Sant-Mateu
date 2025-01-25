@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class elegirForma : MonoBehaviour
 {
-    [Header("Forma Base")]
+    
     [SerializeField] private GameObject formaBase; // Objeto de la galleta base
 
     [Header("Sprites de las Galletas")]
@@ -150,6 +150,7 @@ public class elegirForma : MonoBehaviour
         // Muestra el panel de resultados
         if (panelResultados != null && textoResultados != null)
         {
+            
             panelResultados.SetActive(true); // Activa el panel
             textoResultados.text = "N� Galletas : " + puntuacion;
         }

@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5569d8134525ee41b592fd25ff9f149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progressionmanagerproxy: {fileID: 471796669}
   flowers:
   - {fileID: 1858122558686948654, guid: 7f76e6f78b1400f47bc8b7f1a0e48c0b, type: 3}
   - {fileID: 236005267988376284, guid: c18aa30c95b0a8b459570fe1e81b59bf, type: 3}
@@ -337,7 +338,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &166245869
@@ -1535,7 +1536,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 2.71}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1267495597
@@ -2637,6 +2638,10 @@ PrefabInstance:
     - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Name
       value: CambioMiniToEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 882366497294587228, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Pivot.x

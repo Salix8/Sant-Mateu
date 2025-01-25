@@ -16,7 +16,7 @@ public class TogglePath : MonoBehaviour
         bool toggleVal = !objs[0].activeSelf;
 
         // Alterna el estado activo de cada objeto
-        GlobalManager.GetInstance().SetPathObject(toggleVal);
+        GlobalManager.GetInstance().SetPathObject(true);
 
     }
 }

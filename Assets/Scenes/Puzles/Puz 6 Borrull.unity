@@ -1397,6 +1397,7 @@ MonoBehaviour:
   - {fileID: 1627130862}
   - {fileID: 2013661257}
   - {fileID: 384595673}
+  progressionmanagerproxy: {fileID: 1891071030}
   image0: {fileID: 766976950}
   image1: {fileID: 2052001455}
   image2: {fileID: 448108434}
@@ -1910,6 +1911,10 @@ PrefabInstance:
     - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Name
       value: CambioMiniToEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 882366497294587228, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Pivot.x
@@ -3123,7 +3128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7871506876658911815, guid: 0822dda2c1ce01342a24294500ae86e3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -136.99998
+      value: -137
       objectReference: {fileID: 0}
     - target: {fileID: 7871506876658911815, guid: 0822dda2c1ce01342a24294500ae86e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

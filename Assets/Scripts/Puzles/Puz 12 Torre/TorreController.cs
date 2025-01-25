@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TorreController : MonoBehaviour
 {
+    public ProgressionManagerProxy progressionmanagerproxy;
     public List<GameObject> lista; // Lista de engranajes
     private int seleccionado;
     private bool juegoFinalizado = false; // Estado del juego
@@ -11,21 +12,21 @@ public class TorreController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Inicialización si es necesario
+        // Inicializaciï¿½n si es necesario
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Lógica adicional si es necesario
+        // Lï¿½gica adicional si es necesario
     }
 
     public void pulsarEngranaje(int engranaje)
     {
-        // Verificar si el juego ya finalizó
+        // Verificar si el juego ya finalizï¿½
         if (juegoFinalizado)
         {
-            Debug.Log("El juego ya terminó, no puedes cambiar los engranajes.");
+            Debug.Log("El juego ya terminï¿½, no puedes cambiar los engranajes.");
             return;
         }
 
@@ -45,6 +46,7 @@ public class TorreController : MonoBehaviour
         {
             Debug.Log("Correcto");
             juegoFinalizado = true; // Marcar el juego como terminado
+            progressionmanagerproxy.SetComplete(11);
         }
         else
         {

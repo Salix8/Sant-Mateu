@@ -9,6 +9,7 @@ public class GamePhaseManager : MonoBehaviour
     public List<GameObject> gameObjects; // Referencia a los objetos que cambian de posición
     private int currentPhaseIndex = 0;
     public DivisionChecker divisionChecker; // Referencia al script DivisionChecker
+    public ProgressionManagerProxy progressionmanagerproxy;
 
     [SerializeField] private Button GroupHintButton; // Referencia al botón
     //[SerializeField] private Text groupHintText; // Texto del botón
@@ -30,6 +31,7 @@ public class GamePhaseManager : MonoBehaviour
     {
         if (currentPhaseIndex >= phases.Count)
         {
+            progressionmanagerproxy.SetComplete(7);
             Debug.Log("¡Has completado todas las fases!");
             //groupHintText.text = "¡Has completado todas las fases!";
             groupHint.text = "¡Has completado todas las fases!";

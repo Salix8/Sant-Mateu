@@ -1159,6 +1159,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CambioMiniToEscena
       objectReference: {fileID: 0}
+    - target: {fileID: 289811107492977022, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 882366497294587228, guid: bd5105bc28312db46acaf8c1f8dffa7c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3724,6 +3728,7 @@ MonoBehaviour:
   - {fileID: 257114970}
   - {fileID: 1843908084}
   - {fileID: 11652394}
+  progressionmanagerproxy: {fileID: 407625355}
 --- !u!1 &1796923542
 GameObject:
   m_ObjectHideFlags: 0
