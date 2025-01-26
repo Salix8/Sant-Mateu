@@ -3489,7 +3489,6 @@ MonoBehaviour:
   - {fileID: 706602909784772485}
   - {fileID: 681868452}
   - {fileID: 484488600}
-  - {fileID: 0}
   objetoOcultar: {fileID: 150928056}
   dialogo: {fileID: 4900000, guid: f5e80738cb9482349b72c7172b53807c, type: 3}
 --- !u!114 &313227039
@@ -3826,7 +3825,6 @@ MonoBehaviour:
   objects:
   - {fileID: 681868452}
   - {fileID: 484488600}
-  - {fileID: 0}
 --- !u!1001 &428442601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4216,6 +4214,11 @@ PrefabInstance:
       addedObject: {fileID: 1849472257}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+--- !u!1 &480377136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3763284857500501909, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+  m_PrefabInstance: {fileID: 1739986964913392695}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &484488600 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1822904765412485028, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
@@ -5671,6 +5674,11 @@ MonoBehaviour:
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
+--- !u!95 &755809835 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7316294452855914497, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+  m_PrefabInstance: {fileID: 1739986964913392695}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &755823277
 GameObject:
   m_ObjectHideFlags: 0
@@ -15540,6 +15548,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8758239333819371527}
     m_Modifications:
+    - target: {fileID: 847588369509769693, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 755809835}
+    - target: {fileID: 847588369509769693, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+      propertyPath: instructions
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 847588369509769693, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+      propertyPath: transicionFinalizar
+      value: 
+      objectReference: {fileID: 7400000, guid: 53245d2aba9e20a4b9e7b508e08e9535, type: 2}
     - target: {fileID: 3070076470202639256, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -15573,6 +15593,18 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3070076470202639256, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070076470202639256, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070076470202639256, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070076470202639256, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -15590,15 +15622,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3070076470202639256, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3070076470202639256, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3070076470202639256, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3070076470202639256, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -15623,6 +15655,10 @@ PrefabInstance:
     - target: {fileID: 3763284857500501909, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
       propertyPath: m_Name
       value: "Transici\xF3nMinijuegos"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3763284857500501909, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15853,6 +15889,18 @@ PrefabInstance:
       propertyPath: transicionnormal
       value: 
       objectReference: {fileID: 1585859245}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: puzleQRCompletado
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: transicionMinijuego
+      value: 
+      objectReference: {fileID: 480377136}
+    - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
+      propertyPath: transicionMinijuegos
+      value: 
+      objectReference: {fileID: 755809835}
     - target: {fileID: 4495230687779113482, guid: a84d134bd4517c14a815287a6ee394db, type: 3}
       propertyPath: dialogosAlCompletarPuzles.Array.size
       value: 11
