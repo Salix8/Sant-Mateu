@@ -3322,6 +3322,7 @@ MonoBehaviour:
   menuTelefono: {fileID: 959629509}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
+  progresionmanager: {fileID: 0}
 --- !u!114 &309180232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3486,9 +3487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetosMostar:
-  - {fileID: 706602909784772485}
-  - {fileID: 681868452}
   - {fileID: 484488600}
+  - {fileID: 706602909784772485}
   objetoOcultar: {fileID: 150928056}
   dialogo: {fileID: 4900000, guid: f5e80738cb9482349b72c7172b53807c, type: 3}
 --- !u!114 &313227039
@@ -5373,6 +5373,7 @@ MonoBehaviour:
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
+  progresionmanager: {fileID: 0}
 --- !u!1 &690341392
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,6 +5675,7 @@ MonoBehaviour:
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
+  progresionmanager: {fileID: 0}
 --- !u!95 &755809835 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7316294452855914497, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
@@ -8153,6 +8155,7 @@ MonoBehaviour:
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
+  progresionmanager: {fileID: 0}
 --- !u!114 &1145024989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9720,6 +9723,7 @@ MonoBehaviour:
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
+  progresionmanager: {fileID: 0}
 --- !u!1001 &1437179697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16685,6 +16689,7 @@ MonoBehaviour:
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 4900000, guid: ab5f1ccf5972ed64b89774ad68cc3dc5, type: 3}
+  progresionmanager: {fileID: 0}
 --- !u!1 &6219533761136212316
 GameObject:
   m_ObjectHideFlags: 0
