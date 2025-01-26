@@ -134,8 +134,10 @@ public class ProgresionManager : MonoBehaviour
         }
         LoadMainScene();
         //RestoreZoneObjectState();
+
         
-        DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
+        //DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
+        Debug.Log("Se ha hecho bien");
     }
 
     void ChangeZone(string nextZone)
@@ -175,11 +177,63 @@ public class ProgresionManager : MonoBehaviour
 
     public void LoadSceneMinijuego(int num)
     {
-        SaveZoneState();
-        Debug.Log($"Se cambia a la escena {(SceneType)num}; LoadSceneMinijuego(int)");
-        SceneManager.LoadScene(num);
-        GlobalManager.GetInstance().RefreshObjects();
+        
+        StartCoroutine(TransicionarMinijuegoOut(num));
+        
     }
+
+    private IEnumerator TransicionarMinijuegoOut(int num)
+    {
+        // Encuentra el GameObject de la transición 
+        GameObject transicionObjectOut = GameObject.Find("TransiciónMinijuegos");
+        if (transicionObjectOut != null)
+        {
+            Animator animator = transicionObjectOut.GetComponent<Animator>();
+
+            if (animator != null)
+            {
+                // Llamar a la animación de cierre antes de cargar la escena.
+                animator.SetTrigger("Finalizar");
+            }
+            
+
+           
+            yield return new WaitForSeconds(1f);
+
+            
+            SceneManager.LoadScene(num);
+            GlobalManager.GetInstance().RefreshObjects();
+        }
+        GameObject transicionObjectIn = GameObject.Find("TransiciónMinijuegos");
+        if (transicionObjectIn != null)
+        {
+            Animator animator = transicionObjectIn.GetComponent<Animator>();
+            
+
+            if (animator != null)
+            {
+                // Llamar a la animación de cierre antes de cargar la escena.
+                animator.SetTrigger("Iniciar");
+                
+                Debug.Log("Ha iniciado la transicion");
+            }
+
+            yield return new WaitForSeconds(1f);
+
+            TransicionMinijuegos transicion = FindObjectOfType<TransicionMinijuegos>();
+            if (transicion != null && transicion.instructions != null)
+            {
+                transicion.instructions.SetActive(true);
+            }
+
+
+
+        }
+        
+
+    }
+    
+
 
     public void LoadMainScene()
     {

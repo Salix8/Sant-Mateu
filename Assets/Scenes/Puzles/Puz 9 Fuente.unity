@@ -662,6 +662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instructions
       objectReference: {fileID: 0}
+    - target: {fileID: 957123058787680929, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1576268215080852856, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -768,6 +772,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+--- !u!1 &569449012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 957123058787680929, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+  m_PrefabInstance: {fileID: 569449011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &640660662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -776,6 +785,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1626352014}
     m_Modifications:
+    - target: {fileID: 847588369509769693, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+      propertyPath: instructions
+      value: 
+      objectReference: {fileID: 569449012}
     - target: {fileID: 3070076470202639256, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -874,7 +887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3763284857500501909, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

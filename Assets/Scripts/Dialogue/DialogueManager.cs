@@ -142,8 +142,9 @@ public class DialogueManager : MonoBehaviour
     {
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
+        
         dialoguePanel.SetActive(true);
-
+        
         //dialogueVariables.StartListening(currentStory);
 
         canContinueToNextLine = false; // asegurarse de que no se esta ejecutando otra linea de dialogo
@@ -160,6 +161,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
 
         ContinueStory();
+        
     }
 
     public IEnumerator ExitDialogueMode()
