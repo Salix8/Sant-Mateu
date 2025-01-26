@@ -278,4 +278,24 @@ public class ProgresionManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public bool IsPuzzleCompleted(int id)
+    {
+        switch (id)
+        {
+            case 0: return puzleQRCompletado;
+            case 1: return sello1Villores;
+            case 2: return sello3PlazaMayor;
+            case 3: return sello4Arciprestal;
+            case 4: return sello5Muralla;
+            case 5: return sello6Borrull;
+            case 6: return sello7Judios;
+            case 7: return sello8Horno;
+            case 8: return sello9Fuente;
+            case 9: return sello10SantPere;
+            case 10: return sello11Convento;
+            default: return false;
+        }
+    }
+
+
 }
