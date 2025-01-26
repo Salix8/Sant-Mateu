@@ -43,7 +43,7 @@ public class ProgresionManager : MonoBehaviour
 
     
 
-    string currentZone = "";
+    public string currentZone = "";
 
 
     private static ProgresionManager instance;
@@ -136,7 +136,7 @@ public class ProgresionManager : MonoBehaviour
         //RestoreZoneObjectState();
 
         
-        //DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
+        DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
         Debug.Log("Se ha hecho bien");
     }
 
@@ -177,7 +177,8 @@ public class ProgresionManager : MonoBehaviour
 
     public void LoadSceneMinijuego(int num)
     {
-        
+        SaveZoneState();
+
         StartCoroutine(TransicionarMinijuegoOut(num));
         
     }
