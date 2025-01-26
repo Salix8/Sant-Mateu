@@ -136,7 +136,7 @@ public class ProgresionManager : MonoBehaviour
         //RestoreZoneObjectState();
 
         
-        DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
+        //DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
         Debug.Log("Se ha hecho bien");
     }
 
@@ -233,15 +233,36 @@ public class ProgresionManager : MonoBehaviour
         
 
     }
-    
 
 
     public void LoadMainScene()
     {
+        StartCoroutine(TransicionarMainScene());
+    }
+
+    private IEnumerator TransicionarMainScene()
+    {
+        // Encuentra el GameObject de la transición
+        GameObject transicionObject = GameObject.Find("TransiciónMinijuegos");
+        if (transicionObject != null)
+        {
+            Animator animator = transicionObject.GetComponent<Animator>();
+
+            if (animator != null)
+            {
+                
+                animator.SetTrigger("Finalizar");
+
+                
+                yield return new WaitForSeconds(1f);
+            }
+        }
+
         SceneManager.sceneLoaded += FinishMainSceneLoad;
         SceneManager.LoadScene(0);
-
     }
+
+
 
     void FinishMainSceneLoad(Scene scene, LoadSceneMode mode)
     {
