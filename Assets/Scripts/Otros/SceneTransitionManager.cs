@@ -8,6 +8,9 @@ public class SceneTransitionManager : MonoBehaviour
     [SerializeField] private GameObject menuTelefono;       
     [SerializeField] private GameObject mapa;
     [SerializeField] private TextAsset dialogo;
+
+    public ProgresionManager progresionmanager;
+
     private Dictionary<string, string> zoneMapping = new Dictionary<string, string>
     {
         { "Villores3Presente", "Villores3Pasado"    },
@@ -34,8 +37,12 @@ public class SceneTransitionManager : MonoBehaviour
 
     void Start()
     {
-        // menuTelefono.SetActive(false);
+        menuTelefono.SetActive(false);
         // mapa.SetActive(false);
+    }
+
+    void Awake(){
+        if (progresionmanager.puzleQRCompletado) menuTelefono.SetActive(true);
     }
 
     public void AbrirMenuTelefono() // no se abre cuando hay dialogo, desactiva cambio de Zona
