@@ -68,7 +68,6 @@ public class Muralla : MonoBehaviour
             isWin = true;
             ocultarElementos();
             destroyProjectiles();
-            DialogueManager.GetInstance().EnterDialogueMode(dialogo);
             progressionmanagerproxy.SetComplete(4);
             //GlobalManager.GetInstance().LoadMainScene();
         }

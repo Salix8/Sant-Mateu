@@ -1,0 +1,2 @@
+﻿Gracias por la ayuda, con el tiempo que hemos ganado podré ir a ayudar a los invitados que tenemos en el palacio de Borrull. #speaker:Guerrera #portrait:npcMurallaPasado #layout:left
+Pero las balas han roto el portón, nos costará pasar hasta que lo arreglen. #speaker:Silvia #portrait:silvia-hablando #layout:right

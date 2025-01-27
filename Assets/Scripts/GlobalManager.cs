@@ -14,13 +14,6 @@ public class GlobalManager : MonoBehaviour
     [SerializeField] private GameObject[] activeObjectsDefault;
     public int nivelprogreso = 0;
 
-    [System.Serializable]
-    public class ObjectState
-    {
-        public string name; // Nombre del objeto
-        public bool isActive; // Estado del objeto
-    }
-
 
     private bool isDebug = false;
 
@@ -56,7 +49,7 @@ public class GlobalManager : MonoBehaviour
             obj.SetActive(false);
             if (isDebug) Debug.Log("Escena: " + obj);
         }
-        
+
 
         foreach (GameObject obj in pathObjects)
         {
@@ -71,15 +64,15 @@ public class GlobalManager : MonoBehaviour
                             if (isDebug) Debug.Log("Path: " + obj);
                         }
                     }
-                    
+
                 }
-                
+
             }
-            
-            
+
+
         }
-    
-        
+
+
 
     }
     public void RefreshObjects()
@@ -113,12 +106,12 @@ public class GlobalManager : MonoBehaviour
                             if (isDebug) Debug.Log("Path: " + obj);
                         }
                     }
-                    
+
                 }
-                
+
             }
-            
-            
+
+
         }
     }
 

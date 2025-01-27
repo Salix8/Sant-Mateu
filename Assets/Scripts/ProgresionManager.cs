@@ -26,24 +26,24 @@ public class ProgresionManager : MonoBehaviour
 
     [SerializeField] public bool puzleQRCompletado = false;
     [SerializeField] public bool sello1Villores    = false;
-    [SerializeField] public bool sello2Villores    = false;
-    [SerializeField] public bool sello3PlazaMayor  = false;
-    [SerializeField] public bool sello4Arciprestal = false;
-    [SerializeField] public bool sello5Muralla     = false;
-    [SerializeField] public bool sello6Borrull     = false;
-    [SerializeField] public bool sello7Judios      = false;
-    [SerializeField] public bool sello8Horno       = false;
-    [SerializeField] public bool sello9Fuente      = false;
-    [SerializeField] public bool sello10SantPere   = false;
-    [SerializeField] public bool sello11Convento   = false;
-    [SerializeField] public bool sello12Reloj      = false;
+    [SerializeField] public bool sello2PlazaMayor  = false;
+    [SerializeField] public bool sello3Arciprestal = false;
+    [SerializeField] public bool sello4Muralla     = false;
+    [SerializeField] public bool sello5Borrull     = false;
+    [SerializeField] public bool sello6Judios      = false;
+    [SerializeField] public bool sello7Horno       = false;
+    [SerializeField] public bool sello8Fuente      = false;
+    [SerializeField] public bool sello9SantPere   = false;
+    [SerializeField] public bool sello10Convento   = false;
+    [SerializeField] public bool sello11Reloj      = false;
     [SerializeField] public int nivelprogreso      = 0;
+    [SerializeField] public int zonactual      = 0;
 
     [SerializeField] private TextAsset[] dialogosAlCompletarPuzles;
 
-    
 
-    string currentZone = "";
+
+    public string currentZone = "";
 
 
     private static ProgresionManager instance;
@@ -80,52 +80,52 @@ public class ProgresionManager : MonoBehaviour
                 nivelprogreso = 1;
                 break;
             case 2:
-                sello3PlazaMayor = true;
+                sello2PlazaMayor = true;
                 Debug.Log($"Sello {id} (Plaza Mayor) completado.");
                 nivelprogreso = 2;
                 break;
             case 3:
-                sello4Arciprestal = true;
+                sello3Arciprestal = true;
                 Debug.Log($"Sello {id} (Arciprestal) completado.");
                 nivelprogreso = 3;
                 break;
             case 4:
-                sello5Muralla = true;
+                sello4Muralla = true;
                 Debug.Log($"Sello {id} (Muralla) completado.");
                 nivelprogreso = 4;
                 break;
             case 5:
-                sello6Borrull = true;
+                sello5Borrull = true;
                 Debug.Log($"Sello {id} (Borrull) completado.");
                 nivelprogreso = 5;
                 break;
             case 6:
-                sello7Judios = true;
+                sello6Judios = true;
                 Debug.Log($"Sello {id} (Judíos) completado.");
                 nivelprogreso = 6;
                 break;
             case 7:
-                sello8Horno = true;
+                sello7Horno = true;
                 Debug.Log($"Sello {id} (Horno) completado.");
                 nivelprogreso = 7;
                 break;
             case 8:
-                sello9Fuente = true;
+                sello8Fuente = true;
                 Debug.Log($"Sello {id} (Fuente) completado.");
                 nivelprogreso = 8;
                 break;
             case 9:
-                sello10SantPere = true;
+                sello9SantPere = true;
                 Debug.Log($"Sello {id} (Sant Pere) completado.");
                 nivelprogreso = 9;
                 break;
             case 10:
-                sello11Convento = true;
+                sello10Convento = true;
                 Debug.Log($"Sello {id} (Convento) completado.");
                 nivelprogreso = 10;
                 break;
             case 11:
-                sello12Reloj = true;
+                sello11Reloj = true;
                 Debug.Log($"Sello {id} (Reloj) completado.");
                 break;
             default:
@@ -134,8 +134,56 @@ public class ProgresionManager : MonoBehaviour
         }
         LoadMainScene();
         //RestoreZoneObjectState();
-        
-        DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
+
+
+        //DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
+        Debug.Log("Se ha hecho bien");
+    }
+
+    public bool GetComplete(int id)
+    {
+        switch (id)
+        {
+            case 0:
+                Debug.Log($"puzleQRCompletado: {puzleQRCompletado}. ProgresionManager.GetComplete(id)");
+                 return puzleQRCompletado;
+            case 1:
+                Debug.Log($"Sello {id} (Villores): {sello1Villores}. ProgresionManager.GetComplete(id)");
+                 return sello1Villores;
+            case 2:
+                Debug.Log($"Sello {id} (Plaza Mayor): {sello2PlazaMayor}. ProgresionManager.GetComplete(id)");
+                 return sello2PlazaMayor;
+            case 3:
+                Debug.Log($"Sello {id} (Arciprestal): {sello3Arciprestal}. ProgresionManager.GetComplete(id)");
+                 return sello3Arciprestal;
+            case 4:
+                Debug.Log($"Sello {id} (Muralla): {sello4Muralla}. ProgresionManager.GetComplete(id)");
+                 return sello4Muralla;
+            case 5:
+                Debug.Log($"Sello {id} (Borrull): {sello5Borrull}. ProgresionManager.GetComplete(id)");
+                 return sello5Borrull;
+            case 6:
+                Debug.Log($"Sello {id} (Judíos): {sello6Judios}. ProgresionManager.GetComplete(id)");
+                 return sello6Judios;
+            case 7:
+                Debug.Log($"Sello {id} (Horno): {sello7Horno}. ProgresionManager.GetComplete(id)");
+                 return sello7Horno;
+            case 8:
+                Debug.Log($"Sello {id} (Fuente): {sello7Horno}. ProgresionManager.GetComplete(id)");
+                 return sello8Fuente;
+            case 9:
+                Debug.Log($"Sello {id} (Sant Pere): {sello9SantPere}. ProgresionManager.GetComplete(id)");
+                 return sello9SantPere;
+            case 10:
+                Debug.Log($"Sello {id} (Convento): {sello10Convento}. ProgresionManager.GetComplete(id)");
+                 return sello10Convento;
+            case 11:
+                Debug.Log($"Sello {id} (Reloj): {sello11Reloj}. ProgresionManager.GetComplete(id)");
+                return sello11Reloj;
+            default:
+                Debug.LogWarning($"ID no reconocido: {id} ProgresionManager.GetComplete(id)");
+                return false;
+        }
     }
 
     void ChangeZone(string nextZone)
@@ -145,7 +193,7 @@ public class ProgresionManager : MonoBehaviour
         {
             GlobalManager.GetInstance().SetActiveZone(nextZone);
             GlobalManager.GetInstance().HideMainMenu();
-            
+
             AudioPasos.GetInstance().PlayOneShot(); //Por defecto suenan los pasos
         }
     }
@@ -176,17 +224,91 @@ public class ProgresionManager : MonoBehaviour
     public void LoadSceneMinijuego(int num)
     {
         SaveZoneState();
-        Debug.Log($"Se cambia a la escena {(SceneType)num}; LoadSceneMinijuego(int)");
-        SceneManager.LoadScene(num);
-        GlobalManager.GetInstance().RefreshObjects();
+
+        StartCoroutine(TransicionarMinijuegoOut(num));
+
     }
+
+    private IEnumerator TransicionarMinijuegoOut(int num)
+    {
+        // Encuentra el GameObject de la transición
+        GameObject transicionObjectOut = GameObject.Find("TransiciónMinijuegos");
+        if (transicionObjectOut != null)
+        {
+            Animator animator = transicionObjectOut.GetComponent<Animator>();
+
+            if (animator != null)
+            {
+                // Llamar a la animación de cierre antes de cargar la escena.
+                animator.SetTrigger("Finalizar");
+            }
+
+
+
+            yield return new WaitForSeconds(1f);
+
+
+            SceneManager.LoadScene(num);
+            GlobalManager.GetInstance().RefreshObjects();
+        }
+        GameObject transicionObjectIn = GameObject.Find("TransiciónMinijuegos");
+        if (transicionObjectIn != null)
+        {
+            Animator animator = transicionObjectIn.GetComponent<Animator>();
+
+
+            if (animator != null)
+            {
+                // Llamar a la animación de cierre antes de cargar la escena.
+                animator.SetTrigger("Iniciar");
+
+                Debug.Log("Ha iniciado la transicion");
+            }
+
+            yield return new WaitForSeconds(1f);
+
+            TransicionMinijuegos transicion = FindObjectOfType<TransicionMinijuegos>();
+            if (transicion != null && transicion.instructions != null)
+            {
+                transicion.instructions.SetActive(true);
+            }
+
+
+
+        }
+
+
+    }
+
 
     public void LoadMainScene()
     {
+        StartCoroutine(TransicionarMainScene());
+    }
+
+    private IEnumerator TransicionarMainScene()
+    {
+        // Encuentra el GameObject de la transición
+        GameObject transicionObject = GameObject.Find("TransiciónMinijuegos");
+        if (transicionObject != null)
+        {
+            Animator animator = transicionObject.GetComponent<Animator>();
+
+            if (animator != null)
+            {
+
+                animator.SetTrigger("Finalizar");
+
+
+                yield return new WaitForSeconds(1f);
+            }
+        }
+
         SceneManager.sceneLoaded += FinishMainSceneLoad;
         SceneManager.LoadScene(0);
-
     }
+
+
 
     void FinishMainSceneLoad(Scene scene, LoadSceneMode mode)
     {
@@ -201,5 +323,25 @@ public class ProgresionManager : MonoBehaviour
         string sceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(sceneName);
     }
+
+    public bool IsPuzzleCompleted(int id)
+    {
+        switch (id)
+        {
+            case 0: return puzleQRCompletado;
+            case 1: return sello1Villores;
+            case 2: return sello2PlazaMayor;
+            case 3: return sello3Arciprestal;
+            case 4: return sello4Muralla;
+            case 5: return sello5Borrull;
+            case 6: return sello6Judios;
+            case 7: return sello7Horno;
+            case 8: return sello8Fuente;
+            case 9: return sello9SantPere;
+            case 10: return sello10Convento;
+            default: return false;
+        }
+    }
+
 
 }

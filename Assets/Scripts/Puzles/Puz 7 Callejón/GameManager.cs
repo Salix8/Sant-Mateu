@@ -72,7 +72,7 @@ namespace FifteenPuzzle
 
         }
 
-        void Shuffle()
+        public void Shuffle()
         {
             for (int i = 0; i < 100; i++)
             {

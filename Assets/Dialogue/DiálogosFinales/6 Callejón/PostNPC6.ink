@@ -1,0 +1,2 @@
+﻿¿No te interesaría quedarte a trabajar conmigo? #speaker:Artesano #portrait:npcCallejonPasado #layout:left
+Cuando acabes de recoger los sellos podrías volver, de todas formas el anciano de la panadería no me acaba de transmitir confianza. #speaker:Artesano #portrait:npcCallejonPasado #layout:left
