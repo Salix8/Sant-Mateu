@@ -1,1 +1,2 @@
-﻿
+﻿Nuestro más sincero agradecimiento, sentimos no poder ayudaros en vuestra gesta. #speaker:Reyes católicos #portrait:npcBorrullPasado #layout:left
+Lo único que podemos deciros es que hemos oído un ruido de rotura en el callejón de al lado. #speaker:Reyes católicos #portrait:npcBorrullPasado #layout:left
