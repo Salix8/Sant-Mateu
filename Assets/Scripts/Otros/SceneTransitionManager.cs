@@ -14,7 +14,7 @@ public class SceneTransitionManager : MonoBehaviour
     private Dictionary<string, string> zoneMapping = new Dictionary<string, string>
     {
         { "Villores3Presente", "Villores3Pasado"    },
-        { "Villores3Pasado", "PlazaPresente"        },
+        { "Villores3Pasado", "Villores3Presente"        },
         { "PlazaPresente", "PlazaPasado"            },
         { "PlazaPasado", "PlazaPresente"            },
         { "ArciprestalPresente", "ArciprestalPasado"},

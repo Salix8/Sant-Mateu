@@ -38,6 +38,7 @@ public class ProgresionManager : MonoBehaviour
     [SerializeField] public bool sello11Convento   = false;
     [SerializeField] public bool sello12Reloj      = false;
     [SerializeField] public int nivelprogreso      = 0;
+    [SerializeField] public int zonactual      = 0;
 
     [SerializeField] private TextAsset[] dialogosAlCompletarPuzles;
 
