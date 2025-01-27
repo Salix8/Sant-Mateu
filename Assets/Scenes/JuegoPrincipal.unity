@@ -2263,7 +2263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: 3da8cc3a40bf20b49a9f45ab416898ca, type: 3}
+  dialogos: []
   zonaActiva: {fileID: 105390528}
   idPuzzleRequerido: 9
   startDialogueAutomaticamente: 0
@@ -4509,7 +4509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  dialogos: []
   zonaActiva: {fileID: 522859198}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -7821,7 +7821,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: 75a7319efa5b3aa4cbad3f05da4246c9, type: 3}
+  dialogos:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   zonaActiva: {fileID: 481889851}
   idPuzzleRequerido: 10
   startDialogueAutomaticamente: 0
@@ -10365,7 +10385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: abaca84407189d245bb9cf9f03da0c10, type: 3}
+  dialogos: []
   zonaActiva: {fileID: 1332954728}
   idPuzzleRequerido: 2
   startDialogueAutomaticamente: 0
@@ -10655,7 +10675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  dialogos: []
   zonaActiva: {fileID: 1385159851}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -11243,7 +11263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: 169a9b47c5e7e8849b8899bb3ac4ddb9, type: 3}
+  dialogos: []
   zonaActiva: {fileID: 183474825}
   idPuzzleRequerido: 6
   startDialogueAutomaticamente: 0
@@ -11400,7 +11420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: 15656f7f1820cc54bbaf2705669f960f, type: 3}
+  dialogos: []
   zonaActiva: {fileID: 1515046846}
   idPuzzleRequerido: 4
   startDialogueAutomaticamente: 0
@@ -11793,7 +11813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: 8718be85cdbfb934cb19f05dc4c0554c, type: 3}
+  dialogos: []
   zonaActiva: {fileID: 1592618593}
   idPuzzleRequerido: 1
   startDialogueAutomaticamente: 0
@@ -13296,7 +13316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: 9facecaba257c1e419388c54d8049433, type: 3}
+  dialogos: []
   zonaActiva: {fileID: 1750890578}
   idPuzzleRequerido: 8
   startDialogueAutomaticamente: 0
@@ -13322,7 +13342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: f5e7e1c27366d48489a23038ce25e442, type: 3}
+  dialogos: []
   zonaActiva: {fileID: 1765736601}
   idPuzzleRequerido: 7
   startDialogueAutomaticamente: 0
@@ -14734,7 +14754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: ad32d1fed51a4f046aa710d44767531b, type: 3}
+  dialogos: []
   zonaActiva: {fileID: 1895889435}
   idPuzzleRequerido: 5
   startDialogueAutomaticamente: 0
@@ -15459,7 +15479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogo: {fileID: 4900000, guid: baa42ef3b8ea05a4ca031cba2dee6324, type: 3}
+  dialogos: []
   zonaActiva: {fileID: 1939936104}
   idPuzzleRequerido: 3
   startDialogueAutomaticamente: 0

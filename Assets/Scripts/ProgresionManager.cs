@@ -36,6 +36,29 @@ public class ProgresionManager : MonoBehaviour
     [SerializeField] public bool sello9SantPere   = false;
     [SerializeField] public bool sello10Convento   = false;
     [SerializeField] public bool sello11Reloj      = false;
+
+    private bool dialogoVillores2 = false;
+    private bool dialogoVillores3Pres = false;
+    private bool dialogoVillores3Pas = false;
+    private bool dialogoPlazaPres = false;
+    private bool dialogoPlazaPas = false;
+    private bool dialogoArciPres = false;
+    private bool dialogoArciPas = false;
+    private bool dialogoMurallaPres = false;
+    private bool dialogoMurallaPas = false;
+    private bool dialogoBorrullPres = false;
+    private bool dialogoBorrullPas = false;
+    private bool dialogoJudiosPres = false;
+    private bool dialogoJudiosPas = false;
+    private bool dialogoHornoPres = false;
+    private bool dialogoHornoPas = false;
+    private bool dialogoFuentePres = false;
+    private bool dialogoFuentePas = false;
+    private bool dialogoPerePres = false;
+    private bool dialogoPerePas = false;
+    private bool dialogoConvPres = false;
+    private bool dialogoConvPas = false;
+
     [SerializeField] public int nivelprogreso      = 0;
     [SerializeField] public int zonactual      = 0;
 
@@ -340,6 +363,106 @@ public class ProgresionManager : MonoBehaviour
             case 9: return sello9SantPere;
             case 10: return sello10Convento;
             default: return false;
+        }
+    }
+
+    public bool GetBoolDialogo(int id)
+    {
+        switch (id)
+        {
+            case 0: return dialogoVillores2;
+            case 1: return dialogoVillores3Pres;
+            case 2: return dialogoVillores3Pas;
+            case 3: return dialogoPlazaPres;
+            case 4: return dialogoPlazaPas;
+            case 5: return dialogoArciPres;
+            case 6: return dialogoArciPas;
+            case 7: return dialogoMurallaPres;
+            case 8: return dialogoMurallaPas;
+            case 9: return dialogoBorrullPres;
+            case 10: return dialogoBorrullPas;
+            case 11: return dialogoJudiosPres;
+            case 12: return dialogoJudiosPas;
+            case 13: return dialogoHornoPres;
+            case 14: return dialogoHornoPas;
+            case 15: return dialogoFuentePres;
+            case 16: return dialogoFuentePas;
+            case 17: return dialogoPerePres;
+            case 18: return dialogoPerePas;
+            case 19: return dialogoConvPres;
+            case 20: return dialogoConvPas;
+            default: return false;
+        }
+    }
+
+    public void SetBoolDialogo(int id)
+    {
+        switch (id)
+        {
+            case 0: 
+                dialogoVillores2 = true;
+                break;
+            case 1: 
+                dialogoVillores3Pres = true;
+                break;
+            case 2: 
+                dialogoVillores3Pas = true;
+                break;
+            case 3: 
+                dialogoPlazaPres = true;
+                break;
+            case 4: 
+                dialogoPlazaPas = true;
+                break;
+            case 5: 
+                dialogoArciPres = true;
+                break;
+            case 6: 
+                dialogoArciPas = true;
+                break;
+            case 7: 
+                dialogoMurallaPres = true;
+                break;
+            case 8: 
+                dialogoMurallaPas = true;
+                break;
+            case 9: 
+                dialogoBorrullPres = true;
+                break;
+            case 10:
+                    dialogoBorrullPas = true;
+                break;
+            case 11:
+                    dialogoJudiosPres = true;
+                break;
+            case 12:
+                    dialogoJudiosPas = true;
+                break;
+            case 13:
+                    dialogoHornoPres = true;
+                break;
+            case 14:
+                    dialogoHornoPas = true;
+                break;
+            case 15:
+                    dialogoFuentePres = true;
+                break;
+            case 16:
+                    dialogoFuentePas = true;
+                break;
+            case 17:
+                    dialogoPerePres = true;
+                break;
+            case 18:
+                    dialogoPerePas = true;
+                break;
+            case 19:
+                    dialogoConvPres = true;
+                break;
+            case 20:
+                    dialogoConvPas = true;
+                break;
+            default: break;
         }
     }
 

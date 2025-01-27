@@ -637,7 +637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
-  playSound: 1
+  playSound: 0
 --- !u!1 &6379899305146438475
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,6 +787,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 0}
   isDebug: 1
+  transicionmenu: {fileID: 0}
+  playTransition: 0
 --- !u!114 &8102572508710745204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1065,6 +1067,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 0}
   isDebug: 1
+  transicionmenu: {fileID: 0}
+  playTransition: 0
 --- !u!114 &744224194805242930
 MonoBehaviour:
   m_ObjectHideFlags: 0
