@@ -15,7 +15,13 @@ public class ProgressionManagerProxy : MonoBehaviour
 	{
 		ProgresionManager.GetInstance().ReloadScene();
 	}
-	public void SetComplete(int n){
-		ProgresionManager.GetInstance().SetComplete(n);
+
+	public void SetComplete(int num){
+		ProgresionManager.GetInstance().SetComplete(num);
 	}
+
+    public bool GetComplete(int num)
+    {
+        return ProgresionManager.GetInstance().GetComplete(num);
+    }
 }
