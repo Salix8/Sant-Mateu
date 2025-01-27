@@ -14,7 +14,7 @@ public class Muralla : MonoBehaviour
     private bool isWin = false;
     private bool isLose = false;
 
-    [SerializeField] private TextAsset dialogo;
+    
     [SerializeField] private TextAsset dialogo2;
     [SerializeField] private GameObject[] ocultar;
 
