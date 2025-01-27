@@ -9,12 +9,12 @@ public class SceneTransitionManager : MonoBehaviour
     [SerializeField] private GameObject mapa;
     [SerializeField] private TextAsset dialogo;
 
-    public ProgresionManager progresionmanager;
+    public ProgressionManagerProxy progressionManagerProxy;
 
     private Dictionary<string, string> zoneMapping = new Dictionary<string, string>
     {
         { "Villores3Presente", "Villores3Pasado"    },
-        { "Villores3Pasado", "Villores3Presente"        },
+        { "Villores3Pasado", "Villores3Presente"    },
         { "PlazaPresente", "PlazaPasado"            },
         { "PlazaPasado", "PlazaPresente"            },
         { "ArciprestalPresente", "ArciprestalPasado"},
@@ -42,7 +42,7 @@ public class SceneTransitionManager : MonoBehaviour
     }
 
     void Awake(){
-        if (progresionmanager.puzleQRCompletado) menuTelefono.SetActive(true);
+        if (progressionManagerProxy.GetComplete(0)) menuTelefono.SetActive(true);
     }
 
     public void AbrirMenuTelefono() // no se abre cuando hay dialogo, desactiva cambio de Zona
