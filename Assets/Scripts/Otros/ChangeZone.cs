@@ -9,6 +9,9 @@ public class ChangeZone : MonoBehaviour
     [SerializeField] private AjusteSonido ajusteSonido; // Referencia al script de ajuste de sonido
     [SerializeField] private GameObject transicionnormal;
     public int niveldesbloqueo;
+    public int mapcode;
+
+    public ProgresionManager progresionmanager;
 
 
     private Animator transition;
@@ -52,7 +55,7 @@ public class ChangeZone : MonoBehaviour
             yield return null; // Espera un frame
         }
 
-        
+        progresionmanager.zonactual = mapcode;
         transition.SetTrigger("AcabaMedio");
         Debug.Log("Se ha cambiado a la escena: " + nextZone);
         transform.parent.gameObject.SetActive(false);

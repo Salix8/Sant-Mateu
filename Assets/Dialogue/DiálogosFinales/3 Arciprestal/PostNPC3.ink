@@ -1,0 +1,2 @@
+﻿Gracias por todo, ahora podré ir a ayudar a la <b><color=\#FF1E35>muralla</color></b>. #speaker:Noble #portrait:npcArciprestalPasado #layout:left
+Aun que con tanta gente fuera va a estar complicado salir de la iglesia, supongo que esperaré un tiempo. #speaker:Noble #portrait:npcArciprestalPasado #layout:left

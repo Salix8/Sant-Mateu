@@ -1,0 +1,1 @@
+﻿Muchas gracias por todo, ahora creo que iré al Convento a ver si puedo comprar algunas galletas... #speaker:Constructor #portrait:npcPerePasado #layout:left

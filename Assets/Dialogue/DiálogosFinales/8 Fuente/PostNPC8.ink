@@ -1,0 +1,2 @@
+﻿A ver si van bien las reformas en San Pere, espero que no haya ningún accidente. #speaker:Florista #portrait:npcFuentePasado #layout:left
+Pero para llegar ahora va a ser imposible con todos los puestos montados y el mercado abarrotado. #speaker:Florista #portrait:npcFuentePasado #layout:left
