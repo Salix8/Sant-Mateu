@@ -24,4 +24,12 @@ public class ProgressionManagerProxy : MonoBehaviour
     {
         return ProgresionManager.GetInstance().GetComplete(num);
     }
+
+	public void SetBoolDialogo(int num) {
+		ProgresionManager.GetInstance().SetBoolDialogo(num);
+	}
+
+	public bool GetBoolDialogo(int num) {
+		return ProgresionManager.GetInstance().GetBoolDialogo(num);
+	}
 }
