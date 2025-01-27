@@ -8,4 +8,4 @@ Qué casualidad, yo tengo uno, tomad. #speaker:Florista #portrait:npcFuentePasad
 
 ¡Muchas gracias! ¿No sabrás por casualidad dónde podemos encontrar más, no? #speaker:Silvia #portrait:silvia-hablando #layout:right
 
-Pues creo que (nombre) tenía uno, lo único es que ahora estaba en <b><color=\#FF1E35>San Pere</color></b>arreglando algo… #speaker:Florista #portrait:npcFuentePasado #layout:left
+Pues creo que en San Pere tenían uno, lo único es que ahora estaban arreglando algo… #speaker:Florista #portrait:npcFuentePasado #layout:left
