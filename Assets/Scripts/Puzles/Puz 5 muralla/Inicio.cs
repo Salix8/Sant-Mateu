@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Inicio : MonoBehaviour
 {
-    [SerializeField] private TextAsset dialogo;
+    
     [SerializeField] private GameObject[] objetos;
     [SerializeField] private AudioClip cancion;
     private AudioSource audioSource;
 
     void Start()
     {
-        DialogueManager.GetInstance().EnterDialogueMode(dialogo);
+       
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = cancion;
         audioSource.loop = true;
