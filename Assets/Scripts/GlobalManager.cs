@@ -56,10 +56,10 @@ public class GlobalManager : MonoBehaviour
             if(obj.activeSelf){
                 if(obj != null){
                     ChangeZone changezone = obj.GetComponent<ChangeZone>();
-                    Debug.Log("Path: " + changezone);
+                    if (isDebug) Debug.Log("Path: " + changezone);
                     if(changezone != null){
                         if (changezone.niveldesbloqueo > nivelprogreso){
-                            Debug.Log("entra");
+                            //Debug.Log("entra");
                             obj.SetActive(false);
                             if (isDebug) Debug.Log("Path: " + obj);
                         }
@@ -98,7 +98,7 @@ public class GlobalManager : MonoBehaviour
             if(obj.activeSelf){
                 if(obj != null){
                     ChangeZone changezone = obj.GetComponent<ChangeZone>();
-                    Debug.Log("Path: " + changezone);
+                    if (isDebug) Debug.Log("Path: " + changezone);
                     if(changezone != null){
                         if (changezone.niveldesbloqueo > nivelprogreso){
                             Debug.Log("entra");

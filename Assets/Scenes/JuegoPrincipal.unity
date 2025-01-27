@@ -692,7 +692,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1750890581}
+      addedObject: {fileID: 1750890584}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!224 &57038297 stripped
 RectTransform:
@@ -1251,6 +1251,47 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1033853677}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &148735989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148735983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
+  zonaActiva: {fileID: 148735983}
+  idPuzzleRequerido: -1
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &149771353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,7 +1737,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
       addedObject: {fileID: 235308045}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1884403585}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!1 &176059592
 GameObject:
@@ -2244,14 +2288,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 195700667}
+      addedObject: {fileID: 195700670}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!224 &195700664 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 195700663}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &195700667
+--- !u!114 &195700670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2263,10 +2307,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogos: []
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 4900000, guid: 3da8cc3a40bf20b49a9f45ab416898ca, type: 3}
+  PuzzleActivado: 1
   zonaActiva: {fileID: 105390528}
   idPuzzleRequerido: 9
-  startDialogueAutomaticamente: 0
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &197240296
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,7 +2709,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1592618596}
+      addedObject: {fileID: 1592618599}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!224 &216090273 stripped
 RectTransform:
@@ -2856,7 +2925,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1385159855}
+      addedObject: {fileID: 1385159858}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!1001 &235308044
 PrefabInstance:
@@ -3387,7 +3456,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 277505380}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!224 &277505376 stripped
 RectTransform:
@@ -3399,6 +3471,47 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 277505375}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &277505380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277505377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
+  zonaActiva: {fileID: 277505377}
+  idPuzzleRequerido: -1
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!224 &298381780 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6813082479843435305, guid: 4599bce071cd8d64a9b9907686acc598, type: 3}
@@ -3762,6 +3875,47 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 790450065}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &326732766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326732760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
+  zonaActiva: {fileID: 326732760}
+  idPuzzleRequerido: -1
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &350238182
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,7 +4619,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1765736607}
+      addedObject: {fileID: 1765736610}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!1 &480377136 stripped
 GameObject:
@@ -4497,7 +4651,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1824427415}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &522859204
+--- !u!114 &522859207
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4509,10 +4663,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogos: []
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
   zonaActiva: {fileID: 522859198}
-  idPuzzleRequerido: -1
+  idPuzzleRequerido: 0
   startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &545420328
 GameObject:
   m_ObjectHideFlags: 0
@@ -5421,7 +5600,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1515046849}
+      addedObject: {fileID: 1515046852}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!224 &615882294 stripped
 RectTransform:
@@ -5773,7 +5952,7 @@ MonoBehaviour:
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
-  progressionManagerProxy: {fileID: 0}
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &690341392
 GameObject:
   m_ObjectHideFlags: 0
@@ -6070,12 +6249,11 @@ MonoBehaviour:
   allGameObjects:
   - {fileID: 1497191063}
   - {fileID: 484488600}
-  - {fileID: 0}
   - {fileID: 99280431}
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
-  progressionManagerProxy: {fileID: 0}
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &732721984
 GameObject:
   m_ObjectHideFlags: 0
@@ -6692,7 +6870,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1895889438}
+      addedObject: {fileID: 1895889441}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!224 &766672365 stripped
 RectTransform:
@@ -7287,7 +7465,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
       addedObject: {fileID: 51007436}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 326732766}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!1 &809276851 stripped
 GameObject:
@@ -7802,14 +7983,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 902395447}
+      addedObject: {fileID: 902395450}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!224 &902395444 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 902395443}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &902395447
+--- !u!114 &902395450
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7822,29 +8003,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogos:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 4900000, guid: 75a7319efa5b3aa4cbad3f05da4246c9, type: 3}
+  PuzzleActivado: 1
   zonaActiva: {fileID: 481889851}
   idPuzzleRequerido: 10
-  startDialogueAutomaticamente: 0
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!224 &902583958 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6404346158651514647, guid: 9ac425efcd19e394aab690391bbaae77, type: 3}
@@ -8238,7 +8424,10 @@ PrefabInstance:
     - {fileID: 515675035877657247, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
     - {fileID: 313285882853762721, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 148735989}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!1 &1041372524
 GameObject:
@@ -9323,7 +9512,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 313285882853762721, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1976177638}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!1001 &1192306233
 PrefabInstance:
@@ -9620,7 +9812,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
       addedObject: {fileID: 596090529}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1198920471}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!1 &1198920465 stripped
 GameObject:
@@ -9632,6 +9827,47 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1192306233}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1198920471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198920465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
+  zonaActiva: {fileID: 1198920465}
+  idPuzzleRequerido: -1
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &1240681698
 GameObject:
   m_ObjectHideFlags: 0
@@ -10361,7 +10597,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1332954731}
+      addedObject: {fileID: 1332954734}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!224 &1332954727 stripped
 RectTransform:
@@ -10373,7 +10609,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1332954726}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1332954731
+--- !u!114 &1332954734
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10385,10 +10621,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogos: []
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 4900000, guid: abaca84407189d245bb9cf9f03da0c10, type: 3}
+  PuzzleActivado: 1
   zonaActiva: {fileID: 1332954728}
   idPuzzleRequerido: 2
-  startDialogueAutomaticamente: 0
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &1336927521
 GameObject:
   m_ObjectHideFlags: 0
@@ -10663,7 +10924,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 222447706}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1385159855
+--- !u!114 &1385159858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10675,10 +10936,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogos: []
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
   zonaActiva: {fileID: 1385159851}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!224 &1402380293 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3529796266885769315, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
@@ -10849,11 +11135,10 @@ MonoBehaviour:
   - {fileID: 1497191063}
   - {fileID: 681868452}
   - {fileID: 484488600}
-  - {fileID: 0}
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
-  progressionManagerProxy: {fileID: 0}
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1001 &1437179697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11244,14 +11529,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1458796826}
+      addedObject: {fileID: 1458796829}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!224 &1458796823 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1458796822}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1458796826
+--- !u!114 &1458796829
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11263,10 +11548,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogos: []
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 4900000, guid: 169a9b47c5e7e8849b8899bb3ac4ddb9, type: 3}
+  PuzzleActivado: 1
   zonaActiva: {fileID: 183474825}
   idPuzzleRequerido: 6
-  startDialogueAutomaticamente: 0
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &1466747734
 GameObject:
   m_ObjectHideFlags: 0
@@ -11408,7 +11718,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 615882293}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1515046849
+--- !u!114 &1515046852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11420,10 +11730,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogos: []
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 4900000, guid: 15656f7f1820cc54bbaf2705669f960f, type: 3}
+  PuzzleActivado: 1
   zonaActiva: {fileID: 1515046846}
   idPuzzleRequerido: 4
-  startDialogueAutomaticamente: 0
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &1516383370 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8843801661361700400, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
@@ -11801,7 +12136,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 216090272}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1592618596
+--- !u!114 &1592618599
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11813,10 +12148,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogos: []
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 4900000, guid: 8718be85cdbfb934cb19f05dc4c0554c, type: 3}
+  PuzzleActivado: 1
   zonaActiva: {fileID: 1592618593}
   idPuzzleRequerido: 1
-  startDialogueAutomaticamente: 0
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!4 &1614699728 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
@@ -13297,14 +13657,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2013238445}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!1 &1750890578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 57038296}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1750890581
+--- !u!114 &1750890584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13316,10 +13679,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogos: []
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 4900000, guid: 4a9334104b353e241bdf9be0ba3e4b79, type: 3}
+  PuzzleActivado: 1
   zonaActiva: {fileID: 1750890578}
   idPuzzleRequerido: 8
-  startDialogueAutomaticamente: 0
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &1765736601 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
@@ -13330,7 +13718,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 438808830}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1765736607
+--- !u!114 &1765736610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13342,10 +13730,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogos: []
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 4900000, guid: f5e7e1c27366d48489a23038ce25e442, type: 3}
+  PuzzleActivado: 1
   zonaActiva: {fileID: 1765736601}
   idPuzzleRequerido: 7
-  startDialogueAutomaticamente: 0
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &1790458920
 GameObject:
   m_ObjectHideFlags: 0
@@ -14209,7 +14622,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 522859204}
+      addedObject: {fileID: 522859207}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!1 &1826023300
 GameObject:
@@ -14732,6 +15145,47 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 163464670}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1884403585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884403579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
+  zonaActiva: {fileID: 1884403579}
+  idPuzzleRequerido: -1
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!95 &1894107968 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2484341301977446498, guid: 360fed57f1a3724468b5418fc6017dc4, type: 3}
@@ -14742,7 +15196,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 766672364}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1895889438
+--- !u!114 &1895889441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14754,10 +15208,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogos: []
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 4900000, guid: ad32d1fed51a4f046aa710d44767531b, type: 3}
+  PuzzleActivado: 1
   zonaActiva: {fileID: 1895889435}
   idPuzzleRequerido: 5
-  startDialogueAutomaticamente: 0
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!4 &1899152476 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7952576775503285907, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
@@ -15202,13 +15681,57 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 313285882853762721, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1931548870}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!1 &1931548867 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1931548866}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1931548870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931548867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
+  zonaActiva: {fileID: 1931548867}
+  idPuzzleRequerido: -1
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1001 &1939936103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15455,7 +15978,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1939936108}
+      addedObject: {fileID: 1939936111}
   m_SourcePrefab: {fileID: 100100000, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
 --- !u!1 &1939936104 stripped
 GameObject:
@@ -15467,7 +15990,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1939936103}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1939936108
+--- !u!114 &1939936111
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15479,10 +16002,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogos: []
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 4900000, guid: baa42ef3b8ea05a4ca031cba2dee6324, type: 3}
+  PuzzleActivado: 1
   zonaActiva: {fileID: 1939936104}
   idPuzzleRequerido: 3
-  startDialogueAutomaticamente: 0
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &1976177632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
@@ -15493,6 +16041,47 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1190422581}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1976177638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976177632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
+  zonaActiva: {fileID: 1976177632}
+  idPuzzleRequerido: -1
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!4 &1978283803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 880871179116840976, guid: 5df0e14f7d22d4d4591d09bd68d4c1d9, type: 3}
@@ -15788,6 +16377,47 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1746022573}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2013238445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013238439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
+  zonaActiva: {fileID: 2013238439}
+  idPuzzleRequerido: -1
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1001 &2035236253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18537,6 +19167,7 @@ GameObject:
   - component: {fileID: 1244551101116212427}
   - component: {fileID: 4032565710007915707}
   - component: {fileID: 7158015840996796072}
+  - component: {fileID: 7158015840996796073}
   m_Layer: 5
   m_Name: MurallaPresente
   m_TagString: Escena
@@ -18555,6 +19186,7 @@ GameObject:
   - component: {fileID: 1244551099636659286}
   - component: {fileID: 4032565709329466406}
   - component: {fileID: 7158015842742695477}
+  - component: {fileID: 7158015842742695478}
   m_Layer: 5
   m_Name: ConventoPresente
   m_TagString: Escena
@@ -18869,6 +19501,47 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7158015840996796073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991288829743260645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
+  zonaActiva: {fileID: 6991288829743260645}
+  idPuzzleRequerido: -1
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!114 &7158015842742695477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18899,6 +19572,47 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7158015842742695478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991288830153241464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4d7c7beaca60146aca72bb0820425f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 4900000, guid: f19fdb6d1d37e41439e9891d23de5c8a, type: 3}
+  - {fileID: 4900000, guid: 08f8edda1c35fcc49ac9f5e98ca0409c, type: 3}
+  - {fileID: 4900000, guid: 4d6ed226c2f46c241978f1d0d17adcd6, type: 3}
+  - {fileID: 4900000, guid: 10211cf383298df46b8e5d14b7bc8652, type: 3}
+  - {fileID: 4900000, guid: cff472a9dac727a43a6e83752753e5b5, type: 3}
+  - {fileID: 4900000, guid: c9927d78b639d454098c24d941b89ea7, type: 3}
+  - {fileID: 4900000, guid: 036c71eff214ea543ade0fd6d4d77756, type: 3}
+  - {fileID: 4900000, guid: 8b7fcaeea0c1fb44193f33efa7048804, type: 3}
+  - {fileID: 4900000, guid: 31ebe7c75ff70ef47a7d1055d46f5600, type: 3}
+  - {fileID: 4900000, guid: f1a7bc4f723584c438b36469bbdd23b0, type: 3}
+  - {fileID: 4900000, guid: 6add07b3d08859c4a8426df14d9f1d77, type: 3}
+  - {fileID: 4900000, guid: dfbd52bbd09595a4b861f98a4175ce99, type: 3}
+  - {fileID: 4900000, guid: 99f140af2b633bb4286f9d89dcab16b5, type: 3}
+  - {fileID: 4900000, guid: fd146c9673f53e34883eaeb0bd112c51, type: 3}
+  - {fileID: 4900000, guid: 61bf541e56698ce44987221bfb2cd454, type: 3}
+  - {fileID: 4900000, guid: f8833c364a8991840aa51e2ee9b0801a, type: 3}
+  - {fileID: 4900000, guid: 4a9484614f986334398eb79c8216e7b7, type: 3}
+  - {fileID: 4900000, guid: 74546a580007bd84db3dffaf19c1d5c8, type: 3}
+  - {fileID: 4900000, guid: 4fb21fd076901b347aab53bf4aebfa8b, type: 3}
+  - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
+  - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
+  - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
+  dialogoPuzzle: {fileID: 0}
+  PuzzleActivado: 0
+  zonaActiva: {fileID: 6991288830153241464}
+  idPuzzleRequerido: -1
+  startDialogueAutomaticamente: 1
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &7346522233076932953
 GameObject:
   m_ObjectHideFlags: 0

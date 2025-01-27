@@ -58,6 +58,7 @@ public class ProgresionManager : MonoBehaviour
     private bool dialogoPerePas = false;
     private bool dialogoConvPres = false;
     private bool dialogoConvPas = false;
+    private bool dialogoConvGal = false;
 
     [SerializeField] public int nivelprogreso      = 0;
     [SerializeField] public int zonactual      = 0;
@@ -391,6 +392,7 @@ public class ProgresionManager : MonoBehaviour
             case 18: return dialogoPerePas;
             case 19: return dialogoConvPres;
             case 20: return dialogoConvPas;
+            case 21: return dialogoConvGal;
             default: return false;
         }
     }
@@ -461,6 +463,9 @@ public class ProgresionManager : MonoBehaviour
                 break;
             case 20:
                     dialogoConvPas = true;
+                break;
+            case 21:
+                    dialogoConvGal = true;
                 break;
             default: break;
         }
