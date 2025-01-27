@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class elegirForma : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class elegirForma : MonoBehaviour
 
     [Header("Temporizador")]
     [SerializeField] private float tiempoMaximo = 120f;
-    [SerializeField] private Text tiempoTexto;
+    [SerializeField] private TextMeshProUGUI tiempoTexto;
 
     [Header("Panel de Resultados")]
     [SerializeField] private GameObject panelResultados; // Panel que muestra los resultados
