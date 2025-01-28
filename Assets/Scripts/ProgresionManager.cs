@@ -4,6 +4,7 @@ using UnityEngine;
 using static GlobalManager;
 using UnityEngine.SceneManagement;
 using static ProgresionManager;
+using System.Threading;
 
 public class ProgresionManager : MonoBehaviour
 {
@@ -65,6 +66,7 @@ public class ProgresionManager : MonoBehaviour
 
     [SerializeField] private TextAsset[] dialogosAlCompletarPuzles;
 
+    private int completed;
 
 
     public string currentZone = "";
@@ -99,6 +101,7 @@ public class ProgresionManager : MonoBehaviour
 
     public void SetComplete(int id)
     {
+        completed = id;
         switch (id)
         {
             case 0:
@@ -166,9 +169,23 @@ public class ProgresionManager : MonoBehaviour
         LoadMainScene();
         //RestoreZoneObjectState();
 
+        StartCoroutine(rundialog());
 
-        DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
         Debug.Log("Se ha hecho bien");
+    }
+
+    IEnumerator rundialog(){
+
+        yield return new WaitForSeconds(2f);
+        if (DialogueManager.GetInstance() == null){
+            DialogueManager[] dialoguemanager = FindObjectsOfType<DialogueManager>();
+            dialoguemanager[0].EnterDialogueMode(dialogosAlCompletarPuzles[completed]);
+            Debug.Log("Cosa");
+        }else{
+            DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[completed]);
+            Debug.Log("Intento de playear dialogo");
+        }
+        
     }
 
     public bool GetComplete(int id)
