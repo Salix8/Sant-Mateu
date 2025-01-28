@@ -1034,6 +1034,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8806086656338459799, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0e0705149057e4a44bb0a1cb3cd33e20, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1690,6 +1694,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 285
       objectReference: {fileID: 0}
+    - target: {fileID: 6489803182084201235, guid: d239afe9fda92884388cc010791729d2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: eb71fb367a88f9c46a51cb384903f101, type: 3}
     - target: {fileID: 7325188682732387258, guid: d239afe9fda92884388cc010791729d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3663,6 +3671,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1792407812262883030, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3e040f291a1221046a61df6ea695d5b3, type: 3}
     - target: {fileID: 2345673618097312844, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
       propertyPath: m_SizeDelta.x
       value: 2325
@@ -3955,7 +3967,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1591169729, guid: 7334638a372292f4e9f6172308c37054, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c6eb7db5fafcf2645be79a1a2ea72413, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4332,6 +4344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Salir
       objectReference: {fileID: 0}
+    - target: {fileID: 6034029226564664029, guid: 5842e4af787c45c4890997f74811ee9e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1cc1b2d6224cf8542bd0143c8ca8f767, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
