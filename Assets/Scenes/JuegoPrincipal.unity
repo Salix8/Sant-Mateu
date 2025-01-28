@@ -716,6 +716,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 880871179116840976, guid: 5df0e14f7d22d4d4591d09bd68d4c1d9, type: 3}
   m_PrefabInstance: {fileID: 428442601}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &73053852 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6588013179367432978, guid: 23372a7efe2609e42a93784aae3f2003, type: 3}
+  m_PrefabInstance: {fileID: 5399621935354578139}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac23298e3671264882e9f3981d6ca8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &85273836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -873,6 +884,7 @@ GameObject:
   - component: {fileID: 99280434}
   - component: {fileID: 99280433}
   - component: {fileID: 99280435}
+  - component: {fileID: 99280436}
   m_Layer: 5
   m_Name: Mapa
   m_TagString: Untagged
@@ -972,6 +984,51 @@ MonoBehaviour:
   - {fileID: 1087830036}
   - {fileID: 732721984}
   - {fileID: 1832344865}
+--- !u!61 &99280436
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99280431}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0001, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &105390528 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
@@ -1310,8 +1367,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 148735983}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -1785,6 +1840,7 @@ GameObject:
   - component: {fileID: 176059593}
   - component: {fileID: 176059595}
   - component: {fileID: 176059594}
+  - component: {fileID: 176059596}
   m_Layer: 5
   m_Name: Fondo
   m_TagString: Untagged
@@ -1849,6 +1905,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176059592}
   m_CullTransparentMesh: 1
+--- !u!61 &176059596
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176059592}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &179998414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,8 +2463,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 4900000, guid: 3da8cc3a40bf20b49a9f45ab416898ca, type: 3}
-  PuzzleActivado: 1
   zonaActiva: {fileID: 105390528}
   idPuzzleRequerido: 9
   startDialogueAutomaticamente: 1
@@ -3567,8 +3666,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 277505377}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -3971,8 +4068,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 326732760}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -4763,12 +4858,110 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 522859198}
   idPuzzleRequerido: 0
   startDialogueAutomaticamente: 1
   progressionManagerProxy: {fileID: 553834940}
+--- !u!1 &531411589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7825075579322406063, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+  m_PrefabInstance: {fileID: 1739986964913392695}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &531411593
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531411589}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!1 &538161594 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7773124341978089109, guid: c8877e35486c17f459ef6f8529f3797e, type: 3}
+  m_PrefabInstance: {fileID: 54597219361027666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &538161598
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538161594}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &545420328
 GameObject:
   m_ObjectHideFlags: 0
@@ -5998,6 +6191,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 73053852}
+        m_TargetAssemblyTypeName: GlobalManager, Assembly-CSharp
+        m_MethodName: SetPathObject
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &681868457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6052,7 +6257,7 @@ MonoBehaviour:
   - {fileID: 681868452}
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
-  dialogo: {fileID: 0}
+  dialogo: {fileID: 4900000, guid: ab5f1ccf5972ed64b89774ad68cc3dc5, type: 3}
   progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &690341392
 GameObject:
@@ -7609,6 +7814,56 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
   m_PrefabInstance: {fileID: 1645424008}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &825581759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4228018431163023536, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+  m_PrefabInstance: {fileID: 7079487518839091557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &825581763
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825581759}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!224 &833334580 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
@@ -8162,8 +8417,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 4900000, guid: 75a7319efa5b3aa4cbad3f05da4246c9, type: 3}
-  PuzzleActivado: 1
   zonaActiva: {fileID: 481889851}
   idPuzzleRequerido: 10
   startDialogueAutomaticamente: 1
@@ -8218,6 +8471,56 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &967945568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6506469095246339825, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+  m_PrefabInstance: {fileID: 7079487518839091557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &967945572
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967945568}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!4 &996097324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 880871179116840976, guid: 5df0e14f7d22d4d4591d09bd68d4c1d9, type: 3}
@@ -10031,8 +10334,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 1198920465}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -10423,6 +10724,7 @@ GameObject:
   - component: {fileID: 1305884199}
   - component: {fileID: 1305884201}
   - component: {fileID: 1305884200}
+  - component: {fileID: 1305884202}
   m_Layer: 5
   m_Name: Fondo
   m_TagString: Untagged
@@ -10487,6 +10789,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305884198}
   m_CullTransparentMesh: 1
+--- !u!61 &1305884202
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305884198}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &1312690345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10813,8 +11160,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 4900000, guid: abaca84407189d245bb9cf9f03da0c10, type: 3}
-  PuzzleActivado: 1
   zonaActiva: {fileID: 1332954728}
   idPuzzleRequerido: 2
   startDialogueAutomaticamente: 1
@@ -11132,8 +11477,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 1385159851}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -11239,6 +11582,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 73053852}
+        m_TargetAssemblyTypeName: GlobalManager, Assembly-CSharp
+        m_MethodName: SetPathObject
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1406041468
 MonoBehaviour:
@@ -11748,8 +12103,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 4900000, guid: 169a9b47c5e7e8849b8899bb3ac4ddb9, type: 3}
-  PuzzleActivado: 1
   zonaActiva: {fileID: 183474825}
   idPuzzleRequerido: 6
   startDialogueAutomaticamente: 1
@@ -11930,8 +12283,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 4900000, guid: 15656f7f1820cc54bbaf2705669f960f, type: 3}
-  PuzzleActivado: 1
   zonaActiva: {fileID: 1515046846}
   idPuzzleRequerido: 4
   startDialogueAutomaticamente: 1
@@ -12356,8 +12707,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 4900000, guid: 8718be85cdbfb934cb19f05dc4c0554c, type: 3}
-  PuzzleActivado: 1
   zonaActiva: {fileID: 1592618593}
   idPuzzleRequerido: 1
   startDialogueAutomaticamente: 1
@@ -13048,6 +13397,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 73053852}
+        m_TargetAssemblyTypeName: GlobalManager, Assembly-CSharp
+        m_MethodName: SetPathObject
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1675240115
 MonoBehaviour:
@@ -13915,8 +14276,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 4900000, guid: 4a9334104b353e241bdf9be0ba3e4b79, type: 3}
-  PuzzleActivado: 1
   zonaActiva: {fileID: 1750890578}
   idPuzzleRequerido: 8
   startDialogueAutomaticamente: 1
@@ -13966,8 +14325,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 4900000, guid: f5e7e1c27366d48489a23038ce25e442, type: 3}
-  PuzzleActivado: 1
   zonaActiva: {fileID: 1765736601}
   idPuzzleRequerido: 7
   startDialogueAutomaticamente: 1
@@ -15368,6 +15725,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849848042}
   m_CullTransparentMesh: 1
+--- !u!1 &1868505849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7514484624321181613, guid: 2e33cd87c98c3104bb42ad3575ea0d0a, type: 3}
+  m_PrefabInstance: {fileID: 3646590868588317377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1868505853
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868505849}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1884403579 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6991288829887532505, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
@@ -15413,8 +15820,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 1884403579}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -15464,8 +15869,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 4900000, guid: ad32d1fed51a4f046aa710d44767531b, type: 3}
-  PuzzleActivado: 1
   zonaActiva: {fileID: 1895889435}
   idPuzzleRequerido: 5
   startDialogueAutomaticamente: 1
@@ -15967,8 +16370,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 1931548867}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -16266,8 +16667,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 4900000, guid: baa42ef3b8ea05a4ca031cba2dee6324, type: 3}
-  PuzzleActivado: 1
   zonaActiva: {fileID: 1939936104}
   idPuzzleRequerido: 3
   startDialogueAutomaticamente: 1
@@ -16317,8 +16716,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 1976177632}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -16653,8 +17050,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 2013238439}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -17319,7 +17714,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7773124341978089109, guid: c8877e35486c17f459ef6f8529f3797e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 538161598}
   m_SourcePrefab: {fileID: 100100000, guid: c8877e35486c17f459ef6f8529f3797e, type: 3}
 --- !u!1001 &691942964254784477
 PrefabInstance:
@@ -17667,6 +18065,34 @@ PrefabInstance:
       propertyPath: transicionmenu
       value: 
       objectReference: {fileID: 1516383370}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 73053852}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetPathObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GlobalManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005741726325220890, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5001812472701212108, guid: c026edc1841a9b34a9a25a1b87a80616, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -18286,7 +18712,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7825075579322406063, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 531411593}
   m_SourcePrefab: {fileID: 100100000, guid: 86dcfeb6573ea1d48a6cfa67a72b1018, type: 3}
 --- !u!1001 &2378402532369025106
 PrefabInstance:
@@ -18707,7 +19136,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7514484624321181613, guid: 2e33cd87c98c3104bb42ad3575ea0d0a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1868505853}
   m_SourcePrefab: {fileID: 100100000, guid: 2e33cd87c98c3104bb42ad3575ea0d0a, type: 3}
 --- !u!114 &3832658238159508053
 MonoBehaviour:
@@ -19751,6 +20183,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8843801661361700400, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1516383372}
+    - targetCorrespondingSourceObject: {fileID: 6506469095246339825, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 967945572}
+    - targetCorrespondingSourceObject: {fileID: 4228018431163023536, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 825581763}
   m_SourcePrefab: {fileID: 100100000, guid: 2642a1fc9f6e28d48bed3b3822876779, type: 3}
 --- !u!114 &7158015840996796072
 MonoBehaviour:
@@ -19817,8 +20255,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 6991288829743260645}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
@@ -19888,8 +20324,6 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 17784a650e141dc44b4930d91381fadd, type: 3}
   - {fileID: 4900000, guid: 84cd96fab5c52d64dbacbdf162958380, type: 3}
   - {fileID: 4900000, guid: 588fe6b743e14b548953669c1179eb77, type: 3}
-  dialogoPuzzle: {fileID: 0}
-  PuzzleActivado: 0
   zonaActiva: {fileID: 6991288830153241464}
   idPuzzleRequerido: -1
   startDialogueAutomaticamente: 1
