@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MapaController : MonoBehaviour
 {
-    public ProgresionManager progresionmanager;
+     public ProgressionManagerProxy progressionmanagerproxy;
     
     public GameObject[] lugar;
 
@@ -20,8 +20,8 @@ public class MapaController : MonoBehaviour
         foreach(GameObject obj in lugar){
             obj.SetActive(false);
         }
-        Debug.Log(progresionmanager.zonactual);
-        lugar[progresionmanager.zonactual].SetActive(true);
+        Debug.Log(progressionmanagerproxy.getzona());
+        lugar[progressionmanagerproxy.getzona()].SetActive(true);
     }
 
     // Update is called once per frame
