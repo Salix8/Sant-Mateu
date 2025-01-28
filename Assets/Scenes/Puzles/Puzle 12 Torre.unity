@@ -252,7 +252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6a22c6e186bf02e4a97ac9deea8dcef6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72e5af69eec62e54787df0455fec33d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3063,7 +3063,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Borrar
+  m_text: '
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3244,6 +3246,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 285
       objectReference: {fileID: 0}
+    - target: {fileID: 6489803182084201235, guid: d239afe9fda92884388cc010791729d2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: eb71fb367a88f9c46a51cb384903f101, type: 3}
     - target: {fileID: 7325188682732387258, guid: d239afe9fda92884388cc010791729d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
