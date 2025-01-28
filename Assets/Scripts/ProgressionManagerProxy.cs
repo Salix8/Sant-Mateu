@@ -3,6 +3,12 @@
 public class ProgressionManagerProxy : MonoBehaviour
 {
 
+	public int getzona(){
+		return ProgresionManager.GetInstance().getzona();
+	}
+	public void setzona(int n){
+		ProgresionManager.GetInstance().setzona(n);
+	}
 	public void LoadMainScene()
 	{
 		ProgresionManager.GetInstance().LoadMainScene();

@@ -11,7 +11,7 @@ public class ChangeZone : MonoBehaviour
     public int niveldesbloqueo;
     public int mapcode;
 
-    public ProgresionManager progresionmanager;
+    public ProgressionManagerProxy progressionmanagerproxy;
 
 
     private Animator transition;
@@ -55,7 +55,7 @@ public class ChangeZone : MonoBehaviour
             yield return null; // Espera un frame
         }
 
-        progresionmanager.zonactual = mapcode;
+        progressionmanagerproxy.setzona(mapcode);
         transition.SetTrigger("AcabaMedio");
         Debug.Log("Se ha cambiado a la escena: " + nextZone);
         transform.parent.gameObject.SetActive(false);

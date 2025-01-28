@@ -72,6 +72,13 @@ public class ProgresionManager : MonoBehaviour
 
     private static ProgresionManager instance;
 
+    public void setzona(int n){
+        zonactual = n;
+    }
+
+    public int getzona(){
+        return zonactual;
+    }
     void Awake()
     {
         if (instance != null)
@@ -160,7 +167,7 @@ public class ProgresionManager : MonoBehaviour
         //RestoreZoneObjectState();
 
 
-        //DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
+        DialogueManager.GetInstance().EnterDialogueMode(dialogosAlCompletarPuzles[id]);
         Debug.Log("Se ha hecho bien");
     }
 
