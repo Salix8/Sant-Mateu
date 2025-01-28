@@ -4,12 +4,10 @@ using UnityEngine;
 public class DialogoAutomatico : MonoBehaviour
 {
     [SerializeField] private TextAsset[] dialogos;
-    [SerializeField] private TextAsset dialogoPuzzle;
-    [SerializeField] private bool PuzzleActivado = false;
     [SerializeField] private GameObject zonaActiva;
     [SerializeField] private int idPuzzleRequerido = -1;  // ID del puzzle necesario para el diálogo
     [SerializeField] private bool startDialogueAutomaticamente = false;  // Para activar el diálogo al entrar en la escena
-    private bool dialogoPlayed = false;
+    
 
     public ProgressionManagerProxy progressionManagerProxy;
 
@@ -17,7 +15,7 @@ public class DialogoAutomatico : MonoBehaviour
 
     private void Start()
     {
-        if ((dialogos == null && startDialogueAutomaticamente) || (dialogoPuzzle == null && PuzzleActivado))
+        if (dialogos == null && startDialogueAutomaticamente)
         {
             Debug.LogError("El diálogo no está asignado.");
             return;
@@ -28,13 +26,6 @@ public class DialogoAutomatico : MonoBehaviour
         {
             StartCoroutine(EsperarYReproducirDialogo());
         }
-        /* else
-        {
-            if (idPuzzleRequerido != -1 && progressionManagerProxy.GetComplete(idPuzzleRequerido) && !dialogoPlayed)
-            {
-                StartCoroutine(EsperarYReproducirDialogo());
-            }
-        } */
     }
 
     private IEnumerator EsperarYReproducirDialogo()
@@ -96,11 +87,6 @@ public class DialogoAutomatico : MonoBehaviour
 
             // Si el lugar no fue encontrado.
             Debug.Log("Lugar no reconocido");
-        }
-        if (!dialogoPlayed && zonaActiva.activeSelf)  // Verificamos si el objeto zonaActiva está activo
-        {
-            DialogueManager.GetInstance().EnterDialogueMode(dialogoPuzzle);
-            dialogoPlayed = true;  // Aseguramos que el diálogo solo se reproduzca una vez
         }
     }
 }
