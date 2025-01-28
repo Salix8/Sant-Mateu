@@ -216,6 +216,18 @@ MonoBehaviour:
           m_StringArgument: Puz 2 Villores Pasado
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6003093}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6003097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -948,7 +960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa82269165acbae4699b593231a7e784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progresionmanager: {fileID: 996868824}
+  progressionmanagerproxy: {fileID: 553834940}
   lugar:
   - {fileID: 2089563987}
   - {fileID: 1377562889}
@@ -1067,6 +1079,18 @@ MonoBehaviour:
           m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: Puz 8 Horno
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 142578774}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &142578778
@@ -1634,6 +1658,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1666,6 +1694,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -2430,6 +2462,18 @@ MonoBehaviour:
           m_StringArgument: Puz 3 Plaza
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 197240296}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &197240300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2648,6 +2692,10 @@ PrefabInstance:
       propertyPath: transicionnormal
       value: 
       objectReference: {fileID: 1585859245}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2699,6 +2747,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 313285882853762721, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+    - {fileID: 1760797218868080987, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1244551100971928311, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       insertIndex: -1
@@ -2860,6 +2909,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -3361,6 +3414,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3389,6 +3446,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -4010,6 +4071,18 @@ MonoBehaviour:
           m_StringArgument: Puz 4 Arciprestal
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 350238182}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &350238186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4097,6 +4170,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -4786,6 +4863,18 @@ MonoBehaviour:
           m_StringArgument: "Puz 7 Callej\xF3n"
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 545420328}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &545420332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5074,6 +5163,18 @@ MonoBehaviour:
           m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: Puz 9 Fuente
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 562306456}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &562306460
@@ -6047,6 +6148,18 @@ MonoBehaviour:
           m_StringArgument: Puz 1 Villores
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 690341392}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &690341396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6173,6 +6286,18 @@ MonoBehaviour:
       - m_Target: {fileID: 717166435}
         m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
         m_MethodName: MostrarMapa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 99280435}
+        m_TargetAssemblyTypeName: MapaController, Assembly-CSharp
+        m_MethodName: setmapa
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7342,6 +7467,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -7673,6 +7802,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -7705,6 +7838,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -8307,6 +8444,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -8568,6 +8709,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -8746,6 +8891,18 @@ MonoBehaviour:
           m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: Puz 5 Muralla
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1057233213}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &1057233216
@@ -9420,6 +9577,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -9709,6 +9870,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -9741,6 +9906,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -10758,6 +10927,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -11199,6 +11372,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -11968,6 +12145,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -12000,6 +12181,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -12637,6 +12822,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -13049,6 +13238,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -13227,6 +13420,18 @@ MonoBehaviour:
           m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: Puz 11 Convento
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1734956891}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1734956895
@@ -13558,6 +13763,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -13590,6 +13799,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 4194563950580143566, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5081509757013747242, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: textInfo
       value: 
@@ -14201,6 +14414,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -14564,6 +14781,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -14716,6 +14937,18 @@ MonoBehaviour:
           m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: Puz 5 Muralla
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1826023300}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1826023304
@@ -15302,6 +15535,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -15589,6 +15826,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 2738344516816273972, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3392821957506667659, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -16660,6 +16901,18 @@ MonoBehaviour:
           m_StringArgument: Puz 10 Sant Pere
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2097906357}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2097906361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16829,6 +17082,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -17035,6 +17292,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 553834940}
+    - target: {fileID: 5696202357070446410, guid: c8877e35486c17f459ef6f8529f3797e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6370274026564037674, guid: c8877e35486c17f459ef6f8529f3797e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -17124,6 +17385,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 3749485089785334714, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -17245,6 +17510,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -17668,6 +17937,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -17805,6 +18078,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -19266,6 +19543,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 
@@ -19936,6 +20217,10 @@ PrefabInstance:
       propertyPath: progresionmanager
       value: 
       objectReference: {fileID: 996868824}
+    - target: {fileID: 3430277962050508757, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
+      propertyPath: progressionmanagerproxy
+      value: 
+      objectReference: {fileID: 553834940}
     - target: {fileID: 5701381510273856459, guid: 0d62156662603f84d8b2bbdd05612393, type: 3}
       propertyPath: textInfo
       value: 

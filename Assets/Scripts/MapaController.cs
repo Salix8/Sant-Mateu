@@ -15,6 +15,10 @@ public class MapaController : MonoBehaviour
     }
 
     void Awake(){
+        
+    }
+
+    public void setmapa(){
         Debug.Log("Awake del mapa");
 
         foreach(GameObject obj in lugar){
@@ -22,6 +26,7 @@ public class MapaController : MonoBehaviour
         }
         Debug.Log(progressionmanagerproxy.getzona());
         lugar[progressionmanagerproxy.getzona()].SetActive(true);
+
     }
 
     // Update is called once per frame
