@@ -16,7 +16,6 @@ public class Comenzar : MonoBehaviour
         }
         ControlCursor.GetInstance().ResetCursor();
         objetoOcultar.SetActive(false);
-        DialogueManager.GetInstance().EnterDialogueMode(dialogo);
     }
         
 }
