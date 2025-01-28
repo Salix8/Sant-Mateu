@@ -6356,7 +6356,7 @@ RectTransform:
   m_GameObject: {fileID: 681868452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.16915, y: 0.16915, z: 0.16915}
+  m_LocalScale: {x: 0.16915, y: 0.08, z: 0.16915}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1290423176}
@@ -11299,7 +11299,6 @@ GameObject:
   - component: {fileID: 1305884201}
   - component: {fileID: 1305884200}
   - component: {fileID: 1305884202}
-  - component: {fileID: 1305884203}
   m_Layer: 5
   m_Name: Fondo
   m_TagString: Untagged
@@ -11316,14 +11315,14 @@ RectTransform:
   m_GameObject: {fileID: 1305884198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.85, y: 0.4, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 547634322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -26.89502, y: 0}
+  m_AnchoredPosition: {x: 65, y: 0}
   m_SizeDelta: {x: 1866.97, y: 1827.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305884200
@@ -11409,20 +11408,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1305884203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305884198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e591a7e25f79818448d00d7ba5d1f01f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imageComponent: {fileID: 1305884200}
-  svgSprite: {fileID: 3286163911610860551, guid: 1d7d5f0d00756cb40857a664cff9b11f, type: 3}
 --- !u!1001 &1312690345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12245,7 +12230,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1cc1b2d6224cf8542bd0143c8ca8f767, type: 3}
+  m_Sprite: {fileID: -750602801, guid: a8c5f2477daf94c43a06ff819721da15, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15046,7 +15031,7 @@ PrefabInstance:
     - target: {fileID: 7158015840869222548, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d1eef79e8cfa8e64f8a4faa3584f750a, type: 3}
+      objectReference: {fileID: 21300000, guid: 96911d976b3b3f44f8cc52b07cfad462, type: 3}
     - target: {fileID: 7876384844432084963, guid: 0347cf9b79d324b40b8c7b696bcd8958, type: 3}
       propertyPath: m_Size.x
       value: 2001.5323
