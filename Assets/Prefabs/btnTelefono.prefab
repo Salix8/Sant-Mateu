@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2584421821931274088}
   - component: {fileID: 5457325587738554057}
   - component: {fileID: 8534899849230708712}
+  - component: {fileID: -4921928618484766331}
   m_Layer: 5
   m_Name: btnTelefono
   m_TagString: Importante
@@ -167,6 +168,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClickSound: {fileID: 8300000, guid: 8861705d5668a8649a5532d529fdbe01, type: 3}
   playSound: 1
+--- !u!114 &-4921928618484766331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4209499367067407740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e591a7e25f79818448d00d7ba5d1f01f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageComponent: {fileID: 6069531015262559805}
+  svgSprite: {fileID: 3286163911610860551, guid: 1d7d5f0d00756cb40857a664cff9b11f, type: 3}
 --- !u!1 &4863504935444882808
 GameObject:
   m_ObjectHideFlags: 0
