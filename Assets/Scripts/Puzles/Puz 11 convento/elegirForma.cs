@@ -132,7 +132,7 @@ public class elegirForma : MonoBehaviour
         }
         else
         {
-            Debug.LogError("�El campo Tiempo Texto no est� asignado!");
+            Debug.LogError("El campo Tiempo Texto no esta asignado!");
         }
     }
 
@@ -147,17 +147,17 @@ public class elegirForma : MonoBehaviour
 
     private void FinalizarJuego()
     {
-        Debug.Log("�Tiempo agotado! Fin del juego.");
+        Debug.Log("Tiempo agotado! Fin del juego.");
         // Muestra el panel de resultados
         if (panelResultados != null && textoResultados != null)
         {
             
             panelResultados.SetActive(true); // Activa el panel
-            textoResultados.text = "N� Galletas : " + puntuacion;
+            textoResultados.text = "Número de Galletas : " + puntuacion;
         }
         else
         {
-            Debug.LogError("�Panel o texto de resultados no asignados en el Inspector!");
+            Debug.LogError("Panel o texto de resultados no asignados en el Inspector!");
         }
     }
 }
