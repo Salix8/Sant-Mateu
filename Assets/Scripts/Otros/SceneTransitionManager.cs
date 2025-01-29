@@ -11,6 +11,8 @@ public class SceneTransitionManager : MonoBehaviour
 
     public ProgressionManagerProxy progressionManagerProxy;
 
+    [SerializeField] private GameObject btnTelefono;
+
     private Dictionary<string, string> zoneMapping = new Dictionary<string, string>
     {
         { "Villores3Presente", "Villores3Pasado"    },
@@ -42,7 +44,7 @@ public class SceneTransitionManager : MonoBehaviour
     }
 
     void Awake(){
-        if (progressionManagerProxy.GetComplete(0)) menuTelefono.SetActive(true);
+        if (progressionManagerProxy.GetComplete(0)) btnTelefono.SetActive(true);
     }
 
     public void AbrirMenuTelefono() // no se abre cuando hay dialogo, desactiva cambio de Zona
