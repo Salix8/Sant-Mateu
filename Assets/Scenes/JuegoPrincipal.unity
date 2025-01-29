@@ -6756,6 +6756,7 @@ GameObject:
   - component: {fileID: 717166433}
   - component: {fileID: 717166432}
   - component: {fileID: 717166431}
+  - component: {fileID: 717166436}
   - component: {fileID: 717166435}
   - component: {fileID: 717166434}
   m_Layer: 5
@@ -6829,8 +6830,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 717166435}
-        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
+      - m_Target: {fileID: 717166436}
+        m_TargetAssemblyTypeName: "Soluci\xF3nTripleClick, Assembly-CSharp"
         m_MethodName: MostrarMapa
         m_Mode: 1
         m_Arguments:
@@ -6912,7 +6913,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717166428}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
   m_Name: 
@@ -6922,7 +6923,23 @@ MonoBehaviour:
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
   progressionManagerProxy: {fileID: 553834940}
-  btnTelefono: {fileID: 681868452}
+  btnTelefono: {fileID: 484488600}
+--- !u!114 &717166436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717166428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e916088a8321e04f9c63fbb841ad9c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects: []
+  menuTelefono: {fileID: 547634321}
+  mapa: {fileID: 99280431}
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1 &732721984
 GameObject:
   m_ObjectHideFlags: 0
@@ -12207,6 +12224,7 @@ GameObject:
   - component: {fileID: 1406041469}
   - component: {fileID: 1406041468}
   - component: {fileID: 1406041467}
+  - component: {fileID: 1406041472}
   - component: {fileID: 1406041471}
   - component: {fileID: 1406041470}
   m_Layer: 5
@@ -12280,8 +12298,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1406041471}
-        m_TargetAssemblyTypeName: SceneTransitionManager, Assembly-CSharp
+      - m_Target: {fileID: 1406041472}
+        m_TargetAssemblyTypeName: "Soluci\xF3nTripleClick, Assembly-CSharp"
         m_MethodName: Volver
         m_Mode: 1
         m_Arguments:
@@ -12363,7 +12381,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406041464}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
   m_Name: 
@@ -12373,7 +12391,23 @@ MonoBehaviour:
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
   progressionManagerProxy: {fileID: 553834940}
-  btnTelefono: {fileID: 681868452}
+  btnTelefono: {fileID: 484488600}
+--- !u!114 &1406041472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406041464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e916088a8321e04f9c63fbb841ad9c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allGameObjects: []
+  menuTelefono: {fileID: 547634321}
+  mapa: {fileID: 99280431}
+  progressionManagerProxy: {fileID: 553834940}
 --- !u!1001 &1437179697
 PrefabInstance:
   m_ObjectHideFlags: 0
