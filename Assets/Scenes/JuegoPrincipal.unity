@@ -6594,12 +6594,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 681868452}
+  allGameObjects: []
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 4900000, guid: ab5f1ccf5972ed64b89774ad68cc3dc5, type: 3}
-  progressionManagerProxy: {fileID: 0}
+  progressionManagerProxy: {fileID: 553834940}
   btnTelefono: {fileID: 681868452}
 --- !u!1 &690341392
 GameObject:
@@ -6868,7 +6867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6918,15 +6917,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1497191063}
-  - {fileID: 484488600}
-  - {fileID: 99280431}
+  allGameObjects: []
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
   progressionManagerProxy: {fileID: 553834940}
-  btnTelefono: {fileID: 0}
+  btnTelefono: {fileID: 681868452}
 --- !u!1 &732721984
 GameObject:
   m_ObjectHideFlags: 0
@@ -10110,16 +10106,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1497191063}
-  - {fileID: 0}
-  - {fileID: 484488600}
-  - {fileID: 0}
+  allGameObjects: []
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
-  progressionManagerProxy: {fileID: 0}
-  btnTelefono: {fileID: 0}
+  progressionManagerProxy: {fileID: 553834940}
+  btnTelefono: {fileID: 681868452}
 --- !u!114 &1145024989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12326,7 +12318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12376,15 +12368,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601f0f2bb1df0d0438011cf229fb7bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allGameObjects:
-  - {fileID: 1497191063}
-  - {fileID: 681868452}
-  - {fileID: 484488600}
+  allGameObjects: []
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
   progressionManagerProxy: {fileID: 553834940}
-  btnTelefono: {fileID: 0}
+  btnTelefono: {fileID: 681868452}
 --- !u!1001 &1437179697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18107,7 +18096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -21117,7 +21106,7 @@ MonoBehaviour:
   mapa: {fileID: 99280431}
   dialogo: {fileID: 4900000, guid: ab5f1ccf5972ed64b89774ad68cc3dc5, type: 3}
   progressionManagerProxy: {fileID: 553834940}
-  btnTelefono: {fileID: 0}
+  btnTelefono: {fileID: 681868452}
 --- !u!1 &6219533761136212316
 GameObject:
   m_ObjectHideFlags: 0
