@@ -87,6 +87,7 @@ public class ProgresionManager : MonoBehaviour
     public void LoadMainEmergency(){
         if (SceneManager.GetActiveScene().buildIndex == 0) SaveZoneState();
         LoadMainScene();
+        if (GlobalManager.GetInstance().GetZonesObjects() == null) GlobalManager.GetInstance().ShowMainMenu();
 
     }
 
@@ -284,7 +285,9 @@ public class ProgresionManager : MonoBehaviour
                 currentZone = zone.name;
             }
         }
+        if (currentZone == "") currentZone = "Villores1";
         Debug.Log($"La zona actual es: {currentZone}; SaveZoneState()");
+        
     }
 
     // Restaurar el estado de los objetos de la zona

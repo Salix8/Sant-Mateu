@@ -21052,6 +21052,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlobalManger
       objectReference: {fileID: 0}
+    - target: {fileID: 6588013179367432978, guid: 23372a7efe2609e42a93784aae3f2003, type: 3}
+      propertyPath: escenaMenu
+      value: 
+      objectReference: {fileID: 150928056}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

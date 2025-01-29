@@ -14,6 +14,8 @@ public class GlobalManager : MonoBehaviour
     [SerializeField] private GameObject[] activeObjectsDefault;
     public int nivelprogreso = 0;
 
+    public GameObject escenaMenu;
+
 
     private bool isDebug = false;
 
@@ -171,6 +173,17 @@ public class GlobalManager : MonoBehaviour
         foreach (GameObject obj in startObjects)
         {
             obj.SetActive(true);
+        }
+    }
+
+    public void ShowMainMenu()
+    {
+        GameObject menuInicial = GameObject.FindGameObjectWithTag("MenuInicial");
+        menuInicial.SetActive(true);
+        GameObject[] startObjects = GameObject.FindGameObjectWithTag("ObjetosInicio").GetComponent<ObjectCollection>().Objects;
+        foreach (GameObject obj in startObjects)
+        {
+            obj.SetActive(false);
         }
     }
 
