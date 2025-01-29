@@ -295,6 +295,10 @@ PrefabInstance:
       value: -375
       objectReference: {fileID: 0}
     - target: {fileID: 3436491544411759396, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436491544411759396, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
       propertyPath: switcher
       value: 1
       objectReference: {fileID: 0}
@@ -1753,7 +1757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2345673618097312844, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -375
+      value: -273
       objectReference: {fileID: 0}
     - target: {fileID: 3436491544411759396, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
       propertyPath: switcher
@@ -1767,6 +1771,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "Las baldosas del callej\xF3n est\xE1n desordenadas. Ayuda a Silvia
         y Andreu a moverlas y ponerlas bien de nuevo."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784289004006332482, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8193074993677199891, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1804,7 +1812,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1576268215080852856, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 193702045}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de40767f5ae30bf4b93b353730d6f77b, type: 3}
