@@ -6599,7 +6599,8 @@ MonoBehaviour:
   menuTelefono: {fileID: 547634321}
   mapa: {fileID: 99280431}
   dialogo: {fileID: 4900000, guid: ab5f1ccf5972ed64b89774ad68cc3dc5, type: 3}
-  progressionManagerProxy: {fileID: 553834940}
+  progressionManagerProxy: {fileID: 0}
+  btnTelefono: {fileID: 681868452}
 --- !u!1 &690341392
 GameObject:
   m_ObjectHideFlags: 0
@@ -6925,6 +6926,7 @@ MonoBehaviour:
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
   progressionManagerProxy: {fileID: 553834940}
+  btnTelefono: {fileID: 0}
 --- !u!1 &732721984
 GameObject:
   m_ObjectHideFlags: 0
@@ -10117,6 +10119,7 @@ MonoBehaviour:
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
   progressionManagerProxy: {fileID: 0}
+  btnTelefono: {fileID: 0}
 --- !u!114 &1145024989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12381,6 +12384,7 @@ MonoBehaviour:
   mapa: {fileID: 99280431}
   dialogo: {fileID: 0}
   progressionManagerProxy: {fileID: 553834940}
+  btnTelefono: {fileID: 0}
 --- !u!1001 &1437179697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21113,6 +21117,7 @@ MonoBehaviour:
   mapa: {fileID: 99280431}
   dialogo: {fileID: 4900000, guid: ab5f1ccf5972ed64b89774ad68cc3dc5, type: 3}
   progressionManagerProxy: {fileID: 553834940}
+  btnTelefono: {fileID: 0}
 --- !u!1 &6219533761136212316
 GameObject:
   m_ObjectHideFlags: 0
