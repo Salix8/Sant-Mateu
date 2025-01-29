@@ -4,7 +4,7 @@ Le quitas la gracia a las cosas Andreu, ¿No sería mejor hablar con la gente qu
 
 Bueno, pues elige tú. #speaker:Andreu #portrait:andreu-hablando #layout:left
 
-+ [Hablemos con la persona que tenemos enfrente]
++ [Hablemos con ella]
     Te lo dije Andreu, disfrutemos del tiempo. #speaker:Silvia #portrait:silvia-hablando #layout:right
 
 + [Vamos al lío]
