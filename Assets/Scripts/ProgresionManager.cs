@@ -74,6 +74,22 @@ public class ProgresionManager : MonoBehaviour
 
     private static ProgresionManager instance;
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            LoadMainEmergency();
+        }
+    }
+
+    
+
+    public void LoadMainEmergency(){
+        if (SceneManager.GetActiveScene().buildIndex == 0) SaveZoneState();
+        LoadMainScene();
+
+    }
+
     public void setzona(int n){
         zonactual = n;
     }
@@ -101,6 +117,7 @@ public class ProgresionManager : MonoBehaviour
 
     public void SetComplete(int id)
     {
+        int nivelsiguiente = 0;
         completed = id;
         switch (id)
         {
@@ -111,52 +128,62 @@ public class ProgresionManager : MonoBehaviour
             case 1:
                 sello1Villores = true;
                 Debug.Log($"Sello {id} (Villores) completado.");
-                nivelprogreso = 1;
+                nivelsiguiente = 1;
+                if(nivelsiguiente>nivelprogreso) nivelprogreso = 1;
                 break;
             case 2:
                 sello2PlazaMayor = true;
                 Debug.Log($"Sello {id} (Plaza Mayor) completado.");
-                nivelprogreso = 2;
+                nivelsiguiente = 2;
+                if (nivelsiguiente>nivelprogreso) nivelprogreso = 2;
                 break;
             case 3:
                 sello3Arciprestal = true;
                 Debug.Log($"Sello {id} (Arciprestal) completado.");
-                nivelprogreso = 3;
+                nivelsiguiente = 3;
+                if (nivelsiguiente>nivelprogreso) nivelprogreso = 3;
                 break;
             case 4:
                 sello4Muralla = true;
                 Debug.Log($"Sello {id} (Muralla) completado.");
-                nivelprogreso = 4;
+                nivelsiguiente = 4;
+                if (nivelsiguiente>nivelprogreso) nivelprogreso = 4;
                 break;
             case 5:
                 sello5Borrull = true;
                 Debug.Log($"Sello {id} (Borrull) completado.");
-                nivelprogreso = 5;
+                nivelsiguiente = 5;
+                if (nivelsiguiente>nivelprogreso) nivelprogreso = 5;
                 break;
             case 6:
                 sello6Judios = true;
                 Debug.Log($"Sello {id} (Judíos) completado.");
-                nivelprogreso = 6;
+                nivelsiguiente = 6;
+                if (nivelsiguiente>nivelprogreso) nivelprogreso = 6;
                 break;
             case 7:
                 sello7Horno = true;
                 Debug.Log($"Sello {id} (Horno) completado.");
-                nivelprogreso = 7;
+                nivelsiguiente = 7;
+                if (nivelsiguiente>nivelprogreso) nivelprogreso = 7;
                 break;
             case 8:
                 sello8Fuente = true;
                 Debug.Log($"Sello {id} (Fuente) completado.");
-                nivelprogreso = 8;
+                nivelsiguiente = 8;
+                if (nivelsiguiente>nivelprogreso) nivelprogreso = 8;
                 break;
             case 9:
                 sello9SantPere = true;
                 Debug.Log($"Sello {id} (Sant Pere) completado.");
-                nivelprogreso = 9;
+                nivelsiguiente = 9;
+                if (nivelsiguiente>nivelprogreso) nivelprogreso = 9;
                 break;
             case 10:
                 sello10Convento = true;
                 Debug.Log($"Sello {id} (Convento) completado.");
-                nivelprogreso = 10;
+                nivelsiguiente = 10;
+                if (nivelsiguiente>nivelprogreso) nivelprogreso = 10;
                 break;
             case 11:
                 sello11Reloj = true;
